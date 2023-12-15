@@ -12,7 +12,7 @@ get_header();
                   <div class="shadow-moscow"></div>
                </div> -->
                <div class="last-text-first-section">Более 60 локаций по организации активного семейного спорта и досуга</div>
-               <a href="<?php echo get_option('home'); ?>/catalog.html"><button class="to-choice-btn">К выбору ...</button></a>
+               <a href="<?php echo get_option('home'); ?>/catalog"><button class="to-choice-btn">К выбору ...</button></a>
             </div>
             <div class="absolute-peoples-container-f-s">
                <div class="absolute-fs-container-left"></div>
@@ -23,7 +23,7 @@ get_header();
             <div class="absolute-on-map-home-page-text-comtainer">
                <h3 class="text-gradient">Найди свой парк</h3>
             </div>
-            <a href="<?php echo get_option('home'); ?>/find.html"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/map1.png" alt="" class="map-map-s1" /></a>
+            <a href="<?php echo get_option('home'); ?>/find"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/map1.png" alt="" class="map-map-s1" /></a>
          </div>
       </section>
       <section class="second-section take-a-rent">
@@ -49,7 +49,7 @@ get_header();
          </div>
          <div class="shop-take-rent">
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -66,7 +66,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -83,7 +83,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -100,7 +100,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -117,7 +117,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -134,7 +134,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -151,7 +151,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -168,7 +168,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -185,7 +185,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -202,7 +202,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -219,7 +219,7 @@ get_header();
             </div>
          </div>
          <div class="boo">
-            <a href="<?php echo get_option('home'); ?>/catalog.html"><div class="go-to-shop-btn">Перейти в каталог</div></a>
+            <a href="<?php echo get_option('home'); ?>/catalog"><div class="go-to-shop-btn">Перейти в каталог</div></a>
          </div>
          <div class="hand-mask-app-banner">
             <img class="pointer" id="hand-iphone" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/hand-phone-full-size.png" alt="" />
@@ -305,7 +305,7 @@ get_header();
             </div>
          </div>
          <div class="go-to-all-chill-btn-container">
-            <a href="<?php echo get_option('home'); ?>/catalog-child.html"><div class="go-to-all-chill-btn">Смотреть все развлечения для детей</div></a>
+            <a href="<?php echo get_option('home'); ?>/catalog-child"><div class="go-to-all-chill-btn">Смотреть все развлечения для детей</div></a>
          </div>
       </section>
 
@@ -612,7 +612,7 @@ get_header();
             </div>
          </div>
          <div class="button-news-container-main-page">
-            <a href="<?php echo get_option('home'); ?>/news.html"><button class="see-all-usefull-mat-btn">Смотреть все полезные материалы</button></a>
+            <a href="<?php echo get_option('home'); ?>/news"><button class="see-all-usefull-mat-btn">Смотреть все полезные материалы</button></a>
          </div>
       </section>
 
