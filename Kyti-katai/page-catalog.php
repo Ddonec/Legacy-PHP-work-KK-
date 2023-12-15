@@ -10,7 +10,12 @@ Template Name: catalog
 get_header();
 ?>
 
-<section class="main-content-catalog">
+
+
+
+
+
+      <section class="main-content-catalog">
          <div class="bread-crumbs">
             <p><a href="index.html">Главная</a></p>
             <p>/</p>
@@ -18,10 +23,11 @@ get_header();
             <p>/</p>
             <p class="grey-bread-crumbs">Прокат</p>
          </div>
-         <div class="title-of-section t-o-s">
-            <div class="black-text-section">Возьми</div>
+         <div class="title-of-section-catalog-page t-o-s">
+            <h1 class="text-gradient">Возьми в прокат</h1>
+            <!-- <div class="black-text-section">Возьми</div>
             <div class="opacity-text-section o-t-s-all">в прокат</div>
-            <div class="shadow-section s-s-shadow"></div>
+            <div class="shadow-section s-s-shadow"></div> -->
          </div>
 
          <ul class="nav-catalog">
@@ -50,6 +56,51 @@ get_header();
             <aside class="filters-container-catalog">
                <p class="text-24-700">Найдено по фильтрам: 9</p>
                <div style="width: 300px"></div>
+               <section class="catalog-filter-section">
+                  <div class="filter-container-catalog">
+                     <div class="catalog-input-container">
+                        <p>Стоимость аренды</p>
+                        <label for="input-min"></label>
+                        <input type="number" id="input-min" min="300" max="50000" step="1" />
+
+                        <label for="input-max"></label>
+                        <input type="number" id="input-max" min="300" max="50000" step="1" />
+                        <div id="price-values">
+                           <span id="price-min"></span>
+                           <span id="price-max"></span>
+                        </div>
+                        <div id="price-slider"></div>
+                     </div>
+                  </div>
+                  <div class="checkbox-container_catalog">
+                     <p>Производители</p>
+                     <div><input type="checkbox" /><label for="">Format</label></div>
+                     <div><input type="checkbox" /><label for="">Aspect</label></div>
+                     <div><input type="checkbox" /><label for="">BBB</label></div>
+                     <div><input type="checkbox" /><label for="">Hamax</label></div>
+                     <div><input type="checkbox" /><label for="">SKS</label></div>
+                  </div>
+                  <div class="checkbox-container_catalog">
+                     <p>Диаметр колеса</p>
+                     <div><input type="checkbox" /><label for="">8”</label></div>
+                     <div><input type="checkbox" /><label for="">12”</label></div>
+                     <div><input type="checkbox" /><label for="">12,5”</label></div>
+                     <div><input type="checkbox" /><label for="">14”</label></div>
+                     <div><input type="checkbox" /><label for="">16”</label></div>
+                     <div><input type="checkbox" /><label for="">18”</label></div>
+                     <div><input type="checkbox" /><label for="">20”</label></div>
+                     <div><input type="checkbox" /><label for="">21”</label></div>
+                     <div><input type="checkbox" /><label for="">24”</label></div>
+                  </div>
+                  <div class="checkbox-container_catalog">
+                     <p>Цвет</p>
+                     <div><input type="checkbox" /><label for="">Синий</label></div>
+                     <div><input type="checkbox" /><label for="">Зеленый</label></div>
+                     <div><input type="checkbox" /><label for="">Фиолетовый</label></div>
+                     <div><input type="checkbox" /><label for="">Белый</label></div>
+                     <div><input type="checkbox" /><label for="">Красный</label></div>
+                  </div>
+               </section>
             </aside>
             <div class="cpoduct-zone-cat">
                <div class="in-stock-discription">Доступно сейчас</div>
@@ -257,11 +308,89 @@ get_header();
                         </div>
                      </div>
                   </div>
+
+                  <div class="card-of-product">
+                     <a href="item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+
+                     <div class="discription-of-product">
+                        Велосипед 12-K
+                        <ul>
+                           <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
+                           <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li>
+                           <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
+                        </ul>
+                        <div class="price-of-product pointer">
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <span class="prise-of-rent-1">1 200₽/час</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card-of-product">
+                     <a href="item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+
+                     <div class="discription-of-product">
+                        Городской велосипед
+                        <ul>
+                           <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
+                           <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
+                           <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
+                        </ul>
+                        <div class="price-of-product pointer">
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <span class="prise-of-rent-1">1 000₽/час</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card-of-product">
+                     <a href="item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+
+                     <div class="discription-of-product">
+                        Велосипед 12-K
+                        <ul>
+                           <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
+                           <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li>
+                           <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
+                        </ul>
+                        <div class="price-of-product pointer">
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <span class="prise-of-rent-1">1 200₽/час</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card-of-product">
+                     <a href="item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+
+                     <div class="discription-of-product">
+                        Городской велосипед
+                        <ul>
+                           <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
+                           <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
+                           <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
+                        </ul>
+                        <div class="price-of-product pointer">
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <span class="prise-of-rent-1">1 000₽/час</span>
+                        </div>
+                     </div>
+                  </div>
                </div>
+
                <div class="show-more-btn-catalog text-18-500">Показать еще</div>
             </div>
          </div>
       </section>
+
+
+
+
+
+
+
+
+
 
 
 

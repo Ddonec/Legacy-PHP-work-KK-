@@ -19,6 +19,9 @@
       />
 
       <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/item.css" />
+      <link rel="stylesheet" href="css/catalog.css" />
+      <link rel="stylesheet" href="css/media.css" />      
 
       <?php 
     wp_head()

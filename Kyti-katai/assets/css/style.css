@@ -209,7 +209,7 @@ button {
    height: 36px;
    border-radius: 0 0 50px 50px;
    position: absolute;
-   bottom: -36px;
+   bottom: -35px;
    left: 50%;
    transform: translate(-50%);
    z-index: 2;
@@ -254,12 +254,29 @@ s1
 .first-section {
    width: 100vw;
    position: relative;
+
+   border-top: 1px solid white;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.bacground-image-main-page-first-section {
+   width: 100%;
+   background-image: url(../assets/content/header-bg-without-noize.png);
+   background-repeat: no-repeat;
+   border-right-width: 100%;
+   background-position: center top;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
 }
 
 .text-area-first-section-1920 {
    margin: 0 auto;
-   margin-top: 44px;
-   width: 1302px;
+   /* margin-top: 44px; */
    color: #333;
    text-align: center;
    font-family: Montserrat Alternates, "Source Sans Pro";
@@ -268,14 +285,49 @@ s1
    font-weight: 800;
    line-height: 120%; /* 84px */
    position: relative;
+   display: flex;
+   flex-direction: column;
    align-items: center;
+   /* border-top: 1px solid white; */
+   position: relative;
 }
-h1 {
+.text-area-first-section-1920 h1 {
+   width: 100%;
+   max-width: 1302px;
+
    font-family: Montserrat Alternates, "Source Sans Pro";
    font-size: 70px;
    font-style: normal;
    font-weight: 800;
    line-height: 120%; /* 84px */
+   margin-top: 81px;
+}
+
+.absolute-peoples-container-f-s {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   max-width: 1793px;
+   left: 50%;
+   transform: translateX(-50%);
+   max-width: 1793px;
+}
+.absolute-peoples-container-f-s div {
+   aspect-ratio: 1/1;
+   width: calc(100vw / 3.6);
+   background-size: cover;
+   max-width: 533px;
+}
+.absolute-fs-container-left {
+   background-position-y: bottom;
+   background-image: url(../assets/content/left-snow-peoples-3.png);
+}
+.absolute-fs-container-right {
+   width: 578px;
+   background-image: url(../assets/content/right-snow-peoples.png);
 }
 
 h2 {
@@ -315,10 +367,11 @@ h2 {
    font-style: normal;
    font-weight: 400;
    line-height: 140%; /* 33.6px */
+   max-width: 618px;
 }
 
 .to-choice-btn {
-   margin: 30px auto 45px;
+   margin: 30px auto 185px;
    display: inline-flex;
    padding: 14px 32px 16px 32px;
    justify-content: center;
@@ -335,10 +388,35 @@ h2 {
    font-weight: 500;
    line-height: 140%; /* 25.2px */
 }
-
+.map-area-first-section {
+   position: relative;
+   max-width: 1200px;
+}
 .map-map-s1 {
    width: 1200px;
    border-radius: 50px;
+   position: relative;
+}
+
+.absolute-on-map-home-page-text-comtainer {
+   position: absolute;
+   z-index: 4;
+   width: max-content;
+   padding: 7.115px 14.229px 9.96px 14.229px;
+   align-items: flex-start;
+   border-radius: 14.229px;
+   background: #fff;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 35px;
+}
+.absolute-on-map-home-page-text-comtainer h3 {
+   text-align: center;
+   font-family: Montserrat Alternates;
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
 }
 
 /* 
@@ -346,9 +424,9 @@ BODY
 s2
 */
 
-.title-of-section {
+.title-of-section-1 {
    position: relative;
-   margin: 0 auto;
+   margin: 100px auto 40px;
    text-align: center;
    font-family: "Montserrat Alternates", sans-serif;
    font-size: 64px;
@@ -356,8 +434,36 @@ s2
    font-weight: 700;
    line-height: normal;
    display: flex;
-   width: 618px;
-   gap: 20px;
+   /* width: 618px; */
+   /* gap: 20px; */
+   width: max-content;
+}
+.title-of-section-gradient {
+   text-align: center;
+   font-family: Montserrat Alternates;
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+
+   background: linear-gradient(269deg, #455cff 0.35%, #4559ed 47.28%, #333 101.37%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.title-of-section-gradient-yellow {
+   text-align: center;
+   font-family: Montserrat Alternates;
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   width: max-content;
+
+   background: linear-gradient(269deg, #ffc93a 3.38%, #fff 101.37%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 
 .second-section {
@@ -383,7 +489,7 @@ s2
 }
 
 .nav-shop {
-   width: 1280px;
+   width: 1200px;
    text-align: center;
    font-family: "Lato", sans-serif;
    font-size: 18px;
@@ -405,16 +511,18 @@ s2
    list-style: none;
    gap: 21px;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
+   width: calc(100% - 65px);
 }
-.nav-shop ul li:not(:last-child) {
+/* .nav-shop ul li:not(:last-child)  */
+.nav-shop ul li {
    padding: 14px 32px 16px 32px;
 }
 .arrow-right-list {
-   border-radius: 30px;
-   border: 2px solid #ffc93a;
-   padding: 13px 32px 14px 32px;
+   border-radius: 35px;
+   border: 1.423px solid var(--yellow, #ffc93a);
+   padding: 11px 24px;
    line-height: 90%;
    position: absolute;
    right: 0;
@@ -424,26 +532,32 @@ s2
 
 .nav-shop ul li:first-child {
    border-radius: 30px;
-   border: 2px solid #ffc93a;
+   border: 1.423px solid var(--yellow, #ffc93a);
+   padding: 10px 24px 12px 24px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 #vector-1 {
    width: 14px;
    height: 28px;
 }
 .discription-of-product {
-   padding: 24px 20px;
+   padding: 17px 14px;
    overflow: hidden;
    color: #333;
    text-overflow: ellipsis;
-   font-family: "Lato", sans-serif;
-   font-size: 24px;
+   font-family: Lato;
+   font-size: 18px;
    font-style: normal;
    font-weight: 600;
-   line-height: 140%; /* 33.6px */
+   line-height: 140%; /* 25.2px */
 
    border-radius: 20px;
    border: 1px solid rgba(34, 34, 34, 0.1);
    background: #f4f4f8;
+   z-index: 5;
+   position: relative;
 }
 .opacity-text-discription-product-card {
    opacity: 0.5;
@@ -460,7 +574,7 @@ s2
 }
 .add-to-cart-btn {
    display: flex;
-   padding: 18px 32px 19px 32px;
+   padding: 13px 23px 14px 23px;
    justify-content: center;
    align-items: center;
    gap: 10px;
@@ -478,8 +592,8 @@ s2
    border-radius: 20px;
    border: 1px solid rgba(34, 34, 34, 0.1);
    background: #fafafa;
-   width: 310px;
-   height: 443px;
+   /* width: 310px; */
+   /* height: 443px; */
    overflow: hidden;
    transition: 0.6s ease;
 }
@@ -487,18 +601,18 @@ s2
    scale: 1.1;
 }
 .prise-of-rent-1 {
-   padding-right: 32px;
+   padding-right: 20px;
 }
 .img-of-product {
    border-radius: 20px;
-   width: 309px;
+   width: 222px;
    transition: 0.6s ease;
 }
 .shop-take-rent {
    display: flex;
    flex-wrap: wrap;
    gap: 20px;
-   width: 1300px;
+   width: 1200px;
    margin: 30px auto 0;
 }
 .boo {
@@ -518,18 +632,20 @@ s2
 }
 #koleso {
    position: absolute;
-   right: 0;
+   right: -135px;
    opacity: 0.5;
+   bottom: -98px;
 }
 #krug {
    position: absolute;
-   right: 0;
+   right: -135px;
    opacity: 0.5;
+   bottom: -98px;
 }
 .app-banner {
    z-index: 1;
-   width: 1300px;
-   height: 308px;
+   width: 1200px;
+   height: 137px;
    margin: 0 auto;
    position: relative;
    border-radius: 40px;
@@ -537,12 +653,14 @@ s2
    overflow: hidden;
    position: absolute;
    bottom: 0;
+   display: flex;
+   padding: 28px 28px 36px 28px;
 }
 .hand-mask-app-banner {
    overflow: hidden;
    border-radius: 40px;
-   width: 1300px;
-   height: 384px;
+   width: 1200px;
+   height: 300px;
    margin: 0 auto 140px;
    position: relative;
 }
@@ -550,12 +668,16 @@ s2
 #hand-iphone {
    position: absolute;
    z-index: 2;
-   right: 0;
+   right: -49px;
+   bottom: -300px;
+   width: 380px;
+   transform: rotate(-15deg);
 }
 #iphone-screen {
    position: absolute;
    z-index: 2;
    right: 132px;
+   bottom: -50px;
 }
 
 .zaglushka {
@@ -564,54 +686,60 @@ s2
 
 .main-text-app-cart {
    color: #333;
-   font-family: "Montserrat Alternates", sans-serif;
-   font-size: 40px;
+   font-family: Montserrat Alternates;
+   font-size: 28px;
    font-style: normal;
    font-weight: 700;
-   line-height: 120%; /* 48px */
-   margin: 40px 0 0 40px;
+   line-height: 120%; /* 33.6px */
+   margin: 0 0 0 0px;
 }
-.main-text-app-cart span {
+/* .main-text-app-cart span {
    color: #5567ea;
    font-family: "Montserrat Alternates", sans-serif;
    font-size: 40px;
    font-style: normal;
    font-weight: 700;
    line-height: 120%;
-}
+} */
 .discription-app-cart {
    color: #333;
-   font-family: "Lato";
-   font-size: 24px;
+   font-family: Lato;
+   font-size: 18px;
    font-style: normal;
    font-weight: 600;
-   line-height: 160%; /* 38.4px */
-   margin: 14px 0 0 40px;
+   line-height: 160%; /* 28.8px */
+   margin: 14px 0 0 0px;
    display: flex;
 }
 .discription-app-cart div {
-   width: 148px;
-   height: 42px;
+   /* width: 148px;
+   height: 42px; */
+   padding: 0 10px;
    border-radius: 20px;
    background: var(--yellow, #ffc93a);
    text-align: center;
 }
 .apps-links-app-cart {
-   margin: 28px 0 0 40px;
+   margin: 20px 0 0 40px;
    display: flex;
    gap: 20px;
+}
+.apps-links-app-cart img {
+   width: 128px;
+   height: 37px;
 }
 .title-of-section-3 {
    position: relative;
    margin: 0 auto;
    text-align: center;
    font-family: "Montserrat Alternates", sans-serif;
-   font-size: 64px;
+   font-size: 32px;
    font-style: normal;
    font-weight: 700;
    line-height: normal;
    display: flex;
-   width: 860px;
+   /* width: 860px; */
+   width: max-content;
    gap: 20px;
 }
 .shadow-section-3 {
@@ -634,7 +762,7 @@ s2
    margin: 0 auto;
 }
 .kids-chill-container {
-   margin: 50px auto 40px;
+   margin: 20px auto 40px;
    max-width: 1300px;
    position: relative;
 }
@@ -645,6 +773,16 @@ s2
    background: #f4f4f8;
    box-sizing: border-box;
    padding: 30px;
+}
+#wide-card-on-chill-kids {
+   width: calc(100vw - 50px);
+   height: 230px;
+   border-radius: 20px;
+   background: #f4f4f8;
+   box-sizing: border-box;
+   padding: 30px;
+   margin: 0 auto;
+   margin-bottom: 20px;
 }
 .text-in-chill-for-kids-card {
    color: #333;
@@ -1155,24 +1293,32 @@ s6
 }
 
 .text-blocks-6-s div:nth-child(1) {
-   width: 530px;
+   /* width: 530px; */
    font-family: Montserrat Alternates, sans-serif;
    font-size: 40px;
    font-style: normal;
    font-weight: 700;
    line-height: 120%; /* 48px */
 }
-.text-blocks-6-s div:nth-child(2) {
+.text-blocks-6-s > div:nth-child(2) {
    margin: 9px 51px 0 20px;
    width: 279px;
 }
 .text-blocks-6-s div:nth-child(3) {
-   margin-top: 9px;
+   /* margin-top: 9px; */
    width: 420px;
 }
 
 .text-blocks-6-s div:nth-child(1) span {
    color: #ffc93a;
+}
+
+.three-elemrnts-container-home-page-blue-block {
+   flex-wrap: nowrap;
+   overflow-x: auto;
+   justify-content: flex-start;
+   display: flex;
+   gap: 20px;
 }
 
 .show-more-6-section-btn {
@@ -1197,6 +1343,27 @@ s6
    /* float: right; */
    margin: 10px 0 60px;
 }
+.show-more-6-section-btn-2 {
+   border-radius: 160px;
+   border: 2px solid var(--yellow, #ffc93a);
+   display: flex;
+   height: 54.973px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   flex-shrink: 0;
+   color: var(--white, #fff);
+   text-align: center;
+   font-family: Lato, sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%; /* 25.2px */
+   background-color: transparent;
+   /* float: right; */
+   margin: 10px auto 60px;
+   width: calc(100% - 40px);
+}
 .container-for-6-btn {
    display: flex;
    justify-content: end;
@@ -1219,7 +1386,9 @@ s6
    align-items: center;
 
    font-family: Lato;
+
    font-size: 24px;
+   color: black;
    font-style: normal;
    font-weight: 600;
    line-height: 140%; /* 33.6px */
@@ -1228,6 +1397,7 @@ s6
    background-image: url(../assets/content/img2.png);
    width: 530px;
    height: 311px;
+   border-radius: 30px;
 }
 .roll-park-list-visible {
    position: relative;
@@ -1237,8 +1407,11 @@ s6
    width: 100%;
 }
 .roll-park-list {
+   white-space: nowrap;
+   animation: marquee 20s linear infinite;
+
    position: absolute;
-   left: -510px;
+   left: 0px;
 
    color: #ffffff;
    text-align: center;
@@ -1255,7 +1428,50 @@ s6
    background-clip: text;
    gap: 20px;
 }
+
+@keyframes marquee {
+   0% {
+      transform: translateX(0);
+   }
+   100% {
+      transform: translateX(-100%);
+   }
+}
 .roll-park-list img {
+   width: 61px;
+}
+.roll-park-list2 {
+   white-space: nowrap;
+   animation: marquee2 20s linear infinite;
+
+   position: absolute;
+   left: 5000px;
+
+   color: #ffffff;
+   text-align: center;
+   font-family: Montserrat Alternates, sans-serif;
+   font-size: 64px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   display: flex;
+   height: 90px;
+   color: transparent;
+   -webkit-text-stroke: 2px white;
+   -webkit-background-clip: text;
+   background-clip: text;
+   gap: 20px;
+}
+
+@keyframes marquee2 {
+   0% {
+      transform: translateX(0);
+   }
+   100% {
+      transform: translateX(-100%);
+   }
+}
+.roll-park-list2 img {
    width: 61px;
 }
 
@@ -1279,8 +1495,9 @@ s7
    font-weight: 700;
    line-height: normal;
    display: flex;
-   width: 805px;
+   /* width: 805px; */
    gap: 20px;
+   margin-bottom: 40px;
 }
 .shadow-section-7 {
    width: 425px;
@@ -1295,35 +1512,36 @@ s7
    position: relative;
    gap: 20px;
    margin: 0 auto;
-   height: 500px;
+   height: 365px;
    display: inline-flex;
 }
 .green-samokat {
    background-image: url(../assets/content/bg.png);
-   width: 640px;
+   background-size: cover;
+   width: 467px;
    border-radius: 20px;
-   height: 500px;
+   height: 365px;
    padding: 30px;
    color: var(--white, #fff);
    font-family: Montserrat Alternates, sans-serif;
-   font-size: 48px;
+   font-size: 28px;
    font-style: normal;
    font-weight: 700;
    line-height: 120%; /* 57.6px */
 }
 .green-samokat p {
    font-family: Lato, sans-serif;
-   font-size: 24px;
+   font-size: 18px;
    font-style: normal;
-   font-weight: 600;
+   font-weight: 400;
    line-height: 140%; /* 33.6px */
-   width: 223px;
+   width: 158px;
    margin-top: 20px;
 }
 .usrful-materials-cards div:not(:first-child):not(.text-inside-cart-blog, .image-user-zone, .date-in-material-card) {
    overflow: hidden;
-   width: 310px;
-   height: 500px;
+   width: 224px;
+   height: 265px;
    border-radius: 20px;
 }
 
@@ -1332,23 +1550,23 @@ s7
    border-radius: 20px 0px 20px 20px;
    border: 1px solid rgba(34, 34, 34, 0.1);
    background: #f4f4f8;
-   width: 310px;
-   height: 274px;
+   width: 224px;
+   height: 204px;
    bottom: 0px;
    display: flex;
-   padding: 24px 20px;
+   padding: 18px 14px;
    flex-direction: column;
    align-items: flex-start;
    gap: 10px;
    font-family: "Lato", sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 300;
    line-height: 150%; /* 27px */
 }
 .text-inside-cart-blog p {
    font-family: "Lato", sans-serif;
-   font-size: 24px;
+   font-size: 18px;
    font-style: normal;
    font-weight: 400;
    line-height: 130%; /* 31.2px */
@@ -1356,16 +1574,19 @@ s7
 .image-user-zone {
    display: flex;
    align-items: center;
-   height: 40px;
+   height: 28px;
    gap: 8px;
    position: absolute;
-   bottom: 24px;
+   bottom: 18px;
+}
+.image-user-zone img {
+   height: 28px;
 }
 .date-in-material-card {
    position: absolute;
 
    font-family: "Lato", sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 150%; /* 27px */
@@ -1374,13 +1595,17 @@ s7
    border: 1px solid rgba(34, 34, 34, 0.1);
    background: #fff;
    padding: 8px 20px;
-   right: 0;
-   bottom: 253px;
+   right: -1px;
+   bottom: 183px;
 }
 .six-cards-container {
    margin-top: 49px;
    display: flex;
    align-items: center;
+
+   max-width: 1200px;
+   margin: 0 auto;
+   position: relative;
 }
 .cur-pointer {
    display: flex;
@@ -1388,12 +1613,12 @@ s7
    gap: 16px;
    position: absolute;
    left: inherit;
-   right: 100px;
+   right: -85px;
 }
 .cur-pointer button {
    border-radius: 30px;
    border: 2px solid #ffc93a;
-   padding: 13px 32px 14px 32px;
+   padding: 11px 24px;
    justify-content: center;
    align-items: center;
    background: #fff;
@@ -1506,8 +1731,10 @@ s7
 }
 
 .map-area-first-section {
+   margin-top: 130px;
    overflow: hidden;
    border-radius: 60px;
+   height: 570px;
 }
 .map-area-first-section a img {
    transition: 0.6s ease;
@@ -1524,7 +1751,7 @@ s7
 .apps-links-footer-2 {
    display: none;
 }
-.i-b-el-1 {
+/* .i-b-el-1 {
    order: 1;
 }
 
@@ -1573,7 +1800,8 @@ s7
 }
 .blue-n-c-7 {
    order: 7;
-}
+} */
+
 /* header-fake */
 
 .heaer-fake-fullscreen {
