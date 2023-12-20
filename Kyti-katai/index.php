@@ -12,7 +12,7 @@ get_header();
                   <div class="shadow-moscow"></div>
                </div> -->
                <div class="last-text-first-section">Более 60 локаций по организации активного семейного спорта и досуга</div>
-               <a href="<?php echo get_option('home'); ?>/catalog"><button class="to-choice-btn">К выбору ...</button></a>
+               <a href="<?php echo get_option('home'); ?>/catalog"><button class="to-choice-btn class-to-switch-season-btn">Перейти</button></a>
             </div>
             <div class="absolute-peoples-container-f-s">
                <div class="absolute-fs-container-left"></div>
@@ -23,12 +23,12 @@ get_header();
             <div class="absolute-on-map-home-page-text-comtainer">
                <h3 class="text-gradient">Найди свой парк</h3>
             </div>
-            <a href="<?php echo get_option('home'); ?>/find"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/map1.png" alt="" class="map-map-s1" /></a>
+            <a href="<?php echo get_option('home'); ?>/find"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/map571.png" alt="" class="map-map-s1" /></a>
          </div>
       </section>
       <section class="second-section take-a-rent">
          <div class="title-of-section-1">
-            <h3 class="title-of-section-gradient">Возьми в прокат</h3>
+            <h3 class="title-of-section-gradient text-gradient">Возьми в прокат</h3>
             <!-- <div class="black-text-section">Возьми</div>
             <div class="opacity-text-section o-t-s-all">в прокат</div>
             <div class="shadow-section s-s-shadow"></div> -->
@@ -41,15 +41,16 @@ get_header();
                <li class="pointer">Электро</li>
                <li class="pointer">Коньки</li>
                <li class="pointer">Катамараны</li>
+               <li class="pointer">Коньки</li>
                <li class="pointer">Лодки</li>
             </ul>
             <div class="arrow-right-list pointer">
-               <img id="vector-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-1.svg" alt="" />
+               <img id="vector-1" src="assets/icon/Vector+13px.svg" alt="" />
             </div>
          </div>
          <div class="shop-take-rent">
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -59,14 +60,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 200₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -76,14 +77,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 000₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -93,14 +94,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 200₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -110,14 +111,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 000₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -127,14 +128,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 000₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -144,14 +145,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 200₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -161,14 +162,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 000₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -178,14 +179,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 200₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -195,14 +196,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 000₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -212,18 +213,18 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 200₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
          </div>
          <div class="boo">
-            <a href="<?php echo get_option('home'); ?>/catalog"><div class="go-to-shop-btn">Перейти в каталог</div></a>
+            <a href="<?php echo get_option('home'); ?>/catalog"><div class="go-to-shop-btn class-to-switch-season-btn">Перейти в каталог</div></a>
          </div>
          <div class="hand-mask-app-banner">
-            <img class="pointer" id="hand-iphone" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/hand-phone-full-size.png" alt="" />
-            <img class="pointer" id="iphone-screen" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/iPhone-scren.png" alt="" />
+            <img class="pointer" id="hand-iphone" src="assets/content/hand-phone-full-size.png" alt="" />
+            <img class="pointer" id="iphone-screen" src="assets/content/iPhone-scren.png" alt="" />
             <div class="app-banner">
                <svg id="koleso" xmlns="http://www.w3.org/2000/svg" width="577" height="308" viewBox="0 0 577 308" fill="none">
                   <path
@@ -241,85 +242,91 @@ get_header();
                   <div class="main-text-app-cart text-gradient">Для своих дешевле!</div>
                   <div class="discription-app-cart">
                      Скачай приложение - получи&nbsp;
-                     <div>скидку 15%</div>
+                     <div>скидку&nbsp;15%</div>
                   </div>
                </div>
-               <div class="apps-links-app-cart"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></div>
+               <div class="apps-links-app-cart"><img class="pointer" src="assets/content/appstore.png" alt="" /><img class="pointer" src="assets/content/googleplay.png" alt="" /></div>
             </div>
          </div>
       </section>
-
-      <section class="third-section">
-         <div class="title-of-section-3 text-gradient">
-            Развлечения для детей
-            <!-- <div class="black-text-section">Развлечения для</div>
+      <section class="third-section-container none">
+         <div class="third-section">
+            <div class="title-of-section-3 text-gradient">
+               Развлечения для детей
+               <!-- <div class="black-text-section">Развлечения для</div>
             <div class="opacity-text-section o-t-s-all">детей</div>
             <div class="shadow-section-3 s-s-shadow"></div> -->
-         </div>
-         <div class="kids-chill-container">
-            <div id="wide-card-on-chill-kids">
-               Более <span>20 развелечений</span> для вашего ребенка
-               <p>Выберите интересные развлечения для детей в «КутиКатай», пусть отдых в парке будет ярким и разнообразным!</p>
             </div>
-            <div class="kids-chill">
-               <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="" />
-                  <p class="text-in-chill-for-kids-card">Электромобили</p>
+            <div class="kids-chill-container">
+               <div id="wide-card-on-chill-kids">
+                  Более <span>20 развелечений</span> для вашего ребенка
+                  <p>Выберите интересные развлечения для детей в «КутиКатай», пусть отдых в парке будет ярким и разнообразным!</p>
                </div>
-               <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g2.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Зорбинг</p>
-               </div>
-               <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g3.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Лодочки</p>
-               </div>
-               <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g4.svg" alt="" />
-                  <p class="text-in-chill-for-kids-card">Лодочная станция</p>
-               </div>
-               <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g5.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Карусель</p>
-               </div>
-               <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g6.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Паровозик</p>
-               </div>
-               <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g7.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Веревочный парк</p>
-               </div>
-               <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g8.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Лабиринт</p>
-               </div>
-               <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g9.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Спортивные батуты</p>
-               </div>
-               <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g10.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Надувной батут</p>
+               <div class="kids-chill">
+                  <div id="wide-card-on-chill-kids-copy">
+                     Более <span>20 развелечений</span> для вашего ребенка
+                     <p>Выберите интересные развлечения для детей в «КутиКатай», пусть отдых в парке будет ярким и разнообразным!</p>
+                  </div>
+                  <div>
+                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="" />
+                     <p class="text-in-chill-for-kids-card">Электромобили</p>
+                  </div>
+                  <div>
+                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g2.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Зорбинг</p>
+                  </div>
+                  <div>
+                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g3.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Лодочки</p>
+                  </div>
+                  <div>
+                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g4.svg" alt="" />
+                     <p class="text-in-chill-for-kids-card">Лодочная&nbsp;станция</p>
+                  </div>
+                  <div>
+                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g5.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Карусель</p>
+                  </div>
+                  <div>
+                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g6.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Паровозик</p>
+                  </div>
+                  <div>
+                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g7.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Веревочный&nbsp;парк</p>
+                  </div>
+                  <div>
+                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g8.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Лабиринт</p>
+                  </div>
+                  <div>
+                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g9.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Спортивные&nbsp;батуты</p>
+                  </div>
+                  <div>
+                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g10.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Надувной&nbsp;батут</p>
+                  </div>
                </div>
             </div>
-         </div>
-         <div class="go-to-all-chill-btn-container">
-            <a href="<?php echo get_option('home'); ?>/catalog-child"><div class="go-to-all-chill-btn">Смотреть все развлечения для детей</div></a>
+            <div class="go-to-all-chill-btn-container">
+               <a href="<?php echo get_option('home'); ?>/catalog-child"><div class="go-to-all-chill-btn class-to-switch-season-btn">Смотреть все развлечения для детей</div></a>
+            </div>
          </div>
       </section>
 
-      <!-- <section class="four-section">
+      <section class="four-section none">
          <div class="images-swipe-four">
             <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/2.png" alt="" />
             <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/3.png" alt="" />
             <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/4.png" alt="" />
             <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/5.png" alt="" />
          </div>
-         <div class="title-of-section-4 t-o-s">
-            <div class="opacity-text-section o-t-s-all">Верёвочный</div>
+         <div class="title-of-section-4">
+            <h3 class="title-of-section-gradient text-gradient">Верёвочный парк</h3>
+            <!-- <div class="opacity-text-section o-t-s-all">Верёвочный</div>
             <div class="black-text-section">парк</div>
-            <div class="shadow-section-4 s-s-shadow"></div>
+            <div class="shadow-section-4 s-s-shadow"></div> -->
          </div>
          <div class="cards-rope-park">
             <div class="rope-mag-1-hide less-900-hide">
@@ -335,11 +342,11 @@ get_header();
                   </ul>
                </div>
                <div class="emotion-card-buttons">
-                  <div>
-                     <a href="<?php echo get_option('home'); ?>//rope-park.html"><div>Пойти в веревочный парк</div></a>
+                  <div class="class-to-switch-season-btn">
+                     <a href="<?php echo get_option('home'); ?>/rope-park"><div>Пойти в веревочный парк</div></a>
                   </div>
                   <div>
-                     <a href="<?php echo get_option('home'); ?>//rope-park.html"><div>Узнать больше</div></a>
+                     <a href="<?php echo get_option('home'); ?>/rope-park"><div>Узнать больше</div></a>
                   </div>
                </div>
             </div>
@@ -357,17 +364,16 @@ get_header();
             <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/8.png" alt="" /></div>
             <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/7.png" alt="" /></div>
          </div>
-      </section> 
+      </section>
 
-        
-      <section class="five-section">
-         <div class="title-of-section-5 t-o-s">
-            <div class="black-text-section black-text-section-5">Организация</div>
+      <section class="five-section none">
+         <div class="title-of-section-5">
+            <h3 class="title-of-section-gradient text-gradient">Организация детских праздников</h3>
 
+            <!-- <div class="black-text-section black-text-section-5">Организация</div>
             <div class="opacity-text-section o-t-s-all opacity-text-section-5">детских праздников</div>
-            <div class="shadow-section-5 s-s-shadow"></div>
+            <div class="shadow-section-5 s-s-shadow"></div> -->
          </div>
-         <p>С большим вниманием к самым маленьким</p>
 
          <div class="slider-five-section-vision">
             <div class="slider-five-section">
@@ -379,10 +385,7 @@ get_header();
                   <div>Устроить праздник мечты поможет аниматор, который организует шоу-программу, проведет мастер-класс и увлечен детей в атмосферу веселья и радости.</div>
                </div>
                <div class="right-side-slider">
-                  <div>
-                     «КутиКатай» создает новый формат организации Дня рождения. Ваш ребенок и его друзья смогут ощутить себя настоящими «Супергероями» или «Чемпионами», пройти квест или поучаствовать
-                     в соревновании дружной командой.
-                  </div>
+                  <div class="big-attention-for-kids">С большим вниманием к самым маленьким</div>
                   <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle32.png" alt="" />
                   <div id="card-reserve">
                      <p>Кстати, комнату можно забронировать</p>
@@ -391,7 +394,7 @@ get_header();
                         и своей семьи на наших объектах<br
                      /></span>
                      <button>Забронируйте дату вашего праздника</button>
-                     <img class="gold-balls-img" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/image9.png" alt="" />
+                     <img class="gold-balls-img" src="assets/content/image9.png" alt="" />
                   </div>
                </div>
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle35.jpg" alt="" />
@@ -413,7 +416,7 @@ get_header();
                   и своей семьи на наших объектах<br
                /></span>
                <button>Забронируйте дату вашего праздника</button>
-               <img class="gold-balls-img" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/image9.png" alt="" />
+               <img class="gold-balls-img" src="assets/content/image9.png" alt="" />
             </div>
             <div class="image-bg-3 i-b-el-6"></div>
             <div class="image-bg-4 i-b-el-7"></div>
@@ -442,16 +445,16 @@ get_header();
                   Забронируйте дату
                   <span class="reserve-button-less-470px">вашего </span>праздника
                </button>
-               <img class="gold-balls-img" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/image9.png" alt="" />
+               <img class="gold-balls-img" src="assets/content/image9.png" alt="" />
             </div>
             <div class="text-5-s-2 i-b-el-4">Устроить праздник мечты поможет аниматор, который организует шоу-программу, проведет мастер-класс и увлечен детей в атмосферу веселья и радости.</div>
          </div>
 
-         <button class="find-out-more-btn">
+         <button class="find-out-more-btn class-to-switch-season-btn">
             Узнать подробнее
             <span class="less700hide"> &nbsp;об организации праздников</span>
          </button>
-      </section> -->
+      </section>
 
       <section class="six-section">
          <div class="title-of-section-6">
@@ -461,60 +464,74 @@ get_header();
             <div class="shadow-section-6 s-s-shadow"></div> -->
          </div>
          <div class="info-area-six-section">
-            <div class="text-blocks-6-s">
+            <div class="text-blocks-6-s switch-color-text-black-white">
                <div class="blue-n-c-1">
                   За <span>15 лет</span> мы подарили радость более
-                  <span>5 миллионов</span> гостей
+                  <span>5 миллионам</span> гостей
                </div>
-               <div class="blue-n-c-2">
-                  Мы — крупнейшая сеть прокатов прогулочной техники <br />
-                  и спортивного инвентаря во все сезоны<span class="up-to-768px-hidden-text-home-page"
-                     >. Вот уже 15 лет мы создаём досуг для гостей парков Москвы и Московской области. Мы прошли большой путь от малого бизнеса, до федеральной сети прокатов и представлены в более,
-                     чем 60 парках.</span
-                  >
-               </div>
-               <div class="blue-n-c-3">
-                  Вот уже 15 лет мы создаём досуг для гостей парков Москвы и Московской области. Мы прошли большой путь от малого бизнеса, до федеральной сети прокатов и представлены в более,
-                  чем 60 парках.
-               </div>
-               <div class="blue-n-c-4">
-                  <button class="show-more-6-section-btn">Узнать больше о Кути Катай</button>
-               </div>
-               <div class="three-elemrnts-container-home-page-blue-block">
-                  <div class="img-circle blue-n-c-5">
-                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img1.png" alt="" />
+               <div class="blue-n-c-2-area">
+                  <div class="blue-n-c-2">
+                     <p>
+                        Мы — крупнейшая сеть прокатов техники и спортивного инвентаря в любой сезон<span class="up-to-768px-hidden-text-home-page"
+                           >. Вот уже 15 лет мы создаём досуг для гостей парков Москвы и Московской области. Мы прошли большой путь от малого бизнеса, до федеральной сети прокатов и представлены
+                           в более, чем 60 парках.</span
+                        >
+                     </p>
+                     <p>
+                        Вот уже 15 лет мы создаём досуг для гостей парков Москвы и Московской области. Мы прошли большой путь от малого бизнеса, до федеральной сети прокатов и представлены в более,
+                        чем 60 парках.
+                     </p>
                   </div>
-                  <div class="yellow-block blue-n-c-6">С любовью и заботой мы организуем ценное время для общения с близкими и закладываем традиции активного здорового отдыха.</div>
-                  <div class="last-photo blue-n-c-7"></div>
+                  <button class="show-more-6-section-btn border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</button>
+               </div>
+               <div class="overflow-blue-section-index-page-container">
+                  <div class="three-elemrnts-container-home-page-blue-block">
+                     <div class="img-circle blue-n-c-5">
+                        <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img1.png" alt="" />
+                     </div>
+                     <div class="yellow-block blue-n-c-6">С любовью и заботой мы организуем ценное время для общения с близкими и закладываем традиции активного здорового отдыха.</div>
+                     <div class="last-photo blue-n-c-7"></div>
+                  </div>
                </div>
             </div>
          </div>
          <div class="roll-park-list-visible">
             <div class="roll-park-list">
                <div>останкинский&nbsp;парк</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
                <div>строгино</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
                <div>митино</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>вднх</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>измайловский</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>останкинский&nbsp;парк</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>строгино</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>митино</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>вднх</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>измайловский</div>
             </div>
@@ -522,39 +539,50 @@ get_header();
                <!-- <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" /> -->
 
                <div>останкинский&nbsp;парк</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
                <div>строгино</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
                <div>митино</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>вднх</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>измайловский</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>останкинский&nbsp;парк</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>строгино</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>митино</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>вднх</div>
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
 
                <div>измайловский</div>
             </div>
          </div>
-         <div class="show-more-6-section-btn-2">Узнать больше о Кути Катай</div>
+         <div class="show-more-6-section-btn-2 border-switch-status-blue">Узнать о КутиКатай</div>
       </section>
 
       <section class="seven-section">
          <div class="title-of-section-7">
-            <h3 class="title-of-section-gradient">Полезные материалы</h3>
+            <h3 class="title-of-section-gradient text-gradient">Полезные материалы</h3>
             <!-- <div class="black-text-section">Полезные</div>
             <div class="opacity-text-section o-t-s-all">материалы</div>
             <div class="shadow-section-7 s-s-shadow"></div> -->
@@ -608,17 +636,13 @@ get_header();
             </div>
             <div class="cur-pointer">
                <button><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-right.svg" alt="" /></button>
-               <button><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-left.svg" alt="" /></button>
+               <button class="opacity"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-left.svg" alt="" /></button>
             </div>
          </div>
          <div class="button-news-container-main-page">
-            <a href="<?php echo get_option('home'); ?>/news"><button class="see-all-usefull-mat-btn">Смотреть все полезные материалы</button></a>
+            <a href="<?php echo get_option('home'); ?>/news"><button class="see-all-usefull-mat-btn class-to-switch-season-btn">Смотреть все полезные материалы</button></a>
          </div>
       </section>
-
-
-
-
 
 
 
