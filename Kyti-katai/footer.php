@@ -70,6 +70,8 @@
       </footer>
    </body>
    <script src="js/index.js"></script>
+   <script src="js/catalog.js"></script>
+
 </html>
 
 
