@@ -45,12 +45,12 @@ get_header();
                <li class="pointer">Лодки</li>
             </ul>
             <div class="arrow-right-list pointer">
-               <img id="vector-1" src="assets/icon/Vector+13px.svg" alt="" />
+               <img id="vector-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
             </div>
          </div>
          <div class="shop-take-rent">
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -60,14 +60,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                      <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -77,14 +77,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                      <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -94,14 +94,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                      <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -111,14 +111,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                      <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -128,14 +128,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                      <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -145,14 +145,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                      <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -162,14 +162,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                      <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -179,14 +179,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                      <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -196,14 +196,14 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                      <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -213,7 +213,7 @@ get_header();
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                      <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
@@ -223,8 +223,8 @@ get_header();
             <a href="<?php echo get_option('home'); ?>/catalog"><div class="go-to-shop-btn class-to-switch-season-btn">Перейти в каталог</div></a>
          </div>
          <div class="hand-mask-app-banner">
-            <img class="pointer" id="hand-iphone" src="assets/content/hand-phone-full-size.png" alt="" />
-            <img class="pointer" id="iphone-screen" src="assets/content/iPhone-scren.png" alt="" />
+            <img class="pointer" id="hand-iphone" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/hand-phone-full-size.png" alt="" />
+            <img class="pointer" id="iphone-screen" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/iPhone-scren.png" alt="" />
             <div class="app-banner">
                <svg id="koleso" xmlns="http://www.w3.org/2000/svg" width="577" height="308" viewBox="0 0 577 308" fill="none">
                   <path
@@ -245,7 +245,7 @@ get_header();
                      <div>скидку&nbsp;15%</div>
                   </div>
                </div>
-               <div class="apps-links-app-cart"><img class="pointer" src="assets/content/appstore.png" alt="" /><img class="pointer" src="assets/content/googleplay.png" alt="" /></div>
+               <div class="apps-links-app-cart"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></div>
             </div>
          </div>
       </section>
@@ -394,7 +394,7 @@ get_header();
                         и своей семьи на наших объектах<br
                      /></span>
                      <button>Забронируйте дату вашего праздника</button>
-                     <img class="gold-balls-img" src="assets/content/image9.png" alt="" />
+                     <img class="gold-balls-img" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/image9.png" alt="" />
                   </div>
                </div>
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle35.jpg" alt="" />
@@ -416,7 +416,7 @@ get_header();
                   и своей семьи на наших объектах<br
                /></span>
                <button>Забронируйте дату вашего праздника</button>
-               <img class="gold-balls-img" src="assets/content/image9.png" alt="" />
+               <img class="gold-balls-img" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/image9.png" alt="" />
             </div>
             <div class="image-bg-3 i-b-el-6"></div>
             <div class="image-bg-4 i-b-el-7"></div>
@@ -445,7 +445,7 @@ get_header();
                   Забронируйте дату
                   <span class="reserve-button-less-470px">вашего </span>праздника
                </button>
-               <img class="gold-balls-img" src="assets/content/image9.png" alt="" />
+               <img class="gold-balls-img" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/image9.png" alt="" />
             </div>
             <div class="text-5-s-2 i-b-el-4">Устроить праздник мечты поможет аниматор, который организует шоу-программу, проведет мастер-класс и увлечен детей в атмосферу веселья и радости.</div>
          </div>

@@ -23,10 +23,10 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.1/nouislider.min.js"></script>
       <!-- catalog-pgae -->
 
-      <link rel="stylesheet" href="css/style.css" />
+      <!-- <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/item.css" />
       <link rel="stylesheet" href="css/catalog.css" />
-      <link rel="stylesheet" href="css/media.css" />      
+      <link rel="stylesheet" href="css/media.css" />       -->
 
       <?php 
     wp_head()

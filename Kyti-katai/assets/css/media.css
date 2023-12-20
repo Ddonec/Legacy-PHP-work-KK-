@@ -1130,6 +1130,10 @@
    .logo-header img {
       width: 90px;
    }
+   .winter-status,
+   .summer-status {
+      width: 90px;
+   }
    .bacground-image-main-page-first-section {
       height: 700px;
    }
