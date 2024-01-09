@@ -1861,12 +1861,11 @@
    } */
 
    .logo-header {
-      top: 20px;
       display: flex;
    }
-   .under-bike {
+   /* .under-bike {
       width: 140px;
-   }
+   } */
    .h1-news-1-page {
       font-size: 26px;
    }

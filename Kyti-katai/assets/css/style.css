@@ -130,7 +130,7 @@ button {
 }
 .logo-header {
    position: absolute;
-   top: 16px;
+   top: 8px;
 
    left: 50%;
    transform: translate(-50%);

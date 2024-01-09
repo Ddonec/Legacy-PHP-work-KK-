@@ -3,6 +3,9 @@
 get_header();
 ?>
 
+
+
+
       <section class="first-section">
          <div class="bacground-image-main-page-first-section">
             <div class="text-area-first-section-1920">
@@ -12,7 +15,7 @@ get_header();
                   <div class="shadow-moscow"></div>
                </div> -->
                <div class="last-text-first-section">Более 60 локаций по организации активного семейного спорта и досуга</div>
-               <a href="<?php echo get_option('home'); ?>/catalog"><button class="to-choice-btn class-to-switch-season-btn">Перейти</button></a>
+               <a href="<?php echo get_option('home'); ?>catalog"><button class="to-choice-btn class-to-switch-season-btn">Перейти</button></a>
             </div>
             <div class="absolute-peoples-container-f-s">
                <div class="absolute-fs-container-left"></div>
@@ -23,7 +26,7 @@ get_header();
             <div class="absolute-on-map-home-page-text-comtainer">
                <h3 class="text-gradient">Найди свой парк</h3>
             </div>
-            <a href="<?php echo get_option('home'); ?>/find"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/map571.png" alt="" class="map-map-s1" /></a>
+            <a href="<?php echo get_option('home'); ?>find"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/map571.png" alt="" class="map-map-s1" /></a>
          </div>
       </section>
       <section class="second-section take-a-rent">
@@ -50,7 +53,42 @@ get_header();
          </div>
          <div class="shop-take-rent">
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Велосипед 12-K
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Городской велосипед
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -67,7 +105,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -84,7 +122,24 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Городской велосипед
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -101,7 +156,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -118,24 +173,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
-
-               <div class="discription-of-product">
-                  Городской велосипед
-                  <ul>
-                     <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
-                     <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
-                     <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
-                  </ul>
-                  <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
-                     <span class="prise-of-rent-1">от 1 000₽/час</span>
-                  </div>
-               </div>
-            </div>
-
-            <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -152,7 +190,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Городской велосипед
@@ -169,41 +207,7 @@ get_header();
             </div>
 
             <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
-
-               <div class="discription-of-product">
-                  Велосипед 12-K
-                  <ul>
-                     <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
-                     <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li>
-                     <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
-                  </ul>
-                  <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
-                     <span class="prise-of-rent-1">от 1 200₽/час</span>
-                  </div>
-               </div>
-            </div>
-
-            <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
-
-               <div class="discription-of-product">
-                  Городской велосипед
-                  <ul>
-                     <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
-                     <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
-                     <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
-                  </ul>
-                  <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
-                     <span class="prise-of-rent-1">от 1 000₽/час</span>
-                  </div>
-               </div>
-            </div>
-
-            <div class="card-of-product">
-               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+               <a href="<?php echo get_option('home'); ?>item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
 
                <div class="discription-of-product">
                   Велосипед 12-K
@@ -316,12 +320,6 @@ get_header();
       </section>
 
       <section class="four-section none">
-         <div class="images-swipe-four">
-            <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/2.png" alt="" />
-            <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/3.png" alt="" />
-            <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/4.png" alt="" />
-            <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/5.png" alt="" />
-         </div>
          <div class="title-of-section-4">
             <h3 class="title-of-section-gradient text-gradient">Верёвочный парк</h3>
             <!-- <div class="opacity-text-section o-t-s-all">Верёвочный</div>
@@ -329,9 +327,13 @@ get_header();
             <div class="shadow-section-4 s-s-shadow"></div> -->
          </div>
          <div class="cards-rope-park">
-            <div class="rope-mag-1-hide less-900-hide">
+            <img class="i-s-f-image-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/2.png" alt="" />
+            <img class="i-s-f-image-2" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/3.png" alt="" />
+            <img class="i-s-f-image-3" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/4.png" alt="" />
+            <img class="i-s-f-image-4" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/5.png" alt="" />
+            <!-- <div class="rope-mag-1-hide less-900-hide">
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/9(3).png" alt="" />
-            </div>
+            </div> -->
             <div class="emotion-card">
                <div>
                   <p>Испытайте яркие эмоции:</p>
@@ -342,7 +344,7 @@ get_header();
                   </ul>
                </div>
                <div class="emotion-card-buttons">
-                  <div class="class-to-switch-season-btn">
+                  <div class="class-to-switch-season-btn pseudo-cllass-none-styles">
                      <a href="<?php echo get_option('home'); ?>/rope-park"><div>Пойти в веревочный парк</div></a>
                   </div>
                   <div>
@@ -350,25 +352,25 @@ get_header();
                   </div>
                </div>
             </div>
-            <div class="more-900-hide">
+            <!-- <div class="more-900-hide">
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/9(3).png" alt="" />
             </div>
             <div class="less-900-hide">
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/6.png" alt="" />
-            </div>
+            </div> -->
          </div>
-         <div class="cards-rope-park-2">
+         <!-- <div class="cards-rope-park-2">
             <div class="more-900-hide">
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/6.png" alt="" />
             </div>
             <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/8.png" alt="" /></div>
             <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/7.png" alt="" /></div>
-         </div>
+         </div> -->
       </section>
 
       <section class="five-section none">
          <div class="title-of-section-5">
-            <h3 class="title-of-section-gradient text-gradient">Организация детских праздников</h3>
+            <h3 class="title-of-section-gradient text-gradient-summer">Организация детских праздников</h3>
 
             <!-- <div class="black-text-section black-text-section-5">Организация</div>
             <div class="opacity-text-section o-t-s-all opacity-text-section-5">детских праздников</div>
@@ -394,14 +396,14 @@ get_header();
                         и своей семьи на наших объектах<br
                      /></span>
                      <button>Забронируйте дату вашего праздника</button>
-                     <img class="gold-balls-img" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/image9.png" alt="" />
+                     <img class="gold-balls-img" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/blue-adn-tellow-bals-kk.png" alt="" />
                   </div>
                </div>
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle35.jpg" alt="" />
             </div>
          </div>
 
-         <div class="slider-five-section-5">
+         <div class="slider-five-section-5 none">
             <div class="image-bg i-b-el-1"></div>
             <div class="text-5-s-2 i-b-el-2">
                «КутиКатай» создает новый формат организации Дня рождения. Ваш ребенок и его друзья смогут ощутить себя настоящими «Супергероями» или «Чемпионами», пройти квест или поучаствовать в
@@ -409,7 +411,7 @@ get_header();
             </div>
             <div class="image-bg-2 i-b-el-3"></div>
             <div class="text-5-s-2 i-b-el-4">Устроить праздник мечты поможет аниматор, который организует шоу-программу, проведет мастер-класс и увлечен детей в атмосферу веселья и радости.</div>
-            <div id="card-reserve" class="i-b-el-5">
+            <!-- <div id="card-reserve" class="i-b-el-5">
                <p>Кстати, комнату можно забронировать</p>
                <span
                   >Зарезервируйте место для себя <br />
@@ -417,13 +419,23 @@ get_header();
                /></span>
                <button>Забронируйте дату вашего праздника</button>
                <img class="gold-balls-img" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/image9.png" alt="" />
-            </div>
+            </div> -->
             <div class="image-bg-3 i-b-el-6"></div>
             <div class="image-bg-4 i-b-el-7"></div>
             <div class="image-bg-5 i-b-el-8"></div>
          </div>
 
-         <div class="slider-five-section-5-mobile">
+         <div class="card-reserve-mobile none">
+            <p class="text-gradient-summer">
+               Праздник как <br />
+               приключение
+            </p>
+            <div class="discription-of-c-r-m">Преподнесите своему ребенку незабываемый праздник.</div>
+            <div class="button-of-c-r-m">Забронируйте дату вашего праздника</div>
+            <img class="img-balls-c-r-m" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/blue-adn-tellow-bals-kk.png" alt="" />
+         </div>
+
+         <!-- <div class="slider-five-section-5-mobile">
             <div class="text-5-s-2 i-b-el-2">
                «КутиКатай» создает новый формат организации Дня рождения. Ваш ребенок и его друзья смогут ощутить себя настоящими «Супергероями» или «Чемпионами», пройти квест или поучаствовать в
                соревновании дружной командой.
@@ -448,7 +460,7 @@ get_header();
                <img class="gold-balls-img" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/image9.png" alt="" />
             </div>
             <div class="text-5-s-2 i-b-el-4">Устроить праздник мечты поможет аниматор, который организует шоу-программу, проведет мастер-класс и увлечен детей в атмосферу веселья и радости.</div>
-         </div>
+         </div> -->
 
          <button class="find-out-more-btn class-to-switch-season-btn">
             Узнать подробнее
@@ -640,12 +652,9 @@ get_header();
             </div>
          </div>
          <div class="button-news-container-main-page">
-            <a href="<?php echo get_option('home'); ?>/news"><button class="see-all-usefull-mat-btn class-to-switch-season-btn">Смотреть все полезные материалы</button></a>
+            <a href="<?php echo get_option('home'); ?>news"><button class="see-all-usefull-mat-btn class-to-switch-season-btn">Смотреть все полезные материалы</button></a>
          </div>
       </section>
-
-
-
 
 
 

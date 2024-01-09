@@ -15,6 +15,13 @@ get_header();
 
 
 
+
+
+
+
+
+
+
       <section class="main-content-catalog">
          <div class="bread-crumbs">
             <p><a href="index.html">Главная</a></p>
@@ -24,7 +31,7 @@ get_header();
             <p class="grey-bread-crumbs">Прокат</p>
          </div>
          <div class="title-of-section-catalog-page t-o-s">
-            <h1 class="text-gradient">Возьми в прокат</h1>
+            <h1 class="text-gradient"><span class="catalog-page-title-h1-desctop">Возьми в прокат</span><span class="catalog-page-title-h1-mobile none">Каталог</span></h1>
             <!-- <div class="black-text-section">Возьми</div>
             <div class="opacity-text-section o-t-s-all">в прокат</div>
             <div class="shadow-section s-s-shadow"></div> -->
@@ -43,19 +50,24 @@ get_header();
 
          <div class="hide-filters-cat">
             <div class="hide-filter-btn">
-               <p class="text-18-500">Скрыть фильтры</p>
+               <p class="text-14-500">Скрыть фильтры</p>
                <img src="./assets/icon/sliders-horizontal.svg" alt="" />
             </div>
+            <div class="hide-filter-text-btn none">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-up-bold.svg" alt="" />
+
+               Фильтр
+            </div>
             <div class="popular-filter-btn">
-               <p class="text-18-500">По популярности</p>
+               <p class="text-14-500">По популярности</p>
                <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" /></div>
             </div>
          </div>
 
          <div class="catalog-container">
             <aside class="filters-container-catalog">
-               <p class="text-24-700">Найдено по фильтрам: 9</p>
-               <div style="width: 300px"></div>
+               <p class="text-18-700">Найдено по фильтрам: 9</p>
+               <!-- <div style="width: 300px"></div> -->
                <section class="catalog-filter-section">
                   <div class="filter-container-catalog">
                      <div class="catalog-input-container">
@@ -79,6 +91,7 @@ get_header();
                      <div><input type="checkbox" /><label for="">BBB</label></div>
                      <div><input type="checkbox" /><label for="">Hamax</label></div>
                      <div><input type="checkbox" /><label for="">SKS</label></div>
+                     <div class="show-more-filter-catalog">+ Показать еще</div>
                   </div>
                   <div class="checkbox-container_catalog">
                      <p>Диаметр колеса</p>
@@ -91,6 +104,7 @@ get_header();
                      <div><input type="checkbox" /><label for="">20”</label></div>
                      <div><input type="checkbox" /><label for="">21”</label></div>
                      <div><input type="checkbox" /><label for="">24”</label></div>
+                     <div class="show-more-filter-catalog">- Скрыть</div>
                   </div>
                   <div class="checkbox-container_catalog">
                      <p>Цвет</p>
@@ -99,11 +113,14 @@ get_header();
                      <div><input type="checkbox" /><label for="">Фиолетовый</label></div>
                      <div><input type="checkbox" /><label for="">Белый</label></div>
                      <div><input type="checkbox" /><label for="">Красный</label></div>
+                     <div class="show-more-filter-catalog">+ Показать еще</div>
                   </div>
+                  <div class="button-reset-filter-catalog-page">Сбросить фильтры</div>
                </section>
             </aside>
             <div class="cpoduct-zone-cat">
                <div class="in-stock-discription">Доступно сейчас</div>
+               <div class="items-title-catalog-page none">Товары</div>
                <div class="in-stock-catalog">
                   <div class="card-of-product">
                      <a href="item.html"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
@@ -116,7 +133,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 200₽/час</span>
                         </div>
                      </div>
@@ -133,7 +150,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 000₽/час</span>
                         </div>
                      </div>
@@ -150,7 +167,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 200₽/час</span>
                         </div>
                      </div>
@@ -167,7 +184,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 000₽/час</span>
                         </div>
                      </div>
@@ -184,7 +201,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 200₽/час</span>
                         </div>
                      </div>
@@ -201,7 +218,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 000₽/час</span>
                         </div>
                      </div>
@@ -218,7 +235,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 200₽/час</span>
                         </div>
                      </div>
@@ -235,7 +252,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 000₽/час</span>
                         </div>
                      </div>
@@ -252,7 +269,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 200₽/час</span>
                         </div>
                      </div>
@@ -269,7 +286,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 000₽/час</span>
                         </div>
                      </div>
@@ -286,7 +303,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 200₽/час</span>
                         </div>
                      </div>
@@ -303,7 +320,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 000₽/час</span>
                         </div>
                      </div>
@@ -320,7 +337,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 200₽/час</span>
                         </div>
                      </div>
@@ -337,7 +354,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 000₽/час</span>
                         </div>
                      </div>
@@ -354,7 +371,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 200₽/час</span>
                         </div>
                      </div>
@@ -371,7 +388,7 @@ get_header();
                            <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                         </ul>
                         <div class="price-of-product pointer">
-                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                           <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
                            <span class="prise-of-rent-1">1 000₽/час</span>
                         </div>
                      </div>
@@ -382,15 +399,6 @@ get_header();
             </div>
          </div>
       </section>
-
-
-
-
-
-
-
-
-
 
 
 
