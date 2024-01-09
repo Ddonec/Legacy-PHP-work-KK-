@@ -15,11 +15,15 @@
       />
 
       <link rel="stylesheet" href="css/style.css" />
-
+      <link rel="stylesheet" href="css/item.css" />
+      <link rel="stylesheet" href="css/catalog.css" />
+      <link rel="stylesheet" href="css/media.css" />
       <title>Document</title>
    </head>
    <body>
       <header>
+         <!-- <main></main>
+         <nav></nav> -->
          <div class="heaer-fake-fullscreen">
             <div class="blue-line-fake"></div>
             <div class="gray-line-fake"></div>
@@ -35,7 +39,7 @@
                      <div class="text-in-slider-buton" id="season-content">
                         <!-- В начальном состоянии отображаем зиму -->
                         <div class="season winter">
-                           <img src="assets/icon/sun.svg" alt="sun" id="sun-header-button" />
+                           <img src="assets/icon/sun-yellow-icon.svg" alt="sun" id="sun-header-button" />
                            <img src="assets/icon/snowflake.svg" alt="snow" id="snow-header-button" />
                            <span class="time-of-year-text"> Зима </span>
                         </div>
@@ -43,7 +47,7 @@
                         <div class="season summer" style="display: none">
                            <img src="assets/icon/sun.svg" alt="sun" id="sun-header-button-2" />
                            <span class="time-of-year-text"> Лето </span>
-                           <img src="assets/icon/sun.svg" alt="sun" id="snow-header-button-2" />
+                           <img src="assets/icon/snowflake-blue-icon.svg" alt="sun" id="snow-header-button-2" />
                         </div>
                      </div>
                   </span>
@@ -64,7 +68,8 @@
             </div>
             <div class="input-zone-1920">
                <img src="assets/icon/Vector.svg" alt="" id="search-icon-1920" />
-               <input type="text" placeholder="Поиск" id="search-header-1920" class="search-header-1920" />
+               <img src="assets/icon/search-icon-black.svg" alt="" class="none" id="search-icon-1920-black" />
+               <input type="text" placeholder="Парк, город или метро" id="search-header-1920" class="search-header-1920" />
             </div>
             <div class="profile-icon-header">
                <ul class="icun-list-h">
@@ -72,7 +77,7 @@
                      <a href="tel:89351680416"><img src="assets/icon/phone-call.svg" alt="" /></a>
                   </li>
                   <li class="search-icon-list-h">
-                     <img src="assets/icon/Vector.svg" alt="" />
+                     <img src="assets/icon/Vector.svg" alt="" class="winter-status" /> <img src="assets/icon/search-icon-black.svg" alt="" class="summer-status none" />
                   </li>
                   <li><img class="pointer winter-status" src="assets/icon/login.svg" alt="" /> <img class="summer-status none" src="assets/icon/login-black.svg" alt="" /></li>
                   <li><img class="pointer winter-status" src="assets/icon/heart.svg" alt="" /> <img class="summer-status none" src="assets/icon/heart-black.svg" alt="" /></li>
@@ -93,7 +98,7 @@
             </div>
             <div class="logo-header">
                <a href="index.html">
-                  <img class="winter-status" src="assets/icon/Group3.svg" alt="" />
+                  <img class="winter-status" src="assets/icon/g14-logo-bike.svg" alt="" />
                   <img class="summer-status none" src="assets/icon/bike-logo-black.svg" alt="" />
                </a>
             </div>
@@ -118,37 +123,48 @@
          </div>
       </header>
       <section class="first-section">
-         <div class="text-area-first-section-1920">
-            <h1>Крупнейшая сеть прокатов прогулочной техники и спортивного инвентаря</h1>
-            <div class="text-area-moscow">
-               <h2>Москвы и Московской области</h2>
-               <div class="shadow-moscow"></div>
+         <div class="bacground-image-main-page-first-section">
+            <div class="text-area-first-section-1920">
+               <h1>Крупнейшая сеть всесезонных прокатов в парках <span class="text-gradient">Москвы и области</span></h1>
+               <!-- <div class="text-area-moscow">
+                  <h2>Москвы и Московской области</h2>
+                  <div class="shadow-moscow"></div>
+               </div> -->
+               <div class="last-text-first-section">Более 60 локаций по организации активного семейного спорта и досуга</div>
+               <a href="catalog.html"><button class="to-choice-btn class-to-switch-season-btn">Перейти</button></a>
             </div>
-            <div class="last-text-first-section">Крупнейшая сеть по организации активного семейного спорта и досуга. 60 локаций</div>
-            <a href="catalog.html"><button class="to-choice-btn">К выбору ...</button></a>
-            <div class="map-area-first-section">
-               <a href="find.html"><img src="assets/content/map1.png" alt="" class="map-map-s1" /></a>
+            <div class="absolute-peoples-container-f-s">
+               <div class="absolute-fs-container-left"></div>
+               <div class="absolute-fs-container-right"></div>
             </div>
+         </div>
+         <div class="map-area-first-section">
+            <div class="absolute-on-map-home-page-text-comtainer">
+               <h3 class="text-gradient">Найди свой парк</h3>
+            </div>
+            <a href="find.html"><img src="assets/content/map571.png" alt="" class="map-map-s1" /></a>
          </div>
       </section>
       <section class="second-section take-a-rent">
-         <div class="title-of-section t-o-s">
-            <div class="black-text-section">Возьми</div>
+         <div class="title-of-section-1">
+            <h3 class="title-of-section-gradient text-gradient">Возьми в прокат</h3>
+            <!-- <div class="black-text-section">Возьми</div>
             <div class="opacity-text-section o-t-s-all">в прокат</div>
-            <div class="shadow-section s-s-shadow"></div>
+            <div class="shadow-section s-s-shadow"></div> -->
          </div>
          <div class="nav-shop">
             <ul>
-               <li class="pointer">Всё</li>
+               <li class="pointer">Каталог</li>
                <li class="pointer">Велосипеды</li>
                <li class="pointer">Веломобили</li>
                <li class="pointer">Электро</li>
                <li class="pointer">Коньки</li>
                <li class="pointer">Катамараны</li>
+               <li class="pointer">Коньки</li>
                <li class="pointer">Лодки</li>
             </ul>
             <div class="arrow-right-list pointer">
-               <img id="vector-1" src="assets/icon/Vector-1.svg" alt="" />
+               <img id="vector-1" src="assets/icon/Vector+13px.svg" alt="" />
             </div>
          </div>
          <div class="shop-take-rent">
@@ -163,8 +179,9 @@
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 200₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
@@ -180,8 +197,8 @@
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 000₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
@@ -197,8 +214,8 @@
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 200₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
@@ -214,8 +231,8 @@
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 000₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
@@ -231,8 +248,8 @@
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 000₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
@@ -248,8 +265,8 @@
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 200₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
@@ -265,8 +282,8 @@
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 000₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
                   </div>
                </div>
             </div>
@@ -282,17 +299,51 @@
                      <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
                   </ul>
                   <div class="price-of-product pointer">
-                     <img class="add-to-cart-btn" src="assets/icon/Vector+.svg" alt="" />
-                     <span class="prise-of-rent-1">1 200₽/час</span>
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="item.html"><img class="img-of-product" src="assets/content/img-bike-1.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Городской велосипед
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="item.html"><img class="img-of-product" src="assets/content/img-bike-2.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Велосипед 12-K
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
                   </div>
                </div>
             </div>
          </div>
          <div class="boo">
-            <a href="/catalog.html"><div class="go-to-shop-btn">Перейти в каталог</div></a>
+            <a href="/catalog.html"><div class="go-to-shop-btn class-to-switch-season-btn">Перейти в каталог</div></a>
          </div>
          <div class="hand-mask-app-banner">
-            <img class="pointer" id="hand-iphone" src="assets/content/iphine_+_hand.png" alt="" />
+            <img class="pointer" id="hand-iphone" src="assets/content/hand-phone-full-size.png" alt="" />
             <img class="pointer" id="iphone-screen" src="assets/content/iPhone-scren.png" alt="" />
             <div class="app-banner">
                <svg id="koleso" xmlns="http://www.w3.org/2000/svg" width="577" height="308" viewBox="0 0 577 308" fill="none">
@@ -307,89 +358,98 @@
                      fill="#5567EA"
                   />
                </svg>
-               <div class="main-text-app-cart">Для своих <span>дешевле!</span></div>
-               <div class="discription-app-cart">
-                  Скачай приложение - получи &nbsp;
-                  <div>скидку 15%</div>
+               <div>
+                  <div class="main-text-app-cart text-gradient">Для своих дешевле!</div>
+                  <div class="discription-app-cart">
+                     Скачай приложение - получи&nbsp;
+                     <div>скидку&nbsp;15%</div>
+                  </div>
                </div>
                <div class="apps-links-app-cart"><img class="pointer" src="assets/content/appstore.png" alt="" /><img class="pointer" src="assets/content/googleplay.png" alt="" /></div>
             </div>
          </div>
       </section>
-      <section class="third-section">
-         <div class="title-of-section-3 t-o-s">
-            <div class="black-text-section">Развлечения для</div>
+      <section class="third-section-container none">
+         <div class="third-section">
+            <div class="title-of-section-3 text-gradient">
+               Развлечения для детей
+               <!-- <div class="black-text-section">Развлечения для</div>
             <div class="opacity-text-section o-t-s-all">детей</div>
-            <div class="shadow-section-3 s-s-shadow"></div>
-         </div>
-         <div class="kids-chill-container">
-            <div class="kids-chill">
+            <div class="shadow-section-3 s-s-shadow"></div> -->
+            </div>
+            <div class="kids-chill-container">
                <div id="wide-card-on-chill-kids">
                   Более <span>20 развелечений</span> для вашего ребенка
                   <p>Выберите интересные развлечения для детей в «КутиКатай», пусть отдых в парке будет ярким и разнообразным!</p>
                </div>
-               <div>
-                  <img src="assets/content/g1.svg" alt="" />
-                  <p class="text-in-chill-for-kids-card">Электромобили</p>
-               </div>
-               <div>
-                  <img src="assets/content/g2.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Зорбинг</p>
-               </div>
-               <div>
-                  <img src="assets/content/g3.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Лодочки</p>
-               </div>
-               <div>
-                  <img src="assets/content/g4.svg" alt="" />
-                  <p class="text-in-chill-for-kids-card">Лодочная станция</p>
-               </div>
-               <div>
-                  <img src="assets/content/g5.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Карусель</p>
-               </div>
-               <div>
-                  <img src="assets/content/g6.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Паровозик</p>
-               </div>
-               <div>
-                  <img src="assets/content/g7.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Веревочный парк</p>
-               </div>
-               <div>
-                  <img src="assets/content/g8.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Лабиринт</p>
-               </div>
-               <div>
-                  <img src="assets/content/g9.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Спортивные батуты</p>
-               </div>
-               <div>
-                  <img src="assets/content/g10.png" alt="" />
-                  <p class="text-in-chill-for-kids-card">Надувной батут</p>
+               <div class="kids-chill">
+                  <div id="wide-card-on-chill-kids-copy">
+                     Более <span>20 развелечений</span> для вашего ребенка
+                     <p>Выберите интересные развлечения для детей в «КутиКатай», пусть отдых в парке будет ярким и разнообразным!</p>
+                  </div>
+                  <div>
+                     <img src="assets/content/g1.svg" alt="" />
+                     <p class="text-in-chill-for-kids-card">Электромобили</p>
+                  </div>
+                  <div>
+                     <img src="assets/content/g2.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Зорбинг</p>
+                  </div>
+                  <div>
+                     <img src="assets/content/g3.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Лодочки</p>
+                  </div>
+                  <div>
+                     <img src="assets/content/g4.svg" alt="" />
+                     <p class="text-in-chill-for-kids-card">Лодочная&nbsp;станция</p>
+                  </div>
+                  <div>
+                     <img src="assets/content/g5.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Карусель</p>
+                  </div>
+                  <div>
+                     <img src="assets/content/g6.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Паровозик</p>
+                  </div>
+                  <div>
+                     <img src="assets/content/g7.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Веревочный&nbsp;парк</p>
+                  </div>
+                  <div>
+                     <img src="assets/content/g8.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Лабиринт</p>
+                  </div>
+                  <div>
+                     <img src="assets/content/g9.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Спортивные&nbsp;батуты</p>
+                  </div>
+                  <div>
+                     <img src="assets/content/g10.png" alt="" />
+                     <p class="text-in-chill-for-kids-card">Надувной&nbsp;батут</p>
+                  </div>
                </div>
             </div>
-         </div>
-         <div class="go-to-all-chill-btn-container">
-            <a href="/catalog-child.html"><div class="go-to-all-chill-btn">Смотреть все развлечения для детей</div></a>
+            <div class="go-to-all-chill-btn-container">
+               <a href="/catalog-child.html"><div class="go-to-all-chill-btn class-to-switch-season-btn">Смотреть все развлечения для детей</div></a>
+            </div>
          </div>
       </section>
-      <section class="four-section">
-         <div class="images-swipe-four">
-            <img src="assets/content/2.png" alt="" />
-            <img src="assets/content/3.png" alt="" />
-            <img src="assets/content/4.png" alt="" />
-            <img src="assets/content/5.png" alt="" />
-         </div>
-         <div class="title-of-section-4 t-o-s">
-            <div class="opacity-text-section o-t-s-all">Верёвочный</div>
+
+      <section class="four-section none">
+         <div class="title-of-section-4">
+            <h3 class="title-of-section-gradient text-gradient">Верёвочный парк</h3>
+            <!-- <div class="opacity-text-section o-t-s-all">Верёвочный</div>
             <div class="black-text-section">парк</div>
-            <div class="shadow-section-4 s-s-shadow"></div>
+            <div class="shadow-section-4 s-s-shadow"></div> -->
          </div>
          <div class="cards-rope-park">
-            <div class="rope-mag-1-hide less-900-hide">
+            <img class="i-s-f-image-1" src="assets/content/2.png" alt="" />
+            <img class="i-s-f-image-2" src="assets/content/3.png" alt="" />
+            <img class="i-s-f-image-3" src="assets/content/4.png" alt="" />
+            <img class="i-s-f-image-4" src="assets/content/5.png" alt="" />
+            <!-- <div class="rope-mag-1-hide less-900-hide">
                <img src="assets/content/9(3).png" alt="" />
-            </div>
+            </div> -->
             <div class="emotion-card">
                <div>
                   <p>Испытайте яркие эмоции:</p>
@@ -400,7 +460,7 @@
                   </ul>
                </div>
                <div class="emotion-card-buttons">
-                  <div>
+                  <div class="class-to-switch-season-btn pseudo-cllass-none-styles">
                      <a href="/rope-park.html"><div>Пойти в веревочный парк</div></a>
                   </div>
                   <div>
@@ -408,29 +468,30 @@
                   </div>
                </div>
             </div>
-            <div class="more-900-hide">
+            <!-- <div class="more-900-hide">
                <img src="assets/content/9(3).png" alt="" />
             </div>
             <div class="less-900-hide">
                <img src="assets/content/6.png" alt="" />
-            </div>
+            </div> -->
          </div>
-         <div class="cards-rope-park-2">
+         <!-- <div class="cards-rope-park-2">
             <div class="more-900-hide">
                <img src="assets/content/6.png" alt="" />
             </div>
             <div><img src="assets/content/8.png" alt="" /></div>
             <div><img src="assets/content/7.png" alt="" /></div>
-         </div>
+         </div> -->
       </section>
-      <section class="five-section">
-         <div class="title-of-section-5 t-o-s">
-            <div class="black-text-section black-text-section-5">Организация</div>
 
+      <section class="five-section none">
+         <div class="title-of-section-5">
+            <h3 class="title-of-section-gradient text-gradient-summer">Организация детских праздников</h3>
+
+            <!-- <div class="black-text-section black-text-section-5">Организация</div>
             <div class="opacity-text-section o-t-s-all opacity-text-section-5">детских праздников</div>
-            <div class="shadow-section-5 s-s-shadow"></div>
+            <div class="shadow-section-5 s-s-shadow"></div> -->
          </div>
-         <p>С большим вниманием к самым маленьким</p>
 
          <div class="slider-five-section-vision">
             <div class="slider-five-section">
@@ -442,10 +503,7 @@
                   <div>Устроить праздник мечты поможет аниматор, который организует шоу-программу, проведет мастер-класс и увлечен детей в атмосферу веселья и радости.</div>
                </div>
                <div class="right-side-slider">
-                  <div>
-                     «КутиКатай» создает новый формат организации Дня рождения. Ваш ребенок и его друзья смогут ощутить себя настоящими «Супергероями» или «Чемпионами», пройти квест или поучаствовать
-                     в соревновании дружной командой.
-                  </div>
+                  <div class="big-attention-for-kids">С большим вниманием к самым маленьким</div>
                   <img src="assets/content/Rectangle32.png" alt="" />
                   <div id="card-reserve">
                      <p>Кстати, комнату можно забронировать</p>
@@ -454,14 +512,14 @@
                         и своей семьи на наших объектах<br
                      /></span>
                      <button>Забронируйте дату вашего праздника</button>
-                     <img class="gold-balls-img" src="assets/content/image9.png" alt="" />
+                     <img class="gold-balls-img" src="assets/content/blue-adn-tellow-bals-kk.png" alt="" />
                   </div>
                </div>
                <img src="assets/content/Rectangle35.jpg" alt="" />
             </div>
          </div>
 
-         <div class="slider-five-section-5">
+         <div class="slider-five-section-5 none">
             <div class="image-bg i-b-el-1"></div>
             <div class="text-5-s-2 i-b-el-2">
                «КутиКатай» создает новый формат организации Дня рождения. Ваш ребенок и его друзья смогут ощутить себя настоящими «Супергероями» или «Чемпионами», пройти квест или поучаствовать в
@@ -469,7 +527,7 @@
             </div>
             <div class="image-bg-2 i-b-el-3"></div>
             <div class="text-5-s-2 i-b-el-4">Устроить праздник мечты поможет аниматор, который организует шоу-программу, проведет мастер-класс и увлечен детей в атмосферу веселья и радости.</div>
-            <div id="card-reserve" class="i-b-el-5">
+            <!-- <div id="card-reserve" class="i-b-el-5">
                <p>Кстати, комнату можно забронировать</p>
                <span
                   >Зарезервируйте место для себя <br />
@@ -477,13 +535,23 @@
                /></span>
                <button>Забронируйте дату вашего праздника</button>
                <img class="gold-balls-img" src="assets/content/image9.png" alt="" />
-            </div>
+            </div> -->
             <div class="image-bg-3 i-b-el-6"></div>
             <div class="image-bg-4 i-b-el-7"></div>
             <div class="image-bg-5 i-b-el-8"></div>
          </div>
 
-         <div class="slider-five-section-5-mobile">
+         <div class="card-reserve-mobile none">
+            <p class="text-gradient-summer">
+               Праздник как <br />
+               приключение
+            </p>
+            <div class="discription-of-c-r-m">Преподнесите своему ребенку незабываемый праздник.</div>
+            <div class="button-of-c-r-m">Забронируйте дату вашего праздника</div>
+            <img class="img-balls-c-r-m" src="assets/content/blue-adn-tellow-bals-kk.png" alt="" />
+         </div>
+
+         <!-- <div class="slider-five-section-5-mobile">
             <div class="text-5-s-2 i-b-el-2">
                «КутиКатай» создает новый формат организации Дня рождения. Ваш ребенок и его друзья смогут ощутить себя настоящими «Супергероями» или «Чемпионами», пройти квест или поучаствовать в
                соревновании дружной командой.
@@ -508,80 +576,144 @@
                <img class="gold-balls-img" src="assets/content/image9.png" alt="" />
             </div>
             <div class="text-5-s-2 i-b-el-4">Устроить праздник мечты поможет аниматор, который организует шоу-программу, проведет мастер-класс и увлечен детей в атмосферу веселья и радости.</div>
-         </div>
+         </div> -->
 
-         <button class="find-out-more-btn">
+         <button class="find-out-more-btn class-to-switch-season-btn">
             Узнать подробнее
             <span class="less700hide"> &nbsp;об организации праздников</span>
          </button>
       </section>
+
       <section class="six-section">
-         <div class="title-of-section-6 t-o-s">
-            <div class="white-text-section">О</div>
+         <div class="title-of-section-6">
+            <h3 class="title-of-section-gradient-yellow">О нас</h3>
+            <!-- <div class="white-text-section">О</div>
             <div class="opacity-text-section-white">нас</div>
-            <div class="shadow-section-6 s-s-shadow"></div>
+            <div class="shadow-section-6 s-s-shadow"></div> -->
          </div>
          <div class="info-area-six-section">
-            <div class="text-blocks-6-s">
+            <div class="text-blocks-6-s switch-color-text-black-white">
                <div class="blue-n-c-1">
                   За <span>15 лет</span> мы подарили радость более
-                  <span>4 миллионов</span> гостей
+                  <span>5 миллионам</span> гостей
                </div>
-               <div class="blue-n-c-2">
-                  Мы — крупнейшая сеть прокатов прогулочной техники <br />
-                  и спортивного инвентаря во все сезоны
+               <div class="blue-n-c-2-area">
+                  <div class="blue-n-c-2">
+                     <p>
+                        Мы — крупнейшая сеть прокатов техники и спортивного инвентаря в любой сезон<span class="up-to-768px-hidden-text-home-page"
+                           >. Вот уже 15 лет мы создаём досуг для гостей парков Москвы и Московской области. Мы прошли большой путь от малого бизнеса, до федеральной сети прокатов и представлены
+                           в более, чем 60 парках.</span
+                        >
+                     </p>
+                     <p>
+                        Вот уже 15 лет мы создаём досуг для гостей парков Москвы и Московской области. Мы прошли большой путь от малого бизнеса, до федеральной сети прокатов и представлены в более,
+                        чем 60 парках.
+                     </p>
+                  </div>
+                  <button class="show-more-6-section-btn border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</button>
                </div>
-               <div class="blue-n-c-3">
-                  Вот уже 15 лет мы создаём досуг для гостей парков Москвы и Московской области. Мы прошли большой путь от малого бизнеса, до федеральной сети прокатов и представлены в более,
-                  чем 60 парках.
-               </div>
-               <div class="blue-n-c-4">
-                  <button class="show-more-6-section-btn">Узнать больше о Кути Катай</button>
-               </div>
-               <div class="img-circle blue-n-c-5">
-                  <img src="assets/content/img1.png" alt="" />
-               </div>
-               <div class="yellow-block blue-n-c-6">С любовью и заботой мы организуем ценное время для общения с близкими и закладываем традиции активного здорового отдыха.</div>
-               <div class="last-photo blue-n-c-7"></div>
-            </div>
-            <div class="roll-park-list-visible">
-               <div class="roll-park-list">
-                  <div>останкинский&nbsp;парк</div>
-                  <img src="assets/icon/g100.svg" alt="" />
-                  <div>строгино</div>
-                  <img src="assets/icon/Group14.svg" alt="" />
-                  <div>митино</div>
-                  <img src="assets/icon/g100.svg" alt="" />
-
-                  <div>вднх</div>
-                  <img src="assets/icon/Group14.svg" alt="" />
-
-                  <div>измайловский</div>
-                  <img src="assets/icon/g100.svg" alt="" />
-
-                  <div>останкинский&nbsp;парк</div>
-                  <img src="assets/icon/Group14.svg" alt="" />
-
-                  <div>строгино</div>
-                  <img src="assets/icon/g100.svg" alt="" />
-
-                  <div>митино</div>
-                  <img src="assets/icon/Group14.svg" alt="" />
-
-                  <div>вднх</div>
-                  <img src="assets/icon/g100.svg" alt="" />
-
-                  <div>измайловский</div>
+               <div class="overflow-blue-section-index-page-container">
+                  <div class="three-elemrnts-container-home-page-blue-block">
+                     <div class="img-circle blue-n-c-5">
+                        <img src="assets/content/img1.png" alt="" />
+                     </div>
+                     <div class="yellow-block blue-n-c-6">С любовью и заботой мы организуем ценное время для общения с близкими и закладываем традиции активного здорового отдыха.</div>
+                     <div class="last-photo blue-n-c-7"></div>
+                  </div>
                </div>
             </div>
          </div>
+         <div class="roll-park-list-visible">
+            <div class="roll-park-list">
+               <div>останкинский&nbsp;парк</div>
+               <img src="assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>строгино</div>
+               <img src="assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>митино</div>
+               <img src="assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>вднх</div>
+               <img src="assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>измайловский</div>
+               <img src="assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>останкинский&nbsp;парк</div>
+               <img src="assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>строгино</div>
+               <img src="assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>митино</div>
+               <img src="assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>вднх</div>
+               <img src="assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>измайловский</div>
+            </div>
+            <div class="roll-park-list2">
+               <!-- <img src="assets/icon/Group14.svg" alt="" /> -->
+
+               <div>останкинский&nbsp;парк</div>
+               <img src="assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>строгино</div>
+               <img src="assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>митино</div>
+               <img src="assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>вднх</div>
+               <img src="assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>измайловский</div>
+               <img src="assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>останкинский&nbsp;парк</div>
+               <img src="assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>строгино</div>
+               <img src="assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>митино</div>
+               <img src="assets/icon/Group14.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/Group14-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>вднх</div>
+               <img src="assets/icon/g100.svg" alt="" class="show-hide-yellow-wheel" />
+               <img src="assets/icon/g100-blue.svg" alt="" class="show-hide-blue-wheel none" />
+
+               <div>измайловский</div>
+            </div>
+         </div>
+         <div class="show-more-6-section-btn-2 border-switch-status-blue">Узнать о КутиКатай</div>
       </section>
 
       <section class="seven-section">
-         <div class="title-of-section-7 t-o-s">
-            <div class="black-text-section">Полезные</div>
+         <div class="title-of-section-7">
+            <h3 class="title-of-section-gradient text-gradient">Полезные материалы</h3>
+            <!-- <div class="black-text-section">Полезные</div>
             <div class="opacity-text-section o-t-s-all">материалы</div>
-            <div class="shadow-section-7 s-s-shadow"></div>
+            <div class="shadow-section-7 s-s-shadow"></div> -->
          </div>
          <div class="six-cards-container">
             <div class="usrful-materials-cards">
@@ -610,20 +742,33 @@
                   <div class="text-inside-cart-blog">
                      <p>Кути Катай оснастит самокаты шлемами</p>
 
-                     В дополнение к действующим инициативам по безопасности мы предоставим меры по защ...
+                     В дополнение к действующим инициативам по безопасности мы предос...
 
                      <div class="image-user-zone"><img src="assets/content/Ellipse1(1).svg" alt="" /> Елена Васильева</div>
                      <div class="date-in-material-card">30.06.23</div>
                   </div>
                </div>
+
+               <div>
+                  <img src="assets/content/img(2).png" alt="" />
+                  <div class="text-inside-cart-blog">
+                     <p>Электровелосипеды доступны москвичам</p>
+
+                     Парк моделей превысит 2000 устройств. Городской<br />
+                     велосипед рассчитан на 7 км
+
+                     <div class="image-user-zone"><img src="assets/content/Ellipse1.svg" alt="" /> Савелий Октябрьский</div>
+                     <div class="date-in-material-card">15.07.23</div>
+                  </div>
+               </div>
             </div>
             <div class="cur-pointer">
                <button><img src="assets/icon/Vector-right.svg" alt="" /></button>
-               <button><img src="assets/icon/Vector-left.svg" alt="" /></button>
+               <button class="opacity"><img src="assets/icon/Vector-left.svg" alt="" /></button>
             </div>
          </div>
          <div class="button-news-container-main-page">
-            <a href="news.html"><button class="see-all-usefull-mat-btn">Смотреть все полезные материалы</button></a>
+            <a href="news.html"><button class="see-all-usefull-mat-btn class-to-switch-season-btn">Смотреть все полезные материалы</button></a>
          </div>
       </section>
       <footer>
@@ -632,6 +777,11 @@
             <div class="apps-links-footer-1">
                <img class="pointer" src="assets/content/appstore.png" alt="" />
                <img class="pointer" src="assets/content/googleplay.png" alt="" />
+            </div>
+
+            <div class="social-circles-footer-index">
+               <img class="pointer" src="assets/icon/socials.svg" alt="" />
+               <img class="pointer" src="assets/icon/tg.svg" alt="" />
             </div>
          </div>
          <div class="columns-footer">
