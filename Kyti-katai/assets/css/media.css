@@ -8,10 +8,10 @@
       width: 100vw;
       padding: 20px;
    }
-   .slider-five-section-vision {
+   /* .slider-five-section-vision {
       display: none;
-   }
-   #card-reserve {
+   } */
+   /* #card-reserve {
       width: 630px;
       flex-shrink: 0;
       border-radius: 20px;
@@ -27,14 +27,14 @@
       font-size: 36px;
       font-style: normal;
       font-weight: 700;
-      line-height: 120%; /* 48px */
+      line-height: 120%; 
    }
    #card-reserve span {
       font-family: Lato, sans-serif;
       font-size: 20px;
       font-style: normal;
       font-weight: 400;
-      line-height: 140%; /* 33.6px */
+      line-height: 140%; 
    }
    #card-reserve button {
       margin-top: 20px;
@@ -43,7 +43,7 @@
       position: absolute;
       right: -60px;
       bottom: 0px;
-   }
+   } */
 }
 
 @media (min-width: 1701px) {
@@ -66,17 +66,12 @@
    .input-zone-1920 {
       display: none;
    }
-   .nav-shop {
-      width: calc(100vw - 65px);
-      white-space: nowrap;
-      overflow-x: hidden;
-      margin: 40px auto 0;
-   }
+
    .shop-take-rent {
       width: 100vw;
-      justify-content: space-evenly;
-      padding: 0 15px;
-      max-width: 1350px;
+      justify-content: space-between;
+      padding: 0;
+      max-width: 1200px;
    }
    .second-section {
       width: 100vw;
@@ -163,6 +158,9 @@
    .profile-icon-header ul {
       margin-right: 0;
    }
+   .h1-no-main-page.text-gradient {
+      width: 100%;
+   }
 }
 
 @media (max-width: 1400px) {
@@ -244,6 +242,12 @@
    header {
       height: unset;
    }
+   .nav-shop {
+      width: calc(100vw - 65px);
+      white-space: nowrap;
+      overflow-x: hidden;
+      margin: 40px auto 0;
+   }
 }
 
 @media (max-width: 1299px) {
@@ -270,6 +274,9 @@
    .row-footer-2,
    .row-footer-1 {
       width: 25%;
+   }
+   .slider-five-section {
+      left: -870px;
    }
 }
 @media (max-width: 986px) {
@@ -373,8 +380,96 @@
    .btn-hide {
       display: block !important;
    }
-}
+   .contact-info-area-contacts-page {
+      flex-direction: column;
+      margin-left: 20px;
+      gap: 20px;
+   }
+   .line-contact-zone-contacts-page {
+      display: none;
+   }
+   .call-back-form-contact-p {
+      margin: 60px 20px 80px;
+   }
+   /* catalog */
 
+   .catalog-container {
+      flex-direction: column;
+   }
+   .filters-container-catalog {
+      width: 100%;
+   }
+   .catalog-filter-section {
+      padding: 14px 32px 32px 32px;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 0;
+      justify-content: space-between;
+      row-gap: 24px;
+   }
+   .catalog-filter-section > div {
+      width: 20%;
+   }
+   .catalog-filter-section .button-reset-filter-catalog-page {
+      width: 21%;
+      min-width: 180px;
+   }
+   .catalog-filter-section > div:not(:nth-last-child(-n + 2))::before {
+      content: "";
+      position: absolute;
+      height: 318px;
+      width: 2px;
+      background: #ccccd0;
+      top: 35px;
+      right: -17%;
+      opacity: 0.5;
+      /* transform: translateX(3.3%); */
+   }
+   .catalog-filter-section > div:nth-last-child(-n + 2)::before {
+      display: none;
+   }
+   .in-stock-discription {
+      display: none;
+   }
+   .in-stock-catalog {
+      justify-content: space-between;
+   }
+}
+@media (max-width: 1240px) {
+   .blue-bacground-section-about-us {
+      padding: 80px 20px 0;
+   }
+   .left-margin-container {
+      margin: 0;
+   }
+   .p-disc-our-history-about-page {
+      width: 100%;
+   }
+   .main-content-news-page {
+      padding: 0 20px;
+   }
+   .text-charity-pahe-switch-pseudo {
+      display: none;
+   }
+   .pseudo-sspan-charity-page {
+      display: contents;
+   }
+   .text-blicks-repair-page div,
+   .text-blicks-repair-page p {
+      width: 100%;
+   }
+   .text-blicks-repair-page {
+      flex-direction: column;
+   }
+
+   /* catalog */
+
+   .main-content-catalog {
+      padding: 0 20px;
+   }
+}
 @media (min-width: 900px) {
    .more-900-hide {
       display: none;
@@ -428,6 +523,17 @@
       margin-left: -20px;
    }
 }
+@media (max-width: 1100px) {
+   .first-2-blocks-rope-park-page {
+      flex-direction: column;
+   }
+   .first-2-blocks-rope-park-page > div {
+      width: 100%;
+   }
+   .first-2-blocks-rope-park-page > div:nth-last-child(1) {
+      display: none;
+   }
+}
 @media (max-width: 1000px) {
    .text-area-first-section-1920 h1 {
       font-size: 48px;
@@ -462,6 +568,15 @@
    }
    .cards-rope-park-2 {
       display: none;
+   }
+   .map-area-find-page {
+      height: 430px;
+   }
+   .input-zone-news-work-page-cont {
+      width: 100%;
+   }
+   .input-small-vacancies {
+      width: 49%;
    }
 }
 
@@ -549,7 +664,7 @@
       gap: 20px;
       overflow: auto;
    }
-   .i-b-el-1 {
+   /* .i-b-el-1 {
       order: 1;
    }
 
@@ -577,18 +692,18 @@
    .i-b-el-8 {
       order: 8;
       display: none;
-   }
+   } */
 
    .slider-five-section-5 {
-      gap: 5px;
+      gap: 20px;
       row-gap: 20px;
    }
-   .slider-five-section-5 div {
+   /* .slider-five-section-5 div {
       width: 47%;
-   }
-   #card-reserve {
+   } */
+   /* #card-reserve {
       width: calc(94% + 20px);
-   }
+   } */
 
    .input-zone-news-p-cont {
       width: 60%;
@@ -632,6 +747,13 @@
    }
    .columns-footer {
       justify-content: space-between;
+   }
+   .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 6) {
+      display: none;
+   }
+   #input-min,
+   #input-max {
+      width: 48%;
    }
 }
 
@@ -727,6 +849,38 @@
       margin: 70px auto 80px;
       scale: 0.8;
    }
+   .parks-area-find-page-overflow-container {
+      overflow-x: auto;
+   }
+   .parks-area-find-page {
+      width: max-content;
+   }
+   .parks-area-find-page-overflow-container::-webkit-scrollbar {
+      display: none;
+   }
+   /* five-section */
+   .image-bg,
+   .image-bg-2,
+   .image-bg-3,
+   .image-bg-4,
+   .image-bg-5 {
+      aspect-ratio: 1.33;
+      width: unset;
+      height: 300px;
+      background-size: cover;
+   }
+   .slider-five-section-5 {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      display: flex;
+   }
+   .slider-five-section-5::-webkit-scrollbar {
+      display: none;
+   }
+   .slider-five-section-vision {
+      display: none;
+   }
 }
 
 @media (min-width: 801px) {
@@ -737,8 +891,26 @@
       display: none;
    }
 }
-
+@media (max-width: 720px) {
+   .input-small-vacancies {
+      width: 100%;
+      max-width: unset;
+   }
+   .send-btn-news-sub,
+   .grey-btd-add-resume {
+      width: 100%;
+      opacity: 1;
+      z-index: 5;
+   }
+   .call-back-form-container-work-in-page {
+      gap: 20px;
+   }
+}
 @media (max-width: 700px) {
+   .mobile-viev-table-find-page {
+      display: block;
+   }
+
    .absolute-peoples-container-f-s div {
       height: 270px;
    }
@@ -815,9 +987,9 @@
    .to-choice-btn {
       width: calc(100vw - 40px);
    }
-   .card-of-product {
+   /* .card-of-product {
       width: 210px;
-   }
+   } */
    .prise-of-rent-1 {
       padding-right: 5px;
    }
@@ -924,13 +1096,10 @@
       margin: auto;
       justify-content: flex-start;
    }
-   .slider-five-section-5 {
+   /* .slider-five-section-5 {
       display: none;
-   }
-   .text-5-s-2 {
-      width: 90%;
-      margin: 20px auto;
-   }
+   } */
+
    .gold-balls-img {
       scale: 0.6;
       right: -93px;
@@ -987,7 +1156,7 @@
       gap: 0;
    }
    .green-samokat {
-      width: 85vw;
+      /* width: 100%; */
       background-position: right;
    }
    .row-footer-1,
@@ -998,9 +1167,11 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      margin-bottom: 30px;
    }
    .apps-links-footer- img {
       width: 45%;
+      max-width: 200px;
    }
 
    .shop-take-rent {
@@ -1074,6 +1245,9 @@
    }
    .call-back-form-container {
       margin-bottom: 0;
+      width: 100vw;
+      transform: translateX(-20px);
+      border-radius: 20px 20px 0 0;
    }
    .images-footer > img {
       width: 102px;
@@ -1090,6 +1264,142 @@
    }
    .kids-chill div:nth-last-child(-n + 5) {
       display: block;
+   }
+   .parks-area-find-page-overflow-container::-webkit-scrollbar,
+   .table-info-find-page,
+   .search-container-find-page {
+      display: none;
+   }
+   .title-of-section-news-page {
+      font-size: 36px;
+   }
+
+   .h2-find-page {
+      font-size: 30px;
+   }
+
+   .map-area-find-page {
+      height: 260px;
+      width: 100vw;
+      transform: translateX(-20px);
+      border-radius: 20px;
+   }
+   .call-back-form-contact-p {
+      margin-bottom: 0;
+      width: 100vw;
+      transform: translateX(-20px);
+      border-radius: 20px 20px 0 0;
+   }
+   .respond-btn-work-in-page {
+      width: 100%;
+   }
+   .discription-area-of-vacancier-work-page {
+      border-radius: 0 0 20px 20px;
+   }
+   .faq-page-first-text {
+      width: 100%;
+      padding-right: 20px;
+   }
+   .main-content-news-page > div > img {
+      width: 100%;
+   }
+   .text-blicks-repair-page {
+      flex-direction: column;
+   }
+   .main-text-in-card-about-page {
+      width: 90%;
+   }
+   .text-blicks-repair-page div {
+      width: 100%;
+   }
+   .text-blicks-repair-page p {
+      width: 100%;
+   }
+
+   /* catalog */
+
+   .catalog-filter-section {
+      flex-direction: column;
+      padding: 0;
+      row-gap: 10px;
+   }
+
+   .catalog-filter-section > div:not(:last-child) {
+      border-radius: 20px;
+      background: #f4f4f8;
+      width: 100vw;
+      transform: translateX(-20px);
+      padding: 24px 20px;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+   .catalog-filter-section.button-reset-filter-catalog-page {
+      width: 21%;
+      min-width: 180px;
+   }
+   .catalog-filter-section > div::before {
+      display: none;
+   }
+   .checkbox-container_catalog > p {
+      width: 100%;
+   }
+   .checkbox-container_catalog > div {
+      width: 45%;
+   }
+   .checkbox-container_catalog > div:nth-last-child(1) {
+      width: 100%;
+   }
+   .catalog-filter-section {
+      border: none;
+   }
+   .popular-filter-btn {
+      padding: 0;
+      width: unset;
+   }
+   .popular-filter-btn p {
+      padding: 0 10px;
+   }
+   .hide-filter-btn {
+      display: none;
+   }
+   .catalog-filter-section .button-reset-filter-catalog-page {
+      width: 100%;
+      margin: 20px 0 80px;
+   }
+   .items-title-catalog-page {
+      display: block;
+
+      color: #333;
+      font-family: Lato, sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 33.6px */
+   }
+   .catalog-page-title-h1-mobile {
+      display: block;
+   }
+   .catalog-page-title-h1-desctop {
+      display: none;
+      font-size: 32px;
+   }
+   .title-of-section-catalog-page h1 {
+      font-size: 32px;
+   }
+   .hide-filter-text-btn {
+      display: flex;
+   }
+   .in-stock-catalog {
+      gap: 10px;
+      justify-content: space-between;
+      row-gap: 20px;
+   }
+   .i-s-f-image-1,
+   .i-s-f-image-2,
+   .i-s-f-image-3,
+   .i-s-f-image-4 {
+      display: none;
    }
 }
 
@@ -1114,6 +1424,51 @@
    .shop-take-rent > div:nth-last-child(-n + 6) {
       display: none;
    }
+   .history-cards-container-about-page {
+      margin-left: 0;
+   }
+   .blue-yellow-dot-about-page-1 {
+      left: 15px;
+   }
+   .blue-yellow-dot-about-page-2 {
+      left: 790px;
+   }
+   .photo-area-about-us-page {
+      height: 300px;
+      order: 1;
+      margin: 20px 0;
+   }
+   .first-2-blocks-about-us-page {
+      order: 2;
+      flex-direction: column;
+      gap: 20px;
+   }
+   .our-values-about-us-page-container > div,
+   .first-2-blocks-about-us-page > div {
+      width: 100%;
+      text-align: left;
+   }
+   .our-values-about-us-page-container {
+      order: 3;
+      margin: 80px 0;
+      flex-direction: column;
+      align-items: center;
+   }
+   .our-values-about-us-page-container > div {
+      max-width: 500px;
+   }
+   .p-disc-our-history-about-page {
+      font-size: 16px;
+   }
+   .title-of-section-news-page {
+      margin: 30px 0 30px;
+   }
+   .call-back-form-container-f-p {
+      width: 100vw;
+      transform: translateX(-20px);
+      margin-bottom: 0;
+      border-radius: 20px 20px 0 0;
+   }
 }
 
 @media (max-width: 500px) {
@@ -1128,10 +1483,6 @@
       bottom: -20px;
    }
    .logo-header img {
-      width: 74px;
-   }
-   .winter-status,
-   .summer-status {
       width: 90px;
    }
    .bacground-image-main-page-first-section {
@@ -1213,7 +1564,7 @@
       margin: 40px auto 20px;
    }
    .three-elemrnts-container-home-page-blue-block {
-      margin-left: -20px;
+      margin-left: 0px;
    }
    .roll-park-list-visible {
       margin: 30px 0 20px;
@@ -1230,15 +1581,15 @@
       height: 484px;
    }
    .green-samokat {
-      width: 83vw;
+      /* width: 83vw; */
       height: 484px;
    }
    .usrful-materials-cards > div:not(:first-child) > img {
       height: 310px;
    }
-   .usrful-materials-cards div:not(:first-child):not(.text-inside-cart-blog, .image-user-zone, .date-in-material-card) {
+   /* .usrful-materials-cards div:not(:first-child):not(.text-inside-cart-blog, .image-user-zone, .date-in-material-card) {
       height: 310px;
-   }
+   } */
    .see-all-usefull-mat-btn {
       padding: 10px 24px 12px 24px;
       font-size: 16px;
@@ -1249,6 +1600,42 @@
       scale: 1;
       width: 100%;
       justify-content: space-between;
+   }
+   .h1-no-main-page {
+      font-size: 34px;
+   }
+   .main-text-area-rules-page div,
+   .main-text-area-rules-page p {
+      font-size: 16px;
+   }
+   .text-charity-pahe-switch-pseudo {
+      display: contents;
+   }
+   .pseudo-sspan-charity-page {
+      display: none;
+   }
+   .our-values-about-us-page-container > div:nth-child(1) {
+      padding: 0;
+   }
+   .card-of-product {
+      width: calc(48%);
+      height: 352px;
+   }
+   .img-of-product {
+      display: block;
+      margin: 0 auto;
+   }
+   .buton-show-more-favorite-page {
+      width: 100%;
+   }
+   .favorite-and-switch {
+      margin: 20px 0 0;
+   }
+   .discription-of-product {
+      height: 220px;
+   }
+   .card-reserve-mobile {
+      display: block;
    }
 }
 
@@ -1322,6 +1709,26 @@
    }
    .year-time-button {
       height: 44px;
+   }
+   .h1-no-main-page {
+      font-size: 24px;
+   }
+   .div-pseudo-h1-no-main-page {
+      display: block;
+
+      color: transparent;
+      font-family: Montserrat Alternates;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 40px 0;
+   }
+   .card-of-product {
+      width: 100%;
+   }
+   .title-of-section-5 .title-of-section-gradient {
+      width: 100%;
    }
 }
 
@@ -1466,6 +1873,17 @@
    .social-circles-footer-index {
       margin-right: 10%;
    }
+
+   /* Catalog  */
+
+   .popular-filter-btn div {
+      background: unset;
+      padding: 0 0 0 4px;
+   }
+   .popular-filter-btn {
+      padding: 0;
+      border: unset;
+   }
 }
 
 @media (max-width: 459px) {
@@ -1474,6 +1892,9 @@
    }
    .title-of-section-news-page h1 {
       font-size: 36px;
+   }
+   .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 12) {
+      display: none;
    }
 }
 
@@ -1486,7 +1907,7 @@
       bottom: -20px;
    }
    .logo-header img {
-      width: 74px;
+      width: 90px;
    }
    .last-text-first-section {
       padding: 0;
@@ -1618,15 +2039,15 @@
       margin-bottom: 18px;
    }
    .green-samokat {
-      width: 78vw;
+      /* width: 78vw; */
       height: 360px;
    }
    .usrful-materials-cards > div:not(:first-child) > img {
-      height: 310px;
+      height: 100%;
    }
-   .usrful-materials-cards div:not(:first-child):not(.text-inside-cart-blog, .image-user-zone, .date-in-material-card) {
+   /* .usrful-materials-cards div:not(:first-child):not(.text-inside-cart-blog, .image-user-zone, .date-in-material-card) {
       height: 310px;
-   }
+   } */
    .see-all-usefull-mat-btn {
       width: calc(100vw - 40px);
       margin: 20px auto 50px;
@@ -1640,5 +2061,22 @@
    }
    .absolute-peoples-container-f-s div {
       height: 230px;
+   }
+
+   .slider-five-section-5 div {
+      height: 240px;
+   }
+   .text-5-s-2 {
+      font-size: 16px;
+   }
+   .image-bg,
+   .image-bg-2,
+   .image-bg-3,
+   .image-bg-4,
+   .image-bg-5 {
+      aspect-ratio: 1.2;
+   }
+   .button-of-c-r-m {
+      font-size: 14px;
    }
 }
