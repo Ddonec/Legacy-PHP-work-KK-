@@ -87,7 +87,7 @@
                   <li class="pointer list-under-700" id="shopping-cart-icon-header">
                      <a href="tel:89351680416"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/phone-call.svg" alt="" /></a>
                   </li>
-                  <li class="search-icon-list-h">
+                  <li class="search-icon-list-h none">
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector.svg" alt="" />
                   </li>
                   <li><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login.svg" alt="" /> <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login-black.svg" alt="" /></li>
