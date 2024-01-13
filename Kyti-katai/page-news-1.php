@@ -33,7 +33,7 @@ get_header();
                <div class="main-photo-of-news-1-page"></div>
                <div class="full-text-news-1-area">
                   <h4 class="text-24-600">Время каждой бесплатной поездки — до 30 минут, их количество в день неограниченно.</h4>
-                  <p class="text-18-500">
+                  <p class="text-18-500-left">
                      Теперь в Москве можно бесплатно ездить на новых моделях электровелосипедов по безлимитным билетам «Единый» и картам москвича для обучающихся. С 21 июля бесплатные поездки от
                      сервиса «Велобайка» можно совершать на всех 10 тысячах велосипедов городского велопроката. Об этом сообщил заместитель Мэра Москвы по вопросам транспорта
                      <a href="https://www.mos.ru/dt/structure/person/20885093/">Максим Ликсутов.</a><br />
@@ -47,9 +47,9 @@ get_header();
                   </p>
                </div>
                <div class="autor-of-state-news-1-page">
-                  <div class="image-user-news-1 text-18-500"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1.svg" alt="" /> Савелий Октябрьский</div>
+                  <div class="image-user-news-1 text-18-500-left"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1.svg" alt="" /> Савелий Октябрьский</div>
                   <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/dot-blue.svg" alt="dot" /></div>
-                  <div class="text-18-500">15.07.23</div>
+                  <div class="text-18-500-left">15.07.23</div>
                </div>
             </div>
             <aside class="aside-right-block-news-1-page">
@@ -90,7 +90,7 @@ get_header();
             <div class="input-zone-news-p-cont">
                <input class="input-in-news-p-cont i-n-p-c-name" type="text" placeholder="Ваше имя" />
                <input class="input-in-news-p-cont i-n-p-c-email" type="email" placeholder="Электронная почта" />
-               <div class="send-btn-news-sub text-18-500 pointer">Отправить</div>
+               <div class="send-btn-news-sub text-18-500-left pointer">Отправить</div>
                <img class="convert-img-news-sub" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/convert-yellow.png" alt="mail" />
             </div>
          </div>

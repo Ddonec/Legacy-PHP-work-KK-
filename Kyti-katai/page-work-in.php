@@ -19,7 +19,9 @@ get_header();
 ?>
 
 
-<section class="main-content-news-page">
+
+
+      <section class="main-content-news-page">
          <div class="bread-crumbs">
             <p><a href="index.html">Главная</a></p>
             <p>/</p>
@@ -28,16 +30,17 @@ get_header();
             <p class="grey-bread-crumbs">Веревочный парк</p>
          </div>
          <div class="title-of-section-news-page">
-            <div class="black-text-section">Работа в</div>
+            <h3 class="text-gradient">Работа в КутиКатай</h3>
+            <!-- <div class="black-text-section">Работа в</div>
             <div class="opacity-text-section o-t-s-all">КутиКатай</div>
-            <div class="item-shadow-section-vacancies-page"></div>
+            <div class="item-shadow-section-vacancies-page"></div> -->
          </div>
          <div class="first-2-blocks-rope-park-page">
             <div class="k-k-about-rope-park-page">Люди — главный актив компании</div>
             <div class="k-k-div-510w-vacancies">Ценим в своих работниках стремление к достижению результата, готовность работать в команде и брать на себя ответственность.</div>
             <div class="k-k-div-510w-vacancies">Ценим в своих работниках стремление к достижению результата, готовность работать в команде и брать на себя ответственность.</div>
          </div>
-         <div class="company-princips-vacancies-page">
+         <div class="company-princips-vacancies-page none">
             <p class="text-18-500">Принципы компании</p>
             <div class="row-of-table-vacancies-page">
                <h4 class="h4-vacancies-page">Добросовестность</h4>
@@ -61,17 +64,19 @@ get_header();
             </div>
          </div>
 
-         <div class="title-of-section-news-page">
-            <div class="black-text-section">Наши</div>
-            <div class="opacity-text-section o-t-s-all">Вакансии</div>
-            <div class="item-shadow-section-vacancies-page-2"></div>
+         <div class="title-of-section-news">
+            <div class="black-text-section">Наши Вакансии</div>
+            <!-- <div class="opacity-text-section o-t-s-all">Вакансии</div>
+            <div class="item-shadow-section-vacancies-page-2"></div> -->
          </div>
 
          <div class="vacancies-list-container-vacancy-page">
-            <div class="nav-menu-of-vacancies-work-in-page">
-               <div class="text-18-500">Логист</div>
-               <div class="text-18-500 opacity">Сотрудник проката</div>
-               <div class="text-18-500 opacity">Директор по маркетингу</div>
+            <div class="overflow-nav-vacancies-container">
+               <div class="nav-menu-of-vacancies-work-in-page">
+                  <div class="text-18-500">Логист</div>
+                  <div class="text-18-500 opacity">Сотрудник проката</div>
+                  <div class="text-18-500 opacity">Директор по маркетингу</div>
+               </div>
             </div>
             <div class="discription-area-of-vacancier-work-page">
                <h5 class="text-18-500">Ищем ответственного, амбициозного и целеустремленного сотрудника для работы в нашей команде.</h5>
@@ -120,7 +125,7 @@ get_header();
                <input class="input-big-vacancies i-n-p-c-work-in-about" type="text" placeholder="Расскажите о себе" />
                <div class="grey-btd-add-resume">
                   <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/plus.svg" alt="" />
-                  <p>Прикрепить резюме</p>
+                  <p>Прикрепить&nbsp;резюме</p>
                </div>
             </div>
             <img class="koleso-work-in-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/koleso-blue.svg" alt="" />
@@ -128,6 +133,13 @@ get_header();
             <div class="send-btn-news-sub text-18-500 pointer">Отправить</div>
          </div>
       </section>
+
+
+
+
+
+
+
 
 <?php
 get_footer();

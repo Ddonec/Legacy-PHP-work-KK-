@@ -12,18 +12,20 @@ get_header();
 ?>
 
 
-<section class="main-content-news-page">
+
+
+
+
+      <section class="main-content-news-page">
          <div class="bread-crumbs">
-            <p><a href="index.html">Главная</a></p>
+            <p><a href="index">Главная</a></p>
             <p>/</p>
             <p><a href="#">Лето</a></p>
             <p>/</p>
             <p class="grey-bread-crumbs">Развлечения для детей</p>
          </div>
          <div class="title-of-section-news-page">
-            <div class="black-text-section">Развлечения</div>
-            <div class="opacity-text-section o-t-s-all">детям</div>
-            <div class="item-shadow-section-catalog-child-page"></div>
+<h1 class="text-gradient">Развлечения детям</h1>
          </div>
          <div class="kids-dosug-catalog-child-page-container">
             <div class="child-game-card-cataloc-child-page">
@@ -148,8 +150,8 @@ get_header();
          </div>
          <div class="call-back-form-container">
             <div class="text-sub-block-news-inside">
-               <h4 class="main-text-sub-block-news-p-cont">Давайте <span>созвонимся!</span></h4>
-               <p class="second-text-sub-block-news-p-cont text-24-600">Наши специалисты ответят на все ваши вопросы</p>
+               <h4 class="main-text-sub-block-news-p-cont text-gradient">Давайте <span>созвонимся!</span></h4>
+               <p class="second-text-sub-block-news-p-cont text-18-500">Наши специалисты ответят на все ваши вопросы</p>
             </div>
 
             <div class="input-zone-news-p-cont">
