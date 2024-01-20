@@ -727,7 +727,6 @@
    display: flex;
    justify-content: space-between;
    padding: 20px 0;
-   margin-bottom: 24px;
 }
 
 .title-table-find-page p:nth-child(1),
@@ -745,7 +744,7 @@
    display: flex;
    justify-content: space-between;
    padding: 20px 0;
-   margin-bottom: 24px;
+   /* margin-bottom: 24px; */
 
    color: #333;
    font-family: Lato, sans-serif;
