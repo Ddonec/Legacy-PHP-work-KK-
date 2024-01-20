@@ -51,7 +51,7 @@ get_header();
          <div class="hide-filters-cat">
             <div class="hide-filter-btn">
                <p class="text-14-500">Скрыть фильтры</p>
-               <img src="./assets/icon/sliders-horizontal.svg" alt="" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/sliders-horizontal.svg" alt="" />
             </div>
             <div class="hide-filter-text-btn none">
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-up-bold.svg" alt="" />

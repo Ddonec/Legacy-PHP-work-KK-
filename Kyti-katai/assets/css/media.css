@@ -60,9 +60,13 @@
       width: 287px;
    }
 }
+@media (max-width: 1370px) {
+   .cur-pointer {
+      display: none;
+   }
+}
 
-@media (max-width: 1700px) {
-   .cur-pointer,
+@media (max-width: 1300px) {
    .input-zone-1920 {
       display: none;
    }
@@ -641,6 +645,15 @@
    .k-k-about-rope-park-page {
       margin-bottom: 10px;
    }
+   .i-n-p-c-email {
+      width: 20%;
+   }
+   .social-left-block-news-2-page {
+      margin-top: 226px;
+   }
+   .aside-right-block-news-1-page {
+      margin-top: 175px;
+   }
 }
 /* @media (max-width: 1088px){
 .third-section-make-fun{
@@ -698,6 +711,9 @@
    .avalible-park__title-text {
       flex-direction: column;
    }
+   .title-of-section-item-page {
+      margin-top: 40px;
+   }
 }
 @media (max-width: 990px) {
    .phopos-container-example-repair-page {
@@ -726,6 +742,9 @@
    .phopos-container-example-repair-page > div:nth-child(5) {
       height: 300px;
       width: 507px;
+   }
+   .convert-img-news-sub {
+      bottom: -130px;
    }
 }
 
@@ -932,6 +951,18 @@
 
       white-space: nowrap;
       text-overflow: ellipsis;
+   }
+   .aside-right-block-news-max-width-area {
+      flex-direction: row;
+      width: max-content;
+      margin: 0 auto;
+   }
+   .aside-right-block-news-1hidden-slide-area {
+      width: 100%;
+      overflow-x: auto;
+   }
+   .aside-right-block-news-1-page {
+      margin-top: 60px;
    }
 }
 
@@ -1514,6 +1545,13 @@
    .subscribe-for-our-news-container {
       padding: 30px 20px;
       margin: 40px 0 0;
+      width: 100vw;
+      transform: translateX(-20px);
+      border-radius: 40px 40px 0 0;
+   }
+   .main-content-news-1-page {
+      margin: 0;
+      padding-bottom: 0;
    }
    .main-content-news-page {
       margin: 0;
@@ -2009,7 +2047,7 @@
       height: 484px;
    }
    .green-samokat {
-      /* width: 83vw; */
+      width: 83vw;
       height: 484px;
    }
    .usrful-materials-cards > div:not(:first-child) > img {
@@ -2515,7 +2553,7 @@
       margin-bottom: 18px;
    }
    .green-samokat {
-      /* width: 78vw; */
+      width: 78vw;
       height: 360px;
    }
    .usrful-materials-cards > div:not(:first-child) > img {

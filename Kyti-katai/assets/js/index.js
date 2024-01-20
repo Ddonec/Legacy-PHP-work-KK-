@@ -27,11 +27,12 @@ const runStringSecond = document.querySelector(".roll-park-list2");
 const yellowBlock = document.querySelector(".yellow-block");
 const borderColorSwitch = document.querySelectorAll(".border-switch-status-blue");
 const sixSectionTitle = document.querySelector(".title-of-section-gradient-yellow");
-const thirdSectionContainerHide = document.querySelector(".third-section-container");
+// const thirdSectionContainerHide = document.querySelector(".third-section-container");
 const fourSectionContainerHide = document.querySelector(".four-section");
 const fiveSectionContainerHide = document.querySelector(".five-section");
 const showHideBlueWheel = document.querySelectorAll(".show-hide-blue-wheel");
 const showHideYellowWheel = document.querySelectorAll(".show-hide-yellow-wheel");
+const appbanner = document.querySelector(".app-banner");
 
 const blueFake = document.querySelector(".blue-line-fake");
 const grayFake = document.querySelector(".gray-line-fake");
@@ -83,7 +84,7 @@ checkbox.addEventListener("change", function () {
       placeholderElement.style.color = newPlaceholderColor;
       blueFake.style.background = "#5567ea";
       grayFake.style.background = "rgba(232, 234, 251, 0.8)";
-      numberHeader.style.color = "#FFC93A";
+      // numberHeader.style.color = "#FFC93A";
       backgroundHeaderRightPhoto.classList.remove("summer");
       backgroundHeaderLeftPhoto.classList.remove("summer");
       backgroundHeader.classList.remove("summer");
@@ -91,6 +92,7 @@ checkbox.addEventListener("change", function () {
       // searchIconSwitchW.classList.remove("none");
       bgSixSection.classList.remove("summer");
       bgSixSection.style.backgroundColor = "#5567ea";
+      appbanner.style.background = "#e8eafb";
 
       runStringFirst.classList.remove("roll-park-list-black");
       runStringSecond.classList.remove("roll-park-list-black");
@@ -98,7 +100,7 @@ checkbox.addEventListener("change", function () {
       sixSectionTitle.classList.remove("text-gradient");
       fourSectionContainerHide.classList.add("none");
       fiveSectionContainerHide.classList.add("none");
-      thirdSectionContainerHide.classList.add("none");
+      // thirdSectionContainerHide.classList.add("none");
    } else {
       summerStatus.forEach(function (element) {
          element.classList.remove("none");
@@ -145,7 +147,7 @@ checkbox.addEventListener("change", function () {
       placeholderElement.style.color = "black";
       blueFake.style.background = "#ffc93a";
       grayFake.style.background = "#fff9e8";
-      numberHeader.style.color = "#5567EA";
+      // numberHeader.style.color = "#5567EA";
       backgroundHeaderRightPhoto.classList.add("summer");
       backgroundHeaderLeftPhoto.classList.add("summer");
       backgroundHeader.classList.add("summer");
@@ -153,6 +155,7 @@ checkbox.addEventListener("change", function () {
       // // searchIconSwitchW.classList.add("none");
       bgSixSection.classList.add("summer");
       bgSixSection.style.backgroundColor = "unset";
+      appbanner.style.background = "#ffefc4";
 
       runStringFirst.classList.add("roll-park-list-black");
       runStringSecond.classList.add("roll-park-list-black");
@@ -160,7 +163,7 @@ checkbox.addEventListener("change", function () {
       sixSectionTitle.classList.add("text-gradient");
       fourSectionContainerHide.classList.remove("none");
       fiveSectionContainerHide.classList.remove("none");
-      thirdSectionContainerHide.classList.remove("none");
+      // thirdSectionContainerHide.classList.remove("none");
    }
 });
 

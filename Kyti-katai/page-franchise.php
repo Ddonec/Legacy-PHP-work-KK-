@@ -149,8 +149,8 @@ get_header();
       <section class="they-chose-us">
          <h3 class="title-of-section-gradient-yellow"><?php the_field('franchise-tretyaya_sekcziya_sinyaya-title') ?></h3>
 
-         <div class="chose-us__second-title"><?php the_field('franchise-tretyaya_sekcziya_sinyaya_subtitle') ?></div>
-         <div class="feedback-absolute-pseudo-container">
+           <div class="chose-us__second-title"><?php the_field('franchise-tretyaya_sekcziya_sinyaya_subtitle') ?></div>
+           <div class="feedback-absolute-pseudo-container">
             <div class="feedback-overflov-pseudo-container">
                <ul class="feedback-containers-zone-franchise">
                   <li class="feedback-container-franchise">

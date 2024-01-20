@@ -21,7 +21,6 @@ get_header();
 
 
       <section class="main-content-item">
-         <h1 class="text-gradient">Городской велоипед</h1>
          <div class="bread-crumbs">
             <p><a href="index">Главная</a></p>
             <p>/</p>
@@ -31,6 +30,7 @@ get_header();
             <p>/</p>
             <p>...</p>
          </div>
+         <h1 class="text-gradient">Городской велоипед</h1>
          <div class="main-info-info-page">
             <div class="photo-item-i-p"></div>
             <div class="right-section-info-page">
@@ -42,8 +42,8 @@ get_header();
                </div>
                <div class="buttons-abd-discription-i-p">
                   <ul class="discription-of-item-i-p">
-                     <li class="pointer item-disc-i-p-1 i-p-d i-p-d-active text-16-500-left">Описание</li>
-                     <li class="pointer item-disc-i-p-2 i-p-d text-16-500-left">Характеристики</li>
+                     <li class="pointer item-disc-i-p-1 i-p-d i-p-d-active text-14-500-left">Описание</li>
+                     <li class="pointer item-disc-i-p-2 i-p-d text-14-500-left">Характеристики</li>
                   </ul>
                   <p class="text-18-500-left">
                   <?php the_field('item-page-tekst_opisaniya') ?>
@@ -77,10 +77,10 @@ get_header();
                      <p class="text-14"><span class="grey-i-p">Залог:</span> <?php the_field('item-page-zalog') ?></p>
                   </div>
                   <div class="avalibale-card-i-p">
-                     <p class="text-18-500-left">Наличие</p>
+                     <p class="text-14-500-left">Наличие</p>
                      <div class="">
                         <p class="grey-i-p text-14">В 12 парках:</p>
-                        <p class="text-18-500-left div-dics-right-card-i-p text-14">
+                        <p class="text-14-500-left-lato div-dics-right-card-i-p ">
                         <?php the_field('item-page-nali4ie') ?>
                         </p>
                      </div>
@@ -162,6 +162,23 @@ get_header();
                      </div>
                   </div>
                </div>
+
+               <div class="card-of-product">
+                  <a href="item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+                  <div class="discription-of-product">
+                     Городской велосипед
+                     <ul>
+                        <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
+                        <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
+                        <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
+                     </ul>
+                     <div class="price-of-product pointer">
+                        <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+.svg" alt="" />
+                        <span class="prise-of-rent-1">1 000₽/час</span>
+                     </div>
+                  </div>
+               </div>
+               
             </div>
             <div class="left-arrow-i-p arrows-i-p"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-left.svg" alt="" /></div>
 

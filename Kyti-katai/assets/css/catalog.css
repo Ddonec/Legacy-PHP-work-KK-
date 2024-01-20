@@ -439,7 +439,8 @@
 .in-stock-catalog {
    display: flex;
    flex-wrap: wrap;
-   gap: 20px;
+   gap: 15px;
+   justify-content: space-between;
 }
 
 .show-more-btn-catalog {
@@ -455,6 +456,15 @@
 
    border-radius: 14.229px;
    border: 0.711px solid #ccccd0;
+}
+.show-more-btn-news {
+   padding: 9px 24px 11px 24px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+   background: #ffc93a;
+   width: fit-content;
+   margin: 40px auto 0;
 }
 .filters-container-catalog {
    width: 222px;
@@ -493,7 +503,7 @@
    width: 100%;
 }
 .charity-title,
-.faq-title  {
+.faq-title {
    margin: 40px 0;
 }
 .catalog-filter-section > div:not(:last-child)::before {

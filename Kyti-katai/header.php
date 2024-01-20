@@ -51,7 +51,7 @@
                      <div class="text-in-slider-buton" id="season-content">
                         <!-- В начальном состоянии отображаем зиму -->
                         <div class="season winter">
-                           <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/sun.svg" alt="sun" id="sun-header-button" />
+                           <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/sun-yellow.svg" alt="sun" id="sun-header-button" />
                            <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/snowflake.svg" alt="snow" id="snow-header-button" />
                            <span class="time-of-year-text"> Зима </span>
                         </div>
@@ -59,7 +59,7 @@
                         <div class="season summer" style="display: none">
                            <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/sun.svg" alt="sun" id="sun-header-button-2" />
                            <span class="time-of-year-text"> Лето </span>
-                           <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/sun.svg" alt="sun" id="snow-header-button-2" />
+                           <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/snowflake-blue.svg" alt="sun" id="snow-header-button-2" />
                         </div>
                      </div>
                   </span>
@@ -70,13 +70,13 @@
 
             <ul class="header-1920-list">
                <li class="pointer">Компания <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /> <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" /></li>
-               <li class="pointer">Сообщества <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /><img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" /></li>
+               <!-- <li class="pointer">Сообщества <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /><img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" /></li> -->
                <li class="pointer">Франшиза</li>
                <li class="pointer"><a class="white-text-section" href="/faq">FAQ</a></li>
             </ul>
             <div class="zero-block-header"></div>
             <div class="number-h-y-container">
-               <a class="number-header-yellow n-h-y" href="tel:89351680416"><?php the_field('phone', 95) ?></a>
+               <!-- <a class="number-header-yellow n-h-y" href="tel:89351680416"><?php the_field('phone', 95) ?></a> -->
             </div>
             <div class="input-zone-1920">
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector.svg" alt="" id="search-icon-1920" />

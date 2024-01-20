@@ -52,7 +52,7 @@ get_header();
                <li class="pointer">Лодки</li>
             </ul>
             <div class="arrow-right-list pointer">
-               <img id="vector-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+               <img id="vector-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-right.svg" alt="" />
             </div>
          </div>
          <div class="shop-take-rent">
@@ -257,7 +257,7 @@ get_header();
             </div>
          </div>
       </section>
-      <section class="third-section-container none">
+      <section class="third-section-container">
          <div class="third-section">
             <div class="title-of-section-3 text-gradient">
             <?php the_field('razvlecheniya_dlya_detej_title_main') ?>         
@@ -331,10 +331,11 @@ get_header();
             <div class="shadow-section-4 s-s-shadow"></div> -->
          </div>
          <div class="cards-rope-park">
-            <img class="i-s-f-image-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/2.png" alt="" />
-            <img class="i-s-f-image-2" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/3.png" alt="" />
-            <img class="i-s-f-image-3" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/4.png" alt="" />
             <img class="i-s-f-image-4" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/5.png" alt="" />
+            <img class="i-s-f-image-3" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/4.png" alt="" />
+            <img class="i-s-f-image-2" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/3.png" alt="" />
+            <img class="i-s-f-image-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/2.png" alt="" />
+
             <!-- <div class="rope-mag-1-hide less-900-hide">
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/9(3).png" alt="" />
             </div> -->
@@ -588,7 +589,7 @@ get_header();
                <div>измайловский</div>
             </div>
          </div>
-         <div class="show-more-6-section-btn-2 border-switch-status-blue">Узнать о КутиКатай</div>
+         <div class="show-more-6-section-btn-2 border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</div>
       </section>
 
       <section class="seven-section">

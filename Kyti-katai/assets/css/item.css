@@ -16,7 +16,15 @@
    line-height: 150%; /* 27px */
    vertical-align: center;
 }
-
+.text-14-500-left-lato {
+   color: #333;
+   font-family: Lato, sans-serif;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 150%; /* 27px */
+   vertical-align: center;
+}
 .main-content-item h1 {
    font-family: Montserrat Alternates;
    font-size: 32px;
@@ -135,7 +143,7 @@
 
 .i-p-d {
    display: flex;
-   padding: 14px 32px 16px 32px;
+   padding: 11px 24px 9px 24px;
    justify-content: center;
    align-items: center;
    gap: 10px;
@@ -181,6 +189,11 @@
    /* gap: 40px; */
    gap: 20px;
 }
+.prices-area-i-p-flex > div {
+   row-gap: 10px;
+   display: flex;
+   flex-direction: column;
+}
 .hours-area-i-p-flex,
 .prices-area-i-p-flex-in-card {
    display: flex;
@@ -215,7 +228,7 @@
    border-radius: 60px;
 
    margin-top: 40px;
-   margin-bottom: 120px;
+   margin-bottom: 60px;
    transition: 0.8s;
 }
 .item-page-map-block:hover {
@@ -380,7 +393,7 @@
    gap: 24px;
    border-radius: 40px;
    background: #e8eafb;
-   margin: 160px auto 90px;
+   margin: 80px auto 90px;
    position: relative;
    overflow: hidden;
    width: 100%;
@@ -441,7 +454,7 @@
 .convert-img-news-sub {
    height: 410px;
    position: absolute;
-   right: -219px;
+   right: -130px;
    bottom: -110px;
 }
 
@@ -539,9 +552,13 @@
    display: flex;
    flex-direction: column;
    gap: 20px;
-   margin-top: 110px;
+   margin-top: 127px;
 }
-
+.aside-right-block-news-max-width-area {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
 .main-content-news-1-page {
    width: 100%;
    max-width: 1300px;
