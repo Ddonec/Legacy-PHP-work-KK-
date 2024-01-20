@@ -28,7 +28,7 @@ get_header();
             <p class="grey-bread-crumbs">Полезные материалы</p>
          </div>
          <div class="title-of-section-news-page">
-            <h1 class="text-gradient">Полезные материалы</h1>
+            <h1 class="text-gradient"><?php the_field('title_of_news_page') ?></h1>
             <!-- <div class="black-text-section">Полезные</div>
             <div class="opacity-text-section o-t-s-all">материалы</div>
             <div class="item-shadow-section-news-p-1"></div> -->
@@ -62,7 +62,7 @@ get_header();
 
                      В дополнение к действующим инициативам по безопасности мы предоставим меры по з...
 
-                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> <p>Елена Васильева</p></div>
+                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> <p class="text-14-300">Елена Васильева</p></div>
                      <div class="date-in-material-card">30.06.23</div>
                   </div>
                </div>
@@ -87,7 +87,7 @@ get_header();
 
                      В дополнение к действующим инициативам по безопасности мы предоставим меры по з...
 
-                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> <p>Елена Васильева</p></div>
+                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> <p class="text-14-300">Елена Васильева</p></div>
                      <div class="date-in-material-card">30.06.23</div>
                   </div>
                </div>
@@ -119,7 +119,7 @@ get_header();
 
                      В дополнение к действующим инициативам по безопасности мы предоставим меры по з...
 
-                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> <p>Елена Васильева</p></div>
+                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> <p class="text-14-300">Елена Васильева</p></div>
                      <div class="date-in-material-card">30.06.23</div>
                   </div>
                </div>
@@ -144,7 +144,7 @@ get_header();
 
                      В дополнение к действующим инициативам по безопасности мы предоставим меры по з...
 
-                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> <p>Елена Васильева</p></div>
+                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> <p class="text-14-300">Елена Васильева</p></div>
                      <div class="date-in-material-card">30.06.23</div>
                   </div>
                </div>
@@ -163,55 +163,12 @@ get_header();
 
                      В дополнение к действующим инициативам по безопасности мы предоставим меры по з...
 
-                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> <p>Елена Васильева</p></div>
+                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> <p class="text-14-300">Елена Васильева</p></div>
                      <div class="date-in-material-card">30.06.23</div>
                   </div>
                </div>
 
-               <div class="sick-cart-news">
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img(2).png" alt="" />
-                  <div class="text-inside-cart-blog">
-                     <p>Электровелосипеды доступны москвичам</p>
-
-                     Парк моделей превысит 2000 устройств. Городской<br />
-                     велосипед рассчитан на 7 км
-
-                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1.svg" alt="" /> Савелий Октябрьский</div>
-                     <div class="date-in-material-card">15.07.23</div>
-                  </div>
-               </div>
-
-               <div class="sick-cart-news">
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img(3).png" alt="" />
-                  <div class="text-inside-cart-blog">
-                     <p>Кути Катай оснастит самокаты шлемами</p>
-
-                     В дополнение к действующим инициативам по безопасности мы предоставим меры по з...
-
-                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> <p>Елена Васильева</p></div>
-                     <div class="date-in-material-card">30.06.23</div>
-                  </div>
-               </div>
-
-               <div class="sick-cart-news">
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img(2).png" alt="" />
-                  <div class="text-inside-cart-blog">
-                     <p>Электровелосипеды доступны москвичам</p>
-
-                     Парк моделей превысит 2000 устройств. Городской<br />
-                     велосипед рассчитан на 7 км
-
-                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1.svg" alt="" /> Савелий Октябрьский</div>
-                     <div class="date-in-material-card">15.07.23</div>
-                  </div>
-               </div>
-
-               <div class="green-samokat">
-                  Езда на<br />
-                  электро- <br />
-                  самокате
-                  <p>Актуальные правила 2023 года</p>
-               </div>
+   
             </div>
          </div>
          <div class="show-more-btn-catalog text-18-500 pointer">Показать еще</div>

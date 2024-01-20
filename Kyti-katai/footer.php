@@ -28,7 +28,8 @@
                   <li class="pointer"><a href="<?php echo get_option('home'); ?>/find">Мы в парках</a></li>
                   <li class="pointer"><a href="<?php echo get_option('home'); ?>/about-us">О нас</a></li>
                   <li class="pointer"><a href="<?php echo get_option('home'); ?>/news-1">Новости</a></li>
-                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/work-in">Работа у нас</a></li>
+                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/charity">Благотворительность</a></li>
+                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/work">Работа у нас</a></li>
                </ul>
             </div>
 
@@ -38,8 +39,9 @@
                   <li class="pointer"><a href="<?php echo get_option('home'); ?>/repair">Ремонт техники</a></li>
                   <li class="pointer">Сезонное хранение</li>
                   <li class="pointer">Велотур</li>
-                  <li class="pointer">Корп. клиентам</li>
-                  <li class="pointer">Франшиза</li>
+                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/corporative">Корп. клиентам</a></li>
+                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/franchise">Франшиза</a></li>
+
                </ul>
             </div>
 

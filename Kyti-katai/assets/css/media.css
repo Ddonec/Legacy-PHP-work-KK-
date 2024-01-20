@@ -231,6 +231,30 @@
    .year-time-button {
       margin-left: 40px;
    }
+   .absolute-peoples-container-f-s {
+      height: 50%;
+   }
+}
+@media (max-width: 1350px) {
+   .franchise-arrows-feedback {
+      display: none;
+   }
+}
+@media (max-width: 1240px) {
+   .overflov-block-advantages-cards-frahciese-page {
+      width: calc(100% - 20px);
+      margin-left: 20px;
+   }
+   .format-of-service-franchise-page {
+      width: calc(100% - 40px);
+   }
+   .what-we-can-do {
+      width: calc(100% - 40px);
+      margin: 0 auto;
+   }
+   .contact-cards-frabchise {
+      width: calc(100% - 40px);
+   }
 }
 
 @media (max-width: 1299px) {
@@ -278,8 +302,11 @@
    .slider-five-section {
       left: -870px;
    }
+   .shop-take-rent {
+      column-gap: 10px;
+   }
 }
-@media (max-width: 986px) {
+@media (max-width: 965px) {
    .shop-take-rent > div:nth-last-child(-n + 4) {
       display: none;
    }
@@ -436,6 +463,9 @@
    .in-stock-catalog {
       justify-content: space-between;
    }
+   .blue-list-frahciese {
+      padding-right: 20px;
+   }
 }
 @media (max-width: 1240px) {
    .blue-bacground-section-about-us {
@@ -447,6 +477,7 @@
    .p-disc-our-history-about-page {
       width: 100%;
    }
+   .main-section-make-fun-page,
    .main-content-news-page {
       padding: 0 20px;
    }
@@ -463,11 +494,27 @@
    .text-blicks-repair-page {
       flex-direction: column;
    }
+   .feedback-overflov-pseudo-container {
+      width: calc(100% - 20px);
+      margin-left: 20px;
+   }
+   .row-diagramm {
+      width: calc(100% - 40px);
+      margin: 0 auto;
+   }
+   .dynamic__title {
+      margin-left: 20px;
+   }
 
    /* catalog */
 
    .main-content-catalog {
       padding: 0 20px;
+   }
+   .assortiment-section-corporative-page {
+      width: calc(100vw - 20px);
+      margin-left: 20px;
+      transform: translateX(-20px);
    }
 }
 @media (min-width: 900px) {
@@ -522,6 +569,26 @@
    .year-time-button {
       margin-left: -20px;
    }
+   .shop-take-rent {
+      padding: 0 20px;
+      row-gap: 20px;
+      column-gap: 10px;
+   }
+
+   .birthday-kid-card {
+      width: 48%;
+   }
+   .birthday-cards-container {
+      flex-wrap: wrap;
+      row-gap: 20px;
+   }
+   .corporative-casues-container {
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   .corporative-casues-container > div {
+      width: 48.5%;
+   }
 }
 @media (max-width: 1100px) {
    .first-2-blocks-rope-park-page {
@@ -533,7 +600,56 @@
    .first-2-blocks-rope-park-page > div:nth-last-child(1) {
       display: none;
    }
+   .director__email-image {
+      top: 54px;
+      right: -20px;
+      width: 98px;
+   }
+   .k-k-div-530w-disc-rope-park-page-pseudo {
+      display: inline;
+   }
+   .park-characteristics div {
+      width: 50%;
+   }
+   .park-characteristics__image1 {
+      order: 2;
+   }
+   .park-characteristics__text1 {
+      order: 1;
+   }
+   .park-characteristics__image2 {
+      order: 3;
+   }
+   .park-characteristics__text2 {
+      order: 4;
+   }
+   .park-characteristics__image3 {
+      order: 6;
+   }
+   .park-characteristics__text3 {
+      order: 5;
+   }
+   .park-characteristics__image4 {
+      order: 7;
+   }
+   .park-characteristics__text4 {
+      order: 8;
+   }
+   .photo-area-about-rope-park-page > div {
+      height: 400px;
+   }
+   .k-k-about-rope-park-page {
+      margin-bottom: 10px;
+   }
 }
+/* @media (max-width: 1088px){
+.third-section-make-fun{
+   height: 600px;
+}}
+@media (max-width: 1030px){
+   .third-section-make-fun{
+      height: 630px;
+   }} */
 @media (max-width: 1000px) {
    .text-area-first-section-1920 h1 {
       font-size: 48px;
@@ -577,6 +693,39 @@
    }
    .input-small-vacancies {
       width: 49%;
+   }
+
+   .avalible-park__title-text {
+      flex-direction: column;
+   }
+}
+@media (max-width: 990px) {
+   .phopos-container-example-repair-page {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+   }
+   .phopos-container-example-repair-page::-webkit-scrollbar {
+      display: none;
+   }
+   .phopos-container-example-repair-page div p {
+      width: max-content;
+   }
+   .phopos-container-example-repair-page > div {
+      height: 300px;
+      width: 307px;
+      flex-shrink: 0;
+   }
+
+   .phopos-container-example-repair-page > div:nth-child(1),
+   .phopos-container-example-repair-page > div:nth-child(2),
+   .phopos-container-example-repair-page > div:nth-child(3) {
+      height: 300px;
+      width: 307px;
+   }
+   .phopos-container-example-repair-page > div:nth-child(4),
+   .phopos-container-example-repair-page > div:nth-child(5) {
+      height: 300px;
+      width: 507px;
    }
 }
 
@@ -755,12 +904,48 @@
    #input-max {
       width: 48%;
    }
+
+   .phone-hand-full-size {
+      position: absolute;
+      bottom: -76px;
+      right: -204px;
+      height: 576px;
+      transform: rotate(351deg);
+   }
+   .phone-screen-full-size {
+      position: absolute;
+      bottom: 194px;
+      right: -4px;
+      height: 290px;
+      transform: rotate(351deg);
+   }
+   .fill-for-hand-no-hide-franchise {
+      height: 500px;
+   }
+   .finmodel__main {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 40px;
+   }
+   .data__title {
+      width: 70%;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+   }
 }
 
 @media (max-width: 976px) {
    .apps-links-footer- {
       order: 1;
       margin: 0 auto;
+   }
+   .blue-list-frahciese {
+      padding-left: 20px;
+   }
+   .director-phone-card,
+   .director-email-card {
+      width: 100%;
    }
 }
 @media (max-width: 800px) {
@@ -881,14 +1066,74 @@
    .slider-five-section-vision {
       display: none;
    }
+   .buttons-fs-frahciese-page {
+      flex-direction: column;
+      margin-bottom: 112px;
+      align-items: center;
+   }
+   .format__numbers-and-lines {
+      flex-direction: column;
+   }
+   .format__numbers-and-lines > div:nth-child(even) {
+      display: none;
+   }
+   .format__numbers-and-lines > div {
+      display: flex;
+      align-items: center;
+   }
+   .we-can-row {
+      flex-direction: column;
+   }
+   .we-can-row__disc {
+      width: 100%;
+   }
+   .google-piexel-screen-callback-form {
+      right: -125px;
+   }
+   .google-piexel-phone-callback-form {
+      right: -131px;
+   }
+
+   .photos-of-rope-park {
+      display: flex;
+      width: max-content;
+      flex-wrap: nowrap;
+      justify-content: start;
+      gap: 20px;
+      overflow: auto;
+   }
+   .photos-of-rope-park__big-layout {
+      width: 400px;
+      height: 240px;
+   }
+   .photos-of-rope-park__small-layout {
+      width: 260px;
+      height: 240px;
+   }
+   .photos-of-rope-park-overflow {
+      overflow-x: auto;
+   }
+   .photos-of-rope-park-overflow::-webkit-scrollbar {
+      display: none;
+   }
 }
 
+/* @media (max-width: 799px){
+   .third-section-make-fun{
+      height: 680px;
+   }} */
 @media (min-width: 801px) {
    .up-to-768px-hidden-text-home-page {
       display: none;
    }
    .show-more-6-section-btn-2 {
       display: none;
+   }
+}
+
+@media (max-width: 752px) {
+   .in-stock-catalog {
+      justify-content: space-evenly;
    }
 }
 @media (max-width: 720px) {
@@ -904,6 +1149,25 @@
    }
    .call-back-form-container-work-in-page {
       gap: 20px;
+   }
+   .blue-list-frahciese li {
+      display: none;
+   }
+   .blue-list-frahciese {
+      gap: 20px;
+      width: fit-content;
+   }
+   .burger-blue-list-franchese {
+      display: block;
+   }
+   .corporative-casues-container > div {
+      width: 100%;
+   }
+   .corparative-three-cards-container {
+      flex-wrap: wrap;
+   }
+   .corparative-three-cards-container > div {
+      width: 100%;
    }
 }
 @media (max-width: 700px) {
@@ -973,6 +1237,20 @@
    .absolute-peoples-container-f-s {
       top: 50px;
       bottom: unset;
+   }
+   .absolute-peoples-container-f-s-frahciese {
+      height: 15%;
+      position: relative;
+   }
+   .absolute-peoples-container-f-s-frahciese div {
+      width: 40%;
+      aspect-ratio: 1/1;
+   }
+   .absolute-peoples-container-f-s-frahciese .absolute-fs-container-left-frahciese {
+      width: 35%;
+   }
+   .text-area-first-section-1920 .franchese-h1 {
+      margin-top: 30px;
    }
    .to-choice-btn {
       margin: 30px auto 40px;
@@ -1392,7 +1670,6 @@
    }
    .in-stock-catalog {
       gap: 10px;
-      justify-content: space-between;
       row-gap: 20px;
    }
    .i-s-f-image-1,
@@ -1400,6 +1677,30 @@
    .i-s-f-image-3,
    .i-s-f-image-4 {
       display: none;
+   }
+   .format__who-is {
+      flex-direction: column;
+   }
+   .format__pictures_max-width div {
+      width: 280px;
+      height: 200px;
+   }
+   .google-piexel-phone-callback-form,
+   .google-piexel-screen-callback-form {
+      display: none;
+   }
+   .our-team-franchise {
+      margin-top: 80px;
+   }
+   .call-back-form-container-overflow-container-default {
+      border-radius: 0;
+      overflow: hidden;
+      width: 100vw;
+      margin: 0;
+      transform: translateX(-20px);
+   }
+   .call-back-form-container-franchise {
+      border-radius: 40px 40px 0 0;
    }
 }
 
@@ -1449,7 +1750,6 @@
       text-align: left;
    }
    .our-values-about-us-page-container {
-      order: 3;
       margin: 80px 0;
       flex-direction: column;
       align-items: center;
@@ -1468,6 +1768,134 @@
       transform: translateX(-20px);
       margin-bottom: 0;
       border-radius: 20px 20px 0 0;
+   }
+   .finnodel-section > .call-back-form-container {
+      transform: translatex(0);
+   }
+   .price-repair-page-container > div {
+      padding: 24px 0;
+   }
+}
+@media (max-width: 670px) {
+   .avalible-park-make-fun-container {
+      flex-direction: column;
+   }
+   .avalible-park__button {
+      display: flex;
+      width: 100%;
+   }
+   .nav-repair-page,
+   .text-blicks-repair-page,
+   .desctop-photo-repair-page {
+      display: none;
+   }
+   .mibile-version-top-content-repair-page {
+      display: block;
+   }
+}
+
+@media (max-width: 630px) {
+   .park-characteristics div {
+      width: 100%;
+      height: 130px;
+   }
+   .park-characteristics__image1 {
+      order: 2;
+   }
+   .park-characteristics__text1 {
+      order: 1;
+   }
+   .park-characteristics__image2 {
+      order: 4;
+   }
+   .park-characteristics__text2 {
+      order: 3;
+   }
+   .park-characteristics__image3 {
+      order: 6;
+   }
+   .park-characteristics__text3 {
+      order: 5;
+   }
+   .park-characteristics__image4 {
+      order: 8;
+   }
+   .park-characteristics__text4 {
+      order: 7;
+   }
+
+   .first-2-blocks-make-fun {
+      color: #333;
+      font-family: Lato, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%; /* 28.8px */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+   .make-fun__first-text {
+      width: 100%;
+   }
+   .make-fun__second-text {
+      width: 100%;
+   }
+}
+@media (max-width: 601px) {
+   .phone-hand-full-size {
+      display: none;
+   }
+   .phone-screen-full-size {
+      display: none;
+   }
+   .column-container-in-app-banner-franchise {
+      width: 100%;
+   }
+   .apps-links-app-cart-franchise {
+      flex-wrap: wrap;
+   }
+   .fill-for-hand-no-hide-franchise {
+      height: fit-content;
+      margin-top: 80px;
+   }
+   .data__list-fin {
+      width: calc(100vw - 40px);
+   }
+   .finmodel__data::before {
+      border-radius: 0 0 15px 15px;
+   }
+   .data__procent {
+      aspect-ratio: 2;
+   }
+   .finmodel-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 0 0 0;
+   }
+   .director__name {
+      width: 70%;
+   }
+   .director__photo {
+      position: absolute;
+      top: -9px;
+      right: -45px;
+      border-radius: 50%;
+      width: 210px;
+   }
+   .poller-park-photo__discription-area {
+      width: 100%;
+   }
+
+   .birthday-kid-card {
+      width: 100%;
+   }
+   .h1-repair-page {
+      font-size: 36px;
+   }
+   .title-of-section-news-page h1 {
+      font-size: 36px;
    }
 }
 
@@ -1637,6 +2065,35 @@
    .card-reserve-mobile {
       display: block;
    }
+   .buttons-fs-frahciese-page {
+      margin-bottom: 50px;
+   }
+   .dynamic__title {
+      width: 90%;
+      text-align: center;
+      margin: 0 auto;
+   }
+   .director__photo {
+      position: absolute;
+      top: -4px;
+      right: -79px;
+      border-radius: 50%;
+      width: 197px;
+   }
+   .photo-area-about-rope-park-page > div {
+      height: 360px;
+   }
+   .phopos-container-example-repair-page > div:nth-child(1),
+   .phopos-container-example-repair-page > div:nth-child(2),
+   .phopos-container-example-repair-page > div:nth-child(3) {
+      height: 415px;
+      width: 280px;
+   }
+   .phopos-container-example-repair-page > div:nth-child(4),
+   .phopos-container-example-repair-page > div:nth-child(5) {
+      height: 415px;
+      width: 380px;
+   }
 }
 
 @media (max-width: 470px) {
@@ -1729,6 +2186,21 @@
    }
    .title-of-section-5 .title-of-section-gradient {
       width: 100%;
+   }
+   .absolute-peoples-container-f-s {
+      top: 20px;
+   }
+   .director__photo {
+      position: relative;
+      height: 120px;
+      width: 120px;
+      top: 0;
+      right: 0;
+   }
+   .director-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
    }
 }
 
@@ -1883,15 +2355,20 @@
       padding: 0;
       border: unset;
    }
+   .director__email,
+   .director__phone-number {
+      font-size: 20px;
+   }
+   .director__name {
+      width: 100%;
+   }
 }
 
 @media (max-width: 459px) {
    .child-game-card-cataloc-child-page {
       width: 100%;
    }
-   .title-of-section-news-page h1 {
-      font-size: 36px;
-   }
+
    .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 12) {
       display: none;
    }
@@ -2077,5 +2554,11 @@
    }
    .button-of-c-r-m {
       font-size: 14px;
+   }
+   .data__list-fin {
+      padding: 20px;
+   }
+   .h1-repair-page {
+      font-size: 32px;
    }
 }

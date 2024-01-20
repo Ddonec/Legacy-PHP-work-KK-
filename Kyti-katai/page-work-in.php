@@ -30,15 +30,15 @@ get_header();
             <p class="grey-bread-crumbs">Веревочный парк</p>
          </div>
          <div class="title-of-section-news-page">
-            <h3 class="text-gradient">Работа в КутиКатай</h3>
+            <h3 class="text-gradient"><?php the_field('work-zagolovok_straniczy') ?></h3>
             <!-- <div class="black-text-section">Работа в</div>
             <div class="opacity-text-section o-t-s-all">КутиКатай</div>
             <div class="item-shadow-section-vacancies-page"></div> -->
          </div>
          <div class="first-2-blocks-rope-park-page">
-            <div class="k-k-about-rope-park-page">Люди — главный актив компании</div>
-            <div class="k-k-div-510w-vacancies">Ценим в своих работниках стремление к достижению результата, готовность работать в команде и брать на себя ответственность.</div>
-            <div class="k-k-div-510w-vacancies">Ценим в своих работниках стремление к достижению результата, готовность работать в команде и брать на себя ответственность.</div>
+            <div class="k-k-about-rope-park-page"><?php the_field('work-levyj_tekst') ?></div>
+            <div class="k-k-div-510w-vacancies"><?php the_field('work-srednij_tekst') ?></div>
+            <div class="k-k-div-510w-vacancies"><?php the_field('work-pravyj_tekst') ?></div>
          </div>
          <div class="company-princips-vacancies-page none">
             <p class="text-18-500">Принципы компании</p>
@@ -65,7 +65,7 @@ get_header();
          </div>
 
          <div class="title-of-section-news">
-            <div class="black-text-section">Наши Вакансии</div>
+            <div class="black-text-section"><?php the_field('work-zagolovok_sekczii') ?></div>
             <!-- <div class="opacity-text-section o-t-s-all">Вакансии</div>
             <div class="item-shadow-section-vacancies-page-2"></div> -->
          </div>
@@ -79,33 +79,23 @@ get_header();
                </div>
             </div>
             <div class="discription-area-of-vacancier-work-page">
-               <h5 class="text-18-500">Ищем ответственного, амбициозного и целеустремленного сотрудника для работы в нашей команде.</h5>
+               <h5 class="text-18-500"><?php the_field('work-tekst_kogo_ishhem') ?></h5>
                <div>
-                  <p class="requirements-vacancie-work-page">Обязанности</p>
+                  <p class="requirements-vacancie-work-page"><?php the_field('work-tekst_v_vakansii_sinij_1') ?></p>
                   <ul>
-                     <li>Полный цикл организации перевозок автомобильным транспортом;</li>
-                     <li>Контроль доставки груза, взаимодействие с водителями;</li>
-                     <li>Контроль взаиморасчетов, работа с дебиторской задолженностью;</li>
-                     <li>Оформление сопроводительной документации (договоры, заявки и др.);</li>
-                     <li>Формирование отчетности по установленным в компании стандартам</li>
+                  <?php the_field('work-spisok_posle_sinego_1') ?>
                   </ul>
                </div>
                <div>
-                  <p class="requirements-vacancie-work-page">Требования</p>
+                  <p class="requirements-vacancie-work-page"><?php the_field('work-tekst_v_vakansii_sinij_2') ?></p>
                   <ul>
-                     <li>Опыт работы в грузоперевозках, знание работы программы ati.su;</li>
-                     <li>Активная жизненная позиция, коммуникабельность, обучаемость, высокие коммуникативные навыки;</li>
-                     <li>Умение работать в команде, не просиживать время впустую, а зарабатывать.</li>
+                  <?php the_field('work-spisok_posle_sinego_2') ?>
                   </ul>
                </div>
                <div>
-                  <p class="requirements-vacancie-work-page">Требования</p>
+                  <p class="requirements-vacancie-work-page"><?php the_field('work-tekst_v_vakansii_sinij_3') ?></p>
                   <ul>
-                     <li>График работы 5/2, 9.00-18.00</li>
-                     <li>Конкурентоспособная заработная плата</li>
-                     <li>Свой парк автотранспорта;</li>
-                     <li>Дружный коллектив;</li>
-                     <li>Удобный паркинг рядом с офисом.</li>
+                  <?php the_field('work-spisok_posle_sinego_3') ?>
                   </ul>
                </div>
                <div class="respond-btn-work-in-page text-18-500">Откликнуться</div>
@@ -114,8 +104,8 @@ get_header();
 
          <div class="call-back-form-container-work-in-page">
             <div class="text-sub-block-news-inside-work-in">
-               <h4 class="main-text-sub-block-news-p-cont">Не нашли <span>подходящую вакансию?</span></h4>
-               <p class="second-text-sub-block-news-p-cont text-24-600">Напишите нам и мы обязательно с вами свяжемся. КутиКатай всегда открыт специалистам, горящим своим делом!</p>
+               <h4 class="main-text-sub-block-news-p-cont"><?php the_field('work-tvjtl_formy') ?></h4>
+               <p class="second-text-sub-block-news-p-cont text-24-600"><?php the_field('work-subtajtl_formy') ?></p>
             </div>
             <div class="input-zone-news-work-page-cont">
                <input class="input-small-vacancies i-n-p-c-work-in-name" type="text" placeholder="Ваше имя" />

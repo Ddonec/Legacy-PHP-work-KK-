@@ -31,7 +31,7 @@ get_header();
             <p class="grey-bread-crumbs">Прокат</p>
          </div>
          <div class="title-of-section-catalog-page t-o-s">
-            <h1 class="text-gradient"><span class="catalog-page-title-h1-desctop">Возьми в прокат</span><span class="catalog-page-title-h1-mobile none">Каталог</span></h1>
+            <h1 class="text-gradient"><span class="catalog-page-title-h1-desctop"><?php the_field('catalog-page-title') ?></span><span class="catalog-page-title-h1-mobile none">Каталог</span></h1>
             <!-- <div class="black-text-section">Возьми</div>
             <div class="opacity-text-section o-t-s-all">в прокат</div>
             <div class="shadow-section s-s-shadow"></div> -->

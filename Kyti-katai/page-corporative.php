@@ -21,45 +21,45 @@ get_header();
          <p class="grey-bread-crumbs">..</p>
       </div>
       <div class="title-of-section-news-page">
-         <h1 class="h1-rope-park-page text-gradient">Корпоративным клиентам</h1>
+         <h1 class="h1-rope-park-page text-gradient"><?php the_field('corporative-zakolovok_straniczy') ?></h1>
       </div>
 
       <div class="first-2-blocks-rope-park-page">
-         <div class="k-k-about-rope-park-page">Наша миссия</div>
+         <div class="k-k-about-rope-park-page"><?php the_field('corporative-levyj_tekst') ?></div>
          <div class="k-k-div-530w-disc-rope-park-page">
-            КутиКатай предлагает корпоративным клиентам максимальное удобство и гибкость в аренде и обеспечивает успешное выполнение проектов.
+         <?php the_field('corporative-srednij_tekst') ?>
             <span class="k-k-div-530w-disc-rope-park-page-pseudo none"
-               >Мы гордимся нашими долгосрочными партнерствами, зная, что залог успешного сотрудничества — это взаимное понимание и доверие.</span
+               ><?php the_field('corporative-pravyj_tekst') ?></span
             >
          </div>
-         <div class="k-k-div-530w-disc-rope-park-page">Мы гордимся нашими долгосрочными партнерствами, зная, что залог успешного сотрудничества — это взаимное понимание и доверие.</div>
+         <div class="k-k-div-530w-disc-rope-park-page"><?php the_field('corporative-pravyj_tekst') ?></div>
       </div>
 
       <div class="corparative-three-cards-container">
          <div>
             <img class="image-frame-corporative" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/corparative-three-card-1.svg" alt="" />
             <div>
-               <h4 class="h4-casues-card">Профессионализм</h4>
-               <div class="p-casues-card">Мы — семья чемпионов, где принято помогать друг другу и учить быть сильными!</div>
+               <h4 class="h4-casues-card"><?php the_field('corporative-3_kartochki_zagolovok_1') ?></h4>
+               <div class="p-casues-card"><?php the_field('corporative-3_kartochki_opisanie_1') ?></div>
             </div>
          </div>
          <div>
             <img class="image-frame-corporative" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/corparative-three-card-2.svg" alt="" />
             <div>
-               <h4 class="h4-casues-card">Безопасность</h4>
-               <div class="p-casues-card">Мы следим за техническим состоянием всех конструкций, чтобы Вы не переживали за здоровье.</div>
+               <h4 class="h4-casues-card"><?php the_field('corporative-3_kartochki_zagolovok_2') ?></h4>
+               <div class="p-casues-card"><?php the_field('corporative-3_kartochki_opisanie_2') ?></div>
             </div>
          </div>
          <div>
             <img class="image-frame-corporative" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/corparative-three-card-3.svg" alt="" />
             <div>
-               <h4 class="h4-casues-card">Семейность</h4>
-               <div class="p-casues-card">Объединяем семью и дарим незабываемые впечатления для всех возрастов</div>
+               <h4 class="h4-casues-card"><?php the_field('corporative-3_kartochki_zagolovok_3') ?></h4>
+               <div class="p-casues-card"><?php the_field('corporative-3_kartochki_opisanie_3') ?></div>
             </div>
          </div>
       </div>
       <section class="assortiment-section-corporative-page">
-         <h4 class="title-of-block-small-text-28-700-mons">Ассортимент КутиКатай</h4>
+         <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('corporative-zagolovok_2_sekczii') ?></h4>
          <div class="assiortement-overflow-container">
             <div class="assortement-main-container">
                <div class="assortement__card assortement__card_1">
@@ -96,27 +96,27 @@ get_header();
 
       <div class="corporative-casues-container">
          <div>
-            <h3 class="main-text-in-casues-card text-gradient">3 причины сотрудничать с нами</h3>
+            <h3 class="main-text-in-casues-card text-gradient"><?php the_field('corporative-4_kartochki_zagolovok_1') ?></h3>
          </div>
          <div>
             <img class="image-frame-corporative" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-1.svg" alt="" />
             <div>
-               <h4 class="h4-casues-card">Профессионализм</h4>
-               <div class="p-casues-card">Мы — семья чемпионов, где принято помогать друг другу и учить быть сильными!</div>
+               <h4 class="h4-casues-card"><?php the_field('corporative-4_kartochki_zagolovok_2') ?></h4>
+               <div class="p-casues-card"><?php the_field('4_kartochki_opisanie_2') ?></div>
             </div>
          </div>
          <div>
             <img class="image-frame-corporative" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-2.svg" alt="" />
             <div>
-               <h4 class="h4-casues-card">Безопасность</h4>
-               <div class="p-casues-card">Мы следим за техническим состоянием всех конструкций, чтобы Вы не переживали за здоровье.</div>
+               <h4 class="h4-casues-card"><?php the_field('corporative-4_kartochki_zagolovok_3') ?></h4>
+               <div class="p-casues-card"><?php the_field('4_kartochki_opisanie_3') ?></div>
             </div>
          </div>
          <div>
             <img class="image-frame-corporative" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-5.svg" alt="" />
             <div>
-               <h4 class="h4-casues-card">Семейность</h4>
-               <div class="p-casues-card">Объединяем семью и дарим незабываемые впечатления для всех возрастов</div>
+               <h4 class="h4-casues-card"><?php the_field('corporative-4_kartochki_zagolovok_4') ?></h4>
+               <div class="p-casues-card"><?php the_field('4_kartochki_opisanie_4') ?></div>
             </div>
          </div>
       </div>

@@ -25,7 +25,7 @@ get_header();
             <p class="grey-bread-crumbs">Развлечения для детей</p>
          </div>
          <div class="title-of-section-news-page">
-<h1 class="text-gradient">Развлечения детям</h1>
+<h1 class="text-gradient"><?php the_field('zagolovok-catalog-child-page') ?></h1>
          </div>
          <div class="kids-dosug-catalog-child-page-container">
             <div class="child-game-card-cataloc-child-page">

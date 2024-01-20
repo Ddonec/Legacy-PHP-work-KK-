@@ -26,7 +26,7 @@ get_header();
             <p class="grey-bread-crumbs">Найди свой парк</p>
          </div>
          <div class="title-of-section-news-page">
-            <h3 class="text-gradient">Найди свой парк</h3>
+            <h3 class="text-gradient"><?php the_field('find-park-title') ?></h3>
          </div>
 
          <div class="map-area-find-page"></div>
@@ -35,12 +35,12 @@ get_header();
 
          <div class="parks-area-find-page-overflow-container">
             <div class="parks-area-find-page">
-               <div class="side-of-region-button-f-p s-o-r-f-p-active">Все парки</div>
-               <div class="side-of-region-button-f-p">Север</div>
-               <div class="side-of-region-button-f-p">Запад</div>
-               <div class="side-of-region-button-f-p">Юг</div>
-               <div class="side-of-region-button-f-p">Восток</div>
-               <div class="side-of-region-button-f-p">Московская область</div>
+               <div class="side-of-region-button-f-p s-o-r-f-p-active"><?php the_field('najdi_svoj_park_navigacziya_1') ?></div>
+               <div class="side-of-region-button-f-p"><?php the_field('najdi_svoj_park_navigacziya_2') ?></div>
+               <div class="side-of-region-button-f-p"><?php the_field('najdi_svoj_park_navigacziya_3') ?></div>
+               <div class="side-of-region-button-f-p"><?php the_field('najdi_svoj_park_navigacziya_4') ?></div>
+               <div class="side-of-region-button-f-p"><?php the_field('najdi_svoj_park_navigacziya_5') ?></div>
+               <div class="side-of-region-button-f-p"><?php the_field('najdi_svoj_park_navigacziya_6') ?></div>
             </div>
          </div>
          <div class="search-container-find-page">
@@ -50,67 +50,62 @@ get_header();
 
          <div class="table-info-find-page text-14-500-left">
             <div class="title-table-find-page grey-i-p">
-               <p>Название</p>
-               <p>Адрес</p>
-               <p>Режим работы</p>
-               <p>Техника парка</p>
+               <p><?php the_field('najdi_svoj_park_nazvanie') ?></p>
+               <p><?php the_field('najdi_svoj_park_adres') ?></p>
+               <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?></p>
+               <p><?php the_field('najdi_svoj_park_teznika_porka') ?></p>
             </div>
             <div class="discription-table-find-page">
-               <p>Парк Строгино</p>
-               <p>Москва, ул. Парковая, 5</p>
-               <p>Круглосуточно</p>
-               <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки, Катамараны</p>
+               <p><?php the_field('najdi_svoj_park_nazvanie_1') ?></p>
+               <p><?php the_field('najdi_svoj_park_adres_1') ?></p>
+               <p><?php the_field('najdi_svoj_park_rezhim_raboty_1') ?></p>
+               <p><?php the_field('najdi_svoj_park-tehnika_parka_1') ?></p>
             </div>
             <div class="discription-table-find-page">
-               <p>ВДНХ</p>
-               <p>Москва, проспект Мира, 119В</p>
-               <p>10:00 - 22:00</p>
-               <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки, Катамараны</p>
-            </div>
-            <div class="discription-table-find-page">
-               <p>Красногвардейский пруд</p>
-               <p>Москва, Красногвардейский бульвар, 1А</p>
-               <p>Круглосуточно</p>
-               <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки, Катамараны</p>
-            </div>
-            <div class="discription-table-find-page">
-               <p>Парк Строгино</p>
-               <p>Москва, ул. Парковая, 5</p>
-               <p>Круглосуточно</p>
-               <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки, Катамараны</p>
-            </div>
-            <div class="discription-table-find-page">
-               <p>ВДНХ</p>
-               <p>Москва, проспект Мира, 119В</p>
-               <p>10:00 - 22:00</p>
-               <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки, Катамараны</p>
-            </div>
-            <div class="discription-table-find-page">
-               <p>Красногвардейский пруд</p>
-               <p>Москва, Красногвардейский бульвар, 1А</p>
-               <p>Круглосуточно</p>
-               <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки, Катамараны</p>
+               <p><?php the_field('najdi_svoj_park_nazvanie_2') ?></p>
+               <p><?php the_field('najdi_svoj_park_adres_2') ?></p>
+               <p><?php the_field('najdi_svoj_park_rezhim_raboty_2') ?></p>
+               <p><?php the_field('najdi_svoj_park-tehnika_parka_2') ?></p>
+            </div>            <div class="discription-table-find-page">
+               <p><?php the_field('najdi_svoj_park_nazvanie_3') ?></p>
+               <p><?php the_field('najdi_svoj_park_adres_3') ?></p>
+               <p><?php the_field('najdi_svoj_park_rezhim_raboty_3') ?></p>
+               <p><?php the_field('najdi_svoj_park-tehnika_parka_3') ?></p>
+            </div>            <div class="discription-table-find-page">
+               <p><?php the_field('najdi_svoj_park_nazvanie_4') ?></p>
+               <p><?php the_field('najdi_svoj_park_adres_4') ?></p>
+               <p><?php the_field('najdi_svoj_park_rezhim_raboty_4') ?></p>
+               <p><?php the_field('najdi_svoj_park-tehnika_parka_4') ?></p>
+            </div>            <div class="discription-table-find-page">
+               <p><?php the_field('najdi_svoj_park_nazvanie_5') ?></p>
+               <p><?php the_field('najdi_svoj_park_adres_5') ?></p>
+               <p><?php the_field('najdi_svoj_park_rezhim_raboty_5') ?></p>
+               <p><?php the_field('najdi_svoj_park-tehnika_parka_5') ?></p>
+            </div>            <div class="discription-table-find-page">
+               <p><?php the_field('najdi_svoj_park_nazvanie_6') ?></p>
+               <p><?php the_field('najdi_svoj_park_adres_6') ?></p>
+               <p><?php the_field('najdi_svoj_park_rezhim_raboty_6') ?></p>
+               <p><?php the_field('najdi_svoj_park-tehnika_parka_6') ?></p>
             </div>
          </div>
-
          <div class="mobile-viev-table-find-page none">
             <div class="table-find-page-for-768less">
                <div class="block-of-768less-table">
                   <div class="element-of-768less-table">
-                     <p>Название:</p>
-                     <p>Парк Строгино</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie_1') ?></p>
                   </div>
                   <div class="element-of-768less-table">
-                     <p>Адрес:</p>
-                     <p>Москва, ул. Парковая, 5</p>
+                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_adres_1') ?></p>
                   </div>
                   <div class="element-of-768less-table">
-                     <p>Режим работы:</p>
-                     <p>Круглосуточно</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_1') ?></p>
                   </div>
                   <div class="last-element-of-768less-table">
-                     <p>Техника парка:</p>
-                     <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки, Катамараны</p>
+                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park-tehnika_parka_1') ?></p>
                   </div>
                </div>
             </div>
@@ -118,20 +113,20 @@ get_header();
             <div class="table-find-page-for-768less">
                <div class="block-of-768less-table">
                   <div class="element-of-768less-table">
-                     <p>Название:</p>
-                     <p>ВДНХ</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie_2') ?></p>
                   </div>
                   <div class="element-of-768less-table">
-                     <p>Адрес:</p>
-                     <p>Москва, проспект Мира, 119В</p>
+                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_adres_2') ?></p>
                   </div>
                   <div class="element-of-768less-table">
-                     <p>Режим работы:</p>
-                     <p>10:00 - 22:00</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_2') ?></p>
                   </div>
                   <div class="last-element-of-768less-table">
-                     <p>Техника парка:</p>
-                     <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки, Катамараны</p>
+                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park-tehnika_parka_2') ?></p>
                   </div>
                </div>
             </div>
@@ -139,20 +134,20 @@ get_header();
             <div class="table-find-page-for-768less">
                <div class="block-of-768less-table">
                   <div class="element-of-768less-table">
-                     <p>Название:</p>
-                     <p>Красногвардейский пруд</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie_3') ?></p>
                   </div>
                   <div class="element-of-768less-table">
-                     <p>Адрес:</p>
-                     <p>Москва, Красногвардейский бульвар, 1А</p>
+                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_adres_3') ?></p>
                   </div>
                   <div class="element-of-768less-table">
-                     <p>Режим работы:</p>
-                     <p>Круглосуточно</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_3') ?></p>
                   </div>
                   <div class="last-element-of-768less-table">
-                     <p>Техника парка:</p>
-                     <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки, Катамараны</p>
+                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park-tehnika_parka_3') ?></p>
                   </div>
                </div>
             </div>
@@ -160,20 +155,20 @@ get_header();
             <div class="table-find-page-for-768less">
                <div class="block-of-768less-table">
                   <div class="element-of-768less-table">
-                     <p>Название:</p>
-                     <p>Парк Строгино</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie_4') ?></p>
                   </div>
                   <div class="element-of-768less-table">
-                     <p>Адрес:</p>
-                     <p>Москва, ул. Парковая, 5</p>
+                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_adres_4') ?></p>
                   </div>
                   <div class="element-of-768less-table">
-                     <p>Режим работы:</p>
-                     <p>Круглосуточно</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_4') ?></p>
                   </div>
                   <div class="last-element-of-768less-table">
-                     <p>Техника парка:</p>
-                     <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки, Катамараны</p>
+                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park-tehnika_parka_4') ?></p>
                   </div>
                </div>
             </div>
@@ -181,20 +176,20 @@ get_header();
             <div class="table-find-page-for-768less">
                <div class="block-of-768less-table">
                   <div class="element-of-768less-table">
-                     <p>Название:</p>
-                     <p>ВДНХ</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie_5') ?></p>
                   </div>
                   <div class="element-of-768less-table">
-                     <p>Адрес:</p>
-                     <p>Москва, проспект Мира, 119В</p>
+                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_adres_5') ?></p>
                   </div>
                   <div class="element-of-768less-table">
-                     <p>Режим работы:</p>
-                     <p>10:00 - 22:00</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_5') ?></p>
                   </div>
                   <div class="last-element-of-768less-table">
-                     <p>Техника парка:</p>
-                     <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки, Катамараны</p>
+                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park-tehnika_parka_5') ?></p>
                   </div>
                </div>
             </div>
@@ -202,34 +197,42 @@ get_header();
             <div class="table-find-page-for-768less">
                <div class="block-of-768less-table">
                   <div class="element-of-768less-table">
-                     <p>Название:</p>
-                     <p>Красногвардейский пруд</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie_6') ?></p>
                   </div>
                   <div class="element-of-768less-table">
-                     <p>Адрес:</p>
-                     <p>Москва, Красногвардейский бульвар, 1А</p>
+                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_adres_6') ?></p>
                   </div>
                   <div class="element-of-768less-table">
-                     <p>Режим работы:</p>
-                     <p>Круглосуточно</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_6') ?></p>
                   </div>
                   <div class="last-element-of-768less-table">
-                     <p>Техника парка:</p>
-                     <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки, Катамараны</p>
+                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park-tehnika_parka_6') ?></p>
                   </div>
                </div>
             </div>
+
+            
          </div>
-         <div class="call-back-form-container">
-            <div class="text-sub-block-news-inside">
-               <h4 class="main-text-sub-block-news-p-cont">Давайте <span>созвонимся!</span></h4>
-               <p class="second-text-sub-block-news-p-cont text-24-600">Наши специалисты ответят на все ваши вопросы</p>
-            </div>
-            <div class="input-zone-news-p-cont">
-               <input class="input-in-news-p-cont i-n-p-c-name" type="text" placeholder="Ваше имя" />
-               <input class="input-in-news-p-cont i-n-p-c-email" type="email" placeholder="Электронная почта" />
-               <div class="send-btn-news-sub text-18-500 pointer">Отправить</div>
-               <img class="convert-img-call-back-sub" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/phone-big-yellow.png" alt="mail" />
+         <div class="call-back-form-container-overflow-container-default">
+            <div class="call-back-form-container-franchise">
+               <div class="text-sub-block-news-inside">
+                  <h4 class="main-text-sub-block-news-p-cont text-gradient">Давайте созвонимся!</h4>
+                  <p class="second-text-sub-block-news-p-cont text-18-500">Наши специалисты ответят на все ваши вопросы</p>
+               </div>
+               <div class="input-zone-news-p-cont">
+                  <input class="input-in-news-p-cont i-n-p-c-name" type="text" placeholder="Ваше имя" />
+                  <input class="input-in-news-p-cont i-n-p-c-email" type="email" placeholder="Электронная почта" />
+                  <div class="send-btn-news-sub text-18-500 pointer">Отправить</div>
+                  <img class="google-piexel-phone-callback-form" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/google-piexel-phone-full.png" alt="" />
+                  <img class="google-piexel-screen-callback-form" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/google-piexel-full.png" alt="" />
+                  <div class="data-agreement-12px">
+                     Нажимая кнопку вы принимаете <a href="https://agency-5.ru/soglashenie-ob-obrabotke-personalnyh-dannyh/">Соглашение об обработке персональных данных</a>
+                  </div>
+               </div>
             </div>
          </div>
       </section>

@@ -22,43 +22,41 @@ get_header();
                <p class="grey-bread-crumbs">...</p>
             </div>
             <div class="title-of-section-news-page">
-               <h1 class="h1-rope-park-page text-gradient">Организация детских праздников</h1>
+               <h1 class="h1-rope-park-page text-gradient"><?php the_field('make-child-fun-zagolovok_straniczy') ?></h1>
             </div>
             <div class="first-2-blocks-make-fun">
                <div class="make-fun__first-text">
-                  День рождения — волшебное событие, к которому мы готовимся с большим трепетом. Продуманное меню, любимые герои, невероятные костюмы, уникальная программа, декор и сюжет, в котором
-                  всегда побеждает добро.
+               <?php the_field('make-child-fun-levyj_tekst') ?>
                </div>
                <div class="make-fun__second-text">
-                  Мы превратим праздник в настоящую сказку, где главными героями будут не только дети, но и взрослые. Предлагаем провести увлекательное День рождение вашего ребенка на территории
-                  Веревочного парка. В этом вам помогут:
+               <?php the_field('make-child-fun-pravyj_tekst') ?>
                </div>
             </div>
             <div class="birthday-cards-container">
                <div class="birthday-kid-card">
                   <img class="birthday-kid-card__icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/kids-holidays-icon-1.svg" alt="" />
-                  <p>Комната/терраса для праздников</p>
+                  <p><?php the_field('make-child-fun-4_kartochki_opisanie_1') ?></p>
                </div>
 
                <div class="birthday-kid-card">
                   <img class="birthday-kid-card__icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/kids-holidays-icon-2.svg" alt="" />
-                  <p>Аниматоры с веселой программой</p>
+                  <p><?php the_field('make-child-fun-4_kartochki_opisanie_2') ?></p>
                </div>
 
                <div class="birthday-kid-card">
                   <img class="birthday-kid-card__icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/kids-holidays-icon-3.svg" alt="" />
-                  <p>Увлекательные маршруты веревочного парка</p>
+                  <p><?php the_field('make-child-fun-4_kartochki_opisanie_3') ?></p>
                </div>
 
                <div class="birthday-kid-card">
                   <img class="birthday-kid-card__icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/kids-holidays-icon-4.svg" alt="" />
-                  <p>Яркие эмоции и отличное настроение на весь день</p>
+                  <p><?php the_field('make-child-fun-4_kartochki_opisanie_4') ?></p>
                </div>
             </div>
          </section>
          <section class="second-section-make-fun">
             <div class="photos-rope-perk-container">
-               <h4 class="title-of-block-small-text-28-700-mons">Фото наших праздников</h4>
+               <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('make-child-fun-zagolovok_sekczii_2') ?></h4>
                <div class="photos-of-rope-park-overflow">
                   <div class="photos-of-rope-park">
                      <div class="photos-of-rope-park__big-layout photos-make-fun__img1"></div>
@@ -73,49 +71,49 @@ get_header();
 
             <div class="our-values-about-us-page-container">
                <div>
-                  <h3 class="main-text-in-card-about-page text-gradient">Почему нам доверяют?</h3>
+                  <h3 class="main-text-in-card-about-page text-gradient"><?php the_field('make-child-fun-6_kartochek_zagolovok_1') ?></h3>
 
-                  <p class="disc-why-our-trust">Уже 22 года мы организуем праздники разных масштабов!</p>
+                  <p class="disc-why-our-trust"><?php the_field('make-child-fun-6_kartochek_opisanie_1') ?></p>
                </div>
                <div>
                   <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-1.svg" alt="" />
                   <div>
-                     <h4 class="h4-about-us-cont">Разные форматы</h4>
-                     <div class="p-about-us-cont">Интерактивные программы для частных и корпоративных праздников</div>
+                     <h4 class="h4-about-us-cont"><?php the_field('make-child-fun-6_kartochek_zagolovok_2') ?></h4>
+                     <div class="p-about-us-cont"><?php the_field('make-child-fun-6_kartochek_opisanie_2') ?></div>
                   </div>
                </div>
                <div>
                   <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-2.svg" alt="" />
                   <div>
-                     <h4 class="h4-about-us-cont">Широкий реквизит</h4>
-                     <div class="p-about-us-cont">300+ костюмов, профессиональное техническое оснащение мероприятий</div>
+                     <h4 class="h4-about-us-cont"><?php the_field('make-child-fun-6_kartochek_zagolovok_3') ?></h4>
+                     <div class="p-about-us-cont"><?php the_field('make-child-fun-6_kartochek_opisanie_3') ?></div>
                   </div>
                </div>
                <div>
                   <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-3.svg" alt="" />
                   <div>
-                     <h4 class="h4-about-us-cont">Вовлеченность</h4>
-                     <div class="p-about-us-cont">Множество дополнений к праздникам для создания единой авторской концепции</div>
+                     <h4 class="h4-about-us-cont"><?php the_field('make-child-fun-6_kartochek_zagolovok_4') ?></h4>
+                     <div class="p-about-us-cont"><?php the_field('make-child-fun-6_kartochek_opisanie_4') ?></div>
                   </div>
                </div>
                <div>
                   <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-4.svg" alt="" />
                   <div>
-                     <h4 class="h4-about-us-cont">Аниматоры высшего уровня</h4>
-                     <div class="p-about-us-cont">Только профессиональные артисты и организаторы с опытом работы на ивентах разных масштабов</div>
+                     <h4 class="h4-about-us-cont"><?php the_field('make-child-fun-6_kartochek_zagolovok_5') ?></h4>
+                     <div class="p-about-us-cont"><?php the_field('make-child-fun-6_kartochek_opisanie_5') ?></div>
                   </div>
                </div>
                <div>
                   <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-5.svg" alt="" />
                   <div>
-                     <h4 class="h4-about-us-cont">Берём все на себя</h4>
-                     <div class="p-about-us-cont">Всегда на связи 27/7! Специализируемся на мероприятиях "под ключ"</div>
+                     <h4 class="h4-about-us-cont"><?php the_field('make-child-fun-6_kartochek_zagolovok_6') ?></h4>
+                     <div class="p-about-us-cont"><?php the_field('make-child-fun-6_kartochek_opisanie_6') ?></div>
                   </div>
                </div>
             </div>
          </section>
          <section class="third-section-make-fun">
-            <h4 class="title-of-block-small-text-28-700-mons">Доступные парки</h4>
+            <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('make-child-fun-zagolovok_3_sekczii') ?></h4>
             <div class="avalible-park-make-fun-container">
                <div class="avalible-park__catd">
                   <div class="avalible-park__image-1"></div>

@@ -65,18 +65,18 @@
                   </span>
                </label>
 
-               <a class="number-headr-yellow number-header-yellow" href="tel:89351`680416">8 935 168 04 16</a>
+               <a class="number-headr-yellow number-header-yellow" href="tel:89351680416"><?php the_field('phone') ?></a>
             </div>
 
             <ul class="header-1920-list">
                <li class="pointer">Компания <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /> <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" /></li>
                <li class="pointer">Сообщества <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /><img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" /></li>
                <li class="pointer">Франшиза</li>
-               <li class="pointer"><a class="white-text-section" href="/faq.html">FAQ</a></li>
+               <li class="pointer"><a class="white-text-section" href="/faq">FAQ</a></li>
             </ul>
             <div class="zero-block-header"></div>
             <div class="number-h-y-container">
-               <a class="number-header-yellow n-h-y" href="tel:89351680416">8 935 168 04 16</a>
+               <a class="number-header-yellow n-h-y" href="tel:89351680416"><?php the_field('phone', 95) ?></a>
             </div>
             <div class="input-zone-1920">
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector.svg" alt="" id="search-icon-1920" />

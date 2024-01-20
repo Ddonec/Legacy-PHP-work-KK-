@@ -35,7 +35,7 @@ get_header();
             <div class="photo-item-i-p"></div>
             <div class="right-section-info-page">
                <div class="title-of-section-item-page text-gradient">
-                  Городской велоипед
+               <?php the_field('item-page-pervyj_zagolovok') ?>
                   <!-- <div class="black-text-section">Городской</div>
                   <div class="opacity-text-section o-t-s-all">велосипед</div>
                   <div class="shadow-section item-shadow-section"></div> -->
@@ -46,8 +46,7 @@ get_header();
                      <li class="pointer item-disc-i-p-2 i-p-d text-16-500-left">Характеристики</li>
                   </ul>
                   <p class="text-18-500-left">
-                     Изящный спортивный велосипед Aspect Oasis станет отличным спутником на прогулке. Удивительный дизайн этого байка не оставит равнодушным никого, а надёжные компоненты позволят
-                     чувствовать себя уверенно на дороге! Эргономичная конструкция седла позволяет удобно устроится на железном коне и мчаться вперёд – на встречу новым впечатлениям!
+                  <?php the_field('item-page-tekst_opisaniya') ?>
                   </p>
                </div>
                <div class="price-cards-i-p">
@@ -66,23 +65,23 @@ get_header();
                               <p>3</p>
                            </div>
                            <div class="prices-area-i-p-flex-in-card">
-                              <p><span class="grey-i-p text-14">от </span>350</p>
-                              <p><span class="grey-i-p text-14">от </span>450</p>
-                              <p><span class="grey-i-p text-14">от </span>700</p>
+                              <p><span class="grey-i-p text-14">от </span><?php the_field('item-page-stoimost_budni_1') ?></p>
+                              <p><span class="grey-i-p text-14">от </span><?php the_field('item-page-stoimost_budni_2') ?></p>
+                              <p><span class="grey-i-p text-14">от </span><?php the_field('item-page-stoimost_budni_3') ?></p>
                            </div>
                            <div class="prices-area-i-p-flex-in-card text-14">
                               <p><span class="grey-i-p text-14">от </span>350</p>
                            </div>
                         </div>
                      </div>
-                     <p class="text-14"><span class="grey-i-p">Залог:</span> документ или 10 000₽</p>
+                     <p class="text-14"><span class="grey-i-p">Залог:</span> <?php the_field('item-page-zalog') ?></p>
                   </div>
                   <div class="avalibale-card-i-p">
                      <p class="text-18-500-left">Наличие</p>
                      <div class="">
                         <p class="grey-i-p text-14">В 12 парках:</p>
                         <p class="text-18-500-left div-dics-right-card-i-p text-14">
-                           Парк Строгино, Парк Победы, Красногвардейский пруд, ВДНХ, Лиазновский парк, Парк 850-летия Москвы и <span class="blue-i-p pointer">еще 6</span>
+                        <?php the_field('item-page-nali4ie') ?>
                         </p>
                      </div>
                   </div>
@@ -93,7 +92,7 @@ get_header();
             <div class="button-on-map-item-page pointer"><a target="_blank" href="https://yandex.ru/maps/213/moscow/?ll=37.617700%2C55.755863&z=10">Смотреть&nbsp;на&nbsp;карте</a></div>
          </div>
       </section>
-      <h3 class="text-gradient second-title-item-page">Могут заинтересовать</h3>
+      <h3 class="text-gradient second-title-item-page"><?php the_field('item-page-vtoroj_zagolovok') ?></h3>
       <div class="last-section-area-i-p">
          <div class="last-section-of-i-p">
             <div class="slider-area-item-page">

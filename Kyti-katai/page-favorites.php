@@ -25,7 +25,7 @@ get_header();
             <p class="grey-bread-crumbs">Избранное</p>
          </div>
          <div class="favorite-and-switch">
-            <h1 class="h1-no-main-page text-gradient">Избранное</h1>
+            <h1 class="h1-no-main-page text-gradient"><?php the_field('title_favirite_page') ?></h1>
 
             <div class="switch-double-container">
                <label class="switch">

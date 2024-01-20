@@ -17,8 +17,8 @@ get_header();
                <div class="absolute-fs-container-right-frahciese"></div>
             </div>
             <div class="text-area-first-section-1920">
-               <h1 class="franchese-h1">Зарабатывайте с франшизой Кути-Катай ежемесячно <span class="text-gradient">от 200 000₽ с одной точки</span></h1>
-               <div class="last-text-first-section">Мы - самый крупный всесезонный провайдер по организации досуга в парке.</div>
+               <h1 class="franchese-h1"><?php the_field('franchise-bolshoj_zagolovok_straniczy') ?></h1>
+               <div class="last-text-first-section"><?php the_field('franchise-podzagolovok_bolshogo') ?></div>
                <div class="buttons-fs-frahciese-page">
                   <a href="/catalog"><button class="download-fin-model-btn class-to-switch-season-btn">Получить финансовую модель</button></a>
                   <a href="/catalog"
@@ -33,12 +33,12 @@ get_header();
                <span></span>
                <span></span>
             </div>
-            <li>Формат услуг</li>
-            <li>Нас выбирают</li>
-            <li>Финмодель</li>
-            <li>Команда</li>
-            <li>Контакты</li>
-            <li class="b-l-f-active">Связаться со мной</li>
+            <li><?php the_field('franchise-sinyaya_navigacziya_1') ?></li>
+            <li><?php the_field('franchise-sinyaya_navigacziya_2') ?></li>
+            <li><?php the_field('franchise-sinyaya_navigacziya_3') ?></li>
+            <li><?php the_field('franchise-sinyaya_navigacziya_4') ?></li>
+            <li><?php the_field('franchise-sinyaya_navigacziya_5') ?></li>
+            <li class="b-l-f-active"><?php the_field('franchise-sinyaya_navigacziya_6') ?></li>
          </ul>
          <div class="cunter-container-left-margin-francheise-page">
             <div class="overflov-block-advantages-cards-frahciese-page">
@@ -46,25 +46,23 @@ get_header();
                   <div class="advantage-card-frahciese-page">
                      <div class="advantage-card__first-text">
                         <div class="first-text__flex">
-                           <span class="first-text__grey-text-14px">от</span>
-                           <p class="first-text__main-text">2<span class="first-text__grey-text-48px">.</span>000<span class="first-text__grey-text-48px">.</span>000₽</p>
+                        <?php the_field('franchise-3_kartochki_nazvanie_1') ?>
                         </div>
-                        <p class="first-text__grey-text-14px">Стоимость инвестиций</p>
+                        <p class="first-text__grey-text-14px"><?php the_field('franchise-3_kartochki_podnazvanie_1') ?></p>
                      </div>
-                     <div class="advantage-card__bottom-text">За эти деньги вы получаете готовый бизнес, приносящий результат с первых месяцев</div>
+                     <div class="advantage-card__bottom-text"><?php the_field('franchise-3_kartochki_opisanie_1') ?></div>
                      <img class="absolut-image-z-coin" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/z-coin-franchaise.png" alt="" />
                   </div>
 
                   <div class="advantage-card-frahciese-page">
                      <div class="advantage-card__first-text">
                         <div class="first-text__flex">
-                           <p class="first-text__main-text">1 сезон</p>
+                           <p class="first-text__main-text"><?php the_field('franchise-3_kartochki_nazvanie_2') ?></p>
                         </div>
-                        <p class="first-text__grey-text-14px">Выход на окупаемость</p>
+                        <p class="first-text__grey-text-14px"><?php the_field('franchise-3_kartochki_podnazvanie_2') ?></p>
                      </div>
                      <div class="advantage-card__bottom-text">
-                        Всего за один год бизнес начнет <br />
-                        приносить вам деньги
+                     <?php the_field('franchise-3_kartochki_opisanie_2') ?>
                      </div>
                      <img class="absolut-image-gold-calendar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/gold-calendar-icon-franchaise.png" alt="" />
                   </div>
@@ -72,13 +70,12 @@ get_header();
                   <div class="advantage-card-frahciese-page">
                      <div class="advantage-card__first-text">
                         <div class="first-text__flex">
-                           <p class="first-text__main-text">30 дней</p>
+                           <p class="first-text__main-text"><?php the_field('franchise-3_kartochki_nazvanie_3') ?></p>
                         </div>
-                        <p class="first-text__grey-text-14px">Срок запуска</p>
+                        <p class="first-text__grey-text-14px"><?php the_field('franchise-3_kartochki_podnazvanie_3') ?></p>
                      </div>
                      <div class="advantage-card__bottom-text">
-                        Всего за один год бизнес начнет <br />
-                        приносить вам деньги
+                     <?php the_field('franchise-3_kartochki_opisanie_3') ?>
                      </div>
                      <img class="absolut-image-gold-calendar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/gold-clock-francheise.png" alt="" />
                   </div>
@@ -87,7 +84,7 @@ get_header();
          </div>
       </section>
       <section class="format-of-service-franchise-page">
-         <h3 class="title-of-section-gradient text-gradient">Формат услуг</h3>
+         <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-zagolovok_vtoroj_sekczii') ?></h3>
          <div class="vacancies-list-container-vacancy-page">
             <div class="overflow-nav-vacancies-container">
                <div class="nav-menu-of-vacancies-work-in-page">
@@ -99,29 +96,29 @@ get_header();
             <div class="discription-area-of-format-franchise-page">
                <div class="format__numbers-and-lines">
                   <div>
-                     <div class="format__number">4</div>
-                     <div class="format__number-title">Пункта проката прогулочной техники</div>
+                     <div class="format__number"><?php the_field('franchise-sinyaya_czifra_1') ?></div>
+                     <div class="format__number-title"><?php the_field('franchise-opisanie_k_sinej_czifre_1') ?></div>
                   </div>
                   <div></div>
                   <div>
-                     <div class="format__number">1</div>
-                     <div class="format__number-title">Роллердром и пункт проката роликов</div>
+                     <div class="format__number"><?php the_field('franchise-sinyaya_czifra_2') ?></div>
+                     <div class="format__number-title"><?php the_field('franchise-opisanie_k_sinej_czifre_2') ?></div>
                   </div>
                   <div></div>
                   <div>
-                     <div class="format__number">1</div>
-                     <div class="format__number-title">Пункт проката детских электромобилей и автогород</div>
+                     <div class="format__number"><?php the_field('franchise-sinyaya_czifra_3') ?></div>
+                     <div class="format__number-title"><?php the_field('franchise-opisanie_k_sinej_czifre_3') ?></div>
                   </div>
                </div>
                <div class="format__who-is">
                   <div class="who-is__title">
-                     Это самый посещаемый парк Москвы, и поэтому безопасность гостей находится в приоритете. Спасибо Команде КутиКатай, что оперативно проводят ТО и следят за качеством техники…
+                  <?php the_field('franchise-v_belom_pole_tekst') ?>
                   </div>
                   <div class="who-is__person-card">
                      <img class="person-card__photo" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/manager-photo.svg" alt="" />
                      <div class="person-card__discription">
-                        <p>Иванов Иван Иванович</p>
-                        <p class="person-card__discription_opacity">Какая-то должность</p>
+                        <p><?php the_field('franchise-imya_sotrudnika') ?></p>
+                        <p class="person-card__discription_opacity"><?php the_field('franchise-kakaya_to_dolzhnost') ?></p>
                      </div>
                   </div>
                </div>
@@ -137,9 +134,9 @@ get_header();
          <div class="fill-for-hand-no-hide-franchise">
             <div class="mobile-app-container-franchise">
                <div class="column-container-in-app-banner-franchise">
-                  <div class="title-in-app-banner-franchise"><span class="text-gradient">Первые</span> на рынке внедрили собственное приложение</div>
+                  <div class="title-in-app-banner-franchise"><span class="text-gradient"><?php the_field('franchise-prilodenie_banner_tajtl') ?></div>
                   <div class="discription-in-app-banner-franchise">
-                     Клиентам мы предоставляем удобный прокат, сотрудникам — работу с техникой, менеджменту — управление и прозрачность на пунктах проката
+                  <?php the_field('franchise-prilodenie_banner_opisanie') ?>
                   </div>
 
                   <div class="apps-links-app-cart-franchise"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></div>
@@ -150,9 +147,9 @@ get_header();
          </div>
       </section>
       <section class="they-chose-us">
-         <h3 class="title-of-section-gradient-yellow">Нас выбирают</h3>
+         <h3 class="title-of-section-gradient-yellow"><?php the_field('franchise-tretyaya_sekcziya_sinyaya-title') ?></h3>
 
-         <div class="chose-us__second-title">Более <span class="yellow-text">800 отзывов</span> на Яндексе, средний рейтинг <span class="yellow-text">4,7</span></div>
+         <div class="chose-us__second-title"><?php the_field('franchise-tretyaya_sekcziya_sinyaya_subtitle') ?></div>
          <div class="feedback-absolute-pseudo-container">
             <div class="feedback-overflov-pseudo-container">
                <ul class="feedback-containers-zone-franchise">
@@ -206,57 +203,60 @@ get_header();
          </div>
       </section>
       <section class="finnodel-section">
-         <h3 class="title-of-section-gradient text-gradient">Рассмотрим финмодель</h3>
+         <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-4_sekcziya_zagolovok') ?>
+</h3>
          <div class="finmodel-container">
-            <p class="finmodel__title">Прибыльность</p>
+            <p class="finmodel__title"><?php the_field('franchise-4_sekcziya_nazvanie_polya') ?>
+</p>
             <div class="finmodel__main">
                <div class="finmodel__data">
                   <ul class="data__list-fin">
-                     Данные по прибыльности
+                  <?php the_field('franchise-nazvanie_spiska') ?>
+
                      <li>
                         <div class="data__circle1"></div>
-                        <div class="data__procent">42%</div>
-                        <div class="data__title">Расходы на оплату труда и налоги с ЗП</div>
+                        <div class="data__procent"><?php the_field('franchise-proczent_spiska_1') ?></div>
+                        <div class="data__title"><?php the_field('franchise-element_spiska_1') ?></div>
                      </li>
                      <li>
                         <div class="data__circle2"></div>
-                        <div class="data__procent">22%</div>
-                        <div class="data__title">Операционная прибыль</div>
+                        <div class="data__procent"><?php the_field('franchise-proczent_spiska_2') ?></div>
+                        <div class="data__title"><?php the_field('franchise-element_spiska_2') ?></div>
                      </li>
                      <li>
                         <div class="data__circle3"></div>
-                        <div class="data__procent">19%</div>
-                        <div class="data__title">Аренда имущества и коммун. платежи</div>
+                        <div class="data__procent"><?php the_field('franchise-proczent_spiska_3') ?></div>
+                        <div class="data__title"><?php the_field('franchise-element_spiska_3') ?></div>
                      </li>
                      <li>
                         <div class="data__circle4"></div>
-                        <div class="data__procent">5%</div>
-                        <div class="data__title">Оборудование и аренда инвентаря</div>
+                        <div class="data__procent"><?php the_field('franchise-proczent_spiska_4') ?></div>
+                        <div class="data__title"><?php the_field('franchise-element_spiska_4') ?></div>
                      </li>
                      <li>
                         <div class="data__circle5"></div>
-                        <div class="data__procent">4%</div>
-                        <div class="data__title">Содержания офиса и точек</div>
+                        <div class="data__procent"><?php the_field('franchise-proczent_spiska_5') ?></div>
+                        <div class="data__title"><?php the_field('franchise-element_spiska_5') ?></div>
                      </li>
                      <li>
                         <div class="data__circle6"></div>
-                        <div class="data__procent">3%</div>
-                        <div class="data__title">Административные расходы</div>
+                        <div class="data__procent"><?php the_field('franchise-proczent_spiska_6') ?></div>
+                        <div class="data__title"><?php the_field('franchise-element_spiska_6') ?></div>
                      </li>
                      <li>
                         <div class="data__circle7"></div>
-                        <div class="data__procent">2%</div>
-                        <div class="data__title">Расходы на оплату труда и налоги с ЗП</div>
+                        <div class="data__procent"><?php the_field('franchise-proczent_spiska_7') ?></div>
+                        <div class="data__title"><?php the_field('franchise-element_spiska_7') ?></div>
                      </li>
                      <li>
                         <div class="data__circle8"></div>
-                        <div class="data__procent">2%</div>
-                        <div class="data__title">Расходы на оплату труда и налоги с ЗП</div>
+                        <div class="data__procent"><?php the_field('franchise-proczent_spiska_8') ?></div>
+                        <div class="data__title"><?php the_field('franchise-element_spiska_8') ?></div>
                      </li>
                      <li>
                         <div class="data__circle9"></div>
-                        <div class="data__procent">1%</div>
-                        <div class="data__title">Расходы на оплату труда и налоги с ЗП</div>
+                        <div class="data__procent"><?php the_field('franchise-proczent_spiska_9') ?></div>
+                        <div class="data__title"><?php the_field('franchise-element_spiska_6') ?></div>
                      </li>
                   </ul>
                </div>
@@ -320,7 +320,7 @@ get_header();
          </div>
       </section>
       <section class="our-team-franchise">
-         <h3 class="title-of-section-gradient text-gradient">Наша команда</h3>
+         <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-zagolovok_5_sekczii') ?></h3>
          <div class="overflow-comand-cards-franchise">
             <div class="comand-cards-franchise">
                <div class="comand-card-franchise">
@@ -334,8 +334,8 @@ get_header();
                   <p class="team-fr__name">Конов В.Б.</p>
                </div>
                <div class="comand-card-text-franchise">
-                  <p class="text-18-500-left">Будем рядом</p>
-                  <p class="team-fr__title">За вами закрепляется менеджер от <span>каждого департамента,</span> а не один специалист</p>
+                  <p class="text-18-500-left"><?php the_field('franchise-vehnij_tekst_kartochki_bez_foto') ?></p>
+                  <p class="team-fr__title"><?php the_field('franchise-nizhnij_tekst_kartochki_bez_foto') ?></p>
                </div>
                <div class="comand-card-franchise">
                   <img class="team-fr__refresh-icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/refresh-ccw.svg" alt="" />
@@ -346,58 +346,55 @@ get_header();
          </div>
 
          <div class="what-we-can-do">
-            <p class="what-we-can-do-title">Чем мы поможем?</p>
+            <p class="what-we-can-do-title"><?php the_field('franchise-chem_pomozhem') ?></p>
             <div class="we-can-row">
-               <div class="we-can-row__title">Подбор помещения</div>
+               <div class="we-can-row__title"><?php the_field('franchise-spisok_pomoshhi_usluga_1') ?></div>
                <p class="we-can-row__disc">
-                  Поможем понять, подходит ли <br />
-                  помещение под пельменную
+               <?php the_field('franchise-opisanie_uslugi_pomoshhi_1') ?>
                </p>
             </div>
 
             <div class="we-can-row">
-               <div class="we-can-row__title">Планирование</div>
+               <div class="we-can-row__title"><?php the_field('franchise-spisok_pomoshhi_usluga_2') ?></div>
                <p class="we-can-row__disc">
-                  Разрабатываем планы расстановки, адаптируем <br />
-                  планировочное решение
+               <?php the_field('franchise-opisanie_uslugi_pomoshhi_2') ?>
                </p>
             </div>
 
             <div class="we-can-row">
-               <div class="we-can-row__title">Технология</div>
-               <p class="we-can-row__disc">Предоставляем план под ключ, партнеру остается лишь купить оборудование</p>
+               <div class="we-can-row__title"><?php the_field('franchise-spisok_pomoshhi_usluga_3') ?></div>
+               <p class="we-can-row__disc"><?php the_field('franchise-opisanie_uslugi_pomoshhi_3') ?></p>
             </div>
 
             <div class="we-can-row">
-               <div class="we-can-row__title">Дизайн</div>
-               <p class="we-can-row__disc">Предоставляем дизайн-альбом с вариантами отделки, мебели и декора,</p>
+               <div class="we-can-row__title"><?php the_field('franchise-spisok_pomoshhi_usluga_4') ?></div>
+               <p class="we-can-row__disc"><?php the_field('franchise-opisanie_uslugi_pomoshhi_4') ?></p>
             </div>
 
             <div class="we-can-row">
-               <div class="we-can-row__title">Стандарты работы</div>
+               <div class="we-can-row__title"><?php the_field('franchise-spisok_pomoshhi_usluga_5') ?></div>
                <p class="we-can-row__disc">
-                  Подготовка рабочего места, чек-листы <br />
-                  сотрудников, мониторинг качества
+               <?php the_field('franchise-opisanie_uslugi_pomoshhi_5') ?>
                </p>
             </div>
          </div>
       </section>
       <section class="contacts-franchise-page">
-         <h3 class="title-of-section-gradient-yellow">Контакты</h3>
+         <h3 class="title-of-section-gradient-yellow"><?php the_field('franchise-tajtl_kontaktov') ?></h3>
          <div class="contact-cards-frabchise">
             <div class="director-card">
                <img class="director__photo" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/director-avatar-full.png" alt="" />
-               <p class="director__name">Директор по франчайзингу <span>Михаил Шекуров</span></p>
-               <p>Ответит на все ваши вопросы</p>
+               <p class="director__name"><?php the_field('franchise-zagolovok_f') ?></p>
+               <p><?php the_field('franchise-kommentarij_fio') ?></p>
             </div>
             <div class="director-phone-card">
-               <a class="director__phone-number" href="tel:+79030030396">+7 903 003 03 96</a>
-               <p class="director__phone-discription">Номер телефона</p>
+               <a class="director__phone-number" href="tel:+79030030396"><?php the_field('franchise-pole_telefona') ?></a>
+               <p class="director__phone-discription"><?php the_field('franchise-opisanie_polya_telefona') ?></p>
                <img class="director__phone-image" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/gold-trubka.png" alt="" />
             </div>
             <div class="director-email-card">
-               <a class="director__email" href="mailto:m.shekurov@kutikatai.ru">m.shekurov@kutikatai.ru</a>
-               <p class="director__email-discription">Электронная почта</p>
+               <a class="director__email" href="mailto:m.shekurov@kutikatai.ru"><?php the_field('franchise-pole_pochty') ?></a>
+               <p class="director__email-discription"><?php the_field('franchise-opisanie_polya_pochty') ?></p>
                <img class="director__email-image" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/mail-notion-icon.png" alt="" />
             </div>
          </div>

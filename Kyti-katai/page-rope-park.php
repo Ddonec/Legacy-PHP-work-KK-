@@ -22,102 +22,102 @@ get_header();
             <p class="grey-bread-crumbs">Веревочный парк</p>
          </div>
          <div class="title-of-section-news-page">
-            <h1 class="h1-rope-park-page text-gradient">Верёвочный парк</h1>
+            <h1 class="h1-rope-park-page text-gradient"><?php the_field('rope-park-zagolovok_straniczy') ?></h1>
          </div>
          <div class="first-2-blocks-rope-park-page">
-            <div class="k-k-about-rope-park-page">О парке</div>
+            <div class="k-k-about-rope-park-page"><?php the_field('rope-park-pervyj_blok_tekst_sleva') ?></div>
             <div class="k-k-div-530w-disc-rope-park-page">
-               Спортивно-развлекательный комплекс, связанных участков для передвижения на подъём и спуск, с препятствиями разной сложности.
-               <span class="k-k-div-530w-disc-rope-park-page-pseudo none">В наших верёвочных парках вы сможете пройти интересные маршруты, и посетить воздушные аттракционы:</span>
+            <?php the_field('rope-park-pervyj_blok_tekst_poseredine') ?>
+               <span class="k-k-div-530w-disc-rope-park-page-pseudo none"><?php the_field('rope-park-pervyj_blok_tekst_sprava') ?></span>
             </div>
-            <div class="k-k-div-530w-disc-rope-park-page">В наших верёвочных парках вы сможете пройти интересные маршруты, и посетить воздушные аттракционы:</div>
+            <div class="k-k-div-530w-disc-rope-park-page"><?php the_field('rope-park-pervyj_blok_tekst_sprava') ?></div>
          </div>
          <div class="photo-area-about-rope-park-page">
             <div class="photo-area-about-rope-park-page__first">
                <div class="poller-park-photo__discription-area">
-                  <p class="poller-park-photo__discription-area_title">RollGlider (Роллглайдер)</p>
+                  <p class="poller-park-photo__discription-area_title"><?php the_field('rope-park-pervaya_kartinka_zagolovok') ?></p>
                   <p class="poller-park-photo__discription-area_discription">
-                     Экстремальная трасса в воздухе, по которой с драйвом можно прокатиться из точки А в точку В при помощи специального приспособления
+                  <?php the_field('rope-park-pervaya_kartinka_opisanie') ?>
                   </p>
                </div>
             </div>
             <div class="photo-area-about-rope-park-page__second">
                <div class="poller-park-photo__discription-area">
-                  <p class="poller-park-photo__discription-area_title">ZipLine (Зиплайн)</p>
-                  <p class="poller-park-photo__discription-area_discription">Cпуск по стальному канату с помощью специального устройства позволит испытать массу положительных эмоций.</p>
+                  <p class="poller-park-photo__discription-area_title"><?php the_field('rope-park-vtoraya_kartinka_zagolovok') ?></p>
+                  <p class="poller-park-photo__discription-area_discription"><?php the_field('rope-park-vtoraya_kartinka_opisanie') ?></p>
                </div>
             </div>
          </div>
          <div class="park-characteristics-container">
-            <h4 class="title-of-block-small-text-28-700-mons">Характеристики парка</h4>
+            <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('rope-park-zagolovok_vtoroj_sekczii') ?></h4>
             <div class="park-characteristics">
                <div class="park-characteristics__text1 park-characteristics__text">
-                  <p class="park-characteristics__title">21м</p>
-                  <p class="park-characteristics__discription">Высота над землей</p>
+                  <p class="park-characteristics__title"><?php the_field('rope-park-sinij_zagolovok_1') ?></p>
+                  <p class="park-characteristics__discription"><?php the_field('rope-park-opisanie_sinego_1') ?></p>
                </div>
                <div class="park-characteristics__image1"></div>
 
                <div class="park-characteristics__text2 park-characteristics__text">
-                  <p class="park-characteristics__title">30 минут</p>
-                  <p class="park-characteristics__discription">Длительность прохождения</p>
+                  <p class="park-characteristics__title"><?php the_field('rope-park-sinij_zagolovok_2') ?></p>
+                  <p class="park-characteristics__discription"><?php the_field('rope-park-opisanie_sinego_2') ?></p>
                </div>
                <div class="park-characteristics__image2"></div>
 
                <div class="park-characteristics__image3"></div>
                <div class="park-characteristics__text3 park-characteristics__text">
-                  <p class="park-characteristics__title">3 трассы</p>
-                  <p class="park-characteristics__discription">Для детей и взрослых</p>
+                  <p class="park-characteristics__title"><?php the_field('rope-park-sinij_zagolovok_3') ?></p>
+                  <p class="park-characteristics__discription"><?php the_field('rope-park-opisanie_sinego_3') ?></p>
                </div>
 
                <div class="park-characteristics__image4"></div>
                <div class="park-characteristics__text4 park-characteristics__text">
-                  <p class="park-characteristics__title">от 400₽</p>
-                  <p class="park-characteristics__discription">Стоимость билета</p>
+                  <p class="park-characteristics__title"><?php the_field('rope-park-sinij_zagolovok_4') ?></p>
+                  <p class="park-characteristics__discription"><?php the_field('rope-park-opisanie_sinego_4') ?></p>
                </div>
             </div>
          </div>
          <div class="our-values-about-us-page-container">
             <div>
-               <h3 class="main-text-in-card-about-page text-gradient"><span>5 причин</span> прийти в верёвочный парк</h3>
+               <h3 class="main-text-in-card-about-page text-gradient"><?php the_field('rope-park-zagolovok_kartochki_1') ?></h3>
             </div>
             <div>
                <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-1.svg" alt="" />
                <div>
-                  <h4 class="h4-about-us-cont">Профессионализм</h4>
-                  <div class="p-about-us-cont">Мы — семья чемпионов, где принято помогать друг другу и учить быть сильными!</div>
+                  <h4 class="h4-about-us-cont"><?php the_field('rope-park-zagolovok_kartochki_2') ?></h4>
+                  <div class="p-about-us-cont"><?php the_field('rope-park-opisanie_kartochki_2') ?></div>
                </div>
             </div>
             <div>
                <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-2.svg" alt="" />
                <div>
-                  <h4 class="h4-about-us-cont">Безопасность</h4>
-                  <div class="p-about-us-cont">Мы тщательно следим за техническим состоянием всех конструкций, чтобы Вы не переживали за свое здоровье.</div>
+                  <h4 class="h4-about-us-cont"><?php the_field('rope-park-zagolovok_kartochki_3') ?></h4>
+                  <div class="p-about-us-cont"><?php the_field('rope-park-opisanie_kartochki_3') ?></div>
                </div>
             </div>
             <div>
                <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-3.svg" alt="" />
                <div>
-                  <h4 class="h4-about-us-cont">Эмоции</h4>
-                  <div class="p-about-us-cont">Кути-Катай — это драйвовое место, где можно проверить себя и своих друзей, организовать праздник или корпоратив !</div>
+                  <h4 class="h4-about-us-cont"><?php the_field('rope-park-zagolovok_kartochki_4') ?></h4>
+                  <div class="p-about-us-cont"><?php the_field('rope-park-opisanie_kartochki_4') ?></div>
                </div>
             </div>
             <div>
                <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-4.svg" alt="" />
                <div>
-                  <h4 class="h4-about-us-cont">Подарки</h4>
-                  <div class="p-about-us-cont">Дарим имениннику в день рождения услугу веревочного парка, а многодетным семьям — 1 маршрут бесплатно.</div>
+                  <h4 class="h4-about-us-cont"><?php the_field('rope-park-zagolovok_kartochki_5') ?></h4>
+                  <div class="p-about-us-cont"><?php the_field('rope-park-opisanie_kartochki_5') ?></div>
                </div>
             </div>
             <div>
                <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-5.svg" alt="" />
                <div>
-                  <h4 class="h4-about-us-cont">Семейность</h4>
-                  <div class="p-about-us-cont">Объединяем всю семью и дарим незабываемые впечатления, в независимости от того, сколько вам лет.</div>
+                  <h4 class="h4-about-us-cont"><?php the_field('rope-park-zagolovok_kartochki_6') ?></h4>
+                  <div class="p-about-us-cont"><?php the_field('rope-park-opisanie_kartochki_6') ?></div>
                </div>
             </div>
          </div>
          <div class="photos-rope-perk-container">
-            <h4 class="title-of-block-small-text-28-700-mons">Фото из веревочного парка</h4>
+            <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('phone') ?></h4>
             <div class="photos-of-rope-park-overflow">
                <div class="photos-of-rope-park">
                   <div class="photos-of-rope-park__big-layout photos-of-rope-park__img1"></div>
@@ -130,15 +130,9 @@ get_header();
             </div>
          </div>
          <div class="rules-of-rope-park-section">
-            <h4 class="title-of-block-small-text-28-700-mons">Правила посещения парка</h4>
+            <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('rope-park-zagolovok_chetvertoj_sekczii') ?></h4>
             <ol class="list-of-rules-rope-park">
-               <li>Посетители, получающие снаряжение и выходящие на трассы, должны ознакомиться и подписать журнал прохождения инструктажа</li>
-               <li>Не допускаются на трассы лица: в состоянии алкогольного или наркотического опьянения; имеющие медицинские противопоказания к занятию спортом, страдающие хроническими заболеваниями; не прошедшие инструктаж по технике безопасности; ниже роста, предписанного каждым уровнем трасс; с рюкзаками или сумками; женщины в платьях/юбках/беременные.</li>
-               <li>Ограничения по весу - до 100 кг;</li>
-               <li>Посетители парка без входных билетов сами несут ответственность за свою безопасность;</li>
-               <li>Запрещено разводить огонь на территории парка. </li>
-               <li>Вход с животными запрещен;</li>
-               <li>Дети до 18 лет допускаются к прохождению трасс только со взрослыми, несущими ответственность за действия детей, за их жизнь и здоровье во время прохождения трасс. В качестве сопровождающих детей взрослых могут выступать сами родители (опекуны), родственники, указанные в письменном согласии родителей на прохождение трассы ребёнком, или педагогические работники, отвечающие за жизнь и здоровье детей по приказу организовавшего детский выезд учреждения.</li>
+            <?php the_field('rope-park-soderzhanie_4_sekczii') ?>
             </ol>
 
          </div>

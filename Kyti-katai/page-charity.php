@@ -19,51 +19,51 @@ get_header();
             <p>/</p>
             <p class="grey-bread-crumbs">Благотворительность</p>
          </div>
-         <h1 class="h1-no-main-page text-gradient">Благотворительность</h1>
+         <h1 class="h1-no-main-page text-gradient charity-title"><?php the_field('charity-page-zagolovk_straniczy') ?></h1>
 
          <div class="text-blicks-repair-page">
-            <div>На службе нашему обществу и отчизне</div>
-            <p>Благотворительность занимает особое место в деятельности КутиКатай. Мы славимся своими традициями попечительства исторического, культурного и духовного наследия​</p>
-            <p>Основными приоритетами благотворительных проектов являются помощь детям, поддержка и продвижение культуры, искусства, образования, здравоохранения и защита окружающей среды.</p>
+            <div><?php the_field('charity-page-levyj_tekst') ?></div>
+            <p><?php the_field('charity-page-srednij_tekst') ?>​</p>
+            <p><?php the_field('charity-page-pravyj_tekst') ?></p>
          </div>
 
          <div class="our-values-about-us-page-container flex-charity-margin">
             <div>
-               <h3 class="main-text-in-card-about-page">Важнейшие инициативы <a class="text-gradient">КутиКатай</a></h3>
+               <h3 class="main-text-in-card-about-page"><?php the_field('charity-page-zagolovok_kartochki_1') ?></h3>
             </div>
             <div>
                <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-1.svg" alt="" />
                <div>
-                  <h4 class="h4-about-us-cont">Гуманитарные мероприятия и здравоохранение</h4>
-                  <div class="p-about-us-cont">В рамках проектов предоставляется фин. поддержка тяжелобольным детям, детским домам и интернатам</div>
+                  <h4 class="h4-about-us-cont"><?php the_field('charity-page-zagolovok_kartochki_2') ?></h4>
+                  <div class="p-about-us-cont"><?php the_field('charity-page-opisanie_kartochki_2') ?></div>
                </div>
             </div>
             <div>
                <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-2.svg" alt="" />
                <div>
-                  <h4 class="h4-about-us-cont">Деятельность в период пандемии COVID-19</h4>
-                  <div class="p-about-us-cont">В марте 2020 года компания передала прибыль в размере 1 млн ₽ на поддержку борьбы с коронавирусной инфекцией.</div>
+                  <h4 class="h4-about-us-cont"><?php the_field('charity-page-zagolovok_kartochki_3') ?></h4>
+                  <div class="p-about-us-cont"><?php the_field('charity-page-opisanie_kartochki_3') ?></div>
                </div>
             </div>
             <div>
                <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-3.svg" alt="" />
                <div>
-                  <h4 class="h4-about-us-cont">Поддержка образования и развитие талантов</h4>
-                  <div class="p-about-us-cont">КутиКатай финансирует стажировки молодых специалистов, выдаёт гранты на обучение, организует научные форумы</div>
+                  <h4 class="h4-about-us-cont"><?php the_field('charity-page-zagolovok_kartochki_4') ?></h4>
+                  <div class="p-about-us-cont"><?php the_field('charity-page-opisanie_kartochki_4') ?></div>
                </div>
             </div>
             <div>
                <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-4.svg" alt="" />
                <div>
-                  <h4 class="h4-about-us-cont">Поддержка культуры и национального наследия</h4>
-                  <div class="p-about-us-cont">Финансируем музыкальные фестивали, конкурсы, литературные премии, кинофестивали, театральных проекты</div>
+                  <h4 class="h4-about-us-cont"><?php the_field('charity-page-zagolovok_kartochki_5') ?></h4>
+                  <div class="p-about-us-cont"><?php the_field('charity-page-opisanie_kartochki_5') ?></div>
                </div>
             </div>
             <div>
                <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-5.svg" alt="" />
                <div>
-                  <h4 class="h4-about-us-cont">Охрана окружающей среды и обеспечение безопасности</h4>
-                  <div class="p-about-us-cont">Реализуем инициативы ответственного потребления и использования ресурсов, сохраняем окружающую среду</div>
+                  <h4 class="h4-about-us-cont"><?php the_field('charity-page-zagolovok_kartochki_6') ?></h4>
+                  <div class="p-about-us-cont"><?php the_field('charity-page-opisanie_kartochki_6') ?></div>
                </div>
             </div>
          </div>

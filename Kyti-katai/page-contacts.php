@@ -19,7 +19,7 @@ get_header();
             <p class="grey-bread-crumbs">Контакты</p>
          </div>
          <div class="title-of-section-news-page">
-            <h3 class="text-gradient">Контакты</h3>
+            <h3 class="text-gradient"><?php the_field('contacts-zagolovok') ?></h3>
             <!-- <div class="opacity-text-section o-t-s-all">Контакты</div>
             <div class="item-shadow-section-contact-page"></div> -->
          </div>
@@ -32,23 +32,23 @@ get_header();
       </div>
       <div class="contact-info-area-contacts-page">
          <li>
-            <p class="text-18-500-l">+7(925) 429-70-29</p>
-            <p class="opacity">номер телефона</p>
+            <p class="text-18-500-l"><?php the_field('contacts-verh_blok_1') ?></p>
+            <p class="opacity"><?php the_field('contacts-niz_blok_1') ?></p>
          </li>
          <li class="line-contact-zone-contacts-page"></li>
          <li>
-            <p><a class="text-18-500-blue" href="mailto:kuti.katai@mail.ru">kuti.katai@mail.ru</a></p>
-            <p class="opacity">почта</p>
+            <p><a class="text-18-500-blue" href="mailto:kuti.katai@mail.ru"><?php the_field('contacts-verh_blok_2') ?></a></p>
+            <p class="opacity"><?php the_field('contacts-niz_blok_2') ?></p>
          </li>
          <li class="line-contact-zone-contacts-page"></li>
          <li>
-            <p class="text-18-500-l">Верхняя Красносельская улица, 3с2</p>
-            <p class="opacity">адрес офиса</p>
+            <p class="text-18-500-l"><?php the_field('contacts-verh_blok_3') ?></p>
+            <p class="opacity"><?php the_field('contacts-niz_blok_3') ?></p>
          </li>
          <li class="line-contact-zone-contacts-page"></li>
          <li>
-            <p class="text-18-500-l">Пн—Пт, 9:00—18:00</p>
-            <p class="opacity">формат работы</p>
+            <p class="text-18-500-l"><?php the_field('contacts-verh_blok_4') ?></p>
+            <p class="opacity"><?php the_field('contacts-niz_blok_4') ?></p>
          </li>
       </div>
       <div class="call-back-form-contact-p">

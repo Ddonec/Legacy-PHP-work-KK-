@@ -29,27 +29,18 @@ get_header();
                ></a>
             </div>
             <div class="news-1-center-block-info">
-               <h1 class="h1-news-1-page">Ездить на новых электровелосипедах теперь можно по безлимитным билетам «Единый»</h1>
+               <h1 class="h1-news-1-page"><?php the_field('top_title_news-1') ?></h1>
                <div class="main-photo-of-news-1-page"></div>
                <div class="full-text-news-1-area">
-                  <h4 class="text-24-600">Время каждой бесплатной поездки — до 30 минут, их количество в день неограниченно.</h4>
+                  <h4 class="text-24-600"><?php the_field('news-1-vtoroj_zagolovok') ?></h4>
                   <p class="text-18-500-left">
-                     Теперь в Москве можно бесплатно ездить на новых моделях электровелосипедов по безлимитным билетам «Единый» и картам москвича для обучающихся. С 21 июля бесплатные поездки от
-                     сервиса «Велобайка» можно совершать на всех 10 тысячах велосипедов городского велопроката. Об этом сообщил заместитель Мэра Москвы по вопросам транспорта
-                     <a href="https://www.mos.ru/dt/structure/person/20885093/">Максим Ликсутов.</a><br />
-                     <br />
-                     Чтобы воспользоваться предложением, нужно привязать карту москвича или «Единый» на 30, 90 или 365 дней, записанный на «Тройку», в личном кабинете приложения
-                     <a href="https://www.mosmetro.ru/app">«Метро Москвы»</a> и активировать бесплатные поездки в веб-приложении «Велобайк». Время каждой такой поездки — до 30 минут, их количество в
-                     день неограниченно. Они доступны до конца действия проездного или велосезона, а общее количество зависит от срока абонемента. За билет на 30 дней — 60 бесплатных велопоездок, на
-                     90 дней — 180, на 365 дней — 390.<br />
-                     <br />
-                     В Москве с 20 июня для аренды доступны три тысячи новых моделей электровелосипедов 2.0. Для них не нужны зарядные станции, поэтому их можно оставлять на городских велопарковках.
+                  <?php the_field('news-1-tekst_novosti') ?>
                   </p>
                </div>
                <div class="autor-of-state-news-1-page">
-                  <div class="image-user-news-1 text-18-500-left"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1.svg" alt="" /> Савелий Октябрьский</div>
+                  <div class="image-user-news-1 text-18-500-left"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1.svg" alt="" /> <?php the_field('news-1-imya_avtora') ?></div>
                   <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/dot-blue.svg" alt="dot" /></div>
-                  <div class="text-18-500-left">15.07.23</div>
+                  <div class="text-18-500-left"><?php the_field('news-1-data') ?></div>
                </div>
             </div>
             <aside class="aside-right-block-news-1-page">
