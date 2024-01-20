@@ -37,11 +37,11 @@ get_header();
          <div class="photo-area-about-us-page"></div>
          <div class="our-values-about-us-page-container">
             <div>
-               <h3 class="main-text-in-card-about-page"><?php the_field('tekst_kartochki_1-about-us-page') ?></h3>
+               <h3 class="main-text-in-card-about-page text-gradient"><?php the_field('tekst_kartochki_1-about-us-page') ?></h3>
                <p class="t-14-50-about"><?php the_field('opisanie_kartochki_1-about-us-page') ?></p>
             </div>
             <div>
-               <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-1.svg" alt="" />
+               <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-update-1.svg" alt="" />
                <div>
                   <h4 class="h4-about-us-cont"><?php the_field('tekst_kartochki_2-about-us-page') ?></h4>
                   <div class="p-about-us-cont">
@@ -50,28 +50,28 @@ get_header();
                </div>
             </div>
             <div>
-               <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-2.svg" alt="" />
+               <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-update-2.svg" alt="" />
                <div>
                   <h4 class="h4-about-us-cont"><?php the_field('tekst_kartochki_3-about-us-page') ?></h4>
                   <div class="p-about-us-cont"><?php the_field('opisanie_kartochki_3-about-us-page') ?></div>
                </div>
             </div>
             <div>
-               <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-3.svg" alt="" />
+               <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-update-3.svg" alt="" />
                <div>
                   <h4 class="h4-about-us-cont"><?php the_field('tekst_kartochki_4-about-us-page') ?></h4>
                   <div class="p-about-us-cont"><?php the_field('opisanie_kartochki_4-about-us-page') ?></div>
                </div>
             </div>
             <div>
-               <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-4.svg" alt="" />
+               <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-update-4.svg" alt="" />
                <div>
                   <h4 class="h4-about-us-cont"><?php the_field('tekst_kartochki_5-about-us-page') ?></h4>
                   <div class="p-about-us-cont"><?php the_field('opisanie_kartochki_5-about-us-page') ?></div>
                </div>
             </div>
             <div>
-               <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-5.svg" alt="" />
+               <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-update-5.svg" alt="" />
                <div>
                   <h4 class="h4-about-us-cont"><?php the_field('tekst_kartochki_6-about-us-page') ?></h4>
                   <div class="p-about-us-cont"><?php the_field('opisanie_kartochki_6-about-us-page') ?></div>

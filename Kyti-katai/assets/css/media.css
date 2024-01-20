@@ -1782,6 +1782,9 @@
       flex-direction: column;
       gap: 20px;
    }
+   .our-values-about-us-page-container {
+      order: 3;
+   }
    .our-values-about-us-page-container > div,
    .first-2-blocks-about-us-page > div {
       width: 100%;
@@ -1792,14 +1795,22 @@
       flex-direction: column;
       align-items: center;
    }
+   .our-values-about-us-page-container > div:not(:first-child) {
+      max-width: 500px;
+      justify-content: start;
+      flex-direction: row;
+      gap: 15px;
+      align-items: center;
+   }
    .our-values-about-us-page-container > div {
       max-width: 500px;
    }
+
    .p-disc-our-history-about-page {
       font-size: 16px;
    }
    .title-of-section-news-page {
-      margin: 30px 0 30px;
+      margin: 0 0 30px;
    }
    .call-back-form-container-f-p {
       width: 100vw;
