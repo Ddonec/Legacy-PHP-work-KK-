@@ -20,8 +20,8 @@ get_header();
                <h1 class="franchese-h1"><?php the_field('franchise-bolshoj_zagolovok_straniczy') ?></h1>
                <div class="last-text-first-section"><?php the_field('franchise-podzagolovok_bolshogo') ?></div>
                <div class="buttons-fs-frahciese-page">
-                  <a href="/catalog"><button class="download-fin-model-btn class-to-switch-season-btn">Получить финансовую модель</button></a>
-                  <a href="/catalog"
+                  <a href=""><button class="download-fin-model-btn class-to-switch-season-btn">Получить финансовую модель</button></a>
+                  <a href=""
                      ><button class="download-prez-btn class-to-switch-season-btn">Скачать презентацию франшизы <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/arrow-down-to-line.svg" alt="" /></button
                   ></a>
                </div>
@@ -33,11 +33,11 @@ get_header();
                <span></span>
                <span></span>
             </div>
-            <li><?php the_field('franchise-sinyaya_navigacziya_1') ?></li>
-            <li><?php the_field('franchise-sinyaya_navigacziya_2') ?></li>
-            <li><?php the_field('franchise-sinyaya_navigacziya_3') ?></li>
-            <li><?php the_field('franchise-sinyaya_navigacziya_4') ?></li>
-            <li><?php the_field('franchise-sinyaya_navigacziya_5') ?></li>
+            <li><a href="#format-of-service-franchise-page"><?php the_field('franchise-sinyaya_navigacziya_1') ?></a></li>
+            <li><a href="#they-chose-us"><?php the_field('franchise-sinyaya_navigacziya_2') ?></a></li>
+            <li><a href="#finnodel-section"><?php the_field('franchise-sinyaya_navigacziya_3') ?></a></li>
+            <li><a href="#our-team-franchise"><?php the_field('franchise-sinyaya_navigacziya_4') ?></a></li>
+            <li><a href="#contacts-franchise-page"><?php the_field('franchise-sinyaya_navigacziya_5') ?></a></li>
             <li class="b-l-f-active"><?php the_field('franchise-sinyaya_navigacziya_6') ?></li>
          </ul>
          <div class="cunter-container-left-margin-francheise-page">
@@ -83,7 +83,7 @@ get_header();
             </div>
          </div>
       </section>
-      <section class="format-of-service-franchise-page">
+      <section id="format-of-service-franchise-page" class="format-of-service-franchise-page">
          <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-zagolovok_vtoroj_sekczii') ?></h3>
          <div class="vacancies-list-container-vacancy-page">
             <div class="overflow-nav-vacancies-container">
@@ -146,7 +146,7 @@ get_header();
             </div>
          </div>
       </section>
-      <section class="they-chose-us">
+      <section id="they-chose-us" class="they-chose-us">
          <h3 class="title-of-section-gradient-yellow"><?php the_field('franchise-tretyaya_sekcziya_sinyaya-title') ?></h3>
 
            <div class="chose-us__second-title"><?php the_field('franchise-tretyaya_sekcziya_sinyaya_subtitle') ?></div>
@@ -202,7 +202,7 @@ get_header();
             </div>
          </div>
       </section>
-      <section class="finnodel-section">
+      <section id="finnodel-section" class="finnodel-section">
          <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-4_sekcziya_zagolovok') ?>
 </h3>
          <div class="finmodel-container">
@@ -319,7 +319,7 @@ get_header();
             </div>
          </div>
       </section>
-      <section class="our-team-franchise">
+      <section id="our-team-franchise" class="our-team-franchise">
          <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-zagolovok_5_sekczii') ?></h3>
          <div class="overflow-comand-cards-franchise">
             <div class="comand-cards-franchise">
@@ -379,7 +379,7 @@ get_header();
             </div>
          </div>
       </section>
-      <section class="contacts-franchise-page">
+      <section id="contacts-franchise-page" class="contacts-franchise-page">
          <h3 class="title-of-section-gradient-yellow"><?php the_field('franchise-tajtl_kontaktov') ?></h3>
          <div class="contact-cards-frabchise">
             <div class="director-card">

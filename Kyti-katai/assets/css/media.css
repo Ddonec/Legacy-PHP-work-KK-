@@ -694,6 +694,9 @@
    .aside-right-block-news-1-page {
       margin-top: 175px;
    }
+   .ticket__card {
+      width: 48%;
+   }
 }
 /* @media (max-width: 1088px){
 .third-section-make-fun{
@@ -1197,6 +1200,10 @@
    }
    .our-values-about-us-page-container > div {
       width: 49%;
+   }
+   .download-fin-model-btn,
+   .download-prez-btn {
+      width: 300px;
    }
 }
 
@@ -1822,6 +1829,9 @@
    .call-back-form-container-franchise {
       border-radius: 40px 40px 0 0;
    }
+   .discription-area-of-format-franchise-page {
+      border-radius: 0px 0px 30px 30px;
+   }
 }
 
 @media (min-width: 701px) {
@@ -2033,6 +2043,12 @@
    .title-of-section-news-page h1 {
       font-size: 36px;
    }
+   .ticket__card {
+      width: 100%;
+   }
+   .apps-links-app-cart-franchise img {
+      width: 47%;
+   }
 }
 
 @media (max-width: 500px) {
@@ -2233,6 +2249,33 @@
    .phopos-container-example-repair-page > div:nth-child(5) {
       height: 415px;
       width: 380px;
+   }
+   .text-area-first-section-1920 a,
+   .buttons-fs-frahciese-page,
+   .download-fin-model-btn,
+   .download-prez-btn {
+      width: 100%;
+   }
+   .buttons-fs-frahciese-page {
+      padding: 0 20px;
+   }
+   .title-in-app-banner-franchise {
+      font-size: 30px;
+   }
+   .first-text__main-text {
+      font-size: 28px;
+   }
+   .absolut-image-z-coin {
+      width: 260px;
+   }
+   .advantage-card-frahciese-page {
+      width: 280px;
+   }
+   .absolut-image-gold-calendar {
+      width: 160px;
+   }
+   .first-text__flex {
+      gap: 8px;
    }
 }
 
@@ -2521,6 +2564,9 @@
    }
    .director__name {
       width: 100%;
+   }
+   .apps-links-app-cart-franchise img {
+      width: 180px;
    }
 }
 

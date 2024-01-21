@@ -38,6 +38,9 @@ button {
 h1 {
    font-size: 48px;
 }
+html {
+   scroll-behavior: smooth;
+}
 /* STATUS */
 
 .none {
@@ -2462,6 +2465,9 @@ input:checked + .slider:before {
    align-items: center;
    max-width: 1200px;
    width: calc(100% - 40px);
+   position: fixed;
+   z-index: 1000;
+   bottom: 0;
 
    list-style: none;
 
@@ -2472,7 +2478,7 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 19.6px */
-   margin: 20px 0 80px;
+   margin: 20px 0 ;
 }
 .blue-list-frahciese > .b-l-f-active {
    border-radius: 20px;
@@ -2528,6 +2534,7 @@ input:checked + .slider:before {
    max-width: 1200px;
    margin: 0 auto;
    width: 100%;
+   margin-top: 80px;
 }
 .advantage-card-frahciese-page {
    display: flex;
@@ -3383,10 +3390,10 @@ input:checked + .slider:before {
 }
 .director__photo {
    position: absolute;
-   top: -34px;
+   top: -16px;
    right: -45px;
    border-radius: 50%;
-   width: 300px;
+   width: 200px;
 }
 
 .director__phone-number {

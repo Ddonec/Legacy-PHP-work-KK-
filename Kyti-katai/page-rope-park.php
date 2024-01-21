@@ -76,6 +76,42 @@ get_header();
                </div>
             </div>
          </div>
+         <div class="park-tikket-buy-container">
+            <h4 class="title-of-block-small-text-28-700-mons">Билеты можно приобрести в парках</h4>
+            <div class="tickets__card-zone">
+               <div class="ticket__card">
+                  <div class="ticket__image"></div>
+                  <div class="ticket__discription">
+                     <p class="text-18-600">Наташинский парк (Гуливер)</p>
+                     <p class="text-14-500-left-lato opacity">МО, Люберцы, ул. Митрофанова, 22</p>
+                  </div>
+               </div>
+
+               <div class="ticket__card">
+                  <div class="ticket__image-2"></div>
+                  <div class="ticket__discription">
+                     <p class="text-18-600">Пехорка</p>
+                     <p class="text-14-500-left-lato opacity">МО, Балашиха, ул. Парковая, 4</p>
+                  </div>
+               </div>
+
+               <div class="ticket__card">
+                  <div class="ticket__image"></div>
+                  <div class="ticket__discription">
+                     <p class="text-18-600">Парк им. Калинина</p>
+                     <p class="text-14-500-left-lato opacity">МО, Королёв, ул. Терешковой, 3</p>
+                  </div>
+               </div>
+
+               <div class="ticket__card">
+                  <div class="ticket__image-2"></div>
+                  <div class="ticket__discription">
+                     <p class="text-18-600">Городской парк г. Кашира </p>
+                     <p class="text-14-500-left-lato opacity">МО, Кашира, ул. Ленина, 2 </p>
+                  </div>
+               </div>
+            </div>
+         </div>
          <div class="our-values-about-us-page-container">
             <div>
                <h3 class="main-text-in-card-about-page text-gradient"><?php the_field('rope-park-zagolovok_kartochki_1') ?></h3>
