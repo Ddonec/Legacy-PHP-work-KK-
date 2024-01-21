@@ -59,6 +59,44 @@
    .columns-footer > div:nth-last-child(1) {
       width: 287px;
    }
+   .photos-zone-work-in-page {
+      overflow: unset;
+      height: unset;
+   }
+   .photos-work-in__photo-1 {
+      width: 180px;
+      height: 240px;
+      transform: rotate(347deg) translateX(-50%);
+      position: absolute;
+      left: -20%;
+      bottom: -132px;
+   }
+   .photos-work-in__photo-2 {
+      width: 150px;
+      height: 200px;
+      transform: rotate(4deg) translateX(-50%);
+      left: -20%;
+      bottom: -500px;
+   }
+   .photos-work-in__photo-3 {
+      width: 139px;
+      height: 168px;
+      transform: rotate(15deg) translateX(-50%);
+      left: 110%;
+      /* bottom: -317px; */
+      top: 195px;
+   }
+   .photos-work-in__photo-4 {
+      width: 150px;
+      height: 200px;
+      transform: rotate(356deg) translateX(-50%);
+      left: 108%;
+      bottom: -150px;
+   }
+
+   .main-content-news-page {
+      overflow-y: clip;
+   }
 }
 @media (max-width: 1370px) {
    .cur-pointer {
@@ -259,6 +297,15 @@
    .contact-cards-frabchise {
       width: calc(100% - 40px);
    }
+   .callback-form-section-max-1200px {
+      padding: 0 20px;
+   }
+   .photos-zone-work-in-page {
+      width: 100vw;
+      transform: translateX(-20px);
+      overflow: hidden;
+      max-width: 1200px;
+   }
 }
 
 @media (max-width: 1299px) {
@@ -411,14 +458,7 @@
    .btn-hide {
       display: block !important;
    }
-   .contact-info-area-contacts-page {
-      flex-direction: column;
-      margin-left: 20px;
-      gap: 20px;
-   }
-   .line-contact-zone-contacts-page {
-      display: none;
-   }
+
    .call-back-form-contact-p {
       margin: 60px 20px 80px;
    }
@@ -964,6 +1004,14 @@
    .aside-right-block-news-1-page {
       margin-top: 60px;
    }
+   .contact-info-area-contacts-page {
+      flex-direction: column;
+      margin-left: 20px;
+      gap: 20px;
+   }
+   .line-contact-zone-contacts-page {
+      display: none;
+   }
 }
 
 @media (max-width: 976px) {
@@ -1147,6 +1195,9 @@
    .photos-of-rope-park-overflow::-webkit-scrollbar {
       display: none;
    }
+   .our-values-about-us-page-container > div {
+      width: 49%;
+   }
 }
 
 /* @media (max-width: 799px){
@@ -1199,6 +1250,37 @@
    }
    .corparative-three-cards-container > div {
       width: 100%;
+   }
+   .photos-zone-work-in-page {
+      overflow: unset;
+      height: unset;
+   }
+   .photos-work-in__photo-1 {
+      transform: rotate(347deg) translateX(-50%);
+      width: 100px;
+      height: 138px;
+      left: 88%;
+      top: -38px;
+   }
+   .photos-work-in__photo-2 {
+      width: 100px;
+      height: 138px;
+      transform: rotate(4deg) translateX(-50%);
+      left: 71%;
+      top: -94px;
+   }
+   .photos-work-in__photo-3 {
+      display: none;
+   }
+   .photos-work-in__photo-4 {
+      width: 100px;
+      height: 138px;
+      transform: rotate(356deg) translateX(-50%);
+      left: 100%;
+      top: 4px;
+   }
+   .main-content-news-page {
+      overflow: hidden;
    }
 }
 @media (max-width: 700px) {
@@ -2250,6 +2332,26 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+   }
+   .photos-work-in__photo-1 {
+      transform: rotate(347deg) translateX(-50%);
+      width: 72px;
+      height: 124px;
+      left: 98%;
+      top: 13px;
+   }
+   .photos-work-in__photo-2 {
+      width: 100px;
+      height: 138px;
+      transform: rotate(4deg) translateX(-50%);
+      left: 92%;
+      top: -94px;
+   }
+   .photos-work-in__photo-3 {
+      display: none;
+   }
+   .photos-work-in__photo-4 {
+      display: none;
    }
 }
 

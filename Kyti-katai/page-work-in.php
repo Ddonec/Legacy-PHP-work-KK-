@@ -29,6 +29,12 @@ get_header();
             <p>/</p>
             <p class="grey-bread-crumbs">Веревочный парк</p>
          </div>
+         <div class="photos-zone-work-in-page">
+            <div class="photos-work-in__photo-1"></div>
+            <div class="photos-work-in__photo-2"></div>
+            <div class="photos-work-in__photo-3"></div>
+            <div class="photos-work-in__photo-4"></div>
+         </div>
          <div class="title-of-section-news-page">
             <h3 class="text-gradient"><?php the_field('work-zagolovok_straniczy') ?></h3>
             <!-- <div class="black-text-section">Работа в</div>
@@ -104,8 +110,8 @@ get_header();
 
          <div class="call-back-form-container-work-in-page">
             <div class="text-sub-block-news-inside-work-in">
-               <h4 class="main-text-sub-block-news-p-cont"><?php the_field('work-tvjtl_formy') ?></h4>
-               <p class="second-text-sub-block-news-p-cont text-24-600"><?php the_field('work-subtajtl_formy') ?></p>
+               <h4 class="main-text-sub-block-news-p-cont text-gradient"><?php the_field('work-tvjtl_formy') ?></h4>
+               <p class="second-text-sub-block-news-p-cont text-18-500-left"><?php the_field('work-subtajtl_formy') ?></p>
             </div>
             <div class="input-zone-news-work-page-cont">
                <input class="input-small-vacancies i-n-p-c-work-in-name" type="text" placeholder="Ваше имя" />
@@ -121,6 +127,7 @@ get_header();
             <img class="koleso-work-in-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/koleso-blue.svg" alt="" />
             <img class="koleso-work-in-2" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/spici-blue.svg" alt="" />
             <div class="send-btn-news-sub text-18-500 pointer">Отправить</div>
+            <div class="data-agreement-12px">Нажимая кнопку вы принимаете <a href="https://agency-5.ru/soglashenie-ob-obrabotke-personalnyh-dannyh/">Соглашение об обработке персональных данных</a></div>
          </div>
       </section>
 

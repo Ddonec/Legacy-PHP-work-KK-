@@ -44,6 +44,7 @@ h1 {
    display: none;
 }
 
+
 /* STATUS */
 
 /* HEEDER */
@@ -2848,6 +2849,15 @@ input:checked + .slider:before {
    max-width: 1200px;
    margin: 0 auto;
    position: relative;
+}
+.make-child-fun-feedback-title {
+   color: #333;
+   font-family: "Montserrat Alternates";
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 130%; /* 36.4px */
+   margin-bottom: 30px;
 }
 .feedback-container-franchise {
    border-radius: 30px;

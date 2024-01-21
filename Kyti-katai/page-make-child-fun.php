@@ -76,35 +76,35 @@ get_header();
                   <p class="disc-why-our-trust"><?php the_field('make-child-fun-6_kartochek_opisanie_1') ?></p>
                </div>
                <div>
-                  <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-1.svg" alt="" />
+                  <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-update-1.svg" alt="" />
                   <div>
                      <h4 class="h4-about-us-cont"><?php the_field('make-child-fun-6_kartochek_zagolovok_2') ?></h4>
                      <div class="p-about-us-cont"><?php the_field('make-child-fun-6_kartochek_opisanie_2') ?></div>
                   </div>
                </div>
                <div>
-                  <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-2.svg" alt="" />
+                  <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-update-2.svg" alt="" />
                   <div>
                      <h4 class="h4-about-us-cont"><?php the_field('make-child-fun-6_kartochek_zagolovok_3') ?></h4>
                      <div class="p-about-us-cont"><?php the_field('make-child-fun-6_kartochek_opisanie_3') ?></div>
                   </div>
                </div>
                <div>
-                  <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-3.svg" alt="" />
+                  <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-update-3.svg" alt="" />
                   <div>
                      <h4 class="h4-about-us-cont"><?php the_field('make-child-fun-6_kartochek_zagolovok_4') ?></h4>
                      <div class="p-about-us-cont"><?php the_field('make-child-fun-6_kartochek_opisanie_4') ?></div>
                   </div>
                </div>
                <div>
-                  <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-4.svg" alt="" />
+                  <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-update-4.svg" alt="" />
                   <div>
                      <h4 class="h4-about-us-cont"><?php the_field('make-child-fun-6_kartochek_zagolovok_5') ?></h4>
                      <div class="p-about-us-cont"><?php the_field('make-child-fun-6_kartochek_opisanie_5') ?></div>
                   </div>
                </div>
                <div>
-                  <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-5.svg" alt="" />
+                  <img class="image-frame-about-card-p" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-about-update-5.svg" alt="" />
                   <div>
                      <h4 class="h4-about-us-cont"><?php the_field('make-child-fun-6_kartochek_zagolovok_6') ?></h4>
                      <div class="p-about-us-cont"><?php the_field('make-child-fun-6_kartochek_opisanie_6') ?></div>
@@ -120,7 +120,7 @@ get_header();
 
                   <div class="avalible-park__menu">
                      <div class="avalible-park__title-text">
-                        <p>Наташинский парк (Гуливер)</p>
+                        <p class="text-bold-600">Наташинский парк (Гуливер)</p>
                         <p class="opacity">МО, Люберцы, ул. Митрофанова, 22,</p>
                      </div>
                      <p class="avalible-park__name-of-park">Школа супергероев</p>
@@ -139,7 +139,7 @@ get_header();
 
                   <div class="avalible-park__menu">
                      <div class="avalible-park__title-text">
-                        <p>Пехорка</p>
+                        <p class="text-bold-600">Пехорка</p>
                         <p class="opacity">МО, Балашиха, парк Пехорка</p>
                      </div>
                      <p class="avalible-park__name-of-park">Школа супергероев</p>
@@ -155,6 +155,7 @@ get_header();
             </div>
          </section>
          <section class="four-section-make-fun">
+            <div class="make-child-fun-feedback-title">Отзывы</div>
             <div class="feedback-absolute-pseudo-container">
                <div class="feedback-overflov-pseudo-container">
                   <ul class="feedback-containers-zone-franchise">
