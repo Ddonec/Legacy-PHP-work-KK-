@@ -21,7 +21,7 @@ get_header();
          <h1 class="h1-repair-page text-gradient"><?php the_field('repair-zagolovok_straniczy') ?></h1>
 
          <section class="mibile-version-top-content-repair-page none">
-            <div class="mobile-image-repair"></div>
+            <!-- <div class="mobile-image-repair"></div> -->
             <div class="mobile-content-repair__title">К каждому клиенту у нас индивидуальный подход и гибкая ценовая политика</div>
             <div class="mobile-content-repair__discription">
                В нашу мастерскую Вы можете обратиться с любой поломкой самоката. Срок и стоимость работ будут зависеть от сложности поломки, а также от необходимых для ремонта запчастей. <br />
@@ -49,7 +49,7 @@ get_header();
                </li>
             </ul>
          </div>
-         <div class="desctop-photo-repair-page"><img class="photo-repair-page" src="/assets/content/repair-page-photo.png" alt="" /></div>
+         <div class="desctop-photo-repair-page"><img class="photo-repair-page" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/repair-page-photo.png" alt="" /></div>
 
          <div class="price-repair-page-container">
             <h5><?php the_field('repair-zagolovok_czen') ?></h5>

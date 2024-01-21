@@ -59,10 +59,10 @@ get_header();
                <li class="pointer">Коньки</li>
                <li class="pointer">Катамараны</li>
                <li class="pointer">Лодки</li>
+               <div class="arrow-right-list-favorite pointer">
+                  <img id="vector-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-1.svg" alt="" />
+               </div>
             </ul>
-            <div class="arrow-right-list pointer">
-               <img id="vector-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-1.svg" alt="" />
-            </div>
          </div>
          <div class="slider-area-favorite-page">
             <div class="card-of-product">

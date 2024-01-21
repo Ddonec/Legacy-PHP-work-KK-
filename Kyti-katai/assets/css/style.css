@@ -44,7 +44,6 @@ h1 {
    display: none;
 }
 
-
 /* STATUS */
 
 /* HEEDER */
@@ -3859,7 +3858,7 @@ input:checked + .slider:before {
    font-weight: 700;
    line-height: normal;
    width: fit-content;
-   margin: 30px 0 40px;
+   margin: 30px 0;
 }
 #vector-repair {
    height: 20px;
@@ -3867,10 +3866,21 @@ input:checked + .slider:before {
 .arrow-right-list {
    border-radius: 30px;
    border: 1.5px solid #ffc93a;
-   padding: 10px 24px;
+   padding: 13.5px 24px;
    line-height: 90%;
    background: #fff;
    /* box-shadow: 0 0px 17px 55px rgba(255, 255, 255, 1); */
+}
+.arrow-right-list-favorite {
+   border-radius: 30px;
+   border: 1.5px solid #ffc93a;
+   padding: 13.5px 24px;
+   line-height: 90%;
+   background: #fff;
+   position: absolute;
+   right: 0;
+   top: 0;
+   box-shadow: 0 0px 17px 20px rgba(255, 255, 255, 1);
 }
 
 .mobile-image-repair {
