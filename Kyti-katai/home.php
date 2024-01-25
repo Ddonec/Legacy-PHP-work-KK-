@@ -26,14 +26,14 @@ get_header();
                <div class="absolute-fs-container-right"></div>
             </div>
          </div>
-         <div class="map-area-first-section">
+         <div class="map-area-first-section" id="map-area-first-section">
             <div class="absolute-on-map-home-page-text-comtainer">
                <h3 class="text-gradient">Найди свой парк</h3>
             </div>
             <a href="<?php echo get_option('home'); ?>/find"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/map571.png" alt="" class="map-map-s1" /></a>
          </div>
       </section>
-      <section class="second-section take-a-rent">
+      <section class="second-section take-a-rent" id="second-section">
          <div class="title-of-section-1">
             <h3 class="title-of-section-gradient text-gradient">Возьми в прокат</h3>
             <!-- <div class="black-text-section">Возьми</div>
@@ -257,7 +257,7 @@ get_header();
             </div>
          </div>
       </section>
-      <section class="third-section-container">
+      <section class="third-section-container" id="third-section">
          <div class="third-section">
             <div class="title-of-section-3 text-gradient">
             <?php the_field('razvlecheniya_dlya_detej_title_main') ?>         
@@ -323,7 +323,7 @@ get_header();
          </div>
       </section>
 
-      <section class="four-section none">
+      <section class="four-section none" id="four-section">
          <div class="title-of-section-4">
             <h3 class="title-of-section-gradient text-gradient"><?php the_field('verevochnyj_park_zagolovok_sekczii') ?></h3>
             <!-- <div class="opacity-text-section o-t-s-all">Верёвочный</div>
@@ -373,7 +373,7 @@ get_header();
          </div> -->
       </section>
 
-      <section class="five-section none">
+      <section class="five-section none" id="five-section">
          <div class="title-of-section-5">
             <h3 class="title-of-section-gradient text-gradient-summer"><?php the_field('organizacziya_detskih_prazdnikov_section_title') ?></h3>
 
@@ -502,7 +502,7 @@ get_header();
                         <img src="<?php the_field('about_us_img_1') ?>" />
                      </div>
                      <div class="yellow-block blue-n-c-6"><?php the_field('about_us_4') ?></div>
-                     <div class="last-photo blue-n-c-7" sytle="background-image: url(<?php the_field('about_us_img_2') ?>)"></div>
+                     <div class="last-photo blue-n-c-7" style="background-image: url(<?php the_field('about_us_img_2') ?>)"></div>
                   </div>
                </div>
             </div>
@@ -655,6 +655,22 @@ get_header();
             <a href="<?php echo get_option('home'); ?>/news"><button class="see-all-usefull-mat-btn class-to-switch-season-btn">Смотреть все полезные материалы</button></a>
          </div>
       </section>
+      <div class="bottom-sticky-panel">
+         <a href="/modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+               <g clip-path="url(#clip0_2927_1340)">
+                  <path d="M2.5 9.16663L18.3333 1.66663L10.8333 17.5L9.16667 10.8333L2.5 9.16663Z" stroke="#333333" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+               </g>
+               <defs>
+                  <clipPath id="clip0_2927_1340">
+                     <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
+                  </clipPath>
+               </defs>
+            </svg>
+            Красногвардейский пруд
+         </a>
+      </div>
+
 
 
 

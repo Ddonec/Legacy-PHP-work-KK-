@@ -71,7 +71,7 @@
             <ul class="header-1920-list">
                <li class="pointer">Компания <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /> <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" /></li>
                <!-- <li class="pointer">Сообщества <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /><img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" /></li> -->
-               <li class="pointer">Франшиза</li>
+               <li class="pointer"><a class="white-text-section" href="/franchise">Франшиза</a></li>
                <li class="pointer"><a class="white-text-section" href="/faq">FAQ</a></li>
             </ul>
             <div class="zero-block-header"></div>
@@ -118,16 +118,16 @@
             <div class="header-second-line-container">
                <div class="left-list">
                   <ul>
-                     <li class="text-second-line-header pointer">Найди свой парк</li>
-                     <li class="text-second-line-header pointer">Возьми в прокат</li>
-                     <li class="text-second-line-header pointer">Развлечения детям</li>
+                     <li class="text-second-line-header pointer"><a href="#map-area-first-section">Найди свой парк</a></li>
+                     <li class="text-second-line-header pointer"><a href="#second-section">Возьми в прокат</a></li>
+                     <li class="text-second-line-header pointer"><a href="#third-section">Развлечения детям</a></li>
                   </ul>
                </div>
                <div class="spase-between-header"></div>
                <div class="right-list">
                   <ul>
-                     <li class="text-second-line-header pointer">Веревочный парк</li>
-                     <li class="text-second-line-header pointer">Организация детских праздников</li>
+                     <li class="text-second-line-header pointer"><a href="#four-section">Веревочный парк</a></li>
+                     <li class="text-second-line-header pointer"><a href="#five-section">Организация детских праздников</a></li>
                   </ul>
                </div>
             </div>

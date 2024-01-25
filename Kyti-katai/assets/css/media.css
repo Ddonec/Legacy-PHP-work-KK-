@@ -2176,6 +2176,9 @@
       margin: 35px auto 50px;
       width: calc(100vw - 40px);
    }
+   .title-of-section-3 {
+      font-size: 32px;
+   }
    .payments-metod {
       scale: 1;
       width: 100%;
