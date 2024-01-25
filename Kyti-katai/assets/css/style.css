@@ -1760,7 +1760,7 @@ s6
 }
 
 .last-photo {
-   background-image: url(../assets/content/img2.png);
+   /* background-image: url(../assets/content/img2.png); */
    width: 600px;
    height: unset;
    border-radius: 30px;

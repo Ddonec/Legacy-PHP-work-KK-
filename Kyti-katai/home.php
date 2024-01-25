@@ -502,7 +502,7 @@ get_header();
                         <img src="<?php the_field('about_us_img_1') ?>" />
                      </div>
                      <div class="yellow-block blue-n-c-6"><?php the_field('about_us_4') ?></div>
-                     <div class="last-photo blue-n-c-7"></div>
+                     <div class="last-photo blue-n-c-7" sytle="background-image: url(<?php the_field('about_us_img_2') ?>)"></div>
                   </div>
                </div>
             </div>
