@@ -4109,6 +4109,8 @@ input:checked + .slider:before {
    width: fit-content;
    margin: 50px auto;
    width: 100%;
+   max-width: 620px;
+   background: gray;
 }
 .modal-reserve-celebrate {
    display: inline-flex;
@@ -4118,10 +4120,18 @@ input:checked + .slider:before {
    gap: 20px;
    border-radius: 20px;
    background: #fff;
-   max-width: 620px;
-   width: 90%;
    position: relative;
    margin: auto;
+   z-index: 3;
+}
+.modal-reserve-celebrate-absolute {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 200;
+   width: 90%;
+   max-width: 620px;
 }
 .modal-r-c__top-container {
    display: flex;
@@ -4213,12 +4223,9 @@ input:checked + .slider:before {
    font-weight: 500;
    line-height: 140%; /* 22.4px */
 }
+
 .modal-data-agree > a {
    color: #5567ea;
-}
-
-body {
-   background-color: gray;
 }
 
 .close-modal-btn {
@@ -4244,14 +4251,21 @@ body {
 .modal-chose-park {
    border-radius: 20px;
    background: #fff;
-   max-width: 620px;
-   width: 90%;
    padding: 40px;
    display: flex;
    flex-direction: column;
    gap: 20px;
    position: relative;
    margin: auto;
+}
+.modal-chose-park-absolute {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 200;
+   width: 90%;
+   max-width: 620px;
 }
 .modal-c-p__top-block {
    display: flex;
@@ -4406,8 +4420,6 @@ body {
 
 .modal-about-park {
    margin: auto;
-   max-width: 620px;
-   width: 90%;
    border-radius: 20px;
    background: #fff;
    padding: 40px;
@@ -4416,6 +4428,16 @@ body {
    gap: 20px;
    position: relative;
 }
+.modal-about-park-absolute {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 200;
+   width: 90%;
+   max-width: 620px;
+}
+
 .modal-a-p__title {
    color: #333;
    text-align: center;
@@ -4480,14 +4502,21 @@ body {
 .modal-switch-park {
    border-radius: 20px;
    background: #fff;
-   max-width: 620px;
-   width: 90%;
    padding: 40px;
    display: flex;
    flex-direction: column;
    gap: 25px;
    position: relative;
    margin: auto;
+}
+.modal-switch-park-absolute {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 200;
+   width: 90%;
+   max-width: 620px;
 }
 .modal-switch__title {
    color: #333;
@@ -4576,4 +4605,14 @@ body {
    padding: 14px 32px 16px 32px;
    justify-content: center;
    align-items: center;
+}
+.grey-bg {
+   background: black;
+   opacity: 0.5;
+   z-index: 2;
+   width: 100vw;
+   height: 100dvh;
+   position: fixed;
+   z-index: 150;
+   top: 0;
 }
