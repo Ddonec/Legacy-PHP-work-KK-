@@ -4387,3 +4387,77 @@ body {
    font-weight: 500;
    line-height: 140%; /* 25.2px */
 }
+
+.modal-about-park {
+   width: 620px;
+   border-radius: 20px;
+   background: #fff;
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.modal-a-p__title {
+   color: #333;
+   text-align: center;
+   font-family: "Montserrat Alternates", sans-serif;
+   font-size: 40px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 140%; /* 56px */
+   margin-bottom: 10px;
+}
+.modal-a-p__middle-container {
+   color: #333;
+   font-family: Lato, sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%; /* 25.2px */
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+.modal-a-p__subtitle {
+   color: #000;
+   text-align: center;
+   font-family: Lato, sans-serif;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 140%; /* 33.6px */
+}
+.modal-a-p__time-zone,
+.modal-a-p__technic-zone {
+   display: flex;
+   gap: 10px;
+}
+.time-zone__grey,
+.technic-zone__grey {
+   width: 130px;
+   flex-shrink: 0;
+   opacity: 0.5;
+}
+.time-zone__disc {
+}
+
+.technic-zone__disc {
+}
+.modal-a-p__img {
+}
+.modal-a-p__button {
+   border-radius: 160px;
+   border: 2px solid #ffc93a;
+   display: flex;
+   padding: 14px 32px 16px 32px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+   color: #333;
+   text-align: center;
+   font-family: Lato, sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%; /* 25.2px */
+}
