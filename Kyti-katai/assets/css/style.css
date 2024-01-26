@@ -4108,6 +4108,7 @@ input:checked + .slider:before {
    gap: 50px;
    width: fit-content;
    margin: 50px auto;
+   width: 100%;
 }
 .modal-reserve-celebrate {
    display: inline-flex;
@@ -4117,8 +4118,10 @@ input:checked + .slider:before {
    gap: 20px;
    border-radius: 20px;
    background: #fff;
-   width: 620px;
+   max-width: 620px;
+   width: 90%;
    position: relative;
+   margin: auto;
 }
 .modal-r-c__top-container {
    display: flex;
@@ -4133,8 +4136,7 @@ input:checked + .slider:before {
    font-weight: 700;
    line-height: 140%; /* 56px */
 }
-.modal-r-c__title {
-}
+
 .modal-subtitle {
    color: #333;
    font-family: "Lato", sans-serif;
@@ -4172,8 +4174,7 @@ input:checked + .slider:before {
    padding: 14px 20px 16px 30px;
    width: 100%;
 }
-.modal-r-c__input-4 {
-}
+
 .modal-r-c__input-5 {
    height: 100px;
    border-radius: 30px;
@@ -4243,12 +4244,14 @@ body {
 .modal-chose-park {
    border-radius: 20px;
    background: #fff;
-   width: 620px;
+   max-width: 620px;
+   width: 90%;
    padding: 40px;
    display: flex;
    flex-direction: column;
    gap: 20px;
    position: relative;
+   margin: auto;
 }
 .modal-c-p__top-block {
    display: flex;
@@ -4402,7 +4405,9 @@ body {
 }
 
 .modal-about-park {
-   width: 620px;
+   margin: auto;
+   max-width: 620px;
+   width: 90%;
    border-radius: 20px;
    background: #fff;
    padding: 40px;
@@ -4475,12 +4480,14 @@ body {
 .modal-switch-park {
    border-radius: 20px;
    background: #fff;
-   width: 620px;
+   max-width: 620px;
+   width: 90%;
    padding: 40px;
    display: flex;
    flex-direction: column;
    gap: 25px;
    position: relative;
+   margin: auto;
 }
 .modal-switch__title {
    color: #333;
