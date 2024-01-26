@@ -656,7 +656,7 @@ get_header();
          </div>
       </section>
       <div class="bottom-sticky-panel">
-         <a href="/modal">
+         <a href="<?php echo get_option('home'); ?>/modal">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
                <g clip-path="url(#clip0_2927_1340)">
                   <path d="M2.5 9.16663L18.3333 1.66663L10.8333 17.5L9.16667 10.8333L2.5 9.16663Z" stroke="#333333" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
