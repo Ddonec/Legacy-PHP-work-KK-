@@ -4186,6 +4186,7 @@ input:checked + .slider:before {
    position: absolute;
    top: 15px;
 }
+
 .modal-r-c__button-area {
    width: 100%;
    display: flex;
@@ -4225,4 +4226,164 @@ body {
    right: 20px;
    cursor: pointer;
    padding: 10px;
+}
+
+.modal-chose-park {
+   border-radius: 20px;
+   background: #fff;
+   width: 620px;
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.modal-c-p__top-block {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+.modal-c-p__title {
+   color: #333;
+   text-align: center;
+   font-family: "Montserrat Alternates";
+   font-size: 40px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 140%; /* 56px */
+}
+.modal-c-p__subtitle {
+   color: #333;
+   font-family: Lato, sans-serif;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 140%; /* 33.6px */
+}
+.modal-c-p__search-city {
+   display: flex;
+   border-radius: 50px;
+   border: 1.5px solid #5567ea;
+   background: #fff;
+   padding: 0 20px 0 30px;
+   width: 100%;
+   height: 50px;
+   align-items: center;
+   justify-content: space-between;
+
+   color: #333;
+   text-align: center;
+   font-family: Lato, sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%; /* 25.2px */
+}
+
+.modal-c-p__moscow-city::after {
+   content: "|";
+   margin-left: 4px;
+   color: #5567ea;
+}
+
+.modal-c-p__park-list {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   width: 100%;
+   position: relative;
+}
+.park-list__title {
+   color: #333;
+   font-family: Lato, sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%; /* 25.2px */
+}
+.park-list__ul {
+   width: 100%;
+   height: 290px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   overflow-y: auto;
+}
+.park-list__ul::-webkit-scrollbar {
+   width: 4px;
+}
+.park-list__ul::-webkit-scrollbar-thumb {
+   border-radius: 20px;
+   background-color: var(--purple-light, #5567ea);
+}
+
+.modal-c-p__park-list::before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   height: 50px;
+   width: 100%;
+   z-index: 100;
+   background: linear-gradient(180deg, rgba(232, 234, 251, 0) 0%, #ffffff 100%);
+}
+.park-list__li {
+   display: flex;
+   padding: 15px 32px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+
+   color: #333;
+   font-family: Lato, sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 139%; /* 25.02px */
+
+   border-radius: 60px;
+   border: 2px solid #d7dbf8;
+   background: #fff;
+}
+.modal-c-p__buttons {
+   width: 100%;
+   gap: 10px;
+   display: flex;
+   flex-direction: column;
+}
+.modal-c-p__save-btn {
+   border-radius: 30px;
+   background: #ffc93a;
+
+   display: flex;
+   width: 100%;
+   padding: 14px 32px 16px 32px;
+   justify-content: center;
+   align-items: center;
+   border: unset;
+
+   color: #000;
+   text-align: center;
+   font-family: Lato, sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%; /* 25.2px */
+}
+.modal-c-p__skip-btn {
+   border-radius: 160px;
+   border: 2px solid #ffc93a;
+
+   display: flex;
+   padding: 14px 32px 16px 32px;
+   justify-content: center;
+   align-items: center;
+   background: white;
+
+   color: #000;
+   text-align: center;
+   font-family: Lato, sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%; /* 25.2px */
 }
