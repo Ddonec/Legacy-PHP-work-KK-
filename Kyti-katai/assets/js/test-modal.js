@@ -1,7 +1,12 @@
 const openModalBtn = document.querySelector(".modal-switch__button-save");
-
 const content = document.querySelector(".modal-container");
-openPopupSwitch();
+const cardReserve = document.getElementById("card-reserve");
+
+cardReserve.addEventListener("click", function () {
+   openPopupReserve();
+});
+
+openPopupChose();
 function openPopupReserve() {
    popup = document.createElement("div");
    greyBG = document.createElement("div");
@@ -32,6 +37,18 @@ function openPopupReserve() {
 
    document.body.appendChild(popup);
    document.body.appendChild(greyBG);
+
+   greyBG.addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
+
+   popup.querySelector(".close-modal-btn").addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
 }
 
 function openPopupChose() {
@@ -93,6 +110,23 @@ function openPopupChose() {
 
    document.body.appendChild(popup);
    document.body.appendChild(greyBG);
+
+   greyBG.addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
+
+   popup.querySelector(".close-modal-btn").addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
+   popup.querySelector(".modal-c-p__skip-btn").addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
 }
 
 function openPopupAbout() {
@@ -124,6 +158,18 @@ function openPopupAbout() {
 
    document.body.appendChild(popup);
    document.body.appendChild(greyBG);
+
+   greyBG.addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
+
+   popup.querySelector(".close-modal-btn").addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
 }
 
 function openPopupSwitch() {
@@ -167,19 +213,35 @@ function openPopupSwitch() {
 
    document.body.appendChild(popup);
    document.body.appendChild(greyBG);
+
+   greyBG.addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
+
+   popup.querySelector(".close-modal-btn").addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
 }
 
-const bg = document.querySelector(".grey-bg");
-bg.addEventListener("click", function () {
-   console.log("close");
-   closePopup();
-});
-const closemodal = document.querySelector(".close-modal-btn");
-closemodal.addEventListener("click", function () {
-   closePopup();
-});
+// const bg = document.querySelector(".grey-bg");
+// bg.addEventListener("click", function () {
+//    console.log("close");
+//    closePopup();
+// });
+// const closeModals = document.querySelectorAll(".close-modal-btn");
 
-function closePopup() {
-   document.body.removeChild(popup);
-   document.body.removeChild(greyBG);
-}
+// closeModals.forEach(function (closeModal) {
+//    closeModal.addEventListener("click", function () {
+//       console.log("close");
+//       closePopup();
+//    });
+// });
+
+// function closePopup() {
+//    document.body.removeChild(popup);
+//    document.body.removeChild(greyBG);
+// }
