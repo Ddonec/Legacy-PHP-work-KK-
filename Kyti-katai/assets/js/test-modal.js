@@ -1,9 +1,13 @@
 const openModalBtn = document.querySelector(".modal-switch__button-save");
 const content = document.querySelector(".modal-container");
 const cardReserve = document.getElementById("card-reserve");
+const parkValueSticky = document.querySelector(".bottom-sticky-panel");
 
 cardReserve.addEventListener("click", function () {
    openPopupReserve();
+});
+parkValueSticky.addEventListener("click", function () {
+   openPopupAbout();
 });
 
 openPopupChose();
@@ -135,26 +139,26 @@ function openPopupAbout() {
    greyBG.className = "grey-bg";
    popup.className = "modal-reserve-celebrate-absolute";
    popup.innerHTML = `<section class="modal-about-park">
-    <div class="modal-a-p__title">О парке</div>
-    <div class="modal-a-p__middle-container">
-       <div class="modal-a-p__subtitle">Красногвардейский пруд</div>
-       <div class="modal-a-p__time-zone">
-          <p class="time-zone__grey">Время работы:</p>
-          <p class="time-zone__disc">Круглосуточно</p>
-       </div>
-       <div class="modal-a-p__technic-zone">
-          <p class="technic-zone__grey">Техника парка:</p>
-          <p class="technic-zone__disc">Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны</p>
-       </div>
-    </div>
-    <img src="assets/content/modal-a-p__img.png" alt="" class="modal-a-p__img" />
-    <div class="modal-a-p__button">Сменить парк</div>
-    <div class="close-modal-btn">
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
-       </svg>
-    </div>
- </section>`;
+   <div class="modal-a-p__title">О парке</div>
+   <div class="modal-a-p__middle-container">
+      <div class="modal-a-p__subtitle">Красногвардейский пруд</div>
+      <div class="modal-a-p__time-zone">
+         <p class="time-zone__grey">Время работы:</p>
+         <p class="time-zone__disc">Круглосуточно</p>
+      </div>
+      <div class="modal-a-p__technic-zone">
+         <p class="technic-zone__grey">Техника парка:</p>
+         <p class="technic-zone__disc">Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны</p>
+      </div>
+   </div>
+   <div class="modal-a-p__img"></div>
+   <div class="modal-a-p__button">Сменить парк</div>
+   <div class="close-modal-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
+      </svg>
+   </div>
+</section>`;
 
    document.body.appendChild(popup);
    document.body.appendChild(greyBG);
@@ -169,6 +173,13 @@ function openPopupAbout() {
       document.body.removeChild(popup);
       document.body.removeChild(greyBG);
       console.log("close");
+   });
+   const swapParkBtnModal = document.querySelector(".modal-a-p__button");
+
+   swapParkBtnModal.addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      openPopupSwitch();
    });
 }
 
@@ -224,6 +235,14 @@ function openPopupSwitch() {
       document.body.removeChild(popup);
       document.body.removeChild(greyBG);
       console.log("close");
+   });
+
+   const goBackBtn = document.querySelector(".go-back-modal-btn");
+
+   goBackBtn.addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      openPopupAbout();
    });
 }
 

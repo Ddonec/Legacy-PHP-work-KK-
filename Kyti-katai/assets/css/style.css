@@ -3965,8 +3965,16 @@ input:checked + .slider:before {
    left: 50%;
    transform: translateX(-50%);
    z-index: 101;
+   cursor: pointer;
 }
 .bottom-sticky-panel a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   flex-shrink: 0;
+}
+.bottom-sticky-panel span {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -4481,6 +4489,9 @@ input:checked + .slider:before {
 .modal-a-p__img {
    border-radius: 20px;
    height: 126px;
+   background-image: url(../assets/content/modal-a-p__img.png);
+   background-position: center;
+   background-size: cover;
 }
 .modal-a-p__button {
    border-radius: 160px;
