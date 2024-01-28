@@ -83,25 +83,58 @@ get_header();
          <div class="left-margin-container">
             <h3 class="h-3-our-history text-yellow-gradient"><?php the_field('sinij_blok_zagolovok-about-us-page') ?></h3>
             <p class="p-disc-our-history-about-page">
-                <?php the_field('sinij_blok_opisanie-about-us-page') ?>
+               <?php the_field('sinij_blok_opisanie-about-us-page') ?>
             </p>
-            <img class="logo-about-us-bike-white" src="/assets/icon/bike-white-w145.svg" alt="" />
-            <div class="overflow-container-for-blue-section-about-us-page">
-               <div class="yellow-line-container">
-                  <img class="blue-yellow-dot-about-page-1" src="/assets/icon/dot-blue-and-yellow.svg" alt="" />
-                  <img class="blue-yellow-dot-about-page-2" src="/assets/icon/dot-blue-and-yellow.svg" alt="" />
-               </div>
-               <div class="history-cards-container-about-page">
-                  <div class="history-block-2009-about-us-page">
-                     <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_1-about-us-page') ?></h3>
-                     <img src="/assets/content/Rectangle-56.png" alt="" />
-                     <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_1-about-us-page') ?></p>
-                  </div>
+            <img class="logo-about-us-bike-white" src="assets/icon/bike-white-w145.svg" alt="" />
+            <div class="blue-scroll-relative-container">
+               <div class="shadow-container-blue-section-about-us"></div>
+               <div class="blue-pseudo-shadow-about-us">
+                  <div class="overflow-container-for-blue-section-about-us-page">
+                     <div class="yellow-line-container">
+                        <img class="blue-yellow-dot-about-page-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/dot-blue-and-yellow.svg" alt="" />
+                        <img class="blue-yellow-dot-about-page-2" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/dot-blue-and-yellow.svg" alt="" />
+                        <img class="blue-yellow-dot-about-page-3" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/dot-blue-and-yellow.svg" alt="" />
+                        <img class="blue-yellow-dot-about-page-4" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/dot-blue-and-yellow.svg" alt="" />
+                        <img class="blue-yellow-dot-about-page-5" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/dot-blue-and-yellow.svg" alt="" />
+                        <img class="blue-yellow-dot-about-page-6" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/dot-blue-and-yellow.svg" alt="" />
+                     </div>
+                     <div class="history-cards-container-about-page">
+                       <div class="history-block-2009-about-us-page">
+                           <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_1-about-us-page') ?></h3>
+                            <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle-56.png" alt="" />
+                            <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_1-about-us-page') ?></p>
+                       </div>
 
-                  <div class="history-block-2009-about-us-page opacity">
-                     <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_2-about-us-page') ?></h3>
-                     <img src="/assets/content/Rectangle-56-1.png" alt="" />
-                     <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_2-about-us-page') ?></p>
+                       <div class="history-block-2009-about-us-page ">
+                          <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_2-about-us-page') ?></h3>
+                          <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle-56-1.png" alt="" />
+                          <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_2-about-us-page') ?></p>
+                       </div>
+
+                       <div class="history-block-2009-about-us-page">
+                           <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_1-about-us-page') ?></h3>
+                            <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle-56.png" alt="" />
+                            <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_1-about-us-page') ?></p>
+                       </div>
+
+                       <div class="history-block-2009-about-us-page ">
+                          <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_2-about-us-page') ?></h3>
+                          <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle-56-1.png" alt="" />
+                          <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_2-about-us-page') ?></p>
+                       </div>
+
+                       <div class="history-block-2009-about-us-page">
+                           <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_1-about-us-page') ?></h3>
+                            <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle-56.png" alt="" />
+                            <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_1-about-us-page') ?></p>
+                       </div>
+
+                       <div class="history-block-2009-about-us-page ">
+                          <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_2-about-us-page') ?></h3>
+                          <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle-56-1.png" alt="" />
+                          <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_2-about-us-page') ?></p>
+                       </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -119,6 +152,9 @@ get_header();
             </div>
          </div>
       </section>
+
+
+
 
 
 

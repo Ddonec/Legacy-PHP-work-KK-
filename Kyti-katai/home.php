@@ -494,7 +494,7 @@ get_header();
                      <?php the_field('about_us_3') ?>
                      </p>
                   </div>
-                  <button class="show-more-6-section-btn border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</button>
+                  <a href="<?php echo get_option('home'); ?>/about-us/"><button  class="show-more-6-section-btn border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</button></a>
                </div>
                <div class="overflow-blue-section-index-page-container">
                   <div class="three-elemrnts-container-home-page-blue-block">
@@ -589,7 +589,7 @@ get_header();
                <div>измайловский</div>
             </div>
          </div>
-         <div class="show-more-6-section-btn-2 border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</div>
+         <a href="<?php echo get_option('home'); ?>/about-us/"><div class="show-more-6-section-btn-2 border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</div></a>
       </section>
 
       <section class="seven-section">

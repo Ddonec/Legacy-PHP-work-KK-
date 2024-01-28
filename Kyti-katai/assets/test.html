@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="first">
+         <div class="second">
+            <div class="third">Lorem, ipsum.</div>
+            <div class="third">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, molestias natus dolorum accusamus adipisci deleniti, incidunt esse tempora cupiditate consectetur quidem fuga excepturi
+               eum? Esse natus pariatur ab tempora eum animi vitae perferendis quo neque optio aspernatur numquam explicabo dolor quasi, quibusdam maxime mollitia ratione corporis placeat suscipit est
+               autem nemo. Nostrum reprehenderit vel delectus eligendi beatae enim in, id tenetur dolorum culpa rerum, deserunt quibusdam modi libero doloremque eos? Officiis ratione est optio iusto
+               commodi dolorum voluptatibus aliquid, explicabo provident porro ad quibusdam veritatis. Soluta minima sequi dolores, ipsam autem doloribus atque, molestiae numquam nam, ad assumenda
+               illo aliquid.
+            </div>
+            <div class="third"></div>
+            <div class="third"></div>
+         </div>
+      </div>
+   </body>
+   <style>
+      .third {
+         width: 400px;
+         height: 100px;
+         background: cadetblue;
+         font-size: 40px;
+         padding: 20px;
+         margin: 20px;
+         text-overflow: ellipsis;
+         overflow: hidden; /* Скрываем все, что не помещается в блоке */
+         text-overflow: ellipsis;
+         transform: rotate(90deg);
+      }
+      .second{
+        display: flex;
+        flex-direction: column;
+        transform: rotate(90deg);
+
+      }
+   </style>
+</html>
