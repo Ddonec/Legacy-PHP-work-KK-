@@ -494,7 +494,7 @@ get_header();
                      <?php the_field('about_us_3') ?>
                      </p>
                   </div>
-                  <button class="show-more-6-section-btn border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</button>
+                  <a href="<?php echo get_option('home'); ?>/about-us/"><button  class="show-more-6-section-btn border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</button></a>
                </div>
                <div class="overflow-blue-section-index-page-container">
                   <div class="three-elemrnts-container-home-page-blue-block">
@@ -589,7 +589,7 @@ get_header();
                <div>измайловский</div>
             </div>
          </div>
-         <div class="show-more-6-section-btn-2 border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</div>
+         <a href="<?php echo get_option('home'); ?>/about-us/"><div class="show-more-6-section-btn-2 border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</div></a>
       </section>
 
       <section class="seven-section">
@@ -656,7 +656,7 @@ get_header();
          </div>
       </section>
       <div class="bottom-sticky-panel">
-         <a href="<?php echo get_option('home'); ?>/modal">
+         <span href="<?php echo get_option('home'); ?>/modal">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
                <g clip-path="url(#clip0_2927_1340)">
                   <path d="M2.5 9.16663L18.3333 1.66663L10.8333 17.5L9.16667 10.8333L2.5 9.16663Z" stroke="#333333" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
@@ -668,7 +668,7 @@ get_header();
                </defs>
             </svg>
             Красногвардейский пруд
-         </a>
+         </span>
       </div>
 
 

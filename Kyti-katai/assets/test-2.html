@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="scroll">
+         <div class="grid">
+            <div class="page">123456789876543435465768796866535657687643423567 797876453451</div>
+            <div class="page">123456789876543435465768796866535657687643423567 797876453451</div>
+            <div class="page">123456789876543435465768796866535657687643423567 797876453451</div>
+            <div class="page">123456789876543435465768796866535657687643423567 797876453451</div>
+            <div class="page">123456789876543435465768796866535657687643423567 797876453451</div>
+            <div class="page">123456789876543435465768796866535657687643423567 797876453451</div>
+            <div class="page">123456789876543435465768796866535657687643423567 797876453451</div>
+            <div class="page">123456789876543435465768796866535657687643423567 797876453451</div>
+            <div class="page">123456789876543435465768796866535657687643423567 797876453451</div>
+            <div class="page">123456789876543435465768796866535657687643423567 797876453451</div>
+         </div>
+      </div>
+   </body>
+   <style>
+      .scroll {
+         overflow-y: auto;
+         transform: rotate(270deg) translateX(-100%);
+         transform-origin: top left;
+         height: 1500px;
+         width: 105px;
+         border: solid 2px;
+         position: relative;
+      }
+
+      .grid {
+         transform: rotate(90deg) translateY(-100%);
+         transform-origin: top left;
+         display: flex;
+         gap: 100px;
+         flex-shrink: 0;
+      }
+
+      .page {
+         display: flex;
+         height: 100px;
+         width: 150px;
+         border: 2px solid red;
+         flex-wrap: wrap;
+         text-overflow: ellipsis;
+         overflow: hidden;
+         flex-shrink: 0;
+      }
+
+      .page {
+         background: limegreen;
+         color: #ff7f00; /* Complement of limegreen */
+      }
+   </style>
+</html>

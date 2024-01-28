@@ -64,7 +64,7 @@
                   <li>
                      <span class="yellow-number-footer pointer"><a id="yellow-tel-numb-footer" href="tel:+79254297029">+7(925) 429-70-29</a></span>
                   </li>
-                  <li class="pointer"><a href="mailto:<?php the_field('email') ?>"><?php the_field('email') ?></a></li>
+                  <li class="pointer"><a href="mailto:kuti.katai@mail.ru">kuti.katai@mail.ru</a></li>
                </ul>
                <div class="social-media-footer">
                   <img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/socials.svg" alt="" />

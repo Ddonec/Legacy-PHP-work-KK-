@@ -9,6 +9,7 @@ add_action('wp_enqueue_scripts', 'kk_scripts');
 
         wp_enqueue_script( 'main_script', get_template_directory_uri( ) . '/assets/js/index.js', array(), null, true);
         wp_enqueue_script( 'catalog_script', get_template_directory_uri( ) . '/assets/js/catalog.js', array(), null, true);
+        wp_enqueue_script( 'modal_scripts', get_template_directory_uri( ) . '/assets/js/test-modal.js', array(), null, true);
 
     };
 
