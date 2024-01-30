@@ -384,17 +384,7 @@
    height: 365px;
 }
 
-.show-more-btn-catalog {
-   display: flex;
-   width: 310px;
-   padding: 14px 32px 16px 32px;
-   justify-content: center;
-   align-items: center;
-   gap: 10px;
-   border-radius: 30px;
-   background: #ffc93a;
-   margin: 45px auto 20px;
-}
+
 .subscribe-for-our-news-container {
    display: flex;
    max-width: 1300px;

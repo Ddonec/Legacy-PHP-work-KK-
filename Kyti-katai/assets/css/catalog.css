@@ -286,7 +286,6 @@
    vertical-align: center;
 }
 
-
 .text-18-500-left {
    color: #333;
    font-family: "Montserrat", sans-serif;
@@ -446,17 +445,14 @@
 
 .show-more-btn-catalog {
    display: flex;
-   width: 310px;
-   padding: 14px 32px 16px 32px;
    justify-content: center;
    align-items: center;
-   gap: 10px;
    border-radius: 30px;
    background: #ffc93a;
    margin: 45px auto 20px;
-
-   border-radius: 14.229px;
-   border: 0.711px solid #ccccd0;
+   border-radius: 20px;
+   background: #ffc93a;
+   padding: 9px 24px 11px 24px;
 }
 .show-more-btn-news {
    padding: 9px 24px 11px 24px;
