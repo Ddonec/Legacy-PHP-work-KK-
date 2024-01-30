@@ -395,7 +395,7 @@ get_header();
                   </div>
                </div>
 
-               <div class="show-more-btn-catalog text-18-500">Показать еще</div>
+               <div class="show-more-btn-catalog text-14-500-left-lato">Показать еще</div>
             </div>
          </div>
       </section>
