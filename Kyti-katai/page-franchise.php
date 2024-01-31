@@ -51,7 +51,7 @@ get_header();
                         <p class="first-text__grey-text-14px"><?php the_field('franchise-3_kartochki_podnazvanie_1') ?></p>
                      </div>
                      <div class="advantage-card__bottom-text"><?php the_field('franchise-3_kartochki_opisanie_1') ?></div>
-                     <img class="absolut-image-z-coin" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/z-coin-franchaise.png" alt="" />
+                     <img class="absolut-image-z-coin" src="<?php echo esc_url(get_field('logotip_perevogo_slajdera_kartochka_1')); ?>" alt="" />
                   </div>
 
                   <div class="advantage-card-frahciese-page">
@@ -64,7 +64,7 @@ get_header();
                      <div class="advantage-card__bottom-text">
                      <?php the_field('franchise-3_kartochki_opisanie_2') ?>
                      </div>
-                     <img class="absolut-image-gold-calendar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/gold-calendar-icon-franchaise.png" alt="" />
+                     <img class="absolut-image-gold-calendar" src="<?php echo esc_url(get_field('logotip_perevogo_slajdera_kartochka_2')); ?>" alt="" />
                   </div>
 
                   <div class="advantage-card-frahciese-page">
@@ -77,7 +77,7 @@ get_header();
                      <div class="advantage-card__bottom-text">
                      <?php the_field('franchise-3_kartochki_opisanie_3') ?>
                      </div>
-                     <img class="absolut-image-gold-calendar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/gold-clock-francheise.png" alt="" />
+                     <img class="absolut-image-gold-calendar" src="<?php echo esc_url(get_field('logotip_perevogo_slajdera_kartochka_3')); ?>" alt="" />
                   </div>
                </div>
             </div>
@@ -154,45 +154,42 @@ get_header();
             <div class="feedback-overflov-pseudo-container">
                <ul class="feedback-containers-zone-franchise">
                   <li class="feedback-container-franchise">
-                     <div class="feedback__title">Масса удовольствия, Персонал был очень вежлив.</div>
+                     <div class="feedback__title"><?php the_field('zagolovok_otzyva_1') ?></div>
                      <div class="feedback__profile">
-                        <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/manager-photo.svg" alt="" /><span>Никита Мельников</span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
+                        <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/manager-photo.svg" alt="" /><span><?php the_field('fio_otzyva_1') ?></span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
                         <span>5</span>
                      </div>
                      <div class="feedback__main-discription">
-                        Брали с другом велики на выходной день. Масса удовольствия! Персонал помог определиться с велосипедом и был вежлив. Удобно и недорого! Обязательно порекомендую этот прокат
-                        своим знакомым и друзьям. Большое спасибо!
+                     <?php the_field('tekst_otzyva_1') ?>
                      </div>
-                     <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
-                     <div class="feedback__opacity">25.10.23</div>
+                     <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span><?php the_field('ssylka_na_otzyv_1') ?></span></div>
+                     <div class="feedback__opacity"><?php the_field('data_otzyva_1') ?></div>
                   </li>
 
                   <li class="feedback-container-franchise">
-                     <div class="feedback__title">Масса удовольствия, Персонал был очень вежлив.</div>
+                     <div class="feedback__title"><?php the_field('zagolovok_otzyva_2') ?></div>
                      <div class="feedback__profile">
-                        <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/avatar-1.svg" alt="" /><span>Мария Зворыкина</span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
+                        <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/avatar-1.svg" alt="" /><span><?php the_field('fio_otzyva_2') ?></span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
                         <span>5</span>
                      </div>
                      <div class="feedback__main-discription">
-                        Чудесное место для отдыха со своей семьёй. Широкий ассортимент услуг: детские машинки, велосипеды, аттракционы и так далее. Очень вежливый персонал и приятная атмосфера.
-                        Настоятельно рекомендую посетить! Скрыть
+                     <?php the_field('tekst_otzyva_2') ?>
                      </div>
-                     <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
-                     <div class="feedback__opacity">23.10.23</div>
+                     <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span><?php the_field('ssylka_na_otzyv_2') ?></span></div>
+                     <div class="feedback__opacity"><?php the_field('data_otzyva_2') ?></div>
                   </li>
 
                   <li class="feedback-container-franchise">
-                     <div class="feedback__title">Масса удовольствия, Персонал был очень вежлив.</div>
+                     <div class="feedback__title"><?php the_field('zagolovok_otzyva_3') ?></div>
                      <div class="feedback__profile">
-                        <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/avatar-2.svg" alt="" /><span>Андрей Потанин</span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
+                        <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/avatar-2.svg" alt="" /><span><?php the_field('fio_otzyva_3') ?></span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
                         <span>5</span>
                      </div>
                      <div class="feedback__main-discription">
-                        Великолепное место для отдыха!!! Отзывчивый и вежливый персонал, который при любых вопросов с радостью готов ответить и помочь. Большое количество разной техники, точно найдете
-                        что-то на свое предпочтение, также много аттракционов
+                     <?php the_field('tekst_otzyva_3') ?>
                      </div>
-                     <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
-                     <div class="feedback__opacity">17.10.23</div>
+                     <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span><?php the_field('ssylka_na_otzyv_3') ?></span></div>
+                     <div class="feedback__opacity"><?php the_field('data_otzyva_3') ?></div>
                   </li>
                </ul>
             </div>
@@ -328,7 +325,7 @@ get_header();
                   <p class="team-fr__who">Директор Логистики</p>
                   <p class="team-fr__name">Конов В.Б.</p>
                </div>
-               <div class="comand-card-franchise">
+               <div class="comand-card-franchise-2">
                   <img class="team-fr__refresh-icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/refresh-ccw.svg" alt="" />
                   <p class="team-fr__who">Директор Логистики</p>
                   <p class="team-fr__name">Конов В.Б.</p>
@@ -337,7 +334,7 @@ get_header();
                   <p class="text-18-500-left"><?php the_field('franchise-vehnij_tekst_kartochki_bez_foto') ?></p>
                   <p class="team-fr__title"><?php the_field('franchise-nizhnij_tekst_kartochki_bez_foto') ?></p>
                </div>
-               <div class="comand-card-franchise">
+               <div class="comand-card-franchise-4">
                   <img class="team-fr__refresh-icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/refresh-ccw.svg" alt="" />
                   <p class="team-fr__who">Директор Логистики</p>
                   <p class="team-fr__name">Конов В.Б.</p>
@@ -383,19 +380,19 @@ get_header();
          <h3 class="title-of-section-gradient-yellow"><?php the_field('franchise-tajtl_kontaktov') ?></h3>
          <div class="contact-cards-frabchise">
             <div class="director-card">
-               <img class="director__photo" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/director-avatar-full.png" alt="" />
+               <img class="director__photo" src="<?php the_field('avatarka_dirketor'); ?>" alt="" />
                <p class="director__name"><?php the_field('franchise-zagolovok_f') ?></p>
                <p><?php the_field('franchise-kommentarij_fio') ?></p>
             </div>
             <div class="director-phone-card">
                <a class="director__phone-number" href="tel:+79030030396"><?php the_field('franchise-pole_telefona') ?></a>
                <p class="director__phone-discription"><?php the_field('franchise-opisanie_polya_telefona') ?></p>
-               <img class="director__phone-image" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/gold-trubka.png" alt="" />
+               <img class="director__phone-image" src="<?php the_field('trubka_zolotaya_snizu'); ?>" alt="" />
             </div>
             <div class="director-email-card">
                <a class="director__email" href="mailto:m.shekurov@kutikatai.ru"><?php the_field('franchise-pole_pochty') ?></a>
                <p class="director__email-discription"><?php the_field('franchise-opisanie_polya_pochty') ?></p>
-               <img class="director__email-image" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/mail-notion-icon.png" alt="" />
+               <img class="director__email-image" src="<?php the_field('pochtovyj_konvert_zolotoj_snizu'); ?>" alt="" />
             </div>
          </div>
       </section>

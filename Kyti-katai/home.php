@@ -601,14 +601,16 @@ get_header();
          </div>
          <div class="six-cards-container">
             <div class="usrful-materials-cards">
+            <a href="<?php echo get_option('home'); ?>/news-1">
                <div class="green-samokat">
                   Езда на<br />
                   электро- <br />
                   самокате
                   <p>Актуальные правила 2023 года</p>
                </div>
-
-               <div>
+               </a>
+               <a href="<?php echo get_option('home'); ?>/news-1">
+                <div>
                   <img src="<?php the_field('kartinka_novosti_1'); ?>" alt="" />
                   <div class="text-inside-cart-blog">
                      <p>Электровелосипеды доступны москвичам</p>
@@ -619,8 +621,10 @@ get_header();
                      <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1.svg" alt="" /> Савелий Октябрьский</div>
                      <div class="date-in-material-card">15.07.23</div>
                   </div>
-               </div>
+                </div>
+               </a>
 
+               <a href="<?php echo get_option('home'); ?>/news-1">
                <div>
                <img src="<?php the_field('kartinka_novosti_2'); ?>" alt="" />
                   <div class="text-inside-cart-blog">
@@ -632,7 +636,9 @@ get_header();
                      <div class="date-in-material-card">30.06.23</div>
                   </div>
                </div>
+               </a>
 
+               <a href="<?php echo get_option('home'); ?>/news-1">
                <div>
                <img src="<?php the_field('kartinka_novosti_3'); ?>" alt="" />
                   <div class="text-inside-cart-blog">
@@ -645,6 +651,7 @@ get_header();
                      <div class="date-in-material-card">15.07.23</div>
                   </div>
                </div>
+               </a>
             </div>
             <div class="cur-pointer">
                <button><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-right.svg" alt="" /></button>

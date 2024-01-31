@@ -123,9 +123,27 @@ html {
 }
 .header-1920-list li {
    padding: 7px;
+   position: relative;
 }
 .header-1920-list li img {
    margin-left: 8px;
+}
+#drop-window-company {
+   position: absolute;
+   bottom: -221px;
+   left: -20px;
+   padding: 20px;
+   background: white;
+   z-index: -1;
+   border-radius: 0 0 20px 20px;
+
+   opacity: 0;
+   transition: 0.6s;
+}
+#drop-window-company a {
+   padding: 10px;
+   width: max-content;
+   display: flex;
 }
 .icun-list-h li:nth-last-child(3) img {
    margin-left: 8px;
@@ -133,6 +151,9 @@ html {
 }
 .icun-list-h li img {
    height: 16px;
+}
+.icun-list-h li .icon-search-burger-show {
+   height: 14px;
 }
 .logo-header {
    position: absolute;
@@ -198,6 +219,7 @@ html {
    right: 20px;
    width: 14px;
 }
+
 .input-zone-1920 {
    position: relative;
 }
@@ -417,11 +439,11 @@ s1
    background-image: url(../assets/content/samokat-rider-summer.png);
 }
 .absolute-fs-container-right-frahciese {
-   background-image: url(../assets/content/bike-riders-summer.png);
+   /* background-image: url(../assets/content/bike-riders-summer.png); */
    transform: scaleX(-1);
 }
 .absolute-fs-container-left-frahciese {
-   background-image: url(../assets/content/left-snow-peoples-3.png);
+   /* background-image: url(../assets/content/left-snow-peoples-3.png); */
 }
 
 h2 {
@@ -1891,11 +1913,11 @@ s7
    height: 365px;
    display: inline-flex;
 }
-.usrful-materials-cards > div:not(:first-child):hover {
+.usrful-materials-cards > a:not(:first-child):hover {
    border: 1px solid #4559ed;
 }
 
-.usrful-materials-cards > div:not(:first-child) > .text-inside-cart-blog:hover {
+.usrful-materials-cards > a:not(:first-child) .text-inside-cart-blog:hover {
    background: #e3e7ff;
    transition: 0.3s;
 }
@@ -1945,12 +1967,13 @@ s7
    transition: 0.6s;
 }
 
-.usrful-materials-cards div:not(:first-child):not(.text-inside-cart-blog, .image-user-zone, .date-in-material-card) {
+.usrful-materials-cards a:not(:first-child):not(.text-inside-cart-blog, .image-user-zone, .date-in-material-card) {
    overflow: hidden;
    width: 224px;
    /* height: 265px; */
    border-radius: 20px;
    position: relative;
+   display: block;
 }
 
 .text-inside-cart-blog {
@@ -2080,6 +2103,9 @@ s7
 }
 .opacity {
    opacity: 0.5;
+}
+.opacity-zero {
+   opacity: 0;
 }
 .see-all-usefull-mat-btn {
    display: inline-flex;
@@ -2259,9 +2285,10 @@ s7
 .blue-line-fake {
    height: 65px;
    background: #5567ea;
+   z-index: 11;
 }
 .gray-line-fake {
-   background: rgba(232, 234, 251, 0.8);
+   background: rgba(232, 234, 251, 1);
    height: 57px;
 }
 /* Кнопка */
@@ -2709,18 +2736,14 @@ input:checked + .slider:before {
    height: 300px;
 }
 .format__pictures_first {
-   background-image: url(../assets/content/109a1bdc90b4cd9f38807c12bd0cbad7.jpeg);
-
    background-size: cover;
    border-radius: 24px;
 }
 .format__pictures_second {
-   background-image: url(../assets/content/2f2a6b9c0046adc7992a54f15fbd44c1.jpeg);
    background-size: cover;
    border-radius: 24px;
 }
 .format__pictures_third {
-   background-image: url(../assets/content/c521208d489355aee00178160512d66b.jpeg);
    background-size: cover;
    border-radius: 24px;
 }
@@ -3216,7 +3239,31 @@ input:checked + .slider:before {
    display: none;
 }
 .comand-card-franchise {
-   background-image: url(../assets/content/our-team-person-1.png);
+   width: 285px;
+   height: 400px;
+   display: flex;
+   flex-direction: column-reverse;
+   padding: 28px 28px 32px 20px;
+   position: relative;
+}
+
+.comand-card-franchise-2 {
+   width: 285px;
+   height: 400px;
+   display: flex;
+   flex-direction: column-reverse;
+   padding: 28px 28px 32px 20px;
+   position: relative;
+}
+.comand-card-franchise-3 {
+   width: 285px;
+   height: 400px;
+   display: flex;
+   flex-direction: column-reverse;
+   padding: 28px 28px 32px 20px;
+   position: relative;
+}
+.comand-card-franchise-4 {
    width: 285px;
    height: 400px;
    display: flex;
@@ -4626,3 +4673,89 @@ input:checked + .slider:before {
    z-index: 150;
    top: 0;
 }
+
+.log-in-modal-container {
+   display: flex;
+   border-radius: 28px;
+   width: 100%;
+   max-width: 996px;
+   overflow: hidden;
+
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 200;
+
+}
+.log-in-modal__image {
+   width: 48%;
+   background-image: url(../assets/content/bike-center-k-k.png);
+   background-position: center;
+   background-size: cover;
+}
+.log-in-modal__main-container {
+   width: 52%;
+   padding: 28px 28px 36px 28px;
+   background: #e8eafb;
+
+   color: var(--black, #333);
+   font-family: "Lato", sans-serif;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%; /* 19.6px */
+}
+.log-in-modal__form {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   height: 325px;
+}
+.log-in-modal__title {
+   font-family: "Montserrat Alternates";
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 120%; /* 33.6px */
+   width: fit-content;
+}
+.log-in-modal__input-zone {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+.log-in-modal__input {
+   border-radius: 36px;
+   border: 1.067px solid #333;
+   opacity: 0.5;
+   background: #fff;
+
+   display: flex;
+   padding: 10px 14px 12px 20px;
+   align-items: flex-start;
+   gap: 6px;
+   align-self: stretch;
+}
+.log-in-modal__button {
+   font-size: 12px;
+
+   border-radius: 20px;
+   background: #ffc93a;
+   display: flex;
+   padding: 10px 24px 12px 24px;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+   width: fit-content;
+   border: none;
+}
+.log-in-modal__go-sign-up {
+   display: flex;
+   gap: 12px;
+}
+.log-in-modal__change-number,
+.log-in-modal__create-acc {
+   color: #5567ea;
+}
+

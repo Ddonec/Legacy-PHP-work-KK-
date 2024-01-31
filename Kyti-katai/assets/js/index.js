@@ -33,6 +33,7 @@ const fiveSectionContainerHide = document.querySelector(".five-section");
 const showHideBlueWheel = document.querySelectorAll(".show-hide-blue-wheel");
 const showHideYellowWheel = document.querySelectorAll(".show-hide-yellow-wheel");
 const appbanner = document.querySelector(".app-banner");
+const winterOpacity = document.querySelectorAll(".winter-opacity");
 
 const blueFake = document.querySelector(".blue-line-fake");
 const grayFake = document.querySelector(".gray-line-fake");
@@ -49,6 +50,9 @@ checkbox.addEventListener("change", function () {
       });
       winterStatus.forEach(function (element) {
          element.classList.remove("none");
+      });
+      winterOpacity.forEach(function (element) {
+         element.classList.add("opacity-zero");
       });
       switchSeasonBtns.forEach(function (element) {
          element.classList.remove("blue-b-g");
@@ -75,7 +79,7 @@ checkbox.addEventListener("change", function () {
       winterContent.style.display = "flex";
       headerLine.style.background = "#5567ea";
       underBiker.style.background = "#5567ea";
-      secondLineHeader.style.background = "rgba(232, 234, 251, 0.8)";
+      secondLineHeader.style.background = "rgba(232, 234, 251, 1)";
       headerList.style.color = "white";
       header2List.style.color = "white";
       searchZoneHeaderClass.classList.remove("custom-placeholder-style");
@@ -83,13 +87,13 @@ checkbox.addEventListener("change", function () {
       searchZoneHeader.style.background = "#5567ea";
       placeholderElement.style.color = newPlaceholderColor;
       blueFake.style.background = "#5567ea";
-      grayFake.style.background = "rgba(232, 234, 251, 0.8)";
+      grayFake.style.background = "rgba(232, 234, 251, 1)";
       // numberHeader.style.color = "#FFC93A";
       backgroundHeaderRightPhoto.classList.remove("summer");
       backgroundHeaderLeftPhoto.classList.remove("summer");
       backgroundHeader.classList.remove("summer");
-      // searchIconSwitchB.classList.add("none");
-      // searchIconSwitchW.classList.remove("none");
+      searchIconSwitchB.classList.add("none");
+      searchIconSwitchW.classList.remove("none");
       bgSixSection.classList.remove("summer");
       bgSixSection.style.backgroundColor = "#5567ea";
       appbanner.style.background = "#e8eafb";
@@ -110,6 +114,9 @@ checkbox.addEventListener("change", function () {
       });
       winterStatus.forEach(function (element) {
          element.classList.add("none");
+      });
+      winterOpacity.forEach(function (element) {
+         element.classList.remove("opacity-zero");
       });
       switchSeasonBtns.forEach(function (element) {
          element.classList.add("blue-b-g");
@@ -144,6 +151,7 @@ checkbox.addEventListener("change", function () {
       searchZoneHeader.style.border = "2px solid black";
       searchZoneHeader.style.background = "#ffdd64";
       searchZoneHeader.style.color = "black";
+
       placeholderElement.style.color = "black";
       blueFake.style.background = "#ffc93a";
       grayFake.style.background = "#fff9e8";
@@ -151,8 +159,8 @@ checkbox.addEventListener("change", function () {
       backgroundHeaderRightPhoto.classList.add("summer");
       backgroundHeaderLeftPhoto.classList.add("summer");
       backgroundHeader.classList.add("summer");
-      // // searchIconSwitchB.classList.remove("none");
-      // // searchIconSwitchW.classList.add("none");
+      searchIconSwitchB.classList.remove("none");
+      searchIconSwitchW.classList.add("none");
       bgSixSection.classList.add("summer");
       bgSixSection.style.backgroundColor = "unset";
       appbanner.style.background = "#ffefc4";
@@ -204,3 +212,19 @@ checkbox.addEventListener("change", function () {
 // inputMax.addEventListener("change", function () {
 //    priceSlider.noUiSlider.set([null, this.value]);
 // });
+
+const dropWindow = document.getElementById("drop-window-company");
+const menuList = document.getElementById("pointer-for-drop");
+
+// Обработчик события клика по кнопке
+menuList.addEventListener("click", (event) => {
+   event.stopPropagation(); // Остановка всплытия события, чтобы не вызывался клик по document
+   dropWindow.style.opacity = 1;
+   dropWindow.style.zIndex = 10;
+});
+
+// Обработчик события клика по document
+document.addEventListener("click", () => {
+   dropWindow.style.opacity = 0;
+   dropWindow.style.zIndex = -1;
+});

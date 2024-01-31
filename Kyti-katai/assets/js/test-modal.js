@@ -10,6 +10,7 @@ parkValueSticky.addEventListener("click", function () {
    openPopupAbout();
 });
 
+
 openPopupChose();
 function openPopupReserve() {
    popup = document.createElement("div");
@@ -245,6 +246,7 @@ function openPopupSwitch() {
       openPopupAbout();
    });
 }
+
 
 // const bg = document.querySelector(".grey-bg");
 // bg.addEventListener("click", function () {
