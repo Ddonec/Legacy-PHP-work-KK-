@@ -32,8 +32,15 @@
     wp_head()
     ?>
 
+    
+
       <title>Document</title>
    </head>
+   <style>
+.green-samokat::before {
+   background-image: url('<?php the_field('kartinka_zelenogo_samokata'); ?>');
+}
+</style>
    <body>
       <header>
          <div class="heaer-fake-fullscreen">

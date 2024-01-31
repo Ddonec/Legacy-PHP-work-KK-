@@ -1927,7 +1927,6 @@ s7
 
 .green-samokat::before {
    content: "";
-   background-image: url(../assets/content/bg.png);
    position: absolute;
    background-size: cover;
    background-position: right;

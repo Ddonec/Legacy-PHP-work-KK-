@@ -277,43 +277,43 @@ get_header();
                   </div>
                   <div>
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="" />
-                     <p class="text-in-chill-for-kids-card">Электромобили</p>
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_1'); ?></p>
                   </div>
                   <div>
-                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g2.png" alt="" />
-                     <p class="text-in-chill-for-kids-card">Зорбинг</p>
+                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_2', 95)); ?>" alt="Alt text" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_2'); ?></p>
                   </div>
                   <div>
-                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g3.png" alt="" />
-                     <p class="text-in-chill-for-kids-card">Лодочки</p>
+                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_3', 95)); ?>" alt="Alt text" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_3'); ?></p>
                   </div>
                   <div>
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g4.svg" alt="" />
-                     <p class="text-in-chill-for-kids-card">Лодочная&nbsp;станция</p>
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_4'); ?></p>
                   </div>
                   <div>
-                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g5.png" alt="" />
-                     <p class="text-in-chill-for-kids-card">Карусель</p>
+                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_5', 95)); ?>" alt="Alt text" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_5'); ?></p>
                   </div>
                   <div>
-                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g6.png" alt="" />
-                     <p class="text-in-chill-for-kids-card">Паровозик</p>
+                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_6', 95)); ?>" alt="Alt text" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_6'); ?></p>
                   </div>
                   <div>
-                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g7.png" alt="" />
-                     <p class="text-in-chill-for-kids-card">Веревочный&nbsp;парк</p>
+                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_7', 95)); ?>" alt="Alt text" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_7'); ?></p>
                   </div>
                   <div>
-                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g8.png" alt="" />
-                     <p class="text-in-chill-for-kids-card">Лабиринт</p>
+                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_8', 95)); ?>" alt="Alt text" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_8'); ?></p>
                   </div>
                   <div>
-                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g9.png" alt="" />
-                     <p class="text-in-chill-for-kids-card">Спортивные&nbsp;батуты</p>
+                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_9', 95)); ?>" alt="Alt text" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_9'); ?></p>
                   </div>
                   <div>
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g10.png" alt="" />
-                     <p class="text-in-chill-for-kids-card">Надувной&nbsp;батут</p>
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_10'); ?></p>
                   </div>
                </div>
             </div>
@@ -609,7 +609,7 @@ get_header();
                </div>
 
                <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img(2).png" alt="" />
+                  <img src="<?php the_field('kartinka_novosti_1'); ?>" alt="" />
                   <div class="text-inside-cart-blog">
                      <p>Электровелосипеды доступны москвичам</p>
 
@@ -622,7 +622,7 @@ get_header();
                </div>
 
                <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img(3).png" alt="" />
+               <img src="<?php the_field('kartinka_novosti_2'); ?>" alt="" />
                   <div class="text-inside-cart-blog">
                      <p>Кути Катай оснастит самокаты шлемами</p>
 
@@ -634,7 +634,7 @@ get_header();
                </div>
 
                <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img(2).png" alt="" />
+               <img src="<?php the_field('kartinka_novosti_3'); ?>" alt="" />
                   <div class="text-inside-cart-blog">
                      <p>Электровелосипеды доступны москвичам</p>
 
