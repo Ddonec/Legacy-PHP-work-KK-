@@ -734,6 +734,35 @@
    .ticket__card {
       width: 48%;
    }
+   .cabinet-content-container {
+      display: flex;
+      flex-direction: column;
+   }
+   .cabinet-orders {
+      order: 3;
+   }
+   .user-data-cabinet {
+      width: unset;
+      order: 2;
+      height: 211px;
+      justify-content: flex-start;
+   }
+   .cabinet-go-check {
+      order: 1;
+   }
+   .user-data-cabinet__buttons-zone {
+      position: absolute;
+      bottom: 32px;
+      right: 32px;
+   }
+   .user-data-cabinet__discription {
+      flex-direction: row;
+   }
+   .cabinet-go-check__btn-3,
+   .cabinet-go-check__btn-4,
+   .cabinet-go-check__btn-5 {
+      display: none;
+   }
 }
 /* @media (max-width: 1088px){
 .third-section-make-fun{
@@ -1988,6 +2017,22 @@
    }
 }
 
+@media (max-width: 650px) {
+   .image-blue-check-cabinet {
+      display: none;
+   }
+   .user-data-cabinet__buttons-zone {
+      position: unset;
+   }
+   .user-data-cabinet {
+      height: unset;
+   }
+   .cabinet-go-check__buttons-zone {
+      flex-direction: column;
+      align-items: normal;
+   }
+}
+
 @media (max-width: 630px) {
    .park-characteristics div {
       width: 100%;
@@ -2634,6 +2679,9 @@
 
    .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 12) {
       display: none;
+   }
+   .user-data-cabinet__discription {
+      flex-direction: column;
    }
 }
 
