@@ -25,7 +25,7 @@ get_header();
             <p>/</p>
             <p class="grey-bread-crumbs">Найди свой парк</p>
          </div>
-         <div class="title-of-section-news-page">
+         <div class="title-of-section-find-page">
             <h3 class="text-gradient"><?php the_field('find-park-title') ?></h3>
          </div>
 
@@ -33,7 +33,7 @@ get_header();
 
          <h2 class="text-36-700 h2-find-page">Список парков</h2>
 
-         <div class="parks-area-find-page-overflow-container">
+         <div class="parks-area-find-page-overflow-container none">
             <div class="parks-area-find-page">
                <div class="side-of-region-button-f-p s-o-r-f-p-active"><?php the_field('najdi_svoj_park_navigacziya_1') ?></div>
                <div class="side-of-region-button-f-p"><?php the_field('najdi_svoj_park_navigacziya_2') ?></div>

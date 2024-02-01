@@ -77,7 +77,7 @@ get_header();
                      <p class="text-14"><span class="grey-i-p">Залог:</span> <?php the_field('item-page-zalog') ?></p>
                   </div>
                   <div class="avalibale-card-i-p">
-                     <p class="text-14-500-left">Наличие</p>
+                     <p class="text-18-500-left">Наличие</p>
                      <div class="">
                         <p class="grey-i-p text-14">В 12 парках:</p>
                         <p class="text-14-500-left-lato div-dics-right-card-i-p ">

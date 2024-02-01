@@ -499,7 +499,9 @@
    position: relative;
    width: 100%;
 }
-.charity-title,
+.charity-title {
+   margin: 0 0 30px;
+}
 .faq-title {
    margin: 40px 0;
 }

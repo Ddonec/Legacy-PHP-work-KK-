@@ -253,7 +253,7 @@ get_header();
                      <div>скидку&nbsp;15%</div>
                   </div>
                </div>
-               <div class="apps-links-app-cart"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></div>
+               <div class="apps-links-app-cart"><a href="https://apps.apple.com/ru/app/кутикатай/id1645059794"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /></a><a href="https://play.google.com/store/apps/details?id=com.kutikataj.app_clients_kutikatay"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></a></div>
             </div>
          </div>
       </section>
@@ -603,6 +603,7 @@ get_header();
             <div class="usrful-materials-cards">
             <a href="<?php echo get_option('home'); ?>/news-1">
                <div class="green-samokat">
+                  <div class="green-samokat-before"> <img src="<?php echo esc_url(get_field('kartinka_zelenogo_samokata')); ?>" alt=""></div>
                   Езда на<br />
                   электро- <br />
                   самокате

@@ -208,6 +208,9 @@
    .gray-line-fake {
       display: none;
    }
+   .bread-crumbs {
+      margin-top: 40px;
+   }
 }
 
 @media (max-width: 1400px) {
@@ -230,6 +233,9 @@
    }
    .main-info-info-page {
       position: relative;
+   }
+   .right-section-info-page {
+      margin-left: 20px;
    }
    .right-section-info-page {
       width: 60%;
@@ -671,6 +677,14 @@
       width: 48.5%;
    }
 }
+@media (max-width: 1254px) {
+   .social-left-block-news-2-page {
+      margin-top: 226px;
+   }
+   .aside-right-block-news-1-page {
+      margin-top: 175px;
+   }
+}
 @media (max-width: 1100px) {
    .first-2-blocks-rope-park-page {
       flex-direction: column;
@@ -725,12 +739,7 @@
    .i-n-p-c-email {
       width: 20%;
    }
-   .social-left-block-news-2-page {
-      margin-top: 226px;
-   }
-   .aside-right-block-news-1-page {
-      margin-top: 175px;
-   }
+
    .ticket__card {
       width: 48%;
    }
@@ -822,6 +831,14 @@
    }
    .title-of-section-item-page {
       margin-top: 40px;
+   }
+}
+@media (max-width: 994px) {
+   .social-left-block-news-2-page {
+      margin-top: 273px;
+   }
+   .aside-right-block-news-1-page {
+      margin-top: 221px;
    }
 }
 @media (max-width: 990px) {
@@ -1649,10 +1666,17 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 30px;
+      position: relative;
    }
-   .apps-links-footer- img {
+   .apps-links-footer- a {
       width: 45%;
       max-width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .apps-links-footer- a img {
+      width: 100%;
    }
 
    .shop-take-rent {
@@ -1965,8 +1989,11 @@
       width: 100%;
       text-align: left;
    }
+   .logo-about-us-bike-white {
+      margin-left: 0;
+   }
    .our-values-about-us-page-container {
-      margin: 0 0 80px;
+      margin: 60px 0 80px;
       flex-direction: column;
       align-items: center;
    }
@@ -1999,6 +2026,9 @@
    .price-repair-page-container > div {
       padding: 24px 0;
    }
+   .our-values-about-us-page-container > div:first-child {
+      padding: 0;
+   }
 }
 @media (max-width: 670px) {
    .avalible-park-make-fun-container {
@@ -2008,8 +2038,7 @@
       display: flex;
       width: 100%;
    }
-   .arrow-right-list-favorite,
-   .text-blicks-repair-page {
+   .arrow-right-list-favorite {
       display: none;
    }
    .mibile-version-top-content-repair-page {
@@ -2145,8 +2174,11 @@
    .ticket__card {
       width: 100%;
    }
-   .apps-links-app-cart-franchise img {
+   .apps-links-app-cart-franchise a {
       width: 47%;
+   }
+   .apps-links-app-cart-franchise a img {
+      width: 100%;
    }
 }
 
@@ -2260,7 +2292,7 @@
       height: 484px;
    }
    .green-samokat {
-      width: 83vw;
+      width: 100%;
       height: 484px;
    }
    .usrful-materials-cards > div:not(:first-child) > img {
@@ -2667,8 +2699,11 @@
    .director__name {
       width: 100%;
    }
-   .apps-links-app-cart-franchise img {
+   .apps-links-app-cart-franchise a {
       width: 180px;
+   }
+   .apps-links-app-cart-franchise a img {
+      width: 100%;
    }
 }
 
@@ -2826,7 +2861,7 @@
       margin-bottom: 18px;
    }
    .green-samokat {
-      width: 78vw;
+      width: 100%;
       height: 360px;
    }
    .usrful-materials-cards > div:not(:first-child) > img {
