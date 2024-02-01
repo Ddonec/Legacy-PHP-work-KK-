@@ -6,12 +6,27 @@ const parkValueSticky = document.querySelector(".bottom-sticky-panel");
 cardReserve.addEventListener("click", function () {
    openPopupReserve();
 });
+
 parkValueSticky.addEventListener("click", function () {
    openPopupAbout();
 });
 
+function openPopupChose() {
+   if (document.cookie.indexOf("popupShown=") === -1) {
+      openPopupChoseSwitch();
+      var expirationDate = new Date();
+      expirationDate.setFullYear(expirationDate.getFullYear() + 1);
+      document.cookie = "popupShown=true; expires=" + expirationDate.toUTCString() + "; path=/;";
+   } else {
+      console.log("Попап уже показан");
+   }
+}
 
-openPopupChose();
+window.onload = function () {
+   openPopupChose();
+   console.log("Страница загружена");
+};
+
 function openPopupReserve() {
    popup = document.createElement("div");
    greyBG = document.createElement("div");
@@ -56,7 +71,7 @@ function openPopupReserve() {
    });
 }
 
-function openPopupChose() {
+function openPopupChoseSwitch() {
    popup = document.createElement("div");
    greyBG = document.createElement("div");
    greyBG.className = "grey-bg";
@@ -246,7 +261,6 @@ function openPopupSwitch() {
       openPopupAbout();
    });
 }
-
 
 // const bg = document.querySelector(".grey-bg");
 // bg.addEventListener("click", function () {

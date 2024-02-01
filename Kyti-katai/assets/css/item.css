@@ -35,6 +35,15 @@
    line-height: 150%; /* 27px */
    vertical-align: center;
 }
+
+.text-14-500-left-lato-left {
+   color: #333;
+   font-family: Lato, sans-serif;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 150%; /* 27px */
+}
 .text-12-500 {
    color: #000;
    font-family: Lato, sans-serif;

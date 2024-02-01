@@ -73,6 +73,33 @@
 </style>
    <body>
       <header>
+
+
+      <nav class="burger-menu text-14-500-left-lato-left" id="burgerMenu">
+            <img class="close-btn-burger-menu" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/close-vector-btn-black.svg" alt="" />
+            <a href="<?php echo get_option('home'); ?>"><img class="logo-blue-burger" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/logo-blue.svg" alt="" /></a>
+            <li>
+               <div class="dropdown" id="companyDropdown">
+                  <div class="dropdown-header" onclick="toggleDropdown()">Компания <img id="burger-company-drop-arrow" src="assets/icon/dropdown-arrow-up.svg" alt="" /></div>
+                  <ul class="dropdown-list" id="companyDropdownList">
+                     <li><a href="<?php echo get_option('home'); ?>/about-us">О нас</a></li>
+                     <li><a href="<?php echo get_option('home'); ?>/news">Новости</a></li>
+                     <li><a href="<?php echo get_option('home'); ?>/work">Работа в КутиКатай</a></li>
+                     <li><a href="<?php echo get_option('home'); ?>/contacts">Контакты</a></li>
+                  </ul>
+               </div>
+            </li>
+            <li><a href="<?php echo get_option('home'); ?>/franchise">Франшиза</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/faq">FAQ</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/find">Найди свой парк</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/catalog">Возьми в прокат</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/catalog-child">Развлечения детям</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/rope-park">Веревочный парк</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/make-child-fun/">Организация детских праздников</a></li>
+         </nav>
+
+
+
          <div class="heaer-fake-fullscreen">
             <div class="blue-line-fake"></div>
             <div class="gray-line-fake"></div>
@@ -147,7 +174,7 @@
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/shopping-cart.svg" alt="" />
                   </li>
                   <li>
-                     <div class="burger">
+                     <div class="burger" onclick="toggleBurgerMenu()">
                         <span class="burgers"></span>
                         <span class="burgers"></span>
                         <span class="burgers"></span>

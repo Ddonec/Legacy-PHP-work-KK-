@@ -8,6 +8,33 @@ get_header();
 ?>
 
 
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    ymaps.ready(init);
+    function init() {
+        var myMap = new ymaps.Map('map', {
+            center: [55.76, 37.64],
+            zoom: 11
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+        $.getJSON( "/wp-content/uploads/points.json", function( data ) {
+            objectManager = new ymaps.ObjectManager({
+                clusterize: true,
+                gridSize: 50,
+                clusterDisableClickZoom: false
+            });
+            objectManager.clusters.options.set('preset', 'islands#invertedNightClusterIcons');
+            myMap.geoObjects.add(objectManager);
+            objectManager.add(data);
+        });
+    }
+</script>
+
+
+
+
 
 
       <section class="first-section">
@@ -26,11 +53,45 @@ get_header();
                <div class="absolute-fs-container-right"></div>
             </div>
          </div>
-         <div class="map-area-first-section" id="map-area-first-section">
+         <div class="map-container" id="map-area-first-section">
             <div class="absolute-on-map-home-page-text-comtainer">
                <h3 class="text-gradient">Найди свой парк</h3>
             </div>
-            <a href="<?php echo get_option('home'); ?>/find"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/map571.png" alt="" class="map-map-s1" /></a>
+            <section class="absolute-map-info-left-container">
+               <div class="park-info-map-zone text-14-500-left-lato-left">
+                  <img class="Vector-close-10" src="assets/icon/Vector-close-10.7.svg" alt="" />
+                  <p class="park-info-map-zone-title">Красногвардейский пруд</p>
+                  <div class="park-info-map-zone-line0info">
+                     <p class="opacity">Время работы:</p>
+                     <p>Круглосуточно</p>
+                  </div>
+                  <div class="park-info-map-zone-line0info">
+                     <p class="opacity">Техника парка:</p>
+                     <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны</p>
+                  </div>
+                  <div class="map-area-first-section__button">Выбрать парк</div>
+               </div>
+            </section>
+            <section class="absolute-map-info-right-container">
+               <div class="park-list-map-zone text-14-500-left-lato-left">
+                  <p class="park-info-map-zone-title">Парки</p>
+                  <input class="park-list-map-zone__input" type="text" placeholder="Парк, город или метро" />
+                  <ul class="park-list-map-zone__ul">
+                     <li>Парк Строгино</li>
+                     <li>Парк Победы</li>
+                     <li>Красногвардейский пруд</li>
+                     <li>ВДНХ</li>
+                     <li>Лиазновский парк</li>
+                     <li>ВДНХ</li>
+                     <li>ВДНХ</li>
+                     <li>ВДНХ</li>
+                  </ul>
+               </div>
+            </section>
+
+            <div id="map"></div>
+            <a href="<?php echo get_option('home'); ?>/find">
+            </a>
          </div>
       </section>
       <section class="second-section take-a-rent" id="second-section">
@@ -465,10 +526,10 @@ get_header();
             <div class="text-5-s-2 i-b-el-4">Устроить праздник мечты поможет аниматор, который организует шоу-программу, проведет мастер-класс и увлечен детей в атмосферу веселья и радости.</div>
          </div> -->
 
-         <button class="find-out-more-btn class-to-switch-season-btn">
+         <a href="<?php echo get_option('home'); ?>/make-child-fun/"><button class="find-out-more-btn class-to-switch-season-btn">
             Узнать подробнее
             <span class="less700hide"> &nbsp;об организации праздников</span>
-         </button>
+         </button></a>
       </section>
 
       <section class="six-section">
