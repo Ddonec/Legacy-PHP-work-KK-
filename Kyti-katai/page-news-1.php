@@ -51,9 +51,11 @@ get_header();
                         <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img(2).png" alt="" />
                         <div class="text-inside-cart-blog">
                            <p>Электровелосипеды доступны москвичам</p>
-      
-                           Парк моделей превысит 2000 устройств. Городской<br />
-                           велосипед рассчитан на 7 км
+                           <span class="truncate-text">
+                              Парк моделей превысит 2000 устройств. Городской<br />
+                              велосипед рассчитан на 7 км к действующим инициативам по безопасности мы предоставим меры к действующим инициативам по безопасности мы предоставим меры
+                        
+                           </span>
       
                            <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1.svg" alt="" /> Савелий Октябрьский</div>
                            <div class="date-in-material-card">15.07.23</div>
@@ -64,8 +66,10 @@ get_header();
                         <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img(3).png" alt="" />
                         <div class="text-inside-cart-blog">
                            <p>Кути Катай оснастит самокаты шлемами</p>
-      
-                           В дополнение к действующим инициативам по безопасности мы предоставим меры по защ...
+                           <span class="truncate-text">
+                              В дополнение к действующим инициативам по безопасности мы предоставим меры к действующим инициативам по безопасности мы предоставим меры к действующим инициативам по безопасности мы предоставим меры по защ...
+                        
+                           </span>
       
                            <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> Елена Васильева</div>
                            <div class="date-in-material-card">30.06.23</div>

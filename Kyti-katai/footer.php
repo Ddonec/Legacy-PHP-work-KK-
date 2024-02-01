@@ -11,8 +11,8 @@
          <div class="images-footer">
             <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group3.svg" alt="" />
             <div class="apps-links-footer-1">
-               <img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" />
-               <img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" />
+              <a href="https://apps.apple.com/ru/app/кутикатай/id1645059794"> <img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /></a>
+              <a href="https://play.google.com/store/apps/details?id=com.kutikataj.app_clients_kutikatay"> <img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></a>
             </div>
 
             <div class="social-circles-footer-index">
@@ -55,8 +55,8 @@
                </ul>
             </div>
             <div class="apps-links-footer-">
-               <img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" />
-               <img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" />
+               <a href="https://apps.apple.com/ru/app/кутикатай/id1645059794"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /></a>
+               <a href="https://play.google.com/store/apps/details?id=com.kutikataj.app_clients_kutikatay"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></a>
             </div>
             <div class="row-footer-1">
                <a href="<?php echo get_option('home'); ?>/contacts"><div class="title-list-1">Контакты</div></a>

@@ -53,9 +53,6 @@
       display: none;
    }
 
-   .icun-list-h li:nth-child(2) {
-      display: none;
-   }
    .columns-footer > div:nth-last-child(1) {
       width: 287px;
    }
@@ -103,7 +100,11 @@
       display: none;
    }
 }
-
+@media (min-width: 1301px) {
+   .icun-list-h li:nth-child(2) {
+      display: none;
+   }
+}
 @media (max-width: 1300px) {
    .input-zone-1920 {
       display: none;
@@ -203,6 +204,13 @@
    .h1-no-main-page.text-gradient {
       width: 100%;
    }
+   .second-line-header,
+   .gray-line-fake {
+      display: none;
+   }
+   .bread-crumbs {
+      margin-top: 40px;
+   }
 }
 
 @media (max-width: 1400px) {
@@ -225,6 +233,9 @@
    }
    .main-info-info-page {
       position: relative;
+   }
+   .right-section-info-page {
+      margin-left: 20px;
    }
    .right-section-info-page {
       width: 60%;
@@ -408,10 +419,7 @@
    .footer-line {
       width: 95vw;
    }
-   .second-line-header,
-   .gray-line-fake {
-      display: none;
-   }
+
    .heaer-fake-fullscreen,
    header {
       height: unset;
@@ -669,6 +677,14 @@
       width: 48.5%;
    }
 }
+@media (max-width: 1254px) {
+   .social-left-block-news-2-page {
+      margin-top: 226px;
+   }
+   .aside-right-block-news-1-page {
+      margin-top: 175px;
+   }
+}
 @media (max-width: 1100px) {
    .first-2-blocks-rope-park-page {
       flex-direction: column;
@@ -723,14 +739,38 @@
    .i-n-p-c-email {
       width: 20%;
    }
-   .social-left-block-news-2-page {
-      margin-top: 226px;
-   }
-   .aside-right-block-news-1-page {
-      margin-top: 175px;
-   }
+
    .ticket__card {
       width: 48%;
+   }
+   .cabinet-content-container {
+      display: flex;
+      flex-direction: column;
+   }
+   .cabinet-orders {
+      order: 3;
+   }
+   .user-data-cabinet {
+      width: unset;
+      order: 2;
+      height: 211px;
+      justify-content: flex-start;
+   }
+   .cabinet-go-check {
+      order: 1;
+   }
+   .user-data-cabinet__buttons-zone {
+      position: absolute;
+      bottom: 32px;
+      right: 32px;
+   }
+   .user-data-cabinet__discription {
+      flex-direction: row;
+   }
+   .cabinet-go-check__btn-3,
+   .cabinet-go-check__btn-4,
+   .cabinet-go-check__btn-5 {
+      display: none;
    }
 }
 /* @media (max-width: 1088px){
@@ -791,6 +831,14 @@
    }
    .title-of-section-item-page {
       margin-top: 40px;
+   }
+}
+@media (max-width: 994px) {
+   .social-left-block-news-2-page {
+      margin-top: 273px;
+   }
+   .aside-right-block-news-1-page {
+      margin-top: 221px;
    }
 }
 @media (max-width: 990px) {
@@ -1240,6 +1288,23 @@
    .download-prez-btn {
       width: 300px;
    }
+
+   .log-in-modal__image {
+      width: 0;
+   }
+   .log-in-modal__main-container {
+      width: 100%;
+   }
+   .log-in-modal-container {
+      width: calc(100vw - 50px);
+   }
+   .log-in-modal__form {
+      height: fit-content;
+   }
+   .log-in-modal__go-sign-up {
+      flex-direction: column;
+      margin-top: 40px;
+   }
 }
 
 /* @media (max-width: 799px){
@@ -1601,10 +1666,17 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 30px;
+      position: relative;
    }
-   .apps-links-footer- img {
+   .apps-links-footer- a {
       width: 45%;
       max-width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .apps-links-footer- a img {
+      width: 100%;
    }
 
    .shop-take-rent {
@@ -1917,8 +1989,11 @@
       width: 100%;
       text-align: left;
    }
+   .logo-about-us-bike-white {
+      margin-left: 0;
+   }
    .our-values-about-us-page-container {
-      margin: 0 0 80px;
+      margin: 60px 0 80px;
       flex-direction: column;
       align-items: center;
    }
@@ -1951,6 +2026,9 @@
    .price-repair-page-container > div {
       padding: 24px 0;
    }
+   .our-values-about-us-page-container > div:first-child {
+      padding: 0;
+   }
 }
 @media (max-width: 670px) {
    .avalible-park-make-fun-container {
@@ -1960,12 +2038,27 @@
       display: flex;
       width: 100%;
    }
-   .arrow-right-list-favorite,
-   .text-blicks-repair-page {
+   .arrow-right-list-favorite {
       display: none;
    }
    .mibile-version-top-content-repair-page {
       display: block;
+   }
+}
+
+@media (max-width: 650px) {
+   .image-blue-check-cabinet {
+      display: none;
+   }
+   .user-data-cabinet__buttons-zone {
+      position: unset;
+   }
+   .user-data-cabinet {
+      height: unset;
+   }
+   .cabinet-go-check__buttons-zone {
+      flex-direction: column;
+      align-items: normal;
    }
 }
 
@@ -2081,8 +2174,11 @@
    .ticket__card {
       width: 100%;
    }
-   .apps-links-app-cart-franchise img {
+   .apps-links-app-cart-franchise a {
       width: 47%;
+   }
+   .apps-links-app-cart-franchise a img {
+      width: 100%;
    }
 }
 
@@ -2196,7 +2292,7 @@
       height: 484px;
    }
    .green-samokat {
-      width: 83vw;
+      width: 100%;
       height: 484px;
    }
    .usrful-materials-cards > div:not(:first-child) > img {
@@ -2603,8 +2699,11 @@
    .director__name {
       width: 100%;
    }
-   .apps-links-app-cart-franchise img {
+   .apps-links-app-cart-franchise a {
       width: 180px;
+   }
+   .apps-links-app-cart-franchise a img {
+      width: 100%;
    }
 }
 
@@ -2615,6 +2714,9 @@
 
    .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 12) {
       display: none;
+   }
+   .user-data-cabinet__discription {
+      flex-direction: column;
    }
 }
 
@@ -2759,7 +2861,7 @@
       margin-bottom: 18px;
    }
    .green-samokat {
-      width: 78vw;
+      width: 100%;
       height: 360px;
    }
    .usrful-materials-cards > div:not(:first-child) > img {

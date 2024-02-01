@@ -14,7 +14,7 @@ get_header();
       <p>/</p>
       <p class="grey-bread-crumbs">Контакты</p>
    </div>
-   <div class="title-of-section-news-page">
+   <div class="title-of-section-contacts-page">
       <h3 class="text-gradient"><?php the_field('contacts-zagolovok') ?></h3>
       <!-- <div class="opacity-text-section o-t-s-all">Контакты</div>
             <div class="item-shadow-section-contact-page"></div> -->

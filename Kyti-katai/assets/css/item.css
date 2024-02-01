@@ -1,3 +1,10 @@
+.truncate-text {
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3; /* Ограничение на количество строк */
+}
+
 .text-18-500-left {
    color: #333;
    font-family: "Montserrat", sans-serif;
@@ -27,6 +34,15 @@
    font-weight: 500;
    line-height: 150%; /* 27px */
    vertical-align: center;
+}
+
+.text-14-500-left-lato-left {
+   color: #333;
+   font-family: Lato, sans-serif;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 150%; /* 27px */
 }
 .text-12-500 {
    color: #000;
@@ -113,7 +129,7 @@
 }
 .main-content-item {
    width: 100vw;
-   max-width: 1300px;
+   max-width: 1200px;
 }
 
 .item-shadow-section {
@@ -128,7 +144,7 @@
    justify-content: space-between;
 }
 .photo-item-i-p {
-   width: 49%;
+   width: 44%;
    border-radius: 20px;
    background-image: url(../assets/content/img-bike-2.png);
    background-repeat: no-repeat;
@@ -143,7 +159,7 @@
    display: flex;
    flex-direction: column;
    gap: 40px;
-   width: 47%;
+   width: 53%;
 }
 
 .discription-of-item-i-p {
@@ -177,7 +193,7 @@
 }
 .price-card-i-p {
    display: flex;
-   padding: 15px;
+   padding: 20px;
    flex-direction: column;
    align-items: flex-start;
    gap: 16px;
@@ -334,6 +350,28 @@
    display: flex;
    gap: 20px;
 }
+.title-of-section-find-page {
+   position: relative;
+   margin: 0 0 50px;
+   font-family: "Montserrat Alternates", sans-serif;
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   display: flex;
+   gap: 20px;
+}
+.title-of-section-contacts-page {
+   position: relative;
+   margin: -5px 0 30px;
+   font-family: "Montserrat Alternates", sans-serif;
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   display: flex;
+   gap: 20px;
+}
 .title-of-section-news {
    position: relative;
    margin: 40px 0 50px;
@@ -384,7 +422,6 @@
    height: 365px;
 }
 
-
 .subscribe-for-our-news-container {
    display: flex;
    max-width: 1300px;
@@ -394,7 +431,7 @@
    gap: 24px;
    border-radius: 40px;
    background: #e8eafb;
-   margin: 80px auto 90px;
+   margin: 80px auto 20px;
    position: relative;
    overflow: hidden;
    width: 100%;
@@ -579,7 +616,7 @@
    display: flex;
    flex-wrap: wrap;
    gap: 20px;
-   justify-content: space-evenly;
+   justify-content: space-between;
 }
 .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 4) {
    display: none;
@@ -693,7 +730,7 @@
 }
 .search-container-find-page {
    position: relative;
-   margin: 30px 0;
+   margin: 0 0 30px;
 }
 .last-section-area-i-p {
    padding: 0 20px;
@@ -772,13 +809,11 @@
 .call-back-form-container-f-p {
    display: flex;
    max-width: 1200px;
-   padding: 40px 40px 50px 40px;
+   padding: 50px 0 0 0;
    flex-direction: column;
    align-items: flex-start;
-   gap: 24px;
    border-radius: 40px;
-   background: #e8eafb;
-   margin: 120px auto 90px;
+   margin: 20px auto 80px;
    position: relative;
    overflow: hidden;
 }
@@ -1680,7 +1715,6 @@
    overflow-x: auto;
    border-radius: 30px;
    box-shadow: inset 0 0 0 1px rgba(85, 103, 234, 0.2);
-   width: 1150px;
 }
 .nav-repair-page ul::-webkit-scrollbar {
    display: none;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php echo get_option('home'); ?>/about-us/<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
@@ -57,7 +57,15 @@
             </div>
 
             <ul class="header-1920-list">
-               <li class="pointer">Компания <img class="winter-status" src="assets/icon/Frame-36.svg" /> <img class="summer-status none" src="assets/icon/Vector-black.svg" alt="" /></li>
+               <li class="pointer" id="pointer-for-drop">
+                  Компания <img class="winter-status" src="assets/icon/Frame-36.svg" /> <img class="summer-status none" src="assets/icon/Vector-black.svg" alt="" />
+                  <div id="drop-window-company">
+                     <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/about-us/">О нас</a>
+                     <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/news/">Новости</a>
+                     <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/work/">Работа в КутиКатай</a>
+                     <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/contact/">Контакты</a>
+                  </div>
+               </li>
                <li class="pointer">Сообщества <img class="winter-status" src="assets/icon/Frame-36.svg" /><img class="summer-status none" src="assets/icon/Vector-black.svg" alt="" /></li>
                <li class="pointer">Франшиза</li>
                <li class="pointer"><a class="white-text-section" href="/faq.html">FAQ</a></li>
@@ -88,7 +96,7 @@
                      <img src="assets/icon/shopping-cart.svg" alt="" />
                   </li>
                   <li>
-                     <div class="burger">
+                     <div class="burger" onclick="toggleBurgerMenu()">
                         <span class="burgers"></span>
                         <span class="burgers"></span>
                         <span class="burgers"></span>
@@ -121,7 +129,117 @@
                </div>
             </div>
          </div>
+
+         <style></style>
+         <nav class="burger-menu text-14-500-left-lato-left" id="burgerMenu">
+            <img class="close-btn-burger-menu" src="assets/icon/close-vector-btn-black.svg" alt="" />
+            <img class="logo-blue-burger" src="assets/icon/logo-blue.svg" alt="" />
+            <li>
+               <div class="dropdown" id="companyDropdown">
+                  <div class="dropdown-header" onclick="toggleDropdown()">Компания <img id="burger-company-drop-arrow" src="assets/icon/dropdown-arrow-up.svg" alt="" /></div>
+                  <ul class="dropdown-list" id="companyDropdownList">
+                     <li><a href="<?php echo get_option('home'); ?>/about-us">О нас</a></li>
+                     <li><a href="<?php echo get_option('home'); ?>/news">Новости</a></li>
+                     <li><a href="<?php echo get_option('home'); ?>/work">Работа в КутиКатай</a></li>
+                     <li><a href="<?php echo get_option('home'); ?>/contacts">Контакты</a></li>
+                  </ul>
+               </div>
+            </li>
+            <li><a href="<?php echo get_option('home'); ?>/franchise">Франшиза</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/faq">FAQ</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/find">Найди свой парк</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/catalog">Возьми в прокат</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/catalog-child">Развлечения детям</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/rope-park">Веревочный парк</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/make-child-fun/">Организация детских праздников</a></li>
+         </nav>
+         <script>
+            function toggleDropdown() {
+               var dropdownList = document.getElementById("companyDropdownList");
+               dropdownList.style.display = dropdownList.style.display === "none" ? "block" : "none";
+               adjustArrowRotation();
+            }
+
+            function adjustArrowRotation() {
+               var arrowIcon = document.getElementById("burger-company-drop-arrow");
+               arrowIcon.style.transform = arrowIcon.style.transform === "rotate(180deg) translateY(30%)" ? "" : "rotate(180deg) translateY(30%)";
+            }
+
+            function toggleBurgerMenu() {
+               var burgerMenu = document.getElementById("burgerMenu");
+               burgerMenu.style.transform = "translateY(0)";
+               const greyBG = document.createElement("div");
+               greyBG.className = "grey-bg";
+               document.body.appendChild(greyBG);
+               document.body.style.overflow = "hidden"
+               greyBG.addEventListener("click", function () {
+                  document.body.removeChild(greyBG);
+                  burgerMenu.style.transform = "translateY(-100%)";
+                  document.body.style.overflow = ""
+
+               });
+               document.querySelector(".close-btn-burger-menu").addEventListener("click", function () {
+                  document.body.removeChild(greyBG);
+                  burgerMenu.style.transform = "translateY(-100%)";
+                  document.body.style.overflow = ""
+
+               });
+            }
+         </script>
       </header>
+
+      <!-- <section class="log-in-modal-container">
+         <div class="log-in-modal__image"></div>
+         <div class="log-in-modal__main-container">
+            <form action="" class="log-in-modal__form">
+               <p class="log-in-modal__title text-gradient">Вход</p>
+               <p class="log-in-modal__subtitle">Введите ваш номер телефона для входа в систему</p>
+               <input type="tel" placeholder="Номер телефона" class="log-in-modal__input" />
+               <button class="log-in-modal__button">Отправить</button>
+            </form>
+            <div class="log-in-modal__go-sign-up">
+               <p class="opacity">Еще не зарегистрированы?</p>
+               <p class="log-in-modal__create-acc">Создайте аккаунт</p>
+            </div>
+         </div>
+      </section>
+
+      <section class="log-in-modal-container">
+         <div class="log-in-modal__image"></div>
+         <div class="log-in-modal__main-container">
+            <form action="" class="log-in-modal__form">
+               <p class="log-in-modal__title text-gradient">Регистрация</p>
+               <p class="log-in-modal__subtitle">Введите ваши данные</p>
+               <div class="log-in-modal__input-zone">
+                  <input type="text" placeholder="Ваше имя" class="log-in-modal__input" />
+                  <input type="tel" placeholder="Номер телефона" class="log-in-modal__input" />
+               </div>
+               <button class="log-in-modal__button">Отправить</button>
+            </form>
+            <div class="log-in-modal__go-sign-up">
+               <p class="opacity">У меня уже есть аккаунт</p>
+            </div>
+         </div>
+      </section>
+
+      <section class="log-in-modal-container">
+         <div class="log-in-modal__image"></div>
+         <div class="log-in-modal__main-container">
+            <form action="" class="log-in-modal__form">
+               <p class="log-in-modal__title text-gradient">Вход</p>
+               <p class="log-in-modal__subtitle">
+                  Проверьте устройство, на котором вы авторизованы в приложении по номеру <span class="log-in-modal__number-proof">8 944 051 57 01</span>.
+                  <span class="log-in-modal__change-number">Изменить номер</span>
+               </p>
+               <input type="number" placeholder="Номер телефона" class="log-in-modal__input" />
+               <button class="log-in-modal__button">Отправить</button>
+            </form>
+            <div class="log-in-modal__go-sign-up">
+               <p class="opacity">Получить новый код можно через <span class="log-in-modal__sms-timer">00:16</span></p>
+            </div>
+         </div>
+      </section> -->
+
       <section class="first-section">
          <div class="bacground-image-main-page-first-section">
             <div class="text-area-first-section-1920">
@@ -142,6 +260,37 @@
             <div class="absolute-on-map-home-page-text-comtainer">
                <h3 class="text-gradient">Найди свой парк</h3>
             </div>
+            <section class="absolute-map-info-left-container">
+               <div class="park-info-map-zone text-14-500-left-lato-left">
+                  <img class="Vector-close-10" src="assets/icon/Vector-close-10.7.svg" alt="" />
+                  <p class="park-info-map-zone-title">Красногвардейский пруд</p>
+                  <div class="park-info-map-zone-line0info">
+                     <p class="opacity">Время работы:</p>
+                     <p>Круглосуточно</p>
+                  </div>
+                  <div class="park-info-map-zone-line0info">
+                     <p class="opacity">Техника парка:</p>
+                     <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны</p>
+                  </div>
+                  <div class="map-area-first-section__button">Выбрать парк</div>
+               </div>
+            </section>
+            <section class="absolute-map-info-right-container">
+               <div class="park-list-map-zone text-14-500-left-lato-left">
+                  <p class="park-info-map-zone-title">Парки</p>
+                  <input class="park-list-map-zone__input" type="text" placeholder="Парк, город или метро" />
+                  <ul class="park-list-map-zone__ul">
+                     <li>Парк Строгино</li>
+                     <li>Парк Победы</li>
+                     <li>Красногвардейский пруд</li>
+                     <li>ВДНХ</li>
+                     <li>Лиазновский парк</li>
+                     <li>ВДНХ</li>
+                     <li>ВДНХ</li>
+                     <li>ВДНХ</li>
+                  </ul>
+               </div>
+            </section>
             <a href="find.html"><img src="assets/content/map571.png" alt="" class="map-map-s1" /></a>
          </div>
       </section>
@@ -708,12 +857,10 @@
          <div class="show-more-6-section-btn-2 border-switch-status-blue">Узнать о КутиКатай</div>
       </section>
 
-      <section class="seven-section">
+      <!-- <section class="seven-section">
          <div class="title-of-section-7">
             <h3 class="title-of-section-gradient text-gradient">Полезные материалы</h3>
-            <!-- <div class="black-text-section">Полезные</div>
-            <div class="opacity-text-section o-t-s-all">материалы</div>
-            <div class="shadow-section-7 s-s-shadow"></div> -->
+  
          </div>
          <div class="six-cards-container">
             <div class="usrful-materials-cards">
@@ -770,7 +917,7 @@
          <div class="button-news-container-main-page">
             <a href="news.html"><button class="see-all-usefull-mat-btn class-to-switch-season-btn">Смотреть все полезные материалы</button></a>
          </div>
-      </section>
+      </section> -->
 
       <div class="bottom-sticky-panel">
          <a href="/modal">
