@@ -4772,7 +4772,7 @@ input:checked + .slider:before {
    display: grid;
    gap: 20px;
    max-width: 1200px;
-   margin-top: 40px;
+   margin: 40px auto;
 
    grid-template-areas:
       "b g g g"
@@ -4795,8 +4795,7 @@ input:checked + .slider:before {
 
    grid-area: b;
 }
-.user-title-cabinet {
-}
+
 .user-data-cabinet__discription {
    display: flex;
    flex-direction: column;
@@ -4811,10 +4810,7 @@ input:checked + .slider:before {
    align-items: flex-start;
    gap: 8px;
 }
-.user-data-cabinet__data-title {
-}
-.user-data-cabinet__data-value {
-}
+
 .user-data-cabinet__buttons-zone {
    display: flex;
    flex-direction: column;
@@ -4872,11 +4868,9 @@ input:checked + .slider:before {
    align-items: flex-start;
    gap: 16px;
 }
-.cabinet-go-check__verif-title {
-}
-.cabinet-go-check__verif-subtitle {
-}
+
 .phone-verif-cabinet {
+   color: #4559ed;
 }
 .cabinet-go-check__buttons-zone {
    display: flex;
