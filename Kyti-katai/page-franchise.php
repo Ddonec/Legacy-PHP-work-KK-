@@ -28,7 +28,7 @@ get_header();
             </div>
          </div>
          <ul class="blue-list-frahciese">
-            <div class="burger-blue-list-franchese none">
+            <div class="burger-blue-list-franchese none" onclick="openPopupBurgerBottom()">
                <span></span>
                <span></span>
                <span></span>

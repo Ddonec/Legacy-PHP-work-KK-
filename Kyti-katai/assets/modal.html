@@ -113,7 +113,49 @@
                   </svg>
                </div>
             </form>
-            <style></style>
+            <style>
+               .burger-bottom-franchise {
+                  position: fixed;
+                  bottom: 0;
+                  padding: 20px;
+                  background: aqua;
+                  z-index: 200;
+                  width: 100%;
+                  display: flex;
+                  flex-wrap: wrap;
+                  list-style: none;
+                  justify-content: space-evenly;
+                  font-family: "lato", sans-serif;
+                  font-size: 16px;
+                  border-radius: 20px 20px 0 0;
+                  transition: 0.6;
+                  transform: translateY(100%);
+               }
+               .burger-bottom-franchise li {
+                  padding: 15px 10px;
+               }
+               .truncate-text {
+                  overflow: hidden;
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 2;
+               }
+            </style>
+            <div class="truncate-text">
+               Длинный текст, который будет обрезан после двух строк с добавлением троеточия. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam omnis praesentium sunt veniam? Autem ea
+               cumque laboriosam, vel maxime ex fugit saepe! Recusandae mollitia dolorum, molestiae dolorem eaque hic delectus a possimus quo eligendi dicta deserunt quasi, iusto illo numquam. In
+               mollitia ex aut numquam ea quos voluptate ab unde dolorum, blanditiis magni eligendi esse ratione sit officia veniam libero placeat dolor nulla sed. Animi ipsa numquam reprehenderit
+               sequi, aliquid impedit eius iste. Deleniti itaque unde dolores, mollitia dolor iure, blanditiis ipsa dolore nemo labore numquam amet. Voluptas neque fugiat eveniet debitis molestiae
+               natus laborum, quae hic voluptatum culpa placeat.
+            </div>
+
+            <nav class="burger-bottom-franchise">
+               <li><a href="#format-of-service-franchise-page">Формат услуг</a></li>
+               <li><a href="#they-chose-us">Нас выбирают</a></li>
+               <li><a href="#finnodel-section">Финмодель</a></li>
+               <li><a href="#our-team-franchise">Команда</a></li>
+               <li><a href="#contacts-franchise-page">Контакты</a></li>
+            </nav>
 
             <form class="modal-reserve-franchise">
                <div class="modal-r-c__top-container">
