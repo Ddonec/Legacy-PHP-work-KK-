@@ -193,16 +193,16 @@
             <div class="header-second-line-container">
                <div class="left-list">
                   <ul>
-                     <li class="text-second-line-header pointer"><a href="#map-area-first-section">Найди свой парк</a></li>
-                     <li class="text-second-line-header pointer"><a href="#second-section">Возьми в прокат</a></li>
-                     <li class="text-second-line-header pointer"><a href="#third-section">Развлечения детям</a></li>
+                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/find/">Найди свой парк</a></li>
+                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/shop/">Возьми в прокат</a></li>
+                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/catalog-child/">Развлечения детям</a></li>
                   </ul>
                </div>
                <div class="spase-between-header"></div>
                <div class="right-list winter-opacity opacity-zero">
                   <ul>
-                     <li class="text-second-line-header pointer"><a href="#four-section">Веревочный парк</a></li>
-                     <li class="text-second-line-header pointer"><a href="#five-section">Организация детских праздников</a></li>
+                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/rope-park/">Веревочный парк</a></li>
+                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/make-child-fun/">Организация детских праздников</a></li>
                   </ul>
                </div>
             </div>

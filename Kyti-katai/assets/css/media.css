@@ -832,6 +832,19 @@
    .title-of-section-item-page {
       margin-top: 40px;
    }
+   .absolute-map-info-right-container {
+      right: 4%;
+   }
+   .absolute-map-info-left-container {
+      left: 4%;
+   }
+   .park-info-map-zone-title {
+      padding-left: 0;
+   }
+   .park-info-map-zone {
+      width: 292px;
+      padding: 20px;
+   }
 }
 @media (max-width: 994px) {
    /* .social-left-block-news-2-page {
@@ -1443,6 +1456,9 @@
    }
    .kids-chill::-webkit-scrollbar {
       display: none;
+   }
+   .third-section-container {
+      display: block;
    }
    .third-section {
       display: block;
@@ -2227,9 +2243,9 @@
    .nav-shop ul {
       width: 100%;
    }
-   .card-of-product {
+   /* .card-of-product {
       height: 332px;
-   }
+   } */
    .go-to-shop-btn {
       width: calc(100vw - 40px);
       height: 44px;
@@ -2246,9 +2262,7 @@
    .app-banner {
       height: 216px;
    }
-   .third-section-container {
-      display: block;
-   }
+
    #wide-card-on-chill-kids {
       font-size: 20px;
       padding: 20px 30px;
@@ -2289,7 +2303,7 @@
 
    .usrful-materials-cards {
       margin-left: 10px;
-      height: 484px;
+      /* height: 484px; */
    }
    .green-samokat {
       width: 100%;
@@ -2337,7 +2351,7 @@
    }
    .card-of-product {
       width: calc(48%);
-      height: 352px;
+      /* height: 352px; */
    }
    .img-of-product {
       display: block;
@@ -2410,6 +2424,23 @@
    }
    .first-text__flex {
       gap: 8px;
+   }
+
+   .absolute-map-info-right-container {
+      display: none;
+   }
+   .absolute-map-info-left-container {
+      left: 50%;
+      transform: translateX(-50%);
+      top: unset;
+      bottom: 5%;
+   }
+   .park-info-map-zone {
+      width: 292px;
+      padding: 20px;
+   }
+   .map-container {
+      height: 500px;
    }
 }
 
@@ -2718,6 +2749,9 @@
    .user-data-cabinet__discription {
       flex-direction: column;
    }
+   .map-container {
+      height: 400px;
+   }
 }
 
 @media (max-width: 400px) {
@@ -2753,7 +2787,7 @@
    }
    .card-of-product {
       width: calc(100%);
-      height: 352px;
+      /* height: 352px; */
    }
    .discription-of-product {
       padding: 20px 16px;
