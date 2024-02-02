@@ -154,6 +154,8 @@ get_header();
                       <h4 class="main-text-sub-block-news-p-cont text-gradient">Давайте созвонимся!</h4>
                       <p class="second-text-sub-block-news-p-cont text-18-500-left">Наши специалисты ответят на все ваши вопросы</p>
                    </div>
+                   <?php echo do_shortcode( '[contact-form-7 id="2b64add" title="Давайте созвонимся"]' ); ?>
+                  
                    <div class="input-zone-news-p-cont">
                       <input class="input-in-news-p-cont i-n-p-c-name" type="text" placeholder="Ваше имя" />
                       <input class="input-in-news-p-cont i-n-p-c-email" type="text" placeholder="Номер телефона" />

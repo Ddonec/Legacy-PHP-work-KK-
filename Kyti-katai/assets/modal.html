@@ -5,144 +5,301 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/item.css" />
    </head>
    <body>
-      <section class="modal-container">
-         <form class="modal-reserve-celebrate">
-            <div class="modal-r-c__top-container">
-               <div class="modal-title modal-r-c__title">Закажи праздник</div>
-               <div class="modal-subtitle modal-r-c__title">Укажите формат праздника, чтобы наши специалисты связались с вами</div>
-            </div>
-            <div class="modal-r-c__input-container">
-               <input required="" type="text" class="modal-r-c__input-1 modal-r-c__input" placeholder="Дата праздника" onfocus="(this.type='date') " />
-               <input type="text" class="modal-r-c__input-2 modal-r-c__input" placeholder="Время" step="900" onfocus="this.type='time'" />
-               <input type="text" placeholder="Ваше имя" class="modal-r-c__input-3 modal-r-c__input" />
-               <input type="text" placeholder="Номер телефона" class="modal-r-c__input-4 modal-r-c__input" />
-               <input type="text" placeholder="Расскажите о вашем мероприятии" class="modal-r-c__input-5 modal-r-c__input" />
-            </div>
-            <div class="modal-r-c__button-area">
-               <button class="modal-r-c__button">Отправить</button>
-               <p class="modal-r-c__data-agree modal-data-agree">Отправляя данную форму, вы соглашаетесь с <br /><a href="#">условиями обработки персональных данных</a></p>
-            </div>
-            <div class="close-modal-btn">
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
-               </svg>
-            </div>
-         </form>
+      <a href="" target="_blank"></a>
+      <style>
+         .scroll-container-js {
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            cursor: grab;
+            user-select: none;
+         }
 
-         <div></div>
+         .scroll-container-js:active {
+            cursor: grabbing;
+         }
 
-         <form class="modal-chose-park" action="">
-            <div class="modal-c-p__top-block">
-               <div class="modal-c-p__title">Выбор парка</div>
-               <div class="modal-c-p__subtitle">Выберите парк, в котором вы хотите арендовать технику</div>
-            </div>
-            <div class="modal-c-p__search-city">
-               <div class="modal-c-p__moscow-city">Москва</div>
-               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                     d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                     stroke="#333333"
-                     stroke-width="2"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                  />
-                  <path d="M21 21L16.7 16.7" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-               </svg>
-            </div>
-            <div class="modal-c-p__park-list">
-               <p class="park-list__title">Парки Москвы:</p>
-               <ul class="park-list__ul">
-                  <li class="park-list__li">Парк Победы</li>
-                  <li class="park-list__li">Парк 850-летия Москвы</li>
-                  <li class="park-list__li">Парк Лосиный остров</li>
-                  <li class="park-list__li">Парк Строгино</li>
-                  <li class="park-list__li">ВДНХ</li>
-                  <li class="park-list__li">Измайловский</li>
-                  <li class="park-list__li">Парк Радуга</li>
-                  <li class="park-list__li">Лодочная станция</li>
-                  <li class="park-list__li">Митино</li>
-                  <li class="park-list__li">Парк Победы</li>
-                  <li class="park-list__li">Парк 850-летия Москвы</li>
-                  <li class="park-list__li">Парк Лосиный остров</li>
-                  <li class="park-list__li">Парк Строгино</li>
-                  <li class="park-list__li">ВДНХ</li>
-                  <li class="park-list__li">Измайловский</li>
-                  <li class="park-list__li">Парк Радуга</li>
-                  <li class="park-list__li">Лодочная станция</li>
-                  <li class="park-list__li">Митино</li>
-               </ul>
-            </div>
-            <div class="modal-c-p__buttons">
-               <button class="modal-c-p__save-btn">Сохранить</button>
-               <button class="modal-c-p__skip-btn">Пропустить</button>
-            </div>
-            <div class="close-modal-btn">
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
-               </svg>
-            </div>
-         </form>
+         .scroll-content {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: #ddd;
+            margin-right: 10px;
+         }
 
-         <section class="modal-about-park">
-            <div class="modal-a-p__title">О парке</div>
-            <div class="modal-a-p__middle-container">
-               <div class="modal-a-p__subtitle">Красногвардейский пруд</div>
-               <div class="modal-a-p__time-zone">
-                  <p class="time-zone__grey">Время работы:</p>
-                  <p class="time-zone__disc">Круглосуточно</p>
+         .scroll-container-js:hover {
+            overflow-x: scroll;
+         }
+      </style>
+      <body>
+         <div class="scroll-container-js" id="scrollContainer">
+            <div class="scroll-content"></div>
+            <div class="scroll-content"></div>
+            <div class="scroll-content"></div>
+            <div class="scroll-content"></div>
+            <div class="scroll-content"></div>
+            <div class="scroll-content"></div>
+            <div class="scroll-content"></div>
+            <div class="scroll-content"></div>
+            <div class="scroll-content"></div>
+            <div class="scroll-content"></div>
+            <div class="scroll-content"></div>
+            <div class="scroll-content"></div>
+         </div>
+
+         <script>
+            document.addEventListener("DOMContentLoaded", function () {
+               const scrollContainers = document.querySelectorAll(".scroll-container-js");
+
+               scrollContainers.forEach(function (scrollContainer) {
+                  let isMouseDown = false;
+                  let startX, scrollLeft;
+
+                  scrollContainer.addEventListener("mousedown", (e) => {
+                     isMouseDown = true;
+                     startX = e.pageX - scrollContainer.offsetLeft;
+                     scrollLeft = scrollContainer.scrollLeft;
+                  });
+
+                  scrollContainer.addEventListener("mouseleave", () => {
+                     isMouseDown = false;
+                  });
+
+                  scrollContainer.addEventListener("mouseup", () => {
+                     isMouseDown = false;
+                  });
+
+                  scrollContainer.addEventListener("mousemove", (e) => {
+                     if (!isMouseDown) return;
+                     const x = e.pageX - scrollContainer.offsetLeft;
+                     const walk = x - startX;
+                     scrollContainer.scrollLeft = scrollLeft - walk;
+                  });
+
+                  scrollContainer.addEventListener("mouseenter", () => {
+                     scrollContainer.style.overflowX = "scroll";
+                  });
+
+                  scrollContainer.addEventListener("mouseleave", () => {
+                     scrollContainer.style.overflowX = "auto";
+                  });
+               });
+            });
+         </script>
+
+         <section class="modal-container">
+            <form class="modal-reserve-celebrate">
+               <div class="modal-r-c__top-container">
+                  <div class="modal-title modal-r-c__title">Закажи праздник</div>
+                  <div class="modal-subtitle modal-r-c__title">Укажите формат праздника, чтобы наши специалисты связались с вами</div>
                </div>
-               <div class="modal-a-p__technic-zone">
-                  <p class="technic-zone__grey">Техника парка:</p>
-                  <p class="technic-zone__disc">Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны</p>
+               <div class="modal-r-c__input-container">
+                  <input required="" type="text" class="modal-r-c__input-1 modal-r-c__input" placeholder="Дата праздника" onfocus="(this.type='date') " />
+                  <input type="text" class="modal-r-c__input-2 modal-r-c__input" placeholder="Время" step="900" onfocus="this.type='time'" />
+                  <input type="text" placeholder="Ваше имя" class="modal-r-c__input-3 modal-r-c__input" />
+                  <input type="text" placeholder="Номер телефона" class="modal-r-c__input-4 modal-r-c__input" />
+                  <input type="text" placeholder="Расскажите о вашем мероприятии" class="modal-r-c__input-5 modal-r-c__input" />
                </div>
+               <div class="modal-r-c__button-area">
+                  <button class="modal-r-c__button">Отправить</button>
+                  <p class="modal-r-c__data-agree modal-data-agree">Отправляя данную форму, вы соглашаетесь с <br /><a href="#">условиями обработки персональных данных</a></p>
+               </div>
+               <div class="close-modal-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                     <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+               </div>
+            </form>
+            <style>
+               .burger-bottom-franchise {
+                  position: fixed;
+                  bottom: 0;
+                  padding: 20px;
+                  background: aqua;
+                  z-index: 200;
+                  width: 100%;
+                  display: flex;
+                  flex-wrap: wrap;
+                  list-style: none;
+                  justify-content: space-evenly;
+                  font-family: "lato", sans-serif;
+                  font-size: 16px;
+                  border-radius: 20px 20px 0 0;
+                  transition: 0.6;
+                  transform: translateY(100%);
+               }
+               .burger-bottom-franchise li {
+                  padding: 15px 10px;
+               }
+               .truncate-text {
+                  overflow: hidden;
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 2;
+               }
+            </style>
+            <div class="truncate-text">
+               Длинный текст, который будет обрезан после двух строк с добавлением троеточия. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam omnis praesentium sunt veniam? Autem ea
+               cumque laboriosam, vel maxime ex fugit saepe! Recusandae mollitia dolorum, molestiae dolorem eaque hic delectus a possimus quo eligendi dicta deserunt quasi, iusto illo numquam. In
+               mollitia ex aut numquam ea quos voluptate ab unde dolorum, blanditiis magni eligendi esse ratione sit officia veniam libero placeat dolor nulla sed. Animi ipsa numquam reprehenderit
+               sequi, aliquid impedit eius iste. Deleniti itaque unde dolores, mollitia dolor iure, blanditiis ipsa dolore nemo labore numquam amet. Voluptas neque fugiat eveniet debitis molestiae
+               natus laborum, quae hic voluptatum culpa placeat.
             </div>
-            <div class="modal-a-p__img"></div>
-            <div class="modal-a-p__button">Сменить парк</div>
-            <div class="close-modal-btn">
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
-               </svg>
-            </div>
+
+            <nav class="burger-bottom-franchise">
+               <li><a href="#format-of-service-franchise-page">Формат услуг</a></li>
+               <li><a href="#they-chose-us">Нас выбирают</a></li>
+               <li><a href="#finnodel-section">Финмодель</a></li>
+               <li><a href="#our-team-franchise">Команда</a></li>
+               <li><a href="#contacts-franchise-page">Контакты</a></li>
+            </nav>
+
+            <form class="modal-reserve-franchise">
+               <div class="modal-r-c__top-container">
+                  <div class="modal-title modal-r-c__title">Оставить заявку</div>
+                  <div class="modal-subtitle modal-r-c__title">Укажите ваши данные, чтобы наши специалисты связались с вами</div>
+               </div>
+               <div class="modal-r-c__input-container">
+                  <input type="text" class="modal-franchise-1 modal-franchise__input" placeholder="Ваше имя" />
+                  <input type="text" class="modal-franchise-2 modal-franchise__input" placeholder="Город открытия" />
+                  <input type="email" placeholder="Электронная почта" class="modal-franchise-3 modal-franchise__input" />
+                  <input type="tel" placeholder="Номер телефона" class="modal-franchise-4 modal-franchise__input" />
+                  <input type="text" placeholder="Ваше сообщение" class="modal-r-c__input-5 modal-r-c__input modal-franchise-5" />
+               </div>
+               <div class="modal-r-c__button-area">
+                  <div class="toggle-container">
+                     <label class="toggle-label" for="toggle"
+                        ><p class="text-14-500-left-lato-left">Напишите на почту</p>
+                        <p class="text-14-500-left-lato-left">Позвоните мне</p></label
+                     >
+                     <input type="checkbox" id="toggle" class="toggle-input" />
+                     <div class="toggle-slider"></div>
+                  </div>
+
+                  <button class="modal-r-c__button">Отправить</button>
+                  <p class="modal-r-c__data-agree modal-data-agree">Отправляя данную форму, вы соглашаетесь с <br /><a href="#">условиями обработки персональных данных</a></p>
+               </div>
+               <div class="close-modal-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                     <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+               </div>
+            </form>
+
+            <div></div>
+
+            <form class="modal-chose-park" action="">
+               <div class="modal-c-p__top-block">
+                  <div class="modal-c-p__title">Выбор парка</div>
+                  <div class="modal-c-p__subtitle">Выберите парк, в котором вы хотите арендовать технику</div>
+               </div>
+               <div class="modal-c-p__search-city">
+                  <div class="modal-c-p__moscow-city">Москва</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                     <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#333333"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     />
+                     <path d="M21 21L16.7 16.7" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+               </div>
+               <div class="modal-c-p__park-list">
+                  <p class="park-list__title">Парки Москвы:</p>
+                  <ul class="park-list__ul">
+                     <li class="park-list__li">Парк Победы</li>
+                     <li class="park-list__li">Парк 850-летия Москвы</li>
+                     <li class="park-list__li">Парк Лосиный остров</li>
+                     <li class="park-list__li">Парк Строгино</li>
+                     <li class="park-list__li">ВДНХ</li>
+                     <li class="park-list__li">Измайловский</li>
+                     <li class="park-list__li">Парк Радуга</li>
+                     <li class="park-list__li">Лодочная станция</li>
+                     <li class="park-list__li">Митино</li>
+                     <li class="park-list__li">Парк Победы</li>
+                     <li class="park-list__li">Парк 850-летия Москвы</li>
+                     <li class="park-list__li">Парк Лосиный остров</li>
+                     <li class="park-list__li">Парк Строгино</li>
+                     <li class="park-list__li">ВДНХ</li>
+                     <li class="park-list__li">Измайловский</li>
+                     <li class="park-list__li">Парк Радуга</li>
+                     <li class="park-list__li">Лодочная станция</li>
+                     <li class="park-list__li">Митино</li>
+                  </ul>
+               </div>
+               <div class="modal-c-p__buttons">
+                  <button class="modal-c-p__save-btn">Сохранить</button>
+                  <button class="modal-c-p__skip-btn">Пропустить</button>
+               </div>
+               <div class="close-modal-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                     <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+               </div>
+            </form>
+
+            <section class="modal-about-park">
+               <div class="modal-a-p__title">О парке</div>
+               <div class="modal-a-p__middle-container">
+                  <div class="modal-a-p__subtitle">Красногвардейский пруд</div>
+                  <div class="modal-a-p__time-zone">
+                     <p class="time-zone__grey">Время работы:</p>
+                     <p class="time-zone__disc">Круглосуточно</p>
+                  </div>
+                  <div class="modal-a-p__technic-zone">
+                     <p class="technic-zone__grey">Техника парка:</p>
+                     <p class="technic-zone__disc">Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны</p>
+                  </div>
+               </div>
+               <div class="modal-a-p__img"></div>
+               <div class="modal-a-p__button">Сменить парк</div>
+               <div class="close-modal-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                     <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+               </div>
+            </section>
+
+            <form action="" class="modal-switch-park">
+               <div class="modal-switch__title">Смена парка</div>
+               <div class="modal-switch__input-search-zone"><input class="modal-switch__input-search" type="search" placeholder="Название парка, района или улицы" /></div>
+               <div class="modal-switch__middle-container">
+                  <p class="modal-switch__subtitle">Ближайшие:</p>
+                  <div class="modal-switch__parks-zone">
+                     <div class="modal-switch__park-range-zone">
+                        <div class="modal-switch__park-name">ВДНХ</div>
+                        <div class="modal-switch__park-range">(450м)</div>
+                     </div>
+                     <div class="modal-switch__park-range-zone">
+                        <div class="modal-switch__park-name">Измайловский</div>
+                        <div class="modal-switch__park-range">(3,2км)</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-switch__bottom-container">
+                  <p class="modal-switch__subtitle">Популярные:</p>
+                  <div class="modal-switch__parks-zone">
+                     <div class="modal-switch__park-name">Парк Победы</div>
+                     <div class="modal-switch__park-name">Парк 850-летия Москвы</div>
+                     <div class="modal-switch__park-name">Парк Лосиный остров</div>
+                     <div class="modal-switch__park-name">Парк Строгино</div>
+                  </div>
+               </div>
+               <div class="modal-switch__button-save">Сохранить</div>
+               <div class="close-modal-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                     <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+               </div>
+               <div class="go-back-modal-btn"></div>
+            </form>
          </section>
-
-         <form action="" class="modal-switch-park">
-            <div class="modal-switch__title">Смена парка</div>
-            <div class="modal-switch__input-search-zone"><input class="modal-switch__input-search" type="search" placeholder="Название парка, района или улицы" /></div>
-            <div class="modal-switch__middle-container">
-               <p class="modal-switch__subtitle">Ближайшие:</p>
-               <div class="modal-switch__parks-zone">
-                  <div class="modal-switch__park-range-zone">
-                     <div class="modal-switch__park-name">ВДНХ</div>
-                     <div class="modal-switch__park-range">(450м)</div>
-                  </div>
-                  <div class="modal-switch__park-range-zone">
-                     <div class="modal-switch__park-name">Измайловский</div>
-                     <div class="modal-switch__park-range">(3,2км)</div>
-                  </div>
-               </div>
-            </div>
-            <div class="modal-switch__bottom-container">
-               <p class="modal-switch__subtitle">Популярные:</p>
-               <div class="modal-switch__parks-zone">
-                  <div class="modal-switch__park-name">Парк Победы</div>
-                  <div class="modal-switch__park-name">Парк 850-летия Москвы</div>
-                  <div class="modal-switch__park-name">Парк Лосиный остров</div>
-                  <div class="modal-switch__park-name">Парк Строгино</div>
-               </div>
-            </div>
-            <div class="modal-switch__button-save">Сохранить</div>
-            <div class="close-modal-btn">
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
-               </svg>
-            </div>
-            <div class="go-back-modal-btn"></div>
-         </form>
-      </section>
+      </body>
+      <script src="js/test-modal.js"></script>
    </body>
-   <script src="js/test-modal.js"></script>
 </html>
-
-<button></button>

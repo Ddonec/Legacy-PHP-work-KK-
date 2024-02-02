@@ -150,11 +150,18 @@
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   aspect-ratio: 590/442;
+   /* aspect-ratio: 590/442; */
    border: 0.711px solid rgba(34, 34, 34, 0.1);
    height: fit-content;
+   overflow: hidden;
 }
 
+.photo-item-i-p img {
+   object-fit: cover;
+   object-position: center;
+   height: 100%;
+   width: 100%;
+}
 .right-section-info-page {
    display: flex;
    flex-direction: column;
@@ -341,7 +348,7 @@
 }
 .title-of-section-news-page {
    position: relative;
-   margin: 40px 0 50px;
+   margin: 0px 0 40px;
    font-family: "Montserrat Alternates", sans-serif;
    font-size: 48px;
    font-style: normal;
@@ -553,7 +560,14 @@
 .main-photo-of-news-1-page {
    height: 462px;
    border-radius: 40px;
-   background-image: url(../assets/content/state-main-photo.png);
+   overflow: hidden;
+   /* background-image: url(../assets/content/state-main-photo.png); */
+}
+.main-photo-of-news-1-page img {
+   object-fit: cover;
+   object-position: center;
+   width: 100%;
+   height: 100%;
 }
 .full-text-news-1-area {
    display: flex;
@@ -584,6 +598,11 @@
    align-items: center;
    display: flex;
    gap: 8px;
+}
+.image-user-news-1 img {
+   width: 40px;
+   height: 40px;
+   border-radius: 20px;
 }
 
 .aside-right-block-news-1-page {
@@ -1997,4 +2016,61 @@
 .last-element-of-768less-table > p:nth-child(1) {
    opacity: 0.5;
    width: 116px;
+}
+
+.attachment-woocommerce_thumbnail {
+   object-fit: cover;
+   object-position: center;
+   width: 100%;
+   height: 200px;
+}
+.scroll-container-js {
+   white-space: nowrap;
+   cursor: grab;
+   user-select: none;
+}
+
+.scroll-container-js:active {
+   cursor: grabbing;
+}
+
+.burger-bottom-franchise {
+   position: fixed;
+   bottom: 0;
+   padding: 20px;
+   background: white;
+   z-index: 1005;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   justify-content: space-evenly;
+   font-family: "lato", sans-serif;
+   font-size: 16px;
+   border-radius: 20px 20px 0 0;
+   transition: 0.6s;
+   transform: translateY(100%);
+}
+.burger-bottom-franchise li {
+   padding: 15px 10px;
+}
+.burger-bottom-franchise.show {
+   transform: translateY(0);
+}
+
+.hide-text-2-string {
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+}
+.hide-text-3-string {
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3;
+}
+.single-page-main-text p:not(:first-child) {
+   font-size: 14px;
+   padding-top: 10px;
 }

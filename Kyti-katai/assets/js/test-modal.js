@@ -261,6 +261,66 @@ function openPopupSwitch() {
       openPopupAbout();
    });
 }
+function openPopupFranchise() {
+   popup = document.createElement("div");
+   greyBG = document.createElement("div");
+   greyBG.className = "grey-bg";
+   popup.className = "modal-reserve-celebrate-absolute";
+   popup.innerHTML = ` <form class="modal-reserve-franchise">
+   <div class="modal-r-c__top-container">
+      <div class="modal-title modal-r-c__title">Оставить заявку</div>
+      <div class="modal-subtitle modal-r-c__title">Укажите ваши данные, чтобы наши специалисты связались с вами</div>
+   </div>
+   <div class="modal-r-c__input-container">
+      <input type="text" class="modal-franchise-1 modal-franchise__input" placeholder="Ваше имя" />
+      <input type="text" class="modal-franchise-2 modal-franchise__input" placeholder="Город открытия" />
+      <input type="email" placeholder="Электронная почта" class="modal-franchise-3 modal-franchise__input" />
+      <input type="tel" placeholder="Номер телефона" class="modal-franchise-4 modal-franchise__input" />
+      <input type="text" placeholder="Ваше сообщение" class="modal-r-c__input-5 modal-r-c__input modal-franchise-5" />
+   </div>
+   <div class="modal-r-c__button-area">
+      <div class="toggle-container">
+         <label class="toggle-label " for="toggle"
+            ><p class="text-14-500-left-lato-left">Напишите на почту</p>
+            <p class="text-14-500-left-lato-left">Позвоните мне</p></label
+         >
+         <input type="checkbox" id="toggle" class="toggle-input" />
+         <div class="toggle-slider"></div>
+      </div>
+
+      <button class="modal-r-c__button">Отправить</button>
+      <p class="modal-r-c__data-agree modal-data-agree">Отправляя данную форму, вы соглашаетесь с <br /><a href="#">условиями обработки персональных данных</a></p>
+   </div>
+   <div class="close-modal-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
+      </svg>
+   </div>
+</form>`;
+
+   document.body.appendChild(popup);
+   document.body.appendChild(greyBG);
+
+   greyBG.addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
+
+   popup.querySelector(".close-modal-btn").addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
+
+   const goBackBtn = document.querySelector(".go-back-modal-btn");
+
+   goBackBtn.addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      openPopupAbout();
+   });
+}
 
 // const bg = document.querySelector(".grey-bg");
 // bg.addEventListener("click", function () {

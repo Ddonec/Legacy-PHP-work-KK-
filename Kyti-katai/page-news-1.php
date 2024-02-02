@@ -30,7 +30,9 @@ get_header();
             </div>
             <div class="news-1-center-block-info">
                <h1 class="h1-news-1-page"><?php the_field('top_title_news-1') ?></h1>
-               <div class="main-photo-of-news-1-page"></div>
+               <div class="main-photo-of-news-1-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/state-main-photo.png" alt="" />
+               </div>
                <div class="full-text-news-1-area">
                   <h4 class="text-24-600"><?php the_field('news-1-vtoroj_zagolovok') ?></h4>
                   <p class="text-18-500-left">

@@ -12,6 +12,7 @@ function kk_scripts()
     wp_enqueue_script('catalog_script', get_template_directory_uri() . '/assets/js/catalog.js', array(), null, true);
     wp_enqueue_script( 'modal_scripts', get_template_directory_uri( ) . '/assets/js/test-modal.js', array(), null, true);
     wp_enqueue_script( 'modal_login', get_template_directory_uri( ) . '/assets/js/modal-login.js', array(), null, true);
+    wp_enqueue_script( 'scroll-js', get_template_directory_uri( ) . '/assets/js/scroll-js.js', array(), null, true);
 
 
     // отключение стилей woocommerce

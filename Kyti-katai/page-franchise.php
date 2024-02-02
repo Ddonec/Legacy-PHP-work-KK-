@@ -20,15 +20,15 @@ get_header();
                <h1 class="franchese-h1"><?php the_field('franchise-bolshoj_zagolovok_straniczy') ?></h1>
                <div class="last-text-first-section"><?php the_field('franchise-podzagolovok_bolshogo') ?></div>
                <div class="buttons-fs-frahciese-page">
-                  <a href=""><button class="download-fin-model-btn class-to-switch-season-btn">Получить финансовую модель</button></a>
-                  <a href=""
-                     ><button class="download-prez-btn class-to-switch-season-btn">Скачать презентацию франшизы <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/arrow-down-to-line.svg" alt="" /></button
+               <button class="download-fin-model-btn class-to-switch-season-btn" onclick="openPopupFranchise()">Получить финансовую модель</button>
+                  <a href="https://forms.gle/bhaVfoQnFYgQi2v36" target="_blank"
+                     ><button class="download-prez-btn class-to-switch-season-btn">Получить презентацию франшизы <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/arrow-down-to-line.svg" alt="" /></button
                   ></a>
                </div>
             </div>
          </div>
          <ul class="blue-list-frahciese">
-            <div class="burger-blue-list-franchese none">
+            <div class="burger-blue-list-franchese none" onclick="openPopupBurgerBottom()">
                <span></span>
                <span></span>
                <span></span>
@@ -38,10 +38,10 @@ get_header();
             <li><a href="#finnodel-section"><?php the_field('franchise-sinyaya_navigacziya_3') ?></a></li>
             <li><a href="#our-team-franchise"><?php the_field('franchise-sinyaya_navigacziya_4') ?></a></li>
             <li><a href="#contacts-franchise-page"><?php the_field('franchise-sinyaya_navigacziya_5') ?></a></li>
-            <li class="b-l-f-active"><?php the_field('franchise-sinyaya_navigacziya_6') ?></li>
+            <li onclick="openPopupFranchise()" class="b-l-f-active"><?php the_field('franchise-sinyaya_navigacziya_6') ?></li>
          </ul>
          <div class="cunter-container-left-margin-francheise-page">
-            <div class="overflov-block-advantages-cards-frahciese-page">
+            <div class="overflov-block-advantages-cards-frahciese-page scroll-container-js">
                <div class="max-width-contaimer-owerflov-inside-franchaise">
                   <div class="advantage-card-frahciese-page">
                      <div class="advantage-card__first-text">
@@ -122,7 +122,7 @@ get_header();
                      </div>
                   </div>
                </div>
-               <div class="format__pictures">
+               <div class="format__pictures scroll-container-js">
                   <div class="format__pictures_max-width">
                      <div class="format__pictures_first"></div>
                      <div class="format__pictures_second"></div>
