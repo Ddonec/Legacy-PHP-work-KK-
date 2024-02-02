@@ -341,7 +341,7 @@
 }
 .title-of-section-news-page {
    position: relative;
-   margin: 40px 0 50px;
+   margin: 0px 0 40px;
    font-family: "Montserrat Alternates", sans-serif;
    font-size: 48px;
    font-style: normal;
@@ -1997,4 +1997,20 @@
 .last-element-of-768less-table > p:nth-child(1) {
    opacity: 0.5;
    width: 116px;
+}
+
+.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+   object-fit: cover;
+   object-position: center;
+   width: 100%;
+   height: 200px;
+}
+.scroll-container-js {
+   white-space: nowrap;
+   cursor: grab;
+   user-select: none;
+}
+
+.scroll-container-js:active {
+   cursor: grabbing;
 }
