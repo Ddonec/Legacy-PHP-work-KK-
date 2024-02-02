@@ -321,7 +321,7 @@ s1
 }
 .bacground-image-main-page-first-section {
    width: 100%;
-   background-image: url(../assets/content/header-bg-without-noize.png);
+   /* background-image: url(../assets/content/header-bg-without-noize.png); */
 
    background-repeat: no-repeat;
    border-right-width: 100%;
@@ -332,13 +332,11 @@ s1
    align-items: center;
    position: relative;
 }
-.bacground-image-main-page-first-section.summer {
-   background-image: url(../assets/content/head-bg-summer.png);
-}
+
 
 .bacground-image-main-page-first-section-franchese {
    width: 100%;
-   background-image: url(../assets/content/header-bg-without-noize.png);
+   /* background-image: url(../assets/content/header-bg-without-noize.png); */
 
    background-repeat: no-repeat;
    border-right-width: 100%;
@@ -425,18 +423,18 @@ s1
 }
 .absolute-fs-container-left {
    background-position-y: bottom;
-   background-image: url(../assets/content/left-snow-peoples-3.png);
+   /* background-image: url(../assets/content/left-snow-peoples-3.png); */
 }
 .absolute-fs-container-left.summer {
-   background-image: url(../assets/content/bike-riders-summer.png);
+   /* background-image: url(../assets/content/bike-riders-summer.png); */
 }
 
 .absolute-fs-container-right {
    width: 578px;
-   background-image: url(../assets/content/right-snow-peoples.png);
+   /* background-image: url(../assets/content/right-snow-peoples.png); */
 }
 .absolute-fs-container-right.summer {
-   background-image: url(../assets/content/samokat-rider-summer.png);
+   /* background-image: url(../assets/content/samokat-rider-summer.png); */
 }
 .absolute-fs-container-right-frahciese {
    /* background-image: url(../assets/content/bike-riders-summer.png); */
@@ -3818,33 +3816,33 @@ input:checked + .slider:before {
 
 .photos-make-fun__img1 {
    border-radius: 15px;
-   background: url(../assets/content/photos-make-fun__img1.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+   /* background: url(../assets/content/photos-make-fun__img1.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat; */
    background-size: cover;
 }
 
 .photos-make-fun__img2 {
    border-radius: 15px;
-   background: url(../assets/content/photos-make-fun__img2.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+   /* background: url(../assets/content/photos-make-fun__img2.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat; */
    background-size: cover;
 }
 .photos-make-fun__img3 {
    border-radius: 15px;
-   background: url(../assets/content/photos-make-fun__img3.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+   /* background: url(../assets/content/photos-make-fun__img3.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat; */
    background-size: cover;
 }
 .photos-make-fun__img4 {
    border-radius: 15px;
-   background: url(../assets/content/photos-make-fun__img4.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+   /* background: url(../assets/content/photos-make-fun__img4.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat; */
    background-size: cover;
 }
 .photos-make-fun__img5 {
    border-radius: 15px;
-   background: url(../assets/content/photos-make-fun__img5.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+   /* background: url(../assets/content/photos-make-fun__img5.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat; */
    background-size: cover;
 }
 .photos-make-fun__img6 {
    border-radius: 15px;
-   background: url(../assets/content/photos-make-fun__img6.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+   /* background: url(../assets/content/photos-make-fun__img6.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat; */
    background-size: cover;
 }
 
@@ -3868,7 +3866,7 @@ input:checked + .slider:before {
    position: relative;
    height: 200px;
    border-radius: 20px 20px 0px 0px;
-   background: url(../assets/content/avalible-park-1.png), lightgray 50% / cover no-repeat;
+   /* background: url(../assets/content/avalible-park-1.png), lightgray 50% / cover no-repeat; */
    background-size: cover;
    background-position: center;
    top: 20px;
@@ -3878,7 +3876,7 @@ input:checked + .slider:before {
    position: relative;
    height: 200px;
    border-radius: 20px 20px 0px 0px;
-   background: url(../assets/content/avalible-park-2.png), lightgray 50% / cover no-repeat;
+   /* background: url(../assets/content/avalible-park-2.png), lightgray 50% / cover no-repeat; */
    background-size: cover;
    background-position: center;
    top: 20px;

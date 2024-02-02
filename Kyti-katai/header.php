@@ -70,6 +70,61 @@
    background-image: url(<?php the_field('levaya_kartinka_sverhu'); ?>);
 }
 
+.bacground-image-main-page-first-section {
+   background-image: url(<?php the_field('banner_glavnoj_straniczy_zima'); ?>);
+}
+.bacground-image-main-page-first-section.summer {
+   background-image: url(<?php the_field('banner_glavnoj_straniczy_leto'); ?>);
+}
+
+.bacground-image-main-page-first-section-franchese {
+   background-image: url(<?php the_field('banner_glavnoj_straniczy_zima'); ?>);
+}
+
+.absolute-fs-container-left {
+   background-image: url(<?php the_field('levaya_kartinka_banera'); ?>);
+}
+.absolute-fs-container-left.summer {
+   background-image: url(<?php the_field('levaya_kartinka_banera_leto'); ?>);
+}
+
+.absolute-fs-container-right {
+   background-image: url(<?php the_field('pravaya_kartinka_banera'); ?>);
+}
+.absolute-fs-container-right.summer {
+   background-image: url(<?php the_field('pravaya_kartinka_banera_leto'); ?>);
+}
+
+.photo-area-about-us-page {
+   background-image: url(<?php the_field('mejn_foto_straniczy'); ?>);
+}
+
+
+.photos-make-fun__img1 {
+   background: url(<?php the_field('pervyj_slajder_foto_1'); ?>), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+}
+.photos-make-fun__img2 {
+   background: url(<?php the_field('pervyj_slajder_foto_2'); ?>), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+}
+.photos-make-fun__img3 {
+   background: url(<?php the_field('pervyj_slajder_foto_3'); ?>), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+}
+.photos-make-fun__img4 {
+   background: url(<?php the_field('pervyj_slajder_foto_4'); ?>), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+}
+.photos-make-fun__img5 {
+   background: url(<?php the_field('pervyj_slajder_foto_5'); ?>), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+}
+.photos-make-fun__img6 {
+   background: url(<?php the_field('pervyj_slajder_foto_6'); ?>), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+}
+
+.avalible-park__image-1 {
+   background: url(<?php the_field('foto_parka_1'); ?>), lightgray 50% / cover no-repeat;
+}
+.avalible-park__image-2 {
+   background: url(<?php the_field('foto_parka_2'); ?>), lightgray 50% / cover no-repeat;
+}
 </style>
    <body>
       <header>
