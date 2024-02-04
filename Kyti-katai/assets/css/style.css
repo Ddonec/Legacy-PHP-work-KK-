@@ -321,7 +321,7 @@ s1
 }
 .bacground-image-main-page-first-section {
    width: 100%;
-   background-image: url(../assets/content/header-bg-without-noize.png);
+   /* background-image: url(../assets/content/header-bg-without-noize.png); */
 
    background-repeat: no-repeat;
    border-right-width: 100%;
@@ -332,13 +332,11 @@ s1
    align-items: center;
    position: relative;
 }
-.bacground-image-main-page-first-section.summer {
-   background-image: url(../assets/content/head-bg-summer.png);
-}
+
 
 .bacground-image-main-page-first-section-franchese {
    width: 100%;
-   background-image: url(../assets/content/header-bg-without-noize.png);
+   /* background-image: url(../assets/content/header-bg-without-noize.png); */
 
    background-repeat: no-repeat;
    border-right-width: 100%;
@@ -425,18 +423,18 @@ s1
 }
 .absolute-fs-container-left {
    background-position-y: bottom;
-   background-image: url(../assets/content/left-snow-peoples-3.png);
+   /* background-image: url(../assets/content/left-snow-peoples-3.png); */
 }
 .absolute-fs-container-left.summer {
-   background-image: url(../assets/content/bike-riders-summer.png);
+   /* background-image: url(../assets/content/bike-riders-summer.png); */
 }
 
 .absolute-fs-container-right {
    width: 578px;
-   background-image: url(../assets/content/right-snow-peoples.png);
+   /* background-image: url(../assets/content/right-snow-peoples.png); */
 }
 .absolute-fs-container-right.summer {
-   background-image: url(../assets/content/samokat-rider-summer.png);
+   /* background-image: url(../assets/content/samokat-rider-summer.png); */
 }
 .absolute-fs-container-right-frahciese {
    /* background-image: url(../assets/content/bike-riders-summer.png); */
@@ -641,22 +639,17 @@ s2
 
 .nav-shop ul li {
    padding: 10px 24px 12px 24px;
-}
-
-.nav-shop ul li:first-child {
-   border-radius: 30px;
-   border: 1.423px solid var(--yellow, #ffc93a);
-   padding: 10px 24px 12px 24px;
    display: flex;
    justify-content: center;
    align-items: center;
 }
+
 #vector-1 {
    width: 14px;
    height: 14px;
 }
 .discription-of-product {
-   height: 257px;
+   height: 210px;
    bottom: 20px;
    padding: 8px 14px;
    overflow: hidden;
@@ -753,8 +746,8 @@ b {
    box-shadow: inset 0 0 0 1px solid rgba(34, 34, 34, 0.1);
 
    background: #fafafa;
-   width: 310px;
-   height: 443px;
+   width: 224px;
+   height: 324px;
    overflow: hidden;
    transition: 0.6s ease;
    position: relative;
@@ -947,6 +940,7 @@ b {
    align-items: center;
    text-align: center;
    margin: 0 auto;
+   white-space: nowrap;
 }
 .kids-chill-container {
    margin: 20px auto 40px;
@@ -1516,6 +1510,8 @@ s5
 
    display: flex;
    align-items: center;
+
+   border-radius: 20px;
 }
 .slider-five-section-vision::-webkit-scrollbar {
    display: none;
@@ -1913,6 +1909,15 @@ s7
    z-index: 0;
    right: 5px;
 }
+.usrful-materials-cards-overflow {
+   max-width: 1200px;
+   width: 100%;
+   position: relative;
+   overflow-x: auto;
+}
+.usrful-materials-cards-overflow::-webkit-scrollbar {
+   display: none;
+}
 .usrful-materials-cards {
    position: relative;
    gap: 20px;
@@ -1922,6 +1927,9 @@ s7
 }
 .usrful-materials-cards > a:not(:first-child):hover {
    border: 1px solid #4559ed;
+}
+.usrful-materials-cards a:not(:has(.green-samokat)) {
+   width: 224px;
 }
 
 .usrful-materials-cards > a:not(:first-child) .text-inside-cart-blog:hover {
@@ -1977,9 +1985,9 @@ s7
    transition: 0.6s;
 }
 
-.usrful-materials-cards a:not(:first-child):not(.text-inside-cart-blog, .image-user-zone, .date-in-material-card) {
+.usrful-materials-cards a:not(.text-inside-cart-blog, .image-user-zone, .date-in-material-card) {
    overflow: hidden;
-   width: 224px;
+   /* width: 224px; */
    /* height: 265px; */
    border-radius: 20px;
    position: relative;
@@ -1991,7 +1999,7 @@ s7
    border-radius: 20px 0px 20px 20px;
    border: 1px solid rgba(34, 34, 34, 0.1);
    background: #f4f4f8;
-   width: 100%;
+   width: 224px;
    height: 204px;
    bottom: 0px;
    display: flex;
@@ -3808,33 +3816,33 @@ input:checked + .slider:before {
 
 .photos-make-fun__img1 {
    border-radius: 15px;
-   background: url(../assets/content/photos-make-fun__img1.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+   /* background: url(../assets/content/photos-make-fun__img1.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat; */
    background-size: cover;
 }
 
 .photos-make-fun__img2 {
    border-radius: 15px;
-   background: url(../assets/content/photos-make-fun__img2.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+   /* background: url(../assets/content/photos-make-fun__img2.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat; */
    background-size: cover;
 }
 .photos-make-fun__img3 {
    border-radius: 15px;
-   background: url(../assets/content/photos-make-fun__img3.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+   /* background: url(../assets/content/photos-make-fun__img3.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat; */
    background-size: cover;
 }
 .photos-make-fun__img4 {
    border-radius: 15px;
-   background: url(../assets/content/photos-make-fun__img4.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+   /* background: url(../assets/content/photos-make-fun__img4.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat; */
    background-size: cover;
 }
 .photos-make-fun__img5 {
    border-radius: 15px;
-   background: url(../assets/content/photos-make-fun__img5.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+   /* background: url(../assets/content/photos-make-fun__img5.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat; */
    background-size: cover;
 }
 .photos-make-fun__img6 {
    border-radius: 15px;
-   background: url(../assets/content/photos-make-fun__img6.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat;
+   /* background: url(../assets/content/photos-make-fun__img6.jpeg), lightgray 0px -33.03px / 100% 118.312% no-repeat; */
    background-size: cover;
 }
 
@@ -3858,7 +3866,7 @@ input:checked + .slider:before {
    position: relative;
    height: 200px;
    border-radius: 20px 20px 0px 0px;
-   background: url(../assets/content/avalible-park-1.png), lightgray 50% / cover no-repeat;
+   /* background: url(../assets/content/avalible-park-1.png), lightgray 50% / cover no-repeat; */
    background-size: cover;
    background-position: center;
    top: 20px;
@@ -3868,7 +3876,7 @@ input:checked + .slider:before {
    position: relative;
    height: 200px;
    border-radius: 20px 20px 0px 0px;
-   background: url(../assets/content/avalible-park-2.png), lightgray 50% / cover no-repeat;
+   /* background: url(../assets/content/avalible-park-2.png), lightgray 50% / cover no-repeat; */
    background-size: cover;
    background-position: center;
    top: 20px;
@@ -5205,4 +5213,9 @@ input:checked + .slider:before {
 .dropdown-header {
    width: fit-content;
    cursor: pointer;
+}
+
+.yellow-border-1_5px {
+   border: 1.5px solid var(--yellow, #ffc93a);
+   border-radius: 30px;
 }

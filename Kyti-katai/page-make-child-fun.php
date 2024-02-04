@@ -120,17 +120,17 @@ get_header();
 
                   <div class="avalible-park__menu">
                      <div class="avalible-park__title-text">
-                        <p class="text-bold-600">Наташинский парк (Гуливер)</p>
-                        <p class="opacity">МО, Люберцы, ул. Митрофанова, 22,</p>
+                        <p class="text-bold-600"><?php the_field('nazvanie_parka_1') ?></p>
+                        <p class="opacity"><?php the_field('adres_parka_1') ?></p>
                      </div>
-                     <p class="avalible-park__name-of-park">Школа супергероев</p>
+                     <p class="avalible-park__name-of-park"><?php the_field('vid_aktivnosti_parka_1') ?></p>
                      <div class="avalible-park__options">
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" />Терраса для праздника 3 часа</div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" />Минимум 10 человек</div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" />от 1 000₽/человек</div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" />Аниматоры</div>
+                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" /><?php the_field('atribut_parka_1_1') ?></div>
+                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" /><?php the_field('atribut_parka_1_2') ?></div>
+                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" /><?php the_field('atribut_parka_1_3') ?></div>
+                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" /><?php the_field('atribut_parka_1_4') ?></div>
                      </div>
-                     <div class="avalible-park__button">Забронировать праздник</div>
+                     <div class="avalible-park__button"><?php the_field('knopka_broni_paka_1') ?></div>
                   </div>
                </div>
 
@@ -139,17 +139,17 @@ get_header();
 
                   <div class="avalible-park__menu">
                      <div class="avalible-park__title-text">
-                        <p class="text-bold-600">Пехорка</p>
-                        <p class="opacity">МО, Балашиха, парк Пехорка</p>
+                        <p class="text-bold-600"><?php the_field('nazvanie_parka_2') ?></p>
+                        <p class="opacity"><?php the_field('adres_parka_2') ?></p>
                      </div>
-                     <p class="avalible-park__name-of-park">Школа супергероев</p>
+                     <p class="avalible-park__name-of-park"><?php the_field('vid_aktivnosti_parka_2') ?></p>
                      <div class="avalible-park__options">
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" />Комната для праздника 3 часа</div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" />Минимум 7 человек</div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" />от 2 000₽/человек</div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" />Аниматоры</div>
+                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" /><?php the_field('atribut_parka_2_1') ?></div>
+                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" /><?php the_field('atribut_parka_2_2') ?></div>
+                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" /><?php the_field('atribut_parka_2_3') ?></div>
+                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" /><?php the_field('atribut_parka_2_4') ?></div>
                      </div>
-                     <div class="avalible-park__button">Забронировать праздник</div>
+                     <div class="avalible-park__button"><?php the_field('knopka_broni_paka_2') ?></div>
                   </div>
                </div>
             </div>
@@ -172,6 +172,8 @@ get_header();
                         <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
                         <div class="feedback__opacity">25.10.23</div>
                      </li>
+                     
+                     
 
                      <li class="feedback-container-franchise">
                         <div class="feedback__title">Масса удовольствия, Персонал был очень вежлив.</div>
@@ -200,12 +202,52 @@ get_header();
                         <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
                         <div class="feedback__opacity">17.10.23</div>
                      </li>
+
+
+                     <?php the_field('otzyv_1_html') ?>
+
+
                   </ul>
                </div>
+
+
+
                <div class="franchise-arrows-feedback">
                   <div class="arrows-feedback-rignt"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-right.svg" alt="" /></div>
                   <div class="arrows-feedback-left arrows-feedback-opacity"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-left.svg" alt="" /></div>
                </div>
+
+                     <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  const scrollWrapper = document.querySelector(".feedback-overflov-pseudo-container");
+  const nextBtn = document.querySelector(".arrows-feedback-rignt");
+  const prevBtn = document.querySelector(".arrows-feedback-left");
+
+  nextBtn.addEventListener("click", function() {
+    scrollWrapper.scrollBy({ left: 409, behavior: "smooth" });
+    console.log("вправо 200");
+    updateButtonOpacity();
+  });
+
+  prevBtn.addEventListener("click", function() {
+    scrollWrapper.scrollBy({ left: -409, behavior: "smooth" });
+    console.log("влево 200");
+    updateButtonOpacity();
+  });
+
+  function updateButtonOpacity() {
+    // Проверяем, можно ли скроллить влево
+    prevBtn.style.opacity = scrollWrapper.scrollLeft > 0 ? 1 : 0.5;
+
+    // Проверяем, можно ли скроллить вправо
+    const maxScrollLeft = scrollWrapper.scrollWidth - scrollWrapper.clientWidth;
+    nextBtn.style.opacity = scrollWrapper.scrollLeft < maxScrollLeft ? 1 : 0.5;
+  }
+  updateButtonOpacity();
+});
+
+                     </script>
             </div>
 
             <div class="call-back-form-container-overflow-container-default">

@@ -101,38 +101,38 @@ get_header();
                      <div class="history-cards-container-about-page">
                        <div class="history-block-2009-about-us-page">
                            <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_1-about-us-page') ?></h3>
-                            <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle-56.png" alt="" />
+                            <img src="<?php the_field('izobrazhenie_goda_1') ?>" alt="" />
                             <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_1-about-us-page') ?></p>
                        </div>
 
                        <div class="history-block-2009-about-us-page ">
                           <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_2-about-us-page') ?></h3>
-                          <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle-56-1.png" alt="" />
-                          <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_2-about-us-page') ?></p>
+                          <img src="<?php the_field('izobrazhenie_goda_2') ?>" alt="" />
+                          <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_2') ?></p>
                        </div>
 
                        <div class="history-block-2009-about-us-page">
-                           <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_1-about-us-page') ?></h3>
-                            <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle-56.png" alt="" />
-                            <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_1-about-us-page') ?></p>
+                           <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_3') ?></h3>
+                            <img src="<?php the_field('izobrazhenie_goda_3') ?>" alt="" />
+                            <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_3') ?></p>
                        </div>
 
                        <div class="history-block-2009-about-us-page ">
-                          <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_2-about-us-page') ?></h3>
-                          <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle-56-1.png" alt="" />
-                          <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_2-about-us-page') ?></p>
+                          <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_4') ?></h3>
+                          <img src="<?php the_field('izobrazhenie_goda_4') ?>" alt="" />
+                          <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_4') ?></p>
                        </div>
 
                        <div class="history-block-2009-about-us-page">
-                           <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_1-about-us-page') ?></h3>
-                            <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle-56.png" alt="" />
-                            <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_1-about-us-page') ?></p>
+                           <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_5') ?></h3>
+                            <img src="<?php the_field('izobrazhenie_goda_5') ?>" alt="" />
+                            <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_5') ?></p>
                        </div>
 
                        <div class="history-block-2009-about-us-page ">
-                          <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_2-about-us-page') ?></h3>
-                          <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Rectangle-56-1.png" alt="" />
-                          <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_2-about-us-page') ?></p>
+                          <h3 class="h-3-our-history"><?php the_field('sinij_blok_god_6') ?></h3>
+                          <img src="<?php the_field('izobrazhenie_goda_6') ?>" alt="" />
+                          <p class="p-disc-history-card-a-u-p"><?php the_field('sinij_blok_opisanie_goda_6') ?></p>
                        </div>
                      </div>
                   </div>

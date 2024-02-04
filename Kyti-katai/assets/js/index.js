@@ -38,7 +38,166 @@ const winterOpacity = document.querySelectorAll(".winter-opacity");
 const blueFake = document.querySelector(".blue-line-fake");
 const grayFake = document.querySelector(".gray-line-fake");
 
+window.addEventListener("load", function () {
+   const checkbox = document.querySelector('input[type="checkbox"]');
+
+   // Получаем значение из куки
+   const cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)checkboxState\s*=\s*([^;]*).*$)|^.*$/, "$1");
+
+   // Устанавливаем значение чекбокса из куки (если куки существует)
+   if (cookieValue !== undefined) {
+      checkbox.checked = cookieValue === "true"; // Преобразовываем строку в булево значение
+
+      // Вызываем функцию для смены стилей на странице
+      applyStyles(checkbox.checked);
+   }
+});
+
 checkbox.addEventListener("change", function () {
+   document.cookie = `checkboxState=${this.checked}; expires=${new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000).toUTCString()}; path=/`;
+
+   // Вызываем функцию для смены стилей на странице
+   applyStyles(this.checked);
+});
+
+function applyStyles(checked) {
+   // const searchZoneHeader = document.getElementById("search-header-1920"); // Замените на ваш реальный ID
+
+   if (checked) {
+      summerStatus.forEach(function (element) {
+         element.classList.add("none");
+      });
+      textGradient.forEach(function (element) {
+         element.classList.remove("text-gradient-summer");
+      });
+      winterStatus.forEach(function (element) {
+         element.classList.remove("none");
+      });
+      winterOpacity.forEach(function (element) {
+         element.classList.add("opacity-zero");
+      });
+      switchSeasonBtns.forEach(function (element) {
+         element.classList.remove("blue-b-g");
+      });
+      burgerMenuSwitchColor.forEach(function (element) {
+         element.style.background = "white";
+      });
+      switchTextColorSixS.forEach(function (element) {
+         element.classList.remove("switch-color-text-black");
+      });
+      textTitlePartBlue.forEach(function (element) {
+         element.style.color = "#ffc93a";
+      });
+      borderColorSwitch.forEach(function (element) {
+         element.classList.remove("border-blue");
+      });
+      showHideBlueWheel.forEach(function (element) {
+         element.classList.add("none");
+      });
+      showHideYellowWheel.forEach(function (element) {
+         element.classList.remove("none");
+      });
+      summerContent.style.display = "none";
+      winterContent.style.display = "flex";
+      headerLine.style.background = "#5567ea";
+      underBiker.style.background = "#5567ea";
+      secondLineHeader.style.background = "rgba(232, 234, 251, 1)";
+      headerList.style.color = "white";
+      header2List.style.color = "white";
+      searchZoneHeaderClass.classList.remove("custom-placeholder-style");
+      searchZoneHeader.style.border = "2px solid #fff";
+      searchZoneHeader.style.background = "#5567ea";
+      // placeholderElement.style.color = newPlaceholderColor;
+      blueFake.style.background = "#5567ea";
+      grayFake.style.background = "rgba(232, 234, 251, 1)";
+      // numberHeader.style.color = "#FFC93A";
+      backgroundHeaderRightPhoto.classList.remove("summer");
+      backgroundHeaderLeftPhoto.classList.remove("summer");
+      backgroundHeader.classList.remove("summer");
+      searchIconSwitchB.classList.add("none");
+      searchIconSwitchW.classList.remove("none");
+      bgSixSection.classList.remove("summer");
+      bgSixSection.style.backgroundColor = "#5567ea";
+      appbanner.style.background = "#e8eafb";
+
+      runStringFirst.classList.remove("roll-park-list-black");
+      runStringSecond.classList.remove("roll-park-list-black");
+      yellowBlock.style.background = "#ffc93a";
+      sixSectionTitle.classList.remove("text-gradient");
+      fourSectionContainerHide.classList.add("none");
+      fiveSectionContainerHide.classList.add("none");
+      // thirdSectionContainerHide.classList.add("none");
+   } else {
+      summerStatus.forEach(function (element) {
+         element.classList.remove("none");
+      });
+      textGradient.forEach(function (element) {
+         element.classList.add("text-gradient-summer");
+      });
+      winterStatus.forEach(function (element) {
+         element.classList.add("none");
+      });
+      winterOpacity.forEach(function (element) {
+         element.classList.remove("opacity-zero");
+      });
+      switchSeasonBtns.forEach(function (element) {
+         element.classList.add("blue-b-g");
+      });
+      burgerMenuSwitchColor.forEach(function (element) {
+         element.style.background = "black";
+      });
+      switchTextColorSixS.forEach(function (element) {
+         element.classList.add("switch-color-text-black");
+      });
+      textTitlePartBlue.forEach(function (element) {
+         element.style.color = "#5567EA";
+      });
+      borderColorSwitch.forEach(function (element) {
+         element.classList.add("border-blue");
+      });
+      showHideBlueWheel.forEach(function (element) {
+         element.classList.remove("none");
+      });
+      showHideYellowWheel.forEach(function (element) {
+         element.classList.add("none");
+      });
+      winterContent.style.display = "none";
+      summerContent.style.display = "flex";
+      headerLine.style.background = "#ffc93a";
+      underBiker.style.background = "#ffc93a";
+      secondLineHeader.style.background = "#fff9e8";
+      headerList.style.color = "black";
+      header2List.style.color = "black";
+      searchZoneHeaderClass.classList.add("custom-placeholder-style");
+
+      searchZoneHeader.style.border = "2px solid black";
+      searchZoneHeader.style.background = "#ffdd64";
+      searchZoneHeader.style.color = "black";
+
+      // placeholderElement.style.color = "black";
+      blueFake.style.background = "#ffc93a";
+      grayFake.style.background = "#fff9e8";
+      // numberHeader.style.color = "#5567EA";
+      backgroundHeaderRightPhoto.classList.add("summer");
+      backgroundHeaderLeftPhoto.classList.add("summer");
+      backgroundHeader.classList.add("summer");
+      searchIconSwitchB.classList.remove("none");
+      searchIconSwitchW.classList.add("none");
+      bgSixSection.classList.add("summer");
+      bgSixSection.style.backgroundColor = "unset";
+      appbanner.style.background = "#ffefc4";
+
+      runStringFirst.classList.add("roll-park-list-black");
+      runStringSecond.classList.add("roll-park-list-black");
+      yellowBlock.style.background = "white";
+      sixSectionTitle.classList.add("text-gradient");
+      fourSectionContainerHide.classList.remove("none");
+      fiveSectionContainerHide.classList.remove("none");
+      // thirdSectionContainerHide.classList.remove("none");
+   }
+}
+
+function styleChange() {
    const newPlaceholderColor = this.checked ? "red" : "white";
    const placeholderElement = searchZoneHeader;
    if (this.checked) {
@@ -173,7 +332,7 @@ checkbox.addEventListener("change", function () {
       fiveSectionContainerHide.classList.remove("none");
       // thirdSectionContainerHide.classList.remove("none");
    }
-});
+}
 
 // Фильтр в каталоге
 

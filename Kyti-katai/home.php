@@ -103,15 +103,31 @@ get_header();
          </div>
          <div class="nav-shop">
             <ul>
-               <li class="pointer">Каталог</li>
-               <li class="pointer">Велосипеды</li>
-               <li class="pointer">Веломобили</li>
-               <li class="pointer">Электро</li>
-               <li class="pointer">Коньки</li>
-               <li class="pointer">Катамараны</li>
-               <li class="pointer">Коньки</li>
-               <li class="pointer">Лодки</li>
+               <li class="pointer nav-shop__pointer yellow-border-1_5px">Каталог</li>
+               <li class="pointer nav-shop__pointer ">Велосипеды</li>
+               <li class="pointer nav-shop__pointer ">Веломобили</li>
+               <li class="pointer nav-shop__pointer ">Электро</li>
+               <li class="pointer nav-shop__pointer ">Коньки</li>
+               <li class="pointer nav-shop__pointer ">Катамараны</li>
+               <li class="pointer nav-shop__pointer ">Коньки</li>
+               <li class="pointer nav-shop__pointer ">Лодки</li>
             </ul>
+
+            <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  const listItems = document.querySelectorAll(".nav-shop__pointer");
+  listItems.forEach(function(item) {
+    item.addEventListener("click", function() {
+      listItems.forEach(function(otherItem) {
+        otherItem.classList.remove("yellow-border-1_5px");
+      });
+      item.classList.add("yellow-border-1_5px");
+    });
+  });
+});
+
+            </script>
             <div class="arrow-right-list pointer">
                <img id="vector-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-right.svg" alt="" />
             </div>
@@ -318,7 +334,7 @@ get_header();
             </div>
          </div>
       </section>
-      <section class="third-section-container" id="third-section">
+      <section class="third-section-container none" id="third-section">
          <div class="third-section">
             <div class="title-of-section-3 text-gradient">
             <?php the_field('razvlecheniya_dlya_detej_title_main') ?>         
@@ -661,67 +677,104 @@ get_header();
             <div class="shadow-section-7 s-s-shadow"></div> -->
          </div>
          <div class="six-cards-container">
+            <div class="usrful-materials-cards-overflow">
             <div class="usrful-materials-cards">
-            <a href="<?php echo get_option('home'); ?>/news-1">
-               <div class="green-samokat">
-                  <div class="green-samokat-before"> <img src="<?php echo esc_url(get_field('kartinka_zelenogo_samokata')); ?>" alt=""></div>
-                  Езда на<br />
-                  электро- <br />
-                  самокате
-                  <p>Актуальные правила 2023 года</p>
-               </div>
-               </a>
-               <a href="<?php echo get_option('home'); ?>/news-1">
-                <div>
-                  <img src="<?php the_field('kartinka_novosti_1'); ?>" alt="" />
-                  <div class="text-inside-cart-blog">
-                     <p>Электровелосипеды доступны москвичам</p>
 
-                     Парк моделей превысит 2000 устройств. Городской<br />
-                     велосипед рассчитан на 7 км
+                <?php
+                global $post;
 
-                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1.svg" alt="" /> Савелий Октябрьский</div>
-                     <div class="date-in-material-card">15.07.23</div>
-                  </div>
-                </div>
-               </a>
+                $on_index_posts = get_posts();
 
-               <a href="<?php echo get_option('home'); ?>/news-1">
-               <div>
-               <img src="<?php the_field('kartinka_novosti_2'); ?>" alt="" />
-                  <div class="text-inside-cart-blog">
-                     <p>Кути Катай оснастит самокаты шлемами</p>
 
-                     В дополнение к действующим инициативам по безопасности мы предос...
+                foreach( $on_index_posts as $post ){
+                    $tags = wp_get_post_tags( get_the_ID() );
+                    $tag_array = array();
+                    foreach ( $tags as $tag ) {
+                        $tag_array[] = $tag->name;
+                    }
+                    ?>
+                    <?php if (in_array("важно", $tag_array)): ?>
 
-                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1(1).svg" alt="" /> Елена Васильева</div>
-                     <div class="date-in-material-card">30.06.23</div>
-                  </div>
-               </div>
-               </a>
+                        <a href="<?php echo get_permalink(); ?>">
+                            <div class="green-samokat">
+                                <div class="green-samokat-before"> <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt=""></div>
+                                <?php echo $post->post_title ?>
+                                <p><span class="truncate-text"><?php echo $post->post_excerpt; ?></span></p>
+                            </div>
+                        </a>
+                    <?php else: ?>
+                        <a href="<?php echo get_permalink(); ?>">
+                            <div>
+                                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt=""/>
+                                <div class="text-inside-cart-blog">
+                                    <p class="hide-text-2-string"><?php echo $post->post_title ?></p>
+                                    <span class="truncate-text"><?php echo $post->post_excerpt; ?></span>
+	                                <?php
+	                                $photo = get_field( 'author-photo' );
+	                                if ( $photo ): ?>
+                                        <div class="image-user-zone">
+                                            <img src="<?php echo $photo; ?>" alt="" />
+			                                <?php the_field( 'author-name' ); ?>
+                                        </div>
+	                                <?php endif; ?>
+                                    <div class="date-in-material-card"><?php echo get_the_date(); ?></div>
+                                </div>
+                            </div>
+                        </a>
+                    <?php endif;?>
 
-               <a href="<?php echo get_option('home'); ?>/news-1">
-               <div>
-               <img src="<?php the_field('kartinka_novosti_3'); ?>" alt="" />
-                  <div class="text-inside-cart-blog">
-                     <p>Электровелосипеды доступны москвичам</p>
 
-                     Парк моделей превысит 2000 устройств. Городской<br />
-                     велосипед рассчитан на 7 км
+                    <?php
+                }
 
-                     <div class="image-user-zone"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/Ellipse1.svg" alt="" /> Савелий Октябрьский</div>
-                     <div class="date-in-material-card">15.07.23</div>
-                  </div>
-               </div>
-               </a>
+                wp_reset_postdata();
+
+
+
+                ?>
+
+            </div>
             </div>
             <div class="cur-pointer">
-               <button><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-right.svg" alt="" /></button>
-               <button class="opacity"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-left.svg" alt="" /></button>
+               <button class="next-btn"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-right.svg" alt="" /></button>
+               <button class=" prev-btn"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-left.svg" alt="" /></button>
             </div>
+
+
+            <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  const scrollWrapper = document.querySelector(".usrful-materials-cards-overflow");
+  const nextBtn = document.querySelector(".next-btn");
+  const prevBtn = document.querySelector(".prev-btn");
+
+  nextBtn.addEventListener("click", function() {
+    scrollWrapper.scrollBy({ left: 244, behavior: "smooth" });
+    console.log("вправо 200");
+    updateButtonOpacity();
+  });
+
+  prevBtn.addEventListener("click", function() {
+    scrollWrapper.scrollBy({ left: -244, behavior: "smooth" });
+    console.log("влево 200");
+    updateButtonOpacity();
+  });
+
+  function updateButtonOpacity() {
+    // Проверяем, можно ли скроллить влево
+    prevBtn.style.opacity = scrollWrapper.scrollLeft > 0 ? 1 : 0.5;
+
+    // Проверяем, можно ли скроллить вправо
+    const maxScrollLeft = scrollWrapper.scrollWidth - scrollWrapper.clientWidth;
+    nextBtn.style.opacity = scrollWrapper.scrollLeft < maxScrollLeft ? 1 : 0.5;
+  }
+  updateButtonOpacity();
+});
+
+            </script>
          </div>
          <div class="button-news-container-main-page">
-            <a href="<?php echo get_option('home'); ?>/news"><button class="see-all-usefull-mat-btn class-to-switch-season-btn">Смотреть все полезные материалы</button></a>
+            <a href="/category/articles/"><button class="see-all-usefull-mat-btn class-to-switch-season-btn">Смотреть все полезные материалы</button></a>
          </div>
       </section>
       <div class="bottom-sticky-panel">
