@@ -42,22 +42,20 @@ window.addEventListener("load", function () {
    const checkbox = document.querySelector('input[type="checkbox"]');
 
    // Получаем значение из куки
-   const cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)checkboxState\s*=\s*([^;]*).*$)|^.*$/, "$1");
+   const cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)SummerWinterCheckStatus\s*=\s*([^;]*).*$)|^.*$/, "$1");
 
-   // Устанавливаем значение чекбокса из куки (если куки существует)
-   if (cookieValue !== undefined) {
+   // Если куки существует, устанавливаем значение чекбокса и вызываем функцию для смены стилей
+   if (cookieValue !== undefined && cookieValue !== "") {
       checkbox.checked = cookieValue === "true"; // Преобразовываем строку в булево значение
-
-      // Вызываем функцию для смены стилей на странице
       applyStyles(checkbox.checked);
    }
-});
 
-checkbox.addEventListener("change", function () {
-   document.cookie = `checkboxState=${this.checked}; expires=${new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000).toUTCString()}; path=/`;
+   checkbox.addEventListener("change", function () {
+      document.cookie = `SummerWinterCheckStatus=${this.checked}; expires=${new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000).toUTCString()}; path=/`;
 
-   // Вызываем функцию для смены стилей на странице
-   applyStyles(this.checked);
+      // Вызываем функцию для смены стилей на странице
+      applyStyles(this.checked);
+   });
 });
 
 function applyStyles(checked) {
