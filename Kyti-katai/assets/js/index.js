@@ -36,6 +36,8 @@ const showHideBlueWheel = document.querySelectorAll(".show-hide-blue-wheel");
 const showHideYellowWheel = document.querySelectorAll(".show-hide-yellow-wheel");
 const appbanner = getElement(".app-banner");
 const winterOpacity = document.querySelectorAll(".winter-opacity");
+const kidsChillSmallCOntainerW = getElement(".kids-chill-winter");
+const kidsChillSmallCOntainerS = getElement(".kids-chill-summer");
 
 const blueFake = getElement(".blue-line-fake");
 const grayFake = getElement(".gray-line-fake");
@@ -99,6 +101,8 @@ function applyStyles(checked) {
       sixSectionTitle && sixSectionTitle.classList.remove("text-gradient");
       fourSectionContainerHide && fourSectionContainerHide.classList.add("none");
       fiveSectionContainerHide && fiveSectionContainerHide.classList.add("none");
+      kidsChillSmallCOntainerW && kidsChillSmallCOntainerW.classList.remove("none");
+      kidsChillSmallCOntainerS && kidsChillSmallCOntainerS.classList.add("none");
    } else {
       removeClass(summerStatus, "none");
       addClass(textGradient, "text-gradient-summer");
@@ -140,6 +144,8 @@ function applyStyles(checked) {
       sixSectionTitle && sixSectionTitle.classList.add("text-gradient");
       fourSectionContainerHide && fourSectionContainerHide.classList.remove("none");
       fiveSectionContainerHide && fiveSectionContainerHide.classList.remove("none");
+      kidsChillSmallCOntainerW && kidsChillSmallCOntainerW.classList.add("none");
+      kidsChillSmallCOntainerS && kidsChillSmallCOntainerS.classList.remove("none");
    }
 }
 

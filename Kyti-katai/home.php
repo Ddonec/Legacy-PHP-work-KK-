@@ -334,7 +334,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
          </div>
       </section>
-      <section class="third-section-container none" id="third-section">
+      <section class="third-section-container " id="third-section">
          <div class="third-section">
             <div class="title-of-section-3 text-gradient">
             <?php the_field('razvlecheniya_dlya_detej_title_main') ?>         
@@ -347,7 +347,7 @@ document.addEventListener("DOMContentLoaded", function() {
                <?php the_field('razvlecheniya_dlya_detej_title') ?>  
                   <p><?php the_field('razvlecheniya_dlya_detej_title_subtitle') ?> </p>
                </div>
-               <div class="kids-chill">
+               <div class="kids-chill kids-chill-summer none">
                   <div id="wide-card-on-chill-kids-copy">
                   <?php the_field('razvlecheniya_dlya_detej_title') ?>  
                      <p><?php the_field('razvlecheniya_dlya_detej_subtitle') ?>  </p>
@@ -391,6 +391,33 @@ document.addEventListener("DOMContentLoaded", function() {
                   <div>
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g10.png" alt="" />
                      <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_10'); ?></p>
+                  </div>
+               </div>
+
+               <div class="kids-chill kids-chill-winter">
+                  <div id="wide-card-on-chill-kids-copy">
+                  <?php the_field('razvlecheniya_dlya_detej_title') ?>  
+                     <p><?php the_field('razvlecheniya_dlya_detej_subtitle') ?>  </p>
+                  </div>
+                  <div>
+                     <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_2', 95)); ?>" alt="" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_winter_1'); ?></p>
+                  </div>
+                  <div>
+                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="Alt text" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_winter_2'); ?></p>
+                  </div>
+                  <div>
+                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_2', 95)); ?>" alt="Alt text" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_winter_3'); ?></p>
+                  </div>
+                  <div>
+                     <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_2', 95)); ?>" alt="" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_winter_4'); ?></p>
+                  </div>
+                  <div>
+                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_2', 95)); ?>" alt="Alt text" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_winter_5'); ?></p>
                   </div>
                </div>
             </div>
