@@ -4872,7 +4872,8 @@ input:checked + .slider:before {
    gap: 12px;
 }
 .log-in-modal__change-number,
-.log-in-modal__create-acc {
+.log-in-modal__create-acc,
+.log-in-modal__i-have-acc {
    color: #5567ea;
    cursor: pointer;
 }

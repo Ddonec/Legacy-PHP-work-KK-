@@ -62,7 +62,7 @@ if (!window.iconProfile) {
                <button class="log-in-modal__button">Отправить</button>
             </form>
             <div class="log-in-modal__go-sign-up">
-               <p class="opacity log-in-modal__i-have-acc">У меня уже есть аккаунт</p>
+               <p class="log-in-modal__i-have-acc">У меня уже есть аккаунт</p>
             </div
          </div>`;
       document.body.appendChild(popup);
