@@ -157,9 +157,9 @@ get_header();
                    <?php echo do_shortcode( '[contact-form-7 id="2b64add" title="Давайте созвонимся"]' ); ?>
                   
                    <div class="input-zone-news-p-cont">
-                      <input class="input-in-news-p-cont i-n-p-c-name" type="text" placeholder="Ваше имя" />
+                      <!-- <input class="input-in-news-p-cont i-n-p-c-name" type="text" placeholder="Ваше имя" />
                       <input class="input-in-news-p-cont i-n-p-c-email" type="text" placeholder="Номер телефона" />
-                      <div class="send-btn-news-sub text-18-500 pointer">Отправить</div>
+                      <div class="send-btn-news-sub text-18-500 pointer">Отправить</div> -->
                       <img class="google-piexel-phone-callback-form" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/google-piexel-phone-full.png" alt="" />
                       <img class="google-piexel-screen-callback-form" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/google-piexel-full.png" alt="" />
                       <div class="data-agreement-12px">
