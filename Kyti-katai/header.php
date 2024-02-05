@@ -192,9 +192,9 @@
             
                <div id="drop-window-company">
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/about-us/">О нас</a>
-                     <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/news/">Новости</a>
+                     <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/category/articles/">Новости</a>
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/work/">Работа в КутиКатай</a>
-                     <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/contact/">Контакты</a>
+                     <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/contacts/">Контакты</a>
                </div>
             
             </li>
@@ -249,7 +249,7 @@
                <div class="left-list">
                   <ul>
                      <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/find/">Найди свой парк</a></li>
-                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/shop/">Возьми в прокат</a></li>
+                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/catalog/">Возьми в прокат</a></li>
                      <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/catalog-child/">Развлечения детям</a></li>
                   </ul>
                </div>
