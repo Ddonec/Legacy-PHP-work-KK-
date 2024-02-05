@@ -1611,8 +1611,7 @@
 }
 .faq-page-questions-container > div {
    width: 100%;
-   display: flex;
-   justify-content: space-between;
+
    align-items: center;
    padding: 32px 20px;
 }
