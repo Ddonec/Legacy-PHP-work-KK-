@@ -2261,6 +2261,11 @@ s7
    width: 100%;
    position: relative;
 }
+
+.map-container.map-containep-find-page {
+   margin-top: 0;
+   margin: 0 auto;
+}
 #map {
    height: 100%;
    width: 1920px;
