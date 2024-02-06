@@ -121,19 +121,19 @@ function adjustArrowRotation() {
 
 function toggleBurgerMenu() {
    const burgerMenu = document.getElementById("burgerMenu");
-   burgerMenu.style.transform = "translateY(0)";
+   burgerMenu.style.transform = "translateX(0)";
    const greyBG = document.createElement("div");
    greyBG.className = "grey-bg";
    document.body.appendChild(greyBG);
    document.body.style.overflow = "hidden";
    greyBG.addEventListener("click", function () {
       document.body.removeChild(greyBG);
-      burgerMenu.style.transform = "translateY(-100%)";
+      burgerMenu.style.transform = "translateX(100%)";
       document.body.style.overflow = "";
    });
    document.querySelector(".close-btn-burger-menu").addEventListener("click", function () {
       document.body.removeChild(greyBG);
-      burgerMenu.style.transform = "translateY(-100%)";
+      burgerMenu.style.transform = "translateX(100%)";
       document.body.style.overflow = "";
    });
 }
