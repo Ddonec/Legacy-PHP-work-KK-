@@ -868,7 +868,7 @@
    font-style: normal;
    font-weight: 500;
    line-height: 150%; /* 27px */
-   text-transform: uppercase;
+   /* text-transform: uppercase; */
    width: 45%;
 }
 .first-2-blocks-about-us-page {
