@@ -140,10 +140,10 @@ html {
    width: max-content;
    display: flex;
 }
-.icun-list-h li:nth-last-child(3) img {
+/* .icun-list-h li:nth-last-child(3) img {
    margin-left: 8px;
    height: 8px;
-}
+} */
 .icun-list-h li img {
    height: 16px;
 }
