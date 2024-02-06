@@ -27,20 +27,10 @@ get_header();
          <div class="title-of-section-news-page">
 <h1 class="text-gradient"><?php the_field('zagolovok-catalog-child-page') ?></h1>
          </div>
-         <div class="kids-dosug-catalog-child-page-container">
+         <div class="kids-dosug-catalog-child-page-container winter-status">
             <div class="child-game-card-cataloc-child-page">
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g2.png" alt="" />
-               <p class="text-18-500">Зорбинг</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g8.png" alt="" />
-               <p class="text-18-500">Лабиринт</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g9.png" alt="" />
-               <p class="text-18-500">Спортивные батуты</p>
+               <p class="text-18-500">Каток</p>
             </div>
 
             <div class="child-game-card-cataloc-child-page">
@@ -49,105 +39,105 @@ get_header();
             </div>
 
             <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g3.png" alt="" />
-               <p class="text-18-500">Лодочки</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g4.svg" alt="" />
-               <p class="text-18-500">Лодочная станция</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g5.png" alt="" />
-               <p class="text-18-500">Карусель</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g6.png" alt="" />
-               <p class="text-18-500">Паровозик</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g7.png" alt="" />
-               <p class="text-18-500">Веревочный парк</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g8.png" alt="" />
-               <p class="text-18-500">Лабиринт</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g9.png" alt="" />
-               <p class="text-18-500">Спортивные батуты</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g10.png" alt="" />
-               <p class="text-18-500">Батуты</p>
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g2.png" alt="" />
+               <p class="text-18-500">Зимняя горка</p>
             </div>
 
             <div class="child-game-card-cataloc-child-page">
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g2.png" alt="" />
-               <p class="text-18-500">Зорбинг</p>
+               <p class="text-18-500">Тюбинг</p>
             </div>
 
             <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g8.png" alt="" />
-               <p class="text-18-500">Лабиринт</p>
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g2.png" alt="" />
+               <p class="text-18-500">Лыжи</p>
             </div>
 
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g9.png" alt="" />
-               <p class="text-18-500">Спортивные батуты</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="" />
-               <p class="text-18-500">Электромобили</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g3.png" alt="" />
-               <p class="text-18-500">Лодочки</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g4.svg" alt="" />
-               <p class="text-18-500">Лодочная станция</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g5.png" alt="" />
-               <p class="text-18-500">Карусель</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g6.png" alt="" />
-               <p class="text-18-500">Паровозик</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g7.png" alt="" />
-               <p class="text-18-500">Веревочный парк</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g8.png" alt="" />
-               <p class="text-18-500">Лабиринт</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g9.png" alt="" />
-               <p class="text-18-500">Спортивные батуты</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g10.png" alt="" />
-               <p class="text-18-500">Батуты</p>
-            </div>
          </div>
+
+         <div class="kids-dosug-catalog-child-page-container summer-status">
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g2.png" alt="" />
+               <p class="text-18-500">Зорбинг</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g8.png" alt="" />
+               <p class="text-18-500">Лабиринт</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g9.png" alt="" />
+               <p class="text-18-500">Спортивные батуты</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="" />
+               <p class="text-18-500">Электромобили</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g3.png" alt="" />
+               <p class="text-18-500">Лодочки</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g4.svg" alt="" />
+               <p class="text-18-500">Лодочная станция</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g5.png" alt="" />
+               <p class="text-18-500">Карусель</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g6.png" alt="" />
+               <p class="text-18-500">Паровозик</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g7.png" alt="" />
+               <p class="text-18-500">Веревочный парк</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g8.png" alt="" />
+               <p class="text-18-500">Лабиринт</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g9.png" alt="" />
+               <p class="text-18-500">Спортивные батуты</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g10.png" alt="" />
+               <p class="text-18-500">Батуты</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g2.png" alt="" />
+               <p class="text-18-500">Зорбинг</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g8.png" alt="" />
+               <p class="text-18-500">Лабиринт</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g9.png" alt="" />
+               <p class="text-18-500">Спортивные батуты</p>
+            </div>
+
+            <div class="child-game-card-cataloc-child-page">
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g10.png" alt="" />
+               <p class="text-18-500">Надувной парк</p>
+            </div>
+
+         </div>
+
          <div class="call-back-form-container-overflow-container-default">
                 <div class="call-back-form-container-franchise">
                    <div class="text-sub-block-news-inside">

@@ -1055,9 +1055,9 @@
    .columns-footer {
       justify-content: space-between;
    }
-   .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 6) {
+   /* .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 6) {
       display: none;
-   }
+   } */
    #input-min,
    #input-max {
       width: 48%;
@@ -2740,10 +2740,10 @@
    .child-game-card-cataloc-child-page {
       width: 100%;
    }
-
+/* 
    .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 12) {
       display: none;
-   }
+   } */
    .user-data-cabinet__discription {
       flex-direction: column;
    }

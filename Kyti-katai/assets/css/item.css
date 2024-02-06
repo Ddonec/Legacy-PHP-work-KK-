@@ -637,9 +637,9 @@
    gap: 20px;
    justify-content: space-between;
 }
-.kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 4) {
+/* .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 4) {
    display: none;
-}
+} */
 .child-game-card-cataloc-child-page {
    width: 200px;
    height: 230px;
@@ -2072,4 +2072,25 @@
 .single-page-main-text p:not(:first-child) {
    font-size: 14px;
    padding-top: 10px;
+}
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+/* STATUS */
+
+.none {
+   display: none;
 }
