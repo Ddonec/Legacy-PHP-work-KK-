@@ -540,7 +540,7 @@ document.addEventListener("DOMContentLoaded", function() {
                приключение
             </p>
             <div class="discription-of-c-r-m">Преподнесите своему ребенку незабываемый праздник.</div>
-            <div class="button-of-c-r-m">Забронируйте дату вашего праздника</div>
+            <div class="button-of-c-r-m" onclick="openPopupReserve()">Забронируйте дату вашего праздника</div>
             <img class="img-balls-c-r-m" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/blue-adn-tellow-bals-kk.png" alt="" />
          </div>
 

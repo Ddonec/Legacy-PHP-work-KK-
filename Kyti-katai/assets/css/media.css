@@ -1600,7 +1600,7 @@
       font-size: 24px;
    }
    .emotion-card {
-      height: 340px;
+      height: 360px;
       width: 90%;
    }
    .cards-rope-park-2 {
@@ -2068,6 +2068,30 @@
    }
    .mibile-version-top-content-repair-page {
       display: block;
+   }
+
+   .modal-reserve-celebrate-absolute form {
+      padding: 28px 20px;
+   }
+   .modal-reserve-celebrate-absolute section {
+      padding: 28px 20px;
+   }
+   .modal-franchise-1,
+   .modal-franchise-2,
+   .modal-franchise-3,
+   .modal-franchise-4 {
+      width: 48%;
+   }
+   .modal-data-agree {
+      font-size: 13px;
+   }
+   .modal-switch__title,
+   .switch__title {
+      font-size: 30px;
+   }
+   .go-back-modal-btn {
+      top: 20px;
+      left: 12px;
    }
 }
 
@@ -2701,8 +2725,7 @@
       height: 350px;
    }
 
-   .icun-list-h li:nth-child(4),
-   .icun-list-h li:nth-child(5) {
+   .icun-list-h li:nth-child(4) {
       display: none;
    }
    /* .row-footer-2 {

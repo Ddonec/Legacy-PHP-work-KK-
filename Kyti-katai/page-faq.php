@@ -26,13 +26,15 @@ get_header();
          <div class="faq-page-questions-container accordion-container">
             <div class="ac">
                <div class="ac-header">
-                  <button type="button" class="ac-trigger"><?php the_field('faq_vopros_1') ?></button>
+                  <button type="button" class="ac-trigger"><?php the_field('faq_vopros_1') ?>
                   <svg class="svg-plus-faq" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                      <g opacity="0.5">
                         <path d="M10 24H38" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M24 10V38" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                      </g>
                   </svg>
+               </button>
+                   
                </div>
                <div class="ac-panel">
                   <p class="ac-text"><?php the_field('faq_otvet_1') ?></p>
@@ -41,13 +43,15 @@ get_header();
 
             <div class="ac">
                <div class="ac-header">
-                  <button type="button" class="ac-trigger"><?php the_field('faq_vopros_2') ?></button>
+                  <button type="button" class="ac-trigger"><?php the_field('faq_vopros_2') ?>
                   <svg class="svg-plus-faq" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                      <g opacity="0.5">
                         <path d="M10 24H38" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M24 10V38" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                      </g>
                   </svg>
+                   </button>
+                
                </div>
                <div class="ac-panel">
                   <p class="ac-text"><?php the_field('faq_otvet_2') ?></p>
@@ -56,13 +60,15 @@ get_header();
 
             <div class="ac">
                <div class="ac-header">
-                  <button type="button" class="ac-trigger"><?php the_field('faq_vopros_3') ?></button>
+                  <button type="button" class="ac-trigger"><?php the_field('faq_vopros_3') ?>
                   <svg class="svg-plus-faq" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                      <g opacity="0.5">
                         <path d="M10 24H38" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M24 10V38" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                      </g>
                   </svg>
+               </button>
+                   
                </div>
                <div class="ac-panel">
                   <p class="ac-text"><?php the_field('faq_otvet_3') ?></p>
@@ -71,13 +77,15 @@ get_header();
 
             <div class="ac">
                <div class="ac-header">
-                  <button type="button" class="ac-trigger"><?php the_field('faq_vopros_4') ?></button>
+                  <button type="button" class="ac-trigger"><?php the_field('faq_vopros_4') ?>
                   <svg class="svg-plus-faq" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                      <g opacity="0.5">
                         <path d="M10 24H38" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M24 10V38" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                      </g>
                   </svg>
+               </button>
+                   
                </div>
                <div class="ac-panel">
                   <p class="ac-text"><?php the_field('faq_otvet_4') ?></p>
@@ -86,13 +94,15 @@ get_header();
 
             <div class="ac">
                <div class="ac-header">
-                  <button type="button" class="ac-trigger"><?php the_field('faq_vopros_5') ?></button>
+                  <button type="button" class="ac-trigger"><?php the_field('faq_vopros_5') ?>
                   <svg class="svg-plus-faq" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                      <g opacity="0.5">
                         <path d="M10 24H38" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M24 10V38" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                      </g>
                   </svg>
+               </button>
+                   
                </div>
                <div class="ac-panel">
                   <p class="ac-text"><?php the_field('faq_otvet_5') ?></p>
@@ -101,13 +111,15 @@ get_header();
 
             <div class="ac">
                <div class="ac-header">
-                  <button type="button" class="ac-trigger"><?php the_field('faq_vopros_6') ?></button>
+                  <button type="button" class="ac-trigger"><?php the_field('faq_vopros_6') ?>
                   <svg class="svg-plus-faq" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                      <g opacity="0.5">
                         <path d="M10 24H38" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M24 10V38" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                      </g>
                   </svg>
+               </button>
+                   
                </div>
                <div class="ac-panel">
                   <p class="ac-text"><?php the_field('faq_otvet_6') ?></p>
