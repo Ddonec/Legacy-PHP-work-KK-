@@ -1953,6 +1953,17 @@
    .discription-area-of-format-franchise-page {
       border-radius: 0px 0px 30px 30px;
    }
+
+   .wpcf7-form p {
+      width: 100%;
+   }
+   .wpcf7-form input {
+      width: 100%;
+   }
+   .wpcf7-form-control.wpcf7-text.wpcf7-tel,
+   .wpcf7-form-control.wpcf7-text {
+      width: 100%;
+   }
 }
 
 @media (min-width: 701px) {
@@ -2740,7 +2751,7 @@
    .child-game-card-cataloc-child-page {
       width: 100%;
    }
-/* 
+   /* 
    .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 12) {
       display: none;
    } */
