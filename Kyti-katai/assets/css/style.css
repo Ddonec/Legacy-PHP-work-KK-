@@ -140,10 +140,10 @@ html {
    width: max-content;
    display: flex;
 }
-.icun-list-h li:nth-last-child(3) img {
+/* .icun-list-h li:nth-last-child(3) img {
    margin-left: 8px;
    height: 8px;
-}
+} */
 .icun-list-h li img {
    height: 16px;
 }
@@ -2261,6 +2261,11 @@ s7
    width: 100%;
    position: relative;
 }
+
+.map-container.map-containep-find-page {
+   margin-top: 0;
+   margin: 0 auto;
+}
 #map {
    height: 100%;
    width: 1920px;
@@ -3954,7 +3959,7 @@ input:checked + .slider:before {
 .arrow-right-list {
    border-radius: 30px;
    border: 1.5px solid #ffc93a;
-   padding: 13.5px 24px;
+   padding: 10.5px 24px;
    line-height: 90%;
    background: #fff;
    /* box-shadow: 0 0px 17px 55px rgba(255, 255, 255, 1); */
@@ -5173,6 +5178,7 @@ input:checked + .slider:before {
 .map-container:hover > .absolute-map-info-left-container {
    opacity: 1;
    z-index: 1;
+   display: none;
 }
 
 .burger-menu {

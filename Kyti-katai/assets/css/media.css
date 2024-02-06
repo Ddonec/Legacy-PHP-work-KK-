@@ -1055,9 +1055,9 @@
    .columns-footer {
       justify-content: space-between;
    }
-   .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 6) {
+   /* .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 6) {
       display: none;
-   }
+   } */
    #input-min,
    #input-max {
       width: 48%;
@@ -1600,7 +1600,7 @@
       font-size: 24px;
    }
    .emotion-card {
-      height: 340px;
+      height: 360px;
       width: 90%;
    }
    .cards-rope-park-2 {
@@ -1953,6 +1953,17 @@
    .discription-area-of-format-franchise-page {
       border-radius: 0px 0px 30px 30px;
    }
+
+   .wpcf7-form p {
+      width: 100%;
+   }
+   .wpcf7-form input {
+      width: 100%;
+   }
+   .wpcf7-form-control.wpcf7-text.wpcf7-tel,
+   .wpcf7-form-control.wpcf7-text {
+      width: 100%;
+   }
 }
 
 @media (min-width: 701px) {
@@ -2057,6 +2068,30 @@
    }
    .mibile-version-top-content-repair-page {
       display: block;
+   }
+
+   .modal-reserve-celebrate-absolute form {
+      padding: 28px 20px;
+   }
+   .modal-reserve-celebrate-absolute section {
+      padding: 28px 20px;
+   }
+   .modal-franchise-1,
+   .modal-franchise-2,
+   .modal-franchise-3,
+   .modal-franchise-4 {
+      width: 48%;
+   }
+   .modal-data-agree {
+      font-size: 13px;
+   }
+   .modal-switch__title,
+   .switch__title {
+      font-size: 30px;
+   }
+   .go-back-modal-btn {
+      top: 20px;
+      left: 12px;
    }
 }
 
@@ -2690,8 +2725,7 @@
       height: 350px;
    }
 
-   .icun-list-h li:nth-child(4),
-   .icun-list-h li:nth-child(5) {
+   .icun-list-h li:nth-child(4) {
       display: none;
    }
    /* .row-footer-2 {
@@ -2740,10 +2774,10 @@
    .child-game-card-cataloc-child-page {
       width: 100%;
    }
-
+   /* 
    .kids-dosug-catalog-child-page-container > div:nth-last-child(-n + 12) {
       display: none;
-   }
+   } */
    .user-data-cabinet__discription {
       flex-direction: column;
    }

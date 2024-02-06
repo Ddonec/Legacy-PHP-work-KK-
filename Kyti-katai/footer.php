@@ -50,7 +50,7 @@
                <ul>
                   <li class="pointer"><a class="white-text-section" href="<?php echo get_option('home'); ?>/rules">Правила проката</a></li>
                   <li class="pointer"><a class="white-text-section" href="<?php echo get_option('home'); ?>/oferta">Договор оферта</a></li>
-                  <li class="pointer"><a class="white-text-section" href="<?php echo get_option('home'); ?>/privacy-politic">Политика конфиденциальности</a></li>
+                  <li class="pointer"><a class="white-text-section" href="<?php echo get_option('home'); ?>/privacy">Политика конфиденциальности</a></li>
                   <li class="pointer"><a class="white-text-section" href="<?php echo get_option('home'); ?>/app-agreement">Пользовательское соглашение для мобильного приложения</a></li>
                </ul>
             </div>

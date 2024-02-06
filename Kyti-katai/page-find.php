@@ -12,7 +12,29 @@ get_header();
 ?>
 
 
-
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    ymaps.ready(init);
+    function init() {
+        var myMap = new ymaps.Map('map', {
+            center: [55.76, 37.64],
+            zoom: 11
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+        $.getJSON( "/wp-content/uploads/points.json", function( data ) {
+            objectManager = new ymaps.ObjectManager({
+                clusterize: true,
+                gridSize: 50,
+                clusterDisableClickZoom: false
+            });
+            objectManager.clusters.options.set('preset', 'islands#invertedNightClusterIcons');
+            myMap.geoObjects.add(objectManager);
+            objectManager.add(data);
+        });
+    }
+</script>
 
 
 
@@ -28,9 +50,48 @@ get_header();
          <div class="title-of-section-find-page">
             <h3 class="text-gradient"><?php the_field('find-park-title') ?></h3>
          </div>
+      </section>
+         <div class="map-container map-containep-find-page" id="map-area-first-section">
+            <div class="absolute-on-map-home-page-text-comtainer">
+               <h3 class="text-gradient">Найди свой парк</h3>
+            </div>
+            <section class="absolute-map-info-left-container">
+               <div class="park-info-map-zone text-14-500-left-lato-left">
+                  <img class="Vector-close-10" src="assets/icon/Vector-close-10.7.svg" alt="" />
+                  <p class="park-info-map-zone-title">Красногвардейский пруд</p>
+                  <div class="park-info-map-zone-line0info">
+                     <p class="opacity">Время работы:</p>
+                     <p>Круглосуточно</p>
+                  </div>
+                  <div class="park-info-map-zone-line0info">
+                     <p class="opacity">Техника парка:</p>
+                     <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны</p>
+                  </div>
+                  <div class="map-area-first-section__button">Выбрать парк</div>
+               </div>
+            </section>
+            <section class="absolute-map-info-right-container">
+               <div class="park-list-map-zone text-14-500-left-lato-left">
+                  <p class="park-info-map-zone-title">Парки</p>
+                  <input class="park-list-map-zone__input" type="text" placeholder="Парк, город или метро" />
+                  <ul class="park-list-map-zone__ul">
+                     <li>Парк Строгино</li>
+                     <li>Парк Победы</li>
+                     <li>Красногвардейский пруд</li>
+                     <li>ВДНХ</li>
+                     <li>Лиазновский парк</li>
+                     <li>ВДНХ</li>
+                     <li>ВДНХ</li>
+                     <li>ВДНХ</li>
+                  </ul>
+               </div>
+            </section>
 
-         <div class="map-area-find-page"></div>
-
+            <div id="map"></div>
+            <a href="<?php echo get_option('home'); ?>/find">
+            </a>
+         </div>
+      <section class="main-content-news-page">
          <h2 class="text-36-700 h2-find-page">Список парков</h2>
 
          <div class="parks-area-find-page-overflow-container none">
