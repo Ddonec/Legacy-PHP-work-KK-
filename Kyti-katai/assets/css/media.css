@@ -1094,7 +1094,6 @@
    .aside-right-block-news-max-width-area {
       flex-direction: row;
       width: max-content;
-      margin: 0 auto;
    }
    .aside-right-block-news-1hidden-slide-area {
       width: 100%;
@@ -1737,8 +1736,7 @@
       font-size: 32px;
    }
 
-   .input-zone-news-p-cont,
-   .sick-cart-news {
+   .input-zone-news-p-cont {
       width: 100%;
    }
    .sick-cart-news > img {
