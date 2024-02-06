@@ -5178,6 +5178,7 @@ input:checked + .slider:before {
 .map-container:hover > .absolute-map-info-left-container {
    opacity: 1;
    z-index: 1;
+   display: none;
 }
 
 .burger-menu {
