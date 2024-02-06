@@ -4815,6 +4815,7 @@ input:checked + .slider:before {
    width: 52%;
    padding: 28px 28px 36px 28px;
    background: #e8eafb;
+   position: relative;
 
    color: var(--black, #333);
    font-family: "Lato", sans-serif;

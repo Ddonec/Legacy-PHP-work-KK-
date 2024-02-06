@@ -26,6 +26,11 @@ if (!window.iconProfile) {
                <p class="opacity">Еще не зарегистрированы?</p>
                <p class="log-in-modal__create-acc">Создайте аккаунт</p>
             </div>
+            <div class="close-modal-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                     <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+               </div>
          </div>`;
 
       document.body.appendChild(popup);
@@ -42,6 +47,12 @@ if (!window.iconProfile) {
          document.body.removeChild(popup);
          document.body.removeChild(greyBG);
          openPopupRegistr();
+      });
+
+      popup.querySelector(".close-modal-btn").addEventListener("click", function () {
+         document.body.removeChild(popup);
+         document.body.removeChild(greyBG);
+         console.log("close");
       });
    }
 
@@ -63,7 +74,12 @@ if (!window.iconProfile) {
             </form>
             <div class="log-in-modal__go-sign-up">
                <p class="log-in-modal__i-have-acc">У меня уже есть аккаунт</p>
-            </div
+            </div>
+            <div class="close-modal-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                     <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+               </div>
          </div>`;
       document.body.appendChild(popup);
       document.body.appendChild(greyBG);
@@ -73,16 +89,24 @@ if (!window.iconProfile) {
          document.body.removeChild(greyBG);
          console.log("close");
       });
+
+      const haveAcc = document.querySelector(".log-in-modal__i-have-acc");
+      haveAcc.addEventListener("click", function () {
+         console.log("new modal");
+         document.body.removeChild(popup);
+         document.body.removeChild(greyBG);
+         openPopupLogIn();
+      });
+
+      popup.querySelector(".close-modal-btn").addEventListener("click", function () {
+         document.body.removeChild(popup);
+         document.body.removeChild(greyBG);
+         console.log("close");
+      });
    }
 }
 
-
-
-
-
-
 // Burger
-
 
 function toggleDropdown() {
    const dropdownList = document.getElementById("companyDropdownList");
@@ -101,17 +125,15 @@ function toggleBurgerMenu() {
    const greyBG = document.createElement("div");
    greyBG.className = "grey-bg";
    document.body.appendChild(greyBG);
-   document.body.style.overflow = "hidden"
+   document.body.style.overflow = "hidden";
    greyBG.addEventListener("click", function () {
       document.body.removeChild(greyBG);
       burgerMenu.style.transform = "translateY(-100%)";
-      document.body.style.overflow = ""
-
+      document.body.style.overflow = "";
    });
    document.querySelector(".close-btn-burger-menu").addEventListener("click", function () {
       document.body.removeChild(greyBG);
       burgerMenu.style.transform = "translateY(-100%)";
-      document.body.style.overflow = ""
-
+      document.body.style.overflow = "";
    });
 }

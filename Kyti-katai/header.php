@@ -220,10 +220,10 @@
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector.svg" class="winter-status icon-search-burger-show" alt="" />
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/search-icon-black.svg" class="summer-status icon-search-burger-show none" alt="" />
                   </li>
-                  <li id="profile-icon-header"><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login.svg" alt="" /> <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login-black.svg" alt="" /></li>
-                  <li><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/heart.svg" alt="" /> <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/heart-black.svg" alt="" /></li>
+                  <li id="profile-icon-header"><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login.svg" alt="" /> <img class="pointer summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login-black.svg" alt="" /></li>
+                  <li><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/heart.svg" alt="" /> <img class="pointer summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/heart-black.svg" alt="" /></li>
                   <li class="pointer reserve-button-less-470px">
-                     Рус <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" alt="" /> <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" />
+                     Рус <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" alt="" /> <img class=" pointer ummer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" />
                   </li>
                   <li class="pointer list-under-700" id="shopping-cart-icon-header">
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/shopping-cart.svg" alt="" />
