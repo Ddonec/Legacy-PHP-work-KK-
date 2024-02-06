@@ -62,16 +62,6 @@ get_header();
             </div>
 
             <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g8.png" alt="" />
-               <p class="text-18-500">Лабиринт</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g9.png" alt="" />
-               <p class="text-18-500">Спортивные батуты</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="" />
                <p class="text-18-500">Электромобили</p>
             </div>
@@ -117,24 +107,10 @@ get_header();
             </div>
 
             <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g2.png" alt="" />
-               <p class="text-18-500">Зорбинг</p>
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="" />
+               <p class="text-18-500">Квадроциклы</p>
             </div>
 
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g8.png" alt="" />
-               <p class="text-18-500">Лабиринт</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g9.png" alt="" />
-               <p class="text-18-500">Спортивные батуты</p>
-            </div>
-
-            <div class="child-game-card-cataloc-child-page">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g10.png" alt="" />
-               <p class="text-18-500">Надувной парк</p>
-            </div>
 
          </div>
 

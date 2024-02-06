@@ -356,6 +356,7 @@ document.addEventListener("DOMContentLoaded", function() {
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="" />
                      <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_1'); ?></p>
                   </div>
+
                   <div>
                   <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_2', 95)); ?>" alt="Alt text" />
                      <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_2'); ?></p>
@@ -391,6 +392,10 @@ document.addEventListener("DOMContentLoaded", function() {
                   <div>
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g10.png" alt="" />
                      <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_10'); ?></p>
+                  </div>
+                  <div>
+                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="" />
+                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_11'); ?></p>
                   </div>
                </div>
 
