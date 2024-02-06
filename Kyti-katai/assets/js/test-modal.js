@@ -3,13 +3,16 @@ const content = document.querySelector(".modal-container");
 const cardReserve = document.getElementById("card-reserve");
 const parkValueSticky = document.querySelector(".bottom-sticky-panel");
 
-cardReserve.addEventListener("click", function () {
-   openPopupReserve();
-});
-
-parkValueSticky.addEventListener("click", function () {
-   openPopupAbout();
-});
+if (cardReserve) {
+   cardReserve.addEventListener("click", function () {
+      openPopupReserve();
+   });
+}
+if (parkValueSticky) {
+   parkValueSticky.addEventListener("click", function () {
+      openPopupAbout();
+   });
+}
 
 function openPopupChose() {
    if (document.cookie.indexOf("popupShown=") === -1) {
@@ -339,4 +342,47 @@ function openPopupFranchise() {
 // function closePopup() {
 //    document.body.removeChild(popup);
 //    document.body.removeChild(greyBG);
-// }
+// }onclick="openPopupReserveRope()"
+function openPopupReserveRope() {
+   popup = document.createElement("div");
+   greyBG = document.createElement("div");
+   greyBG.className = "grey-bg";
+   popup.className = "modal-reserve-celebrate-absolute";
+   popup.innerHTML = `            <form class="modal-reserve-franchise">
+   <div class="modal-r-c__top-container">
+      <div class="modal-title modal-r-c__title">Поход в веревочный парк</div>
+      <div class="modal-subtitle modal-r-c__title">Укажите ваши данные, чтобы наши специалисты связались с вами</div>
+   </div>
+   <div class="modal-r-c__input-container">
+      <input type="text" class="modal-franchise-1 modal-franchise__input" placeholder="Ваше имя" />
+      <input type="text" class="modal-franchise-2 modal-franchise__input" placeholder="Город открытия" />
+      <input type="email" placeholder="Электронная почта" class="modal-franchise-3 modal-franchise__input" />
+      <input type="tel" placeholder="Номер телефона" class="modal-franchise-4 modal-franchise__input" />
+      <input type="text" placeholder="Любой полезный коментарий" class="modal-r-c__input-5 modal-r-c__input modal-franchise-5" />
+   </div>
+   <div class="modal-r-c__button-area">
+      <button class="modal-r-c__button">Отправить</button>
+      <p class="modal-r-c__data-agree modal-data-agree">Отправляя данную форму, вы соглашаетесь с <br /><a href="#">условиями обработки персональных данных</a></p>
+   </div>
+   <div class="close-modal-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+         <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
+      </svg>
+   </div>
+</form>`;
+
+   document.body.appendChild(popup);
+   document.body.appendChild(greyBG);
+
+   greyBG.addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
+
+   popup.querySelector(".close-modal-btn").addEventListener("click", function () {
+      document.body.removeChild(popup);
+      document.body.removeChild(greyBG);
+      console.log("close");
+   });
+}

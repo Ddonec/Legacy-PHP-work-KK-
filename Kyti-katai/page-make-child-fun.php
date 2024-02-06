@@ -130,7 +130,7 @@ get_header();
                         <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" /><?php the_field('atribut_parka_1_3') ?></div>
                         <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" /><?php the_field('atribut_parka_1_4') ?></div>
                      </div>
-                     <div class="avalible-park__button"><?php the_field('knopka_broni_paka_1') ?></div>
+                     <div onclick="openPopupReserve()" class="avalible-park__button pointer"><?php the_field('knopka_broni_paka_1') ?></div>
                   </div>
                </div>
 
@@ -149,7 +149,7 @@ get_header();
                         <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" /><?php the_field('atribut_parka_2_3') ?></div>
                         <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" /><?php the_field('atribut_parka_2_4') ?></div>
                      </div>
-                     <div class="avalible-park__button"><?php the_field('knopka_broni_paka_2') ?></div>
+                     <div onclick="openPopupReserve()" class="avalible-park__button pointer"><?php the_field('knopka_broni_paka_2') ?></div>
                   </div>
                </div>
             </div>

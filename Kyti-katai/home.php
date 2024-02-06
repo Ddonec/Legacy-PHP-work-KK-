@@ -453,8 +453,10 @@ document.addEventListener("DOMContentLoaded", function() {
                   </ul>
                </div>
                <div class="emotion-card-buttons">
-                  <div class="class-to-switch-season-btn pseudo-cllass-none-styles">
-                     <a href="<?php echo get_option('home'); ?>/rope-park"><div>Пойти в веревочный парк</div></a>
+                  <div class="class-to-switch-season-btn pseudo-cllass-none-styles pointer" onclick="openPopupReserveRope()">
+                     <!-- <a href="<?php echo get_option('home'); ?>/rope-park"> -->
+                     <div>Пойти в веревочный парк</div>
+                  <!-- </a> -->
                   </div>
                   <div>
                      <a href="<?php echo get_option('home'); ?>/rope-park"><div>Узнать больше</div></a>
