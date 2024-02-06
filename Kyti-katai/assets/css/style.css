@@ -3954,7 +3954,7 @@ input:checked + .slider:before {
 .arrow-right-list {
    border-radius: 30px;
    border: 1.5px solid #ffc93a;
-   padding: 13.5px 24px;
+   padding: 10.5px 24px;
    line-height: 90%;
    background: #fff;
    /* box-shadow: 0 0px 17px 55px rgba(255, 255, 255, 1); */
