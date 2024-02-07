@@ -1301,7 +1301,7 @@ s5
    height: 743px;
    position: absolute;
    display: flex;
-   left: -720px;
+   left: -812px;
    scale: 0.75;
 }
 .slider-five-section-5 {
@@ -3721,32 +3721,32 @@ input:checked + .slider:before {
 
 .photos-of-rope-park__img1 {
    border-radius: 15px;
-   background: url(../assets/content/rope-park-photo-gallery-1.png), lightgray 50% / cover no-repeat;
+   background: url(../assets/content/photos-of-rope-park__img1.webp), lightgray 50% / cover no-repeat;
    background-size: cover;
 }
 .photos-of-rope-park__img2 {
    border-radius: 15px;
-   background: url(../assets/content/rope-park-photo-gallery-2.png), lightgray 50% / cover no-repeat;
+   background: url(../assets/content/photos-of-rope-park__img2.webp), lightgray 50% / cover no-repeat;
    background-size: cover;
 }
 .photos-of-rope-park__img3 {
    border-radius: 15px;
-   background: url(../assets/content/rope-park-photo-gallery-3.png), lightgray 50% / cover no-repeat;
+   background: url(../assets/content/photos-of-rope-park__img3.webp), lightgray 50% / cover no-repeat;
    background-size: cover;
 }
 .photos-of-rope-park__img4 {
    border-radius: 15px;
-   background: url(../assets/content/rope-park-photo-gallery-4.png), lightgray 50% / cover no-repeat;
+   background: url(../assets/content/photos-of-rope-park__img4.webp), lightgray 50% / cover no-repeat;
    background-size: cover;
 }
 .photos-of-rope-park__img5 {
    border-radius: 15px;
-   background: url(../assets/content/rope-park-photo-gallery-5.png), lightgray 50% / cover no-repeat;
+   background: url(../assets/content/photos-of-rope-park__img5.webp), lightgray 50% / cover no-repeat;
    background-size: cover;
 }
 .photos-of-rope-park__img6 {
    border-radius: 15px;
-   background: url(../assets/content/rope-park-photo-gallery-6.png), lightgray 50% / cover no-repeat;
+   background: url(../assets/content/photos-of-rope-park__img6.webp), lightgray 50% / cover no-repeat;
    background-size: cover;
 }
 

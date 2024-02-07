@@ -1285,7 +1285,7 @@
 .ticket__image {
    height: 75%;
    width: 100%;
-   background-image: url(../assets/content/rope-park__ticket-1.png);
+   background-image: url(../assets/content/guliver-park.png);
    background-size: cover;
    position: absolute;
    top: 0;
@@ -1294,6 +1294,22 @@
    height: 75%;
    width: 100%;
    background-image: url(../assets/content/rope-park__ticket-2.png);
+   background-size: cover;
+   position: absolute;
+   top: 0;
+}
+.ticket__image-3 {
+   height: 75%;
+   width: 100%;
+   background-image: url(../assets/content/rope-park__ticket-1.png);
+   background-size: cover;
+   position: absolute;
+   top: 0;
+}
+.ticket__image-4 {
+   height: 75%;
+   width: 100%;
+   background-image: url(../assets/content/WhatsApp_Image_2024-01-22_at_18.17.46_\(1\).webp);
    background-size: cover;
    position: absolute;
    top: 0;
