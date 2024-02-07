@@ -145,10 +145,8 @@ get_header();
                   <h4 class="main-text-sub-block-news-p-cont text-gradient">Давайте созвонимся!</h4>
                   <p class="second-text-sub-block-news-p-cont text-18-500">Наши специалисты ответят на все ваши вопросы</p>
                </div>
+             <?php echo do_shortcode( '[contact-form-7 id="2b64add" title="Давайте созвонимся"]' ); ?>
                <div class="input-zone-news-p-cont">
-                  <input class="input-in-news-p-cont i-n-p-c-name" type="text" placeholder="Ваше имя" />
-                  <input class="input-in-news-p-cont i-n-p-c-email" type="email" placeholder="Электронная почта" />
-                  <div class="send-btn-news-sub text-18-500 pointer">Отправить</div>
                   <img class="google-piexel-phone-callback-form" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/google-piexel-phone-full.png" alt="" />
                   <img class="google-piexel-screen-callback-form" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/google-piexel-full.png" alt="" />
                   <div class="data-agreement-12px">
