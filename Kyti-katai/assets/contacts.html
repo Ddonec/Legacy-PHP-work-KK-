@@ -118,7 +118,21 @@
             </div>
          </div>
       </header>
+      <style>
+         .map {
+            width: 100%;
+            max-width: 1920px;
+            height: 400px;
+            background-color: #333;
+            border-radius: 40px;
+            overflow: hidden;
+         }
 
+         [class*="copyrights-pane"] {
+            display: none !important;
+         }
+
+      </style>
       <section class="main-content-news-page">
          <div class="bread-crumbs">
             <p><a href="index.html">Главная</a></p>
@@ -131,6 +145,46 @@
             <div class="item-shadow-section-contact-page"></div> -->
          </div>
       </section>
+      <div id="map-test" class="map"></div>
+
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=4e215164-d278-42d9-abf5-0345e2b353a0
+      API-4e215164-d278-42d9-abf5-0345e2b353a0
+      &lang=ru_RU"></script>
+      <script>
+         let center = [55.82859156889557,37.624722999999996];
+
+         function init() {
+            let map = new ymaps.Map("map-test", {
+               center: center,
+               zoom: 15,
+            });
+
+            let placemark = new ymaps.Placemark(
+               center,
+               {},
+               {
+                  iconLayout: "default#image",
+                  iconImageHref: "assets/content/map-dot.png",
+                  iconImageSize: [116, 96],
+                  iconImageOffset: [-116, -96],
+               }
+            );
+
+            map.controls.remove("geolocationControl"); // удаляем геолокацию
+            map.controls.remove("searchControl"); // удаляем поиск
+            map.controls.remove("trafficControl"); // удаляем контроль трафика
+            map.controls.remove("typeSelector"); // удаляем тип
+            map.controls.remove("fullscreenControl"); // удаляем кнопку перехода в полноэкранный режим
+            map.controls.remove("zoomControl"); // удаляем контрол зуммирования
+            map.controls.remove("rulerControl"); // удаляем контрол правил
+            // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+            map.geoObjects.add(placemark);
+         }
+
+         ymaps.ready(init);
+      </script>
+      <img src="assets/assets/content/map-dot.png" alt="" />
       <div class="map-area-contacts-page">
          <div class="blie-map-point-contacts-page">
             <img src="/assets/icon/bike-contact-page-2.svg" alt="" />

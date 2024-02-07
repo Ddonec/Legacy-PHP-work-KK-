@@ -196,4 +196,27 @@ add_action('init', 'kk_register_city_taxonomy');
 
 require_once get_template_directory() . '/inc/Park.php';
 require_once get_template_directory() . '/inc/woocommerce-hooks.php';
-?>
+
+add_filter( 'block_categories_all', function( $categories, $post ) {
+
+    $custom_block = array(
+        'slug'  => 'kk-blocks',
+        'title' => esc_html__( 'Кути Катай', 'kk' ),
+    );
+
+    $categories_sorted = array();
+    $categories_sorted[0] = $custom_block;
+
+    foreach ($categories as $category) {
+        $categories_sorted[] = $category;
+    }
+
+    return $categories_sorted;
+
+}, 10, 2 );
+
+add_action( 'init', 'register_acf_blocks' );
+
+function register_acf_blocks() {
+    register_block_type( get_template_directory() . '/blocks/franshiza-uslugi' );
+}

@@ -79,7 +79,7 @@ get_header();
          <div class="vacancies-list-container-vacancy-page">
             <div class="overflow-nav-vacancies-container">
                <div class="nav-menu-of-vacancies-work-in-page">
-                  <div class="text-18-500">Логист</div>
+                  <div class="text-18-500">Оператор-Кассир</div>
                   <div class="text-18-500 opacity">Сотрудник проката</div>
                   <div class="text-18-500 opacity">Директор по маркетингу</div>
                </div>
