@@ -51,24 +51,7 @@
 .format__pictures_third {
    background-image: url(<?php the_field('format_uslug_slajder_kartinka_3'); ?>);
 }
-.comand-card-franchise {
-   background-image: url(<?php the_field('chlen_komandy_1'); ?>);
-}
-.comand-card-franchise-2 {
-   background-image: url(<?php the_field('chlen_komandy_2'); ?>);
-}
-.comand-card-franchise-3 {
-   background-image: url(<?php the_field('chlen_komandy_3'); ?>);
-}
-.comand-card-franchise-4 {
-   background-image: url(<?php the_field('chlen_komandy_4'); ?>);
-}
-.comand-card-franchise-5 {
-   background-image: url(<?php the_field('chlen_komandy_5'); ?>);
-}
-.comand-card-franchise-6 {
-   background-image: url(<?php the_field('chlen_komandy_6'); ?>);
-}
+
 .absolute-fs-container-right-frahciese {
    background-image: url(<?php the_field('pravaya_kartinka_sverhu'); ?>);
 }
