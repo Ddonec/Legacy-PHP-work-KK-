@@ -3267,48 +3267,32 @@ input:checked + .slider:before {
 }
 .comand-cards-franchise {
    display: flex;
+   flex-wrap: wrap;
    gap: 20px;
-   margin: 40px 20px 100px;
+   margin: 40px 0px 100px;
    width: max-content;
+   width: 100%;
 }
-.overflow-comand-cards-franchise {
-   overflow-x: auto;
-}
+
 .overflow-comand-cards-franchise::-webkit-scrollbar {
    display: none;
 }
-.comand-card-franchise {
+.comand-card-franchise,
+.comand-card-franchise-2,
+.comand-card-franchise-3,
+.comand-card-franchise-4,
+.comand-card-franchise-5,
+.comand-card-franchise-6 {
    width: 285px;
    height: 400px;
    display: flex;
    flex-direction: column-reverse;
    padding: 28px 28px 32px 20px;
    position: relative;
-}
-
-.comand-card-franchise-2 {
-   width: 285px;
-   height: 400px;
-   display: flex;
-   flex-direction: column-reverse;
-   padding: 28px 28px 32px 20px;
-   position: relative;
-}
-.comand-card-franchise-3 {
-   width: 285px;
-   height: 400px;
-   display: flex;
-   flex-direction: column-reverse;
-   padding: 28px 28px 32px 20px;
-   position: relative;
-}
-.comand-card-franchise-4 {
-   width: 285px;
-   height: 400px;
-   display: flex;
-   flex-direction: column-reverse;
-   padding: 28px 28px 32px 20px;
-   position: relative;
+   background-position: center;
+   background-size: cover;
+   overflow: hidden;
+   border-radius: 30px;
 }
 .comand-card-text-franchise {
    width: 285px;
@@ -3318,7 +3302,7 @@ input:checked + .slider:before {
    gap: 8px;
    border-radius: 40px;
    background: #e8eafb;
-   padding: 40px 25px 0 25px;
+   padding: 30px 25px 0 25px;
 }
 .team-fr__refresh-icon {
    width: 24px;
@@ -3335,6 +3319,7 @@ input:checked + .slider:before {
    font-weight: 500;
    line-height: 130%; /* 23.4px */
    opacity: 0.5;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту */
 }
 .team-fr__name {
    color: var(--white, #fff);
@@ -3343,6 +3328,7 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 600;
    line-height: 130%; /* 31.2px */
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту */
 }
 .team-fr__title {
    color: var(--black, #333);
@@ -3355,7 +3341,31 @@ input:checked + .slider:before {
 .team-fr__title > span {
    color: var(--purple, #5567ea);
 }
-
+.team-fr__back-name {
+   color: black;
+   font-family: Lato, sans-serif;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 130%; /* 31.2px */
+}
+.team-fr__back-who {
+   color: black;
+   font-family: Lato, sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 130%; /* 23.4px */
+   opacity: 0.5;
+}
+.team-fr__back-discription {
+   color: black;
+   font-family: Lato, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 130%; /* 23.4px */
+}
 .what-we-can-do-title {
    color: #333;
    font-family: Lato, sans-serif;
@@ -3592,8 +3602,7 @@ input:checked + .slider:before {
    width: 100%;
    height: 540px;
    border-radius: 32px;
-   background: linear-gradient(78deg, rgba(51, 51, 51, 0.6) 1.23%, rgba(51, 51, 51, 0) 75.3%), url(../assets/content/photo_2024-02-067.07.30.jpeg),
-      lightgray 0px -41.505px / 100% 156.143% no-repeat;
+   background: linear-gradient(78deg, rgba(51, 51, 51, 0.6) 1.23%, rgba(51, 51, 51, 0) 75.3%), url(../assets/content/photo_2024-02-067.07.30.jpeg), lightgray 0px -41.505px / 100% 156.143% no-repeat;
    background-size: cover;
    overflow: hidden;
    position: relative;

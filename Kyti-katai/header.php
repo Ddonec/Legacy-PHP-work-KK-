@@ -63,6 +63,12 @@
 .comand-card-franchise-4 {
    background-image: url(<?php the_field('chlen_komandy_4'); ?>);
 }
+.comand-card-franchise-5 {
+   background-image: url(<?php the_field('chlen_komandy_5'); ?>);
+}
+.comand-card-franchise-6 {
+   background-image: url(<?php the_field('chlen_komandy_6'); ?>);
+}
 .absolute-fs-container-right-frahciese {
    background-image: url(<?php the_field('pravaya_kartinka_sverhu'); ?>);
 }

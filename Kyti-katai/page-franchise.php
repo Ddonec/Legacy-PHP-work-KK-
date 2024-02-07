@@ -320,25 +320,119 @@ get_header();
          <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-zagolovok_5_sekczii') ?></h3>
          <div class="overflow-comand-cards-franchise">
             <div class="comand-cards-franchise">
-               <div class="comand-card-franchise">
+            <div class="card">
+               <div class="card__front">
+                  <div class="comand-card-franchise">
                   <img class="team-fr__refresh-icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/refresh-ccw.svg" alt="" />
-                  <p class="team-fr__who">Директор Логистики</p>
-                  <p class="team-fr__name">Конов В.Б.</p>
+                     <p class="team-fr__who"><?php the_field('dolzhnost_chlena_komandy_1') ?></p> 
+                     <p class="team-fr__name"><?php the_field('imya_chlena_komandy_1') ?></p>
+                  </div>
                </div>
-               <div class="comand-card-franchise-2">
+               <div class="card__back">
+                   <div class="comand-card-text-franchise">
+                     <p class="team-fr__back-name"><?php the_field('imya_chlena_komandy_1') ?></p>
+                     <p class="team-fr__back-who"><?php the_field('dolzhnost_chlena_komandy_1') ?></p>
+                     <p class="team-fr__back-discription">
+                        <?php the_field('opisanie_chlena_komandy_1') ?>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card__front">
+                  <div class="comand-card-franchise-2">
                   <img class="team-fr__refresh-icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/refresh-ccw.svg" alt="" />
-                  <p class="team-fr__who">Директор Логистики</p>
-                  <p class="team-fr__name">Конов В.Б.</p>
+                     <p class="team-fr__who"><?php the_field('dolzhnost_chlena_komandy_2') ?></p>
+                     <p class="team-fr__name"><?php the_field('imya_chlena_komandy_2') ?></p>
+                  </div>
                </div>
-               <div class="comand-card-text-franchise">
-                  <p class="text-18-500-left"><?php the_field('franchise-vehnij_tekst_kartochki_bez_foto') ?></p>
-                  <p class="team-fr__title"><?php the_field('franchise-nizhnij_tekst_kartochki_bez_foto') ?></p>
+               <div class="card__back">
+                   <div class="comand-card-text-franchise">
+                     <p class="team-fr__back-name"><?php the_field('imya_chlena_komandy_2') ?></p>
+                     <p class="team-fr__back-who"><?php the_field('dolzhnost_chlena_komandy_2') ?></p>
+                     <p class="team-fr__back-discription">
+                        <?php the_field('opisanie_chlena_komandy_2') ?>
+                     </p>
+                  </div>
                </div>
-               <div class="comand-card-franchise-4">
+            </div>
+            <div class="comand-card-text-franchise">
+                     <p class="text-18-500-left">Будем рядом</p>
+                     <p class="team-fr__title">За вами закрепляется менеджер от <span>каждого департамента,</span> а не один специалист</p>
+            </div>
+            <div class="card">
+               <div class="card__front">
+                  <div class="comand-card-franchise-3">
                   <img class="team-fr__refresh-icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/refresh-ccw.svg" alt="" />
-                  <p class="team-fr__who">Директор Логистики</p>
-                  <p class="team-fr__name">Конов В.Б.</p>
+                     <p class="team-fr__who"><?php the_field('dolzhnost_chlena_komandy_3') ?></p>
+                     <p class="team-fr__name"><?php the_field('imya_chlena_komandy_3') ?></p>
+                  </div>
                </div>
+               <div class="card__back">
+                   <div class="comand-card-text-franchise">
+                     <p class="team-fr__back-name"><?php the_field('imya_chlena_komandy_3') ?></p>
+                     <p class="team-fr__back-who"><?php the_field('dolzhnost_chlena_komandy_3') ?></p>
+                     <p class="team-fr__back-discription">
+                        <?php the_field('opisanie_chlena_komandy_3') ?>
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card">
+               <div class="card__front">
+                  <div class="comand-card-franchise-4">
+                  <img class="team-fr__refresh-icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/refresh-ccw.svg" alt="" />
+                     <p class="team-fr__who"><?php the_field('dolzhnost_chlena_komandy_4') ?></p>
+                     <p class="team-fr__name"><?php the_field('imya_chlena_komandy_4') ?></p>
+                  </div>
+               </div>
+               <div class="card__back">
+                   <div class="comand-card-text-franchise">
+                     <p class="team-fr__back-name"><?php the_field('imya_chlena_komandy_4') ?></p>
+                     <p class="team-fr__back-who"><?php the_field('dolzhnost_chlena_komandy_4') ?></p>
+                     <p class="team-fr__back-discription">
+                        <?php the_field('opisanie_chlena_komandy_4') ?>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card__front">
+                  <div class="comand-card-franchise-5">
+                  <img class="team-fr__refresh-icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/refresh-ccw.svg" alt="" />
+                     <p class="team-fr__who"><?php the_field('dolzhnost_chlena_komandy_5') ?></p>
+                     <p class="team-fr__name"><?php the_field('imya_chlena_komandy_5') ?></p>
+                  </div>
+               </div>
+               <div class="card__back">
+                   <div class="comand-card-text-franchise">
+                     <p class="team-fr__back-name"><?php the_field('imya_chlena_komandy_5') ?></p>
+                     <p class="team-fr__back-who"><?php the_field('dolzhnost_chlena_komandy_5') ?></p>
+                     <p class="team-fr__back-discription">
+                        <?php the_field('opisanie_chlena_komandy_5') ?>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card__front">
+                  <div class="comand-card-franchise-6">
+                  <img class="team-fr__refresh-icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/refresh-ccw.svg" alt="" />
+                     <p class="team-fr__who"><?php the_field('dolzhnost_chlena_komandy_6') ?></p>
+                     <p class="team-fr__name"><?php the_field('imya_chlena_komandy_6') ?></p>
+                  </div>
+               </div>
+               <div class="card__back">
+                   <div class="comand-card-text-franchise">
+                     <p class="team-fr__back-name"><?php the_field('imya_chlena_komandy_6') ?></p>
+                     <p class="team-fr__back-who"><?php the_field('dolzhnost_chlena_komandy_6') ?></p>
+                     <p class="team-fr__back-discription">
+                        <?php the_field('opisanie_chlena_komandy_6') ?>
+                     </p>
+                  </div>
+               </div>
+            </div>
             </div>
          </div>
 
