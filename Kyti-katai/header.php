@@ -28,13 +28,13 @@
       <link rel="stylesheet" href="css/catalog.css" />
       <link rel="stylesheet" href="css/media.css" />       -->
 
-      <?php 
+      <?php
     wp_head()
     ?>
 
-    
 
-      <title>Document</title>
+
+      <title><?php echo wp_get_document_title() ?></title>
    </head>
    <style>
 .green-samokat::before {
@@ -189,14 +189,14 @@
 
             <ul class="header-1920-list">
                <li class="pointer" id="pointer-for-drop">Компания <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /> <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" />
-            
+
                <div id="drop-window-company">
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/about-us/">О нас</a>
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/category/articles/">Новости</a>
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/work/">Работа в КутиКатай</a>
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/contacts/">Контакты</a>
                </div>
-            
+
             </li>
                <!-- <li class="pointer">Сообщества <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /><img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" /></li> -->
                <li class="pointer"><a class="white-text-section" href="/franchise">Франшиза</a></li>

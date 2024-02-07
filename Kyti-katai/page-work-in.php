@@ -113,6 +113,7 @@ get_header();
                <h4 class="main-text-sub-block-news-p-cont text-gradient"><?php the_field('work-tvjtl_formy') ?></h4>
                <p class="second-text-sub-block-news-p-cont text-18-500-left"><?php the_field('work-subtajtl_formy') ?></p>
             </div>
+             <?php echo do_shortcode( '[contact-form-7 id="24c1000" title="Работа в КутиКатай"]' ); ?>
             <div class="input-zone-news-work-page-cont">
                <input class="input-small-vacancies i-n-p-c-work-in-name" type="text" placeholder="Ваше имя" />
                <input class="input-small-vacancies i-n-p-c-work-in-number" type="text" placeholder="Номер телефона" />
