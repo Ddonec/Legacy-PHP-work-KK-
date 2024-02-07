@@ -20,12 +20,52 @@ get_header();
             <div class="item-shadow-section-contact-page"></div> -->
    </div>
 </section>
-<div class="map-area-contacts-page">
+<!-- <div class="map-area-contacts-page">
    <div class="blie-map-point-contacts-page">
       <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/bike-contact-page-2.svg" alt="" />
       <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/bike-contact-page.svg" alt="" />
    </div>
-</div>
+</div> -->
+
+<div id="map-test" class="map"></div>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=4e215164-d278-42d9-abf5-0345e2b353a0
+API-4e215164-d278-42d9-abf5-0345e2b353a0
+&lang=ru_RU"></script>
+<script>
+   let center = [55.82859156889557,37.624722999999996];
+
+   function init() {
+      let map = new ymaps.Map("map-test", {
+         center: center,
+         zoom: 15,
+      });
+
+      let placemark = new ymaps.Placemark(
+         center,
+         {},
+         {
+            iconLayout: "default#image",
+            iconImageHref: "<?php echo bloginfo('template_url'); ?>/assets/assets/content/map-dot.png",
+            iconImageSize: [116, 96],
+            iconImageOffset: [-116, -96],
+         }
+      );
+
+      map.controls.remove("geolocationControl"); // удаляем геолокацию
+      map.controls.remove("searchControl"); // удаляем поиск
+      map.controls.remove("trafficControl"); // удаляем контроль трафика
+      map.controls.remove("typeSelector"); // удаляем тип
+      map.controls.remove("fullscreenControl"); // удаляем кнопку перехода в полноэкранный режим
+      map.controls.remove("zoomControl"); // удаляем контрол зуммирования
+      map.controls.remove("rulerControl"); // удаляем контрол правил
+      // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+      map.geoObjects.add(placemark);
+   }
+
+   ymaps.ready(init);
+</script>
 <div class="contact-info-area-contacts-page">
    <li>
       <p class="text-18-500-l"><?php the_field('contacts-verh_blok_1') ?></p>
