@@ -9,6 +9,26 @@ Template Name: franchise
 get_header();
 ?>
 
+<style>
+   .comand-card-franchise {
+   background-image: url(<?php the_field('chlen_komandy_1'); ?>);
+}
+.comand-card-franchise-2 {
+   background-image: url(<?php the_field('chlen_komandy_2'); ?>);
+}
+.comand-card-franchise-3 {
+   background-image: url(<?php the_field('chlen_komandy_3'); ?>);
+}
+.comand-card-franchise-4 {
+   background-image: url(<?php the_field('chlen_komandy_4'); ?>);
+}
+.comand-card-franchise-5 {
+   background-image: url(<?php the_field('chlen_komandy_5'); ?>);
+}
+.comand-card-franchise-6 {
+   background-image: url(<?php the_field('chlen_komandy_6'); ?>);
+}
+</style>
 
 <section class="first-section">
     <div class="bacground-image-main-page-first-section-franchese">

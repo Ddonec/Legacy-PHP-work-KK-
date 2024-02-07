@@ -352,6 +352,14 @@
       transform: rotate(270deg) translateX(-100%);
       transform-origin: top left; */
    }
+
+   .overflow-comand-cards-franchise {
+      overflow-x: auto;
+   }
+   .comand-cards-franchise {
+      flex-wrap: nowrap;
+      padding: 0 20px;
+   }
 }
 
 @media (max-width: 1299px) {

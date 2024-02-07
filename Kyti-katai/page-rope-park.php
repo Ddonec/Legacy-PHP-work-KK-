@@ -96,7 +96,7 @@ get_header();
                </div>
 
                <div class="ticket__card">
-                  <div class="ticket__image"></div>
+                  <div class="ticket__image-3"></div>
                   <div class="ticket__discription">
                      <p class="text-18-600">Парк им. Калинина</p>
                      <p class="text-14-500-left-lato opacity">МО, Королёв, ул. Терешковой, 3</p>
@@ -104,7 +104,7 @@ get_header();
                </div>
 
                <div class="ticket__card">
-                  <div class="ticket__image-2"></div>
+                  <div class="ticket__image-4"></div>
                   <div class="ticket__discription">
                      <p class="text-18-600">Городской парк г. Кашира </p>
                      <p class="text-14-500-left-lato opacity">МО, Кашира, ул. Ленина, 2 </p>
