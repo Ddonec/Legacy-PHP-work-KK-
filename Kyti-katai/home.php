@@ -136,7 +136,7 @@ $.getJSON("/wp-content/uploads/points.json", function(data) {
             <div class="absolute-on-map-home-page-text-comtainer">
                <h3 class="text-gradient">Найди свой парк</h3>
             </div>
-            <section class="absolute-map-info-left-container">
+            <section class="absolute-map-info-left-container none">
                <div class="park-info-map-zone text-14-500-left-lato-left">
                   <img class="Vector-close-10" src="assets/icon/Vector-close-10.7.svg" alt="" />
                   <p class="park-info-map-zone-title left-park-json-data-1">Красногвардейский пруд</p>
