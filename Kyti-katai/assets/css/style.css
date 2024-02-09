@@ -4211,7 +4211,7 @@ input:checked + .slider:before {
    width: fit-content;
    margin: 50px auto;
    width: 100%;
-   max-width: 620px;
+   max-width: 580px;
    background: gray;
 }
 .modal-reserve-celebrate {
@@ -4233,7 +4233,7 @@ input:checked + .slider:before {
    transform: translate(-50%, -50%);
    z-index: 200;
    width: 90%;
-   max-width: 620px;
+   max-width: 580px;
 }
 
 .modal-reserve-franchise {
@@ -4255,7 +4255,7 @@ input:checked + .slider:before {
    transform: translate(-50%, -50%);
    z-index: 200;
    width: 90%;
-   max-width: 620px;
+   max-width: 580px;
 }
 .modal-r-c__top-container {
    display: flex;
@@ -4452,7 +4452,7 @@ input:checked + .slider:before {
    transform: translate(-50%, -50%);
    z-index: 200;
    width: 90%;
-   max-width: 620px;
+   max-width: 580px;
 }
 .modal-c-p__top-block {
    display: flex;
@@ -4622,7 +4622,7 @@ input:checked + .slider:before {
    transform: translate(-50%, -50%);
    z-index: 200;
    width: 90%;
-   max-width: 620px;
+   max-width: 580px;
 }
 
 .modal-a-p__title {
@@ -4706,7 +4706,7 @@ input:checked + .slider:before {
    transform: translate(-50%, -50%);
    z-index: 200;
    width: 90%;
-   max-width: 620px;
+   max-width: 580px;
 }
 .modal-switch__title {
    color: #333;
