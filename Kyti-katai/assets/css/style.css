@@ -4467,6 +4467,7 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 700;
    line-height: 140%; /* 56px */
+   cursor: default;
 }
 .modal-c-p__subtitle {
    color: #333;
@@ -4475,6 +4476,7 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 600;
    line-height: 140%; /* 33.6px */
+   cursor: default;
 }
 .modal-c-p__search-city {
    display: flex;
@@ -4500,6 +4502,7 @@ input:checked + .slider:before {
    content: "|";
    margin-left: 4px;
    color: #5567ea;
+   cursor: default;
 }
 
 .modal-c-p__park-list {
@@ -4516,6 +4519,7 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
+   cursor: default;
 }
 .park-list__ul {
    width: 100%;
@@ -4560,6 +4564,10 @@ input:checked + .slider:before {
    border-radius: 60px;
    border: 2px solid #d7dbf8;
    background: #fff;
+   cursor: pointer;
+}
+.selected-park {
+   background-color: #e8eafb;
 }
 .modal-c-p__buttons {
    width: 100%;
