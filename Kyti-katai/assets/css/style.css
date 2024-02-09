@@ -4686,7 +4686,7 @@ input:checked + .slider:before {
    border-radius: 160px;
    border: 2px solid #ffc93a;
    display: flex;
-   padding: 14px 32px 16px 32px;
+   padding: 10px 32px 10px 32px;
    justify-content: center;
    align-items: center;
    margin-top: 10px;
