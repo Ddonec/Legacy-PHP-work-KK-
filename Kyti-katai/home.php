@@ -109,6 +109,57 @@ $.getJSON("/wp-content/uploads/points.json", function(data) {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Находим кнопку "Выбрать парк"
+    var chooseParkButton = document.querySelector('.map-area-first-section__button');
+
+    // Добавляем обработчик события клика на кнопку
+    chooseParkButton.addEventListener('click', function() {
+      console.log("порк изменен")
+        // Получаем данные о выбранном парке
+        var parkName = document.querySelector('.left-park-json-data-1').textContent;
+        var parkTime = document.querySelector('.left-park-json-data-2').textContent;
+        var parkEquipment = document.querySelector('.left-park-json-data-3').textContent;
+        var parkNameStickyValue = document.querySelector('.park-name-sticky-value');
+        parkNameStickyValue.textContent = parkName;
+        // Формируем объект с данными о парке
+        var parkData = {
+            name: parkName,
+            time: parkTime,
+            equipment: parkEquipment
+        };
+
+        // Преобразуем объект в строку JSON
+        var parkDataString = JSON.stringify(parkData);
+
+        // Сохраняем данные о парке в куки
+        document.cookie = "parkData=" + parkDataString + "; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/";
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Функция для получения значения куки по её имени
+    function getCookie(name) {
+        var matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    // Получаем данные из куки
+    var parkDataString = getCookie('parkData');
+
+    // Если данные о парке есть в куки
+    if (parkDataString) {
+        // Преобразуем строку JSON обратно в объект
+        var parkData = JSON.parse(parkDataString);
+
+        // Находим элемент с классом park-name-sticky-value и устанавливаем его текстовое содержимое
+        var parkNameStickyValue = document.querySelector('.park-name-sticky-value');
+        parkNameStickyValue.textContent = parkData.name;
+    }
+});
 </script>
 
 
@@ -902,7 +953,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   </clipPath>
                </defs>
             </svg>
-            Красногвардейский пруд
+            <span class="park-name-sticky-value"></span>
          </span>
       </div>
 
