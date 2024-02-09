@@ -197,44 +197,63 @@ function openPopupAbout() {
    greyBG = document.createElement("div");
    greyBG.className = "grey-bg";
    popup.className = "modal-reserve-celebrate-absolute";
-   popup.innerHTML = `<section class="modal-about-park">
-   <div class="modal-a-p__title">О парке</div>
-   <div class="modal-a-p__middle-container">
-      <div class="modal-a-p__subtitle">Красногвардейский пруд</div>
-      <div class="modal-a-p__time-zone">
-         <p class="time-zone__grey">Время работы:</p>
-         <p class="time-zone__disc">Круглосуточно</p>
-      </div>
-      <div class="modal-a-p__technic-zone">
-         <p class="technic-zone__grey">Техника парка:</p>
-         <p class="technic-zone__disc">Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны</p>
-      </div>
-   </div>
-   <div class="modal-a-p__img"></div>
-   <div class="modal-a-p__button">Сменить парк</div>
-   <div class="close-modal-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-         <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
-      </svg>
-   </div>
-</section>`;
+   
+   // Чтение данных из куки
+   var cookieData = document.cookie.split(';').reduce(function(acc, cookie) {
+      var parts = cookie.split('=');
+      acc[parts[0].trim()] = decodeURIComponent(parts[1]);
+      return acc;
+   }, {});
 
+   // Получение данных о выбранном парке из куки
+   var parkData = cookieData["parkData"] ? JSON.parse(cookieData["parkData"]) : null;
+
+   // Формирование HTML для модального окна
+   var modalHTML = `<section class="modal-about-park">
+      <div class="modal-a-p__title">О парке</div>
+      <div class="modal-a-p__middle-container">
+         <div class="modal-a-p__subtitle">${parkData ? parkData.name : ''}</div>
+         <div class="modal-a-p__time-zone">
+            <p class="time-zone__grey">Время работы:</p>
+            <p class="time-zone__disc">${parkData ? parkData.time : ''}</p>
+         </div>
+         <div class="modal-a-p__technic-zone">
+            <p class="technic-zone__grey">Техника парка:</p>
+            <p class="technic-zone__disc">${parkData ? parkData.equipment : ''}</p>
+         </div>
+      </div>
+      <div class="modal-a-p__img"></div>
+      <div class="modal-a-p__button">Сменить парк</div>
+      <div class="close-modal-btn">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
+         </svg>
+      </div>
+   </section>`;
+
+   // Вставка HTML в модальное окно
+   popup.innerHTML = modalHTML;
+
+   // Добавление модального окна и фона на страницу
    document.body.appendChild(popup);
    document.body.appendChild(greyBG);
 
+   // Обработчик закрытия модального окна по клику на фон
    greyBG.addEventListener("click", function () {
       document.body.removeChild(popup);
       document.body.removeChild(greyBG);
       console.log("close");
    });
 
+   // Обработчик закрытия модального окна по клику на кнопку "Закрыть"
    popup.querySelector(".close-modal-btn").addEventListener("click", function () {
       document.body.removeChild(popup);
       document.body.removeChild(greyBG);
       console.log("close");
    });
-   const swapParkBtnModal = document.querySelector(".modal-a-p__button");
 
+   // Обработчик нажатия кнопки "Сменить парк"
+   const swapParkBtnModal = document.querySelector(".modal-a-p__button");
    swapParkBtnModal.addEventListener("click", function () {
       document.body.removeChild(popup);
       document.body.removeChild(greyBG);

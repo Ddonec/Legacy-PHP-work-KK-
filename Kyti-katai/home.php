@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Формируем объект с данными о парке
         var parkData = {
             name: parkName,
-            time: parkTime,
+            time: parkTime ? parkTime : "10:00-21:00",
             equipment: parkEquipment
         };
 
