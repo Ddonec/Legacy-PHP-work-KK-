@@ -4642,6 +4642,7 @@ input:checked + .slider:before {
    font-weight: 700;
    line-height: 140%; /* 56px */
    margin-bottom: 10px;
+   cursor: default;
 }
 .modal-a-p__middle-container {
    color: #333;
@@ -4666,6 +4667,7 @@ input:checked + .slider:before {
 .modal-a-p__technic-zone {
    display: flex;
    gap: 10px;
+   cursor: default;
 }
 .time-zone__grey,
 .technic-zone__grey {
@@ -4695,6 +4697,7 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
+   cursor: pointer;
 }
 
 .modal-switch-park {
