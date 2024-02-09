@@ -5114,11 +5114,18 @@ input:checked + .slider:before {
    gap: 7px;
    align-self: stretch;
    margin-top: 4px;
+   cursor: pointer;
 }
 .park-info-map-zone-title {
    font-size: 18px;
    font-weight: 600;
    padding-left: 10px;
+   cursor: default;
+}
+.left-park-json-data-3,
+.left-park-json-data-2,
+.left-park-json-data-1 {
+   cursor: default;
 }
 
 .park-list-map-zone {
@@ -5157,6 +5164,7 @@ input:checked + .slider:before {
    align-items: center;
    gap: 10px;
    align-self: stretch;
+   cursor: pointer;
 }
 
 .absolute-map-info-left-container {
@@ -5187,7 +5195,7 @@ input:checked + .slider:before {
 .map-container:hover > .absolute-map-info-left-container {
    opacity: 1;
    z-index: 1;
-   display: none;
+   /* display: none; */
 }
 
 .burger-menu {

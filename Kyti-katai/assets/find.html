@@ -337,6 +337,29 @@
          </div>
       </section>
 
+      <h1>Список объектов</h1>
+      <ul id="objects-list"></ul>
+
+      <script>
+ fetch("../../Kyti-katai/assets/points.json")
+      .then((response) => response.json())
+      .then((data) => {
+         // Получение списка объектов
+         const objects = data.features;
+
+         // Получение элемента списка на странице
+         const objectsList = document.getElementById("objects-list");
+
+         // Создание элементов списка для каждого объекта
+         objects.forEach((object) => {
+            const listItem = document.createElement("li");
+            listItem.textContent = `Название: ${object.properties.name}, Время: ${object.properties.worktime}, Оборудование: ${object.properties.equipment}`;
+            objectsList.appendChild(listItem);
+         });
+      })
+      .catch((error) => console.error("Ошибка загрузки данных:", error));
+      </script>
+
       <footer>
          <div class="images-footer">
             <img src="assets/icon/Group3.svg" alt="" />
