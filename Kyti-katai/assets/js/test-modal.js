@@ -30,6 +30,7 @@ window.onload = function () {
    console.log("Страница загружена");
 };
 
+
 function openPopupReserve() {
    popup = document.createElement("div");
    greyBG = document.createElement("div");
