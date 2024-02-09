@@ -4463,7 +4463,7 @@ input:checked + .slider:before {
    color: #333;
    text-align: center;
    font-family: "Montserrat Alternates";
-   font-size: 40px;
+   font-size: 28px;
    font-style: normal;
    font-weight: 700;
    line-height: 140%; /* 56px */
@@ -4471,7 +4471,7 @@ input:checked + .slider:before {
 .modal-c-p__subtitle {
    color: #333;
    font-family: Lato, sans-serif;
-   font-size: 24px;
+   font-size: 18px;
    font-style: normal;
    font-weight: 600;
    line-height: 140%; /* 33.6px */
@@ -4490,7 +4490,7 @@ input:checked + .slider:before {
    color: #333;
    text-align: center;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4512,7 +4512,7 @@ input:checked + .slider:before {
 .park-list__title {
    color: #333;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4545,14 +4545,14 @@ input:checked + .slider:before {
 }
 .park-list__li {
    display: flex;
-   padding: 15px 32px;
+   padding: 10px 24px;
    justify-content: center;
    align-items: center;
    gap: 10px;
 
    color: #333;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 139%; /* 25.02px */
@@ -4573,7 +4573,7 @@ input:checked + .slider:before {
 
    display: flex;
    width: 100%;
-   padding: 14px 32px 16px 32px;
+   padding: 10px 24px 10px 24px;
    justify-content: center;
    align-items: center;
    border: unset;
@@ -4581,7 +4581,7 @@ input:checked + .slider:before {
    color: #000;
    text-align: center;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4591,7 +4591,7 @@ input:checked + .slider:before {
    border: 2px solid #ffc93a;
 
    display: flex;
-   padding: 14px 32px 16px 32px;
+   padding: 10px 24px 10px 24px;
    justify-content: center;
    align-items: center;
    background: white;
@@ -4599,7 +4599,7 @@ input:checked + .slider:before {
    color: #000;
    text-align: center;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4629,7 +4629,7 @@ input:checked + .slider:before {
    color: #333;
    text-align: center;
    font-family: "Montserrat Alternates", sans-serif;
-   font-size: 40px;
+   font-size: 28px;
    font-style: normal;
    font-weight: 700;
    line-height: 140%; /* 56px */
@@ -4638,7 +4638,7 @@ input:checked + .slider:before {
 .modal-a-p__middle-container {
    color: #333;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4649,7 +4649,7 @@ input:checked + .slider:before {
 .modal-a-p__subtitle {
    color: #000;
    font-family: Lato, sans-serif;
-   font-size: 24px;
+   font-size: 18px;
    font-style: normal;
    font-weight: 600;
    line-height: 140%; /* 33.6px */
@@ -4683,7 +4683,7 @@ input:checked + .slider:before {
    color: #333;
    text-align: center;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4692,7 +4692,7 @@ input:checked + .slider:before {
 .modal-switch-park {
    border-radius: 20px;
    background: #fff;
-   padding: 40px;
+   padding: 28px;
    display: flex;
    flex-direction: column;
    gap: 25px;
@@ -4712,7 +4712,7 @@ input:checked + .slider:before {
    color: #333;
    text-align: center;
    font-family: "Montserrat Alternates";
-   font-size: 40px;
+   font-size: 28px;
    font-style: normal;
    font-weight: 700;
    line-height: 140%; /* 56px */
@@ -4748,7 +4748,7 @@ input:checked + .slider:before {
 
    color: #333;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4783,7 +4783,7 @@ input:checked + .slider:before {
    color: #000;
    text-align: center;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4792,7 +4792,7 @@ input:checked + .slider:before {
    background: #ffc93a;
 
    display: flex;
-   padding: 14px 32px 16px 32px;
+   padding: 10px 32px 10px 32px;
    justify-content: center;
    align-items: center;
 }
