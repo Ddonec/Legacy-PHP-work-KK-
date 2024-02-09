@@ -11,16 +11,17 @@ get_header();
 <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-    ymaps.ready(init);
-    function init() {
+    ymaps.ready(function() {
         var myMap = new ymaps.Map('map', {
             center: [55.76, 37.64],
             zoom: 11
         }, {
             searchControlProvider: 'yandex#search'
         });
-        $.getJSON( "/wp-content/uploads/points.json", function( data ) {
-            objectManager = new ymaps.ObjectManager({
+
+        // Загрузка данных и добавление ObjectManager
+        $.getJSON("/wp-content/uploads/points.json", function(data) {
+            var objectManager = new ymaps.ObjectManager({
                 clusterize: true,
                 gridSize: 50,
                 clusterDisableClickZoom: false
@@ -28,8 +29,19 @@ get_header();
             objectManager.clusters.options.set('preset', 'islands#invertedNightClusterIcons');
             myMap.geoObjects.add(objectManager);
             objectManager.add(data);
+
+            // Добавляем обработчик события click на объекте objectManager
+            objectManager.objects.events.add('click', function(e) {
+                var objectId = e.get('objectId'); // Получаем id объекта, на котором произошел клик
+                var objectInfo = objectManager.objects.getById(objectId); // Получаем информацию о кликнутом объекте
+                if (objectInfo && objectInfo.properties) {
+                    // Если информация о объекте доступна, можно её отобразить
+                    var objectName = objectInfo.properties.name; // Пример: получаем название точки
+                    alert('Вы кликнули на точку: ' + objectName);
+                }
+            });
         });
-    }
+    });
 </script>
 
 
@@ -63,11 +75,11 @@ get_header();
                   <p class="park-info-map-zone-title">Красногвардейский пруд</p>
                   <div class="park-info-map-zone-line0info">
                      <p class="opacity">Время работы:</p>
-                     <p>Круглосуточно</p>
+                     <p class="map-info-left-container__time">Круглосуточно</p>
                   </div>
                   <div class="park-info-map-zone-line0info">
                      <p class="opacity">Техника парка:</p>
-                     <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны</p>
+                     <p class="map-info-left-container__technick">Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны</p>
                   </div>
                   <div class="map-area-first-section__button">Выбрать парк</div>
                </div>
