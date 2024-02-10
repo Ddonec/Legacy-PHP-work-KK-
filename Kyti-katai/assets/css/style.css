@@ -4425,11 +4425,11 @@ input:checked + .slider:before {
 }
 .go-back-modal-btn {
    position: absolute;
-   top: 45px;
+   top: 29px;
    left: 25px;
    background-image: url(../assets/icon/Vector-left.svg);
-   width: 46px;
-   height: 48px;
+   width: 32px;
+   height: 19px;
    background-position: center;
    background-repeat: no-repeat;
    cursor: pointer;
@@ -4662,6 +4662,7 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 600;
    line-height: 140%; /* 33.6px */
+   cursor: default;
 }
 .modal-a-p__time-zone,
 .modal-a-p__technic-zone {
@@ -4784,7 +4785,7 @@ input:checked + .slider:before {
    background: #fff;
    display: flex;
    gap: 10px;
-   padding: 15px 32px;
+   padding: 10px 24px;
 }
 .modal-switch__park-range {
    opacity: 0.5;
