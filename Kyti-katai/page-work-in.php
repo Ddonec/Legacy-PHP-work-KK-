@@ -79,9 +79,24 @@ get_header();
          <div class="vacancies-list-container-vacancy-page">
             <div class="overflow-nav-vacancies-container">
                <div class="nav-menu-of-vacancies-work-in-page">
-                  <div class="text-18-500 vac__active nav-menu-of-vacancies__vac">Оператор-Кассир</div>
+                  <!-- <div class="text-18-500 vac__active nav-menu-of-vacancies__vac">Оператор-Кассир</div>
                   <div class="text-18-500 opacity nav-menu-of-vacancies__vac">Сотрудник проката</div>
-                  <div class="text-18-500 opacity nav-menu-of-vacancies__vac">Директор по маркетингу</div>
+                  <div class="text-18-500 opacity nav-menu-of-vacancies__vac">Директор по маркетингу</div> -->
+
+                  <?php
+$vac = get_field('nazvanie_vakansii_strokgo');
+if ($vac) {
+    $co = 0;
+    foreach ($vac as $vacancy) {
+        $co++;
+?>
+<div class="text-18-500 <?php echo ($co == 1) ? 'vac__active' : 'opacity'; ?> nav-menu-of-vacancies__vac pointer">
+      <?php echo $vacancy['nazvanie_vakansii_nomer_povtoritel']; ?></div>
+<?php
+    }
+}
+?>
+
                </div>
             </div>
             <div class="discriptions-of-vacancies-container">
