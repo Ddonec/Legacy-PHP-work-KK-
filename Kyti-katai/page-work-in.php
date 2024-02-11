@@ -79,9 +79,9 @@ get_header();
          <div class="vacancies-list-container-vacancy-page">
             <div class="overflow-nav-vacancies-container">
                <div class="nav-menu-of-vacancies-work-in-page">
-                  <div class="text-18-500">Оператор-Кассир</div>
-                  <div class="text-18-500 opacity">Сотрудник проката</div>
-                  <div class="text-18-500 opacity">Директор по маркетингу</div>
+                  <div class="text-18-500 vac__active nav-menu-of-vacancies__vac1">Оператор-Кассир</div>
+                  <div class="text-18-500 opacity nav-menu-of-vacancies__vac2">Сотрудник проката</div>
+                  <div class="text-18-500 opacity nav-menu-of-vacancies__vac3">Директор по маркетингу</div>
                </div>
             </div>
             <div class="discription-area-of-vacancier-work-page">
@@ -104,8 +104,35 @@ get_header();
                   <?php the_field('work-spisok_posle_sinego_3') ?>
                   </ul>
                </div>
-               <div class="respond-btn-work-in-page text-18-500">Откликнуться</div>
+               <div class="respond-btn-work-in-page text-18-500 pointer">Откликнуться</div>
             </div>
+
+            <div class="discription-area-of-vacancier-work-page">
+               <h5 class="text-18-500"><?php the_field('work-tekst_kogo_ishhem_vac_2') ?></h5>
+               <div>
+               <?php
+                  $vac2 = get_field('opisanie_vakansii_povtoritel_2');
+                  var_dump($vac2); ?>
+                  <p class="requirements-vacancie-work-page"><?php the_field('work-tekst_v_vakansii_sinij_1_vac_2') ?></p>
+                  <ul>
+                  <?php the_field('work-spisok_posle_sinego_1_vac_2') ?>
+                  </ul>
+               </div>
+               <div>
+                  <p class="requirements-vacancie-work-page"><?php the_field('work-tekst_v_vakansii_sinij_2_vac_2') ?></p>
+                  <ul>
+                  <?php the_field('work-spisok_posle_sinego_2_vac_2') ?>
+                  </ul>
+               </div>
+               <div>
+                  <p class="requirements-vacancie-work-page"><?php the_field('work-tekst_v_vakansii_sinij_3_vac_2') ?></p>
+                  <ul>
+                  <?php the_field('work-spisok_posle_sinego_3_vac_2') ?>
+                  </ul>
+               </div>
+               <div class="respond-btn-work-in-page text-18-500 pointer">Откликнуться</div>
+            </div>
+
          </div>
 
          <div class="call-back-form-container-work-in-page">

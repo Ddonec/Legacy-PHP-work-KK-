@@ -4211,7 +4211,7 @@ input:checked + .slider:before {
    width: fit-content;
    margin: 50px auto;
    width: 100%;
-   max-width: 620px;
+   max-width: 580px;
    background: gray;
 }
 .modal-reserve-celebrate {
@@ -4233,7 +4233,7 @@ input:checked + .slider:before {
    transform: translate(-50%, -50%);
    z-index: 200;
    width: 90%;
-   max-width: 620px;
+   max-width: 580px;
 }
 
 .modal-reserve-franchise {
@@ -4255,7 +4255,7 @@ input:checked + .slider:before {
    transform: translate(-50%, -50%);
    z-index: 200;
    width: 90%;
-   max-width: 620px;
+   max-width: 580px;
 }
 .modal-r-c__top-container {
    display: flex;
@@ -4425,11 +4425,11 @@ input:checked + .slider:before {
 }
 .go-back-modal-btn {
    position: absolute;
-   top: 45px;
+   top: 29px;
    left: 25px;
    background-image: url(../assets/icon/Vector-left.svg);
-   width: 46px;
-   height: 48px;
+   width: 32px;
+   height: 19px;
    background-position: center;
    background-repeat: no-repeat;
    cursor: pointer;
@@ -4452,7 +4452,7 @@ input:checked + .slider:before {
    transform: translate(-50%, -50%);
    z-index: 200;
    width: 90%;
-   max-width: 620px;
+   max-width: 580px;
 }
 .modal-c-p__top-block {
    display: flex;
@@ -4463,18 +4463,20 @@ input:checked + .slider:before {
    color: #333;
    text-align: center;
    font-family: "Montserrat Alternates";
-   font-size: 40px;
+   font-size: 28px;
    font-style: normal;
    font-weight: 700;
    line-height: 140%; /* 56px */
+   cursor: default;
 }
 .modal-c-p__subtitle {
    color: #333;
    font-family: Lato, sans-serif;
-   font-size: 24px;
+   font-size: 18px;
    font-style: normal;
    font-weight: 600;
    line-height: 140%; /* 33.6px */
+   cursor: default;
 }
 .modal-c-p__search-city {
    display: flex;
@@ -4490,7 +4492,7 @@ input:checked + .slider:before {
    color: #333;
    text-align: center;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4500,6 +4502,7 @@ input:checked + .slider:before {
    content: "|";
    margin-left: 4px;
    color: #5567ea;
+   cursor: default;
 }
 
 .modal-c-p__park-list {
@@ -4512,10 +4515,11 @@ input:checked + .slider:before {
 .park-list__title {
    color: #333;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
+   cursor: default;
 }
 .park-list__ul {
    width: 100%;
@@ -4545,14 +4549,14 @@ input:checked + .slider:before {
 }
 .park-list__li {
    display: flex;
-   padding: 15px 32px;
+   padding: 10px 24px;
    justify-content: center;
    align-items: center;
    gap: 10px;
 
    color: #333;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 139%; /* 25.02px */
@@ -4560,6 +4564,10 @@ input:checked + .slider:before {
    border-radius: 60px;
    border: 2px solid #d7dbf8;
    background: #fff;
+   cursor: pointer;
+}
+.selected-park {
+   background-color: #e8eafb;
 }
 .modal-c-p__buttons {
    width: 100%;
@@ -4573,7 +4581,7 @@ input:checked + .slider:before {
 
    display: flex;
    width: 100%;
-   padding: 14px 32px 16px 32px;
+   padding: 10px 24px 10px 24px;
    justify-content: center;
    align-items: center;
    border: unset;
@@ -4581,7 +4589,7 @@ input:checked + .slider:before {
    color: #000;
    text-align: center;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4591,7 +4599,7 @@ input:checked + .slider:before {
    border: 2px solid #ffc93a;
 
    display: flex;
-   padding: 14px 32px 16px 32px;
+   padding: 10px 24px 10px 24px;
    justify-content: center;
    align-items: center;
    background: white;
@@ -4599,7 +4607,7 @@ input:checked + .slider:before {
    color: #000;
    text-align: center;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4622,23 +4630,24 @@ input:checked + .slider:before {
    transform: translate(-50%, -50%);
    z-index: 200;
    width: 90%;
-   max-width: 620px;
+   max-width: 580px;
 }
 
 .modal-a-p__title {
    color: #333;
    text-align: center;
    font-family: "Montserrat Alternates", sans-serif;
-   font-size: 40px;
+   font-size: 28px;
    font-style: normal;
    font-weight: 700;
    line-height: 140%; /* 56px */
    margin-bottom: 10px;
+   cursor: default;
 }
 .modal-a-p__middle-container {
    color: #333;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4649,15 +4658,17 @@ input:checked + .slider:before {
 .modal-a-p__subtitle {
    color: #000;
    font-family: Lato, sans-serif;
-   font-size: 24px;
+   font-size: 18px;
    font-style: normal;
    font-weight: 600;
    line-height: 140%; /* 33.6px */
+   cursor: default;
 }
 .modal-a-p__time-zone,
 .modal-a-p__technic-zone {
    display: flex;
    gap: 10px;
+   cursor: default;
 }
 .time-zone__grey,
 .technic-zone__grey {
@@ -4676,23 +4687,24 @@ input:checked + .slider:before {
    border-radius: 160px;
    border: 2px solid #ffc93a;
    display: flex;
-   padding: 14px 32px 16px 32px;
+   padding: 10px 32px 10px 32px;
    justify-content: center;
    align-items: center;
    margin-top: 10px;
    color: #333;
    text-align: center;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
+   cursor: pointer;
 }
 
 .modal-switch-park {
    border-radius: 20px;
    background: #fff;
-   padding: 40px;
+   padding: 28px;
    display: flex;
    flex-direction: column;
    gap: 25px;
@@ -4706,13 +4718,13 @@ input:checked + .slider:before {
    transform: translate(-50%, -50%);
    z-index: 200;
    width: 90%;
-   max-width: 620px;
+   max-width: 580px;
 }
 .modal-switch__title {
    color: #333;
    text-align: center;
    font-family: "Montserrat Alternates";
-   font-size: 40px;
+   font-size: 28px;
    font-style: normal;
    font-weight: 700;
    line-height: 140%; /* 56px */
@@ -4748,7 +4760,7 @@ input:checked + .slider:before {
 
    color: #333;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4773,7 +4785,7 @@ input:checked + .slider:before {
    background: #fff;
    display: flex;
    gap: 10px;
-   padding: 15px 32px;
+   padding: 10px 24px;
 }
 .modal-switch__park-range {
    opacity: 0.5;
@@ -4783,7 +4795,7 @@ input:checked + .slider:before {
    color: #000;
    text-align: center;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4792,7 +4804,7 @@ input:checked + .slider:before {
    background: #ffc93a;
 
    display: flex;
-   padding: 14px 32px 16px 32px;
+   padding: 10px 32px 10px 32px;
    justify-content: center;
    align-items: center;
 }
