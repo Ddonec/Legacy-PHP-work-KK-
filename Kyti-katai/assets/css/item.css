@@ -1391,7 +1391,6 @@
 }
 .nav-menu-of-vacancies-work-in-page div:nth-child(1) {
    border-radius: 30px 0px 0px 0px;
-   background: #e8eafb;
 }
 .nav-menu-of-vacancies-work-in-page div {
    display: flex;
@@ -1401,6 +1400,9 @@
    gap: 10px;
    border: 2px solid #e8eafb;
    flex-shrink: 0;
+}
+.vac__active {
+   background: #e8eafb;
 }
 .discription-area-of-vacancier-work-page ul {
    padding-left: 20px;
@@ -2093,7 +2095,6 @@
    padding-top: 10px;
 }
 
-
 #map-test {
    width: 100%;
    max-width: 1920px;
@@ -2106,8 +2107,6 @@
 [class*="copyrights-pane"] {
    display: none !important;
 }
-
-
 
 .card {
    position: relative;
@@ -2157,8 +2156,6 @@
 */
 
 /* STATUS */
-
-
 
 .none {
    display: none;
