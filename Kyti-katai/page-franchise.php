@@ -108,29 +108,88 @@ get_header();
     <div class="vacancies-list-container-vacancy-page">
         <div class="overflow-nav-vacancies-container">
             <div class="nav-menu-of-vacancies-work-in-page">
-                <div class="text-18-500">ВДНХ</div>
-                <div class="text-18-500 opacity">Парк Перхорка</div>
-                <div class="text-18-500 opacity">Городской парк Ивантеевки</div>
+
+
+                <?php
+$vac = get_field('nazvaniya_parkov_v_tabah');
+if ($vac) {
+    $co = 0;
+    foreach ($vac as $vacancy) {
+        $co++;
+?>
+<div class="text-18-500 <?php echo ($co == 1) ? '' : 'opacity'; ?> pointer">
+      <?php echo $vacancy['tab_nazvanie_parka']; ?></div>
+<?php
+    }
+}
+?>
             </div>
         </div>
-        <div class="discription-area-of-format-franchise-page">
-            <div class="format__numbers-and-lines">
-                <div>
-                    <div class="format__number"><?php the_field('franchise-sinyaya_czifra_1') ?></div>
-                    <div class="format__number-title"><?php the_field('franchise-opisanie_k_sinej_czifre_1') ?></div>
+
+        <?php
+if (have_rows('povtoritel_dlya_gruppy')) {
+    $co = 0;
+    while (have_rows('povtoritel_dlya_gruppy')) {
+        the_row();
+        $co++;
+?>
+        <div class="discription-area-of-format-franchise-page<?php echo ($co > 1) ? ' none' : ''; ?>">
+            <?php
+            $data = get_sub_field('kontejner_franshizy_povtoritel');
+            if ($data) {
+            ?>
+                <div class="format__numbers-and-lines">
+                    <?php
+                    foreach ($data['pervaya_sekcziya_parka_kontejner'] as $item) {
+                    ?>
+                        <div>
+                            <div class="format__number"><?php echo $item['franchise-sinyaya_czifra_1']; ?></div>
+                            <div class="format__number-title"><?php echo $item['franchise-opisanie_k_sinej_czifre_1']; ?></div>
+                        </div>
+                        <div></div>
+                    <?php
+                    }
+                    ?>
                 </div>
-                <div></div>
-                <div>
-                    <div class="format__number"><?php the_field('franchise-sinyaya_czifra_2') ?></div>
-                    <div class="format__number-title"><?php the_field('franchise-opisanie_k_sinej_czifre_2') ?></div>
+            <?php
+            }
+            ?>
+            <div class="format__who-is">
+                <div class="who-is__title">
+                    <?php echo get_sub_field('opisanie_na_belom_fone'); ?>
                 </div>
-                <div></div>
-                <div>
-                    <div class="format__number"><?php the_field('franchise-sinyaya_czifra_3') ?></div>
-                    <div class="format__number-title"><?php the_field('franchise-opisanie_k_sinej_czifre_3') ?></div>
+                <div class="who-is__person-card">
+                    <img class="person-card__photo" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/manager-photo.svg" alt="" />
+                    <div class="person-card__discription">
+                        <p><?php echo get_sub_field('imya_posle_fotografii'); ?></p>
+                        <p class="person-card__discription_opacity"><?php echo get_sub_field('sub-imya_posle_fotografii'); ?></p>
+                    </div>
                 </div>
             </div>
-            <div class="format__who-is">
+            
+            <div class="format__pictures scroll-container-js">
+                <div class="format__pictures_max-width">
+                    <?php
+                    $images = get_sub_field('povtoritel_izobrazhenij_franshiza');
+                    if ($images) {
+                        foreach ($images as $image) {
+                    ?>
+                            <img class="format__pictures_first" src="<?php echo $image['izobradenie_povtoritelya_franshiza']; ?>" />
+                    <?php
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+<?php
+    }
+}
+?>
+
+
+            
+            <!-- <div class="format__who-is">
                 <div class="who-is__title">
                     <?php the_field('franchise-v_belom_pole_tekst') ?>
                 </div>
@@ -144,13 +203,43 @@ get_header();
             </div>
             <div class="format__pictures scroll-container-js">
                 <div class="format__pictures_max-width">
-                    <div class="format__pictures_first"></div>
-                    <div class="format__pictures_second"></div>
-                    <div class="format__pictures_third"></div>
+                    <img class="format__pictures_first" src="<?php the_field('format_uslug_slajder_kartinka_1'); ?>" />
+                    <img class="format__pictures_first" src="<?php the_field('format_uslug_slajder_kartinka_1'); ?>" />
+                    <img class="format__pictures_first" src="<?php the_field('format_uslug_slajder_kartinka_1'); ?>" />
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
+
+    <script>
+
+const vacancies = document.querySelectorAll('.nav-menu-of-vacancies-work-in-page div');
+
+// Перебираем полученные элементы
+vacancies.forEach((vacancy, index) => {
+    // Добавляем слушателя события клика
+    vacancy.addEventListener('click', () => {
+        // Убираем класс "vac__active" у всех соседних элементов
+        vacancies.forEach((v) => {
+            v.classList.add('opacity');
+        });
+        // Добавляем класс "vac__active" к текущему элементу
+        vacancy.classList.remove('opacity');
+
+
+        const descriptionContainers = document.querySelectorAll('.discription-area-of-format-franchise-page');
+
+        descriptionContainers.forEach((container, i) => {
+            if (index === i) {
+                container.classList.remove('none');
+            } else {
+                container.classList.add('none');
+            }
+        });
+    });
+});
+    </script>
+
+
     <div class="fill-for-hand-no-hide-franchise">
         <div class="mobile-app-container-franchise">
             <div class="column-container-in-app-banner-franchise">

@@ -2713,6 +2713,9 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 19.6px */
+   align-content: center;
+   display: flex;
+   flex-wrap: wrap;
 }
 .format__who-is {
    display: flex;
@@ -2747,7 +2750,9 @@ input:checked + .slider:before {
 .format__numbers-and-lines > div {
    margin: 20px;
 }
-
+.format__numbers-and-lines > div:last-child {
+   display: none;
+}
 .who-is__person-card {
    display: flex;
    gap: 10px;
@@ -2770,9 +2775,10 @@ input:checked + .slider:before {
    display: flex;
    gap: 20px;
 }
-.format__pictures_max-width div {
+.format__pictures_max-width img {
    width: 530px;
    height: 300px;
+   border-radius: 20px;
 }
 .format__pictures_first {
    background-size: cover;

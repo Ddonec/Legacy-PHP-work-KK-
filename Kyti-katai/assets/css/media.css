@@ -1937,7 +1937,7 @@
    .format__who-is {
       flex-direction: column;
    }
-   .format__pictures_max-width div {
+   .format__pictures_max-width img {
       width: 280px;
       height: 200px;
    }

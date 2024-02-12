@@ -42,15 +42,7 @@
 }
 
 
-.format__pictures_first {
-   background-image: url(<?php the_field('format_uslug_slajder_kartinka_1'); ?>);
-}
-.format__pictures_second {
-   background-image: url(<?php the_field('format_uslug_slajder_kartinka_2'); ?>);
-}
-.format__pictures_third {
-   background-image: url(<?php the_field('format_uslug_slajder_kartinka_3'); ?>);
-}
+
 
 .absolute-fs-container-right-frahciese {
    background-image: url(<?php the_field('pravaya_kartinka_sverhu'); ?>);
