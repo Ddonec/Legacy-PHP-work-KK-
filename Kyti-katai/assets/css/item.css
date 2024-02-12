@@ -1000,7 +1000,7 @@
 .yellow-line-container {
    border-radius: 4px;
    background: #ffc93a;
-   width: 4610px;
+   width: 3700px;
    height: 4px;
    flex-shrink: 0;
    position: relative;
@@ -1052,10 +1052,9 @@
 }
 .blue-yellow-dot-about-page-1 {
    position: absolute;
-   bottom: -12px;
-   left: 215px;
+   top: -46px;
 }
-.blue-yellow-dot-about-page-2 {
+/* .blue-yellow-dot-about-page-2 {
    position: absolute;
    bottom: -12px;
    left: 990px;
@@ -1079,7 +1078,7 @@
    position: absolute;
    bottom: -12px;
    left: 4090px;
-}
+} */
 .logo-about-us-bike-white {
    margin-left: 90px;
    margin-bottom: 35px;
@@ -1100,9 +1099,12 @@
    width: 460px;
    display: grid;
    gap: 20px;
+   position: relative;
 }
-.history-block-2009-about-us-page img {
+.history-block-2009-about-us-page .image-of-history {
    border-radius: 0 30px 30px 30px;
+   width: 460px;
+   height: 237px;
 }
 
 .history-cards-container-about-page {
