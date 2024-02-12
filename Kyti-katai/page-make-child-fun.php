@@ -159,53 +159,27 @@ get_header();
             <div class="feedback-absolute-pseudo-container">
                <div class="feedback-overflov-pseudo-container">
                   <ul class="feedback-containers-zone-franchise">
+                     <?php
+$arr = get_field('otzyv');
+if ($arr) {
+    foreach ($arr as $item) {
+?>
                      <li class="feedback-container-franchise">
-                        <div class="feedback__title">Масса удовольствия, Персонал был очень вежлив.</div>
+                        <div class="feedback__title"><?php echo $item['zagolovok_otzyva']; ?></div>
                         <div class="feedback__profile">
-                           <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/manager-photo.svg" alt="" /><span>Никита Мельников</span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
-                           <span>5</span>
+                           <img class="feedback__avatar" src="<?php echo $item['foto_cheloveka']; ?>" /><span><?php echo $item['imya_cheloveka']; ?></span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
+                           <span><?php echo $item['czifra_oczenki']; ?></span>
                         </div>
                         <div class="feedback__main-discription">
-                           Брали с другом велики на выходной день. Масса удовольствия! Персонал помог определиться с велосипедом и был вежлив. Удобно и недорого! Обязательно порекомендую этот прокат
-                           своим знакомым и друзьям. Большое спасибо!
+                        <?php echo $item['tekst_otzyva']; ?>
                         </div>
                         <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
-                        <div class="feedback__opacity">25.10.23</div>
+                        <div class="feedback__opacity"><?php echo $item['data_otzyva']; ?></div>
                      </li>
-                     
-                     
-
-                     <li class="feedback-container-franchise">
-                        <div class="feedback__title">Масса удовольствия, Персонал был очень вежлив.</div>
-                        <div class="feedback__profile">
-                           <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/avatar-1.svg" alt="" /><span>Мария Зворыкина</span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
-                           <span>5</span>
-                        </div>
-                        <div class="feedback__main-discription">
-                           Чудесное место для отдыха со своей семьёй. Широкий ассортимент услуг: детские машинки, велосипеды, аттракционы и так далее. Очень вежливый персонал и приятная атмосфера.
-                           Настоятельно рекомендую посетить! Скрыть
-                        </div>
-                        <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
-                        <div class="feedback__opacity">23.10.23</div>
-                     </li>
-
-                     <li class="feedback-container-franchise">
-                        <div class="feedback__title">Масса удовольствия, Персонал был очень вежлив.</div>
-                        <div class="feedback__profile">
-                           <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/avatar-2.svg" alt="" /><span>Андрей Потанин</span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
-                           <span>5</span>
-                        </div>
-                        <div class="feedback__main-discription">
-                           Великолепное место для отдыха!!! Отзывчивый и вежливый персонал, который при любых вопросов с радостью готов ответить и помочь. Большое количество разной техники, точно
-                           найдете что-то на свое предпочтение, также много аттракционов
-                        </div>
-                        <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
-                        <div class="feedback__opacity">17.10.23</div>
-                     </li>
-
-
-                     <?php the_field('otzyv_1_html') ?>
-
+<?php
+    }
+}
+?>
 
                   </ul>
                </div>

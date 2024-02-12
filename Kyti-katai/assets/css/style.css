@@ -2968,6 +2968,8 @@ input:checked + .slider:before {
 .feedback__avatar {
    width: 32px;
    margin-right: 8px;
+   height: 32px;
+   border-radius: 50%;
 }
 .feedback__star {
    margin: 0 10px 0 4px;
