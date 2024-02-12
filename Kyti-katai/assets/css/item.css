@@ -1498,7 +1498,7 @@
 .photos-work-in__photo-1 {
    width: 180px;
    height: 240px;
-   background-image: url(../assets/content/photos-work-in__photo-1.png);
+   /* background-image: url(../assets/content/photos-work-in__photo-1.png); */
    background-size: cover;
    background-position: center;
    border-radius: 20px;
@@ -1510,7 +1510,7 @@
 .photos-work-in__photo-2 {
    width: 150px;
    height: 200px;
-   background-image: url(../assets/content/photos-work-in__photo-2.jpeg);
+   /* background-image: url(../assets/content/photos-work-in__photo-2.jpeg); */
    background-size: cover;
    background-position: center;
    border-radius: 20px;
@@ -1521,7 +1521,7 @@
 .photos-work-in__photo-3 {
    width: 150px;
    height: 200px;
-   background-image: url(../assets/content/photos-work-in__photo-3.png);
+   /* background-image: url(../assets/content/photos-work-in__photo-3.png); */
    background-size: cover;
    background-position: center;
    border-radius: 20px;
@@ -1533,7 +1533,7 @@
 .photos-work-in__photo-4 {
    width: 150px;
    height: 200px;
-   background-image: url(../assets/content/photos-work-in__photo-4.png);
+   /* background-image: url(../assets/content/photos-work-in__photo-4.png); */
    background-size: cover;
    background-position: right;
    border-radius: 20px;
