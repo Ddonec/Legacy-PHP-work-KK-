@@ -79,61 +79,100 @@ get_header();
          <div class="vacancies-list-container-vacancy-page">
             <div class="overflow-nav-vacancies-container">
                <div class="nav-menu-of-vacancies-work-in-page">
-                  <div class="text-18-500 vac__active nav-menu-of-vacancies__vac1">Оператор-Кассир</div>
-                  <div class="text-18-500 opacity nav-menu-of-vacancies__vac2">Сотрудник проката</div>
-                  <div class="text-18-500 opacity nav-menu-of-vacancies__vac3">Директор по маркетингу</div>
-               </div>
-            </div>
-            <div class="discription-area-of-vacancier-work-page">
-               <h5 class="text-18-500"><?php the_field('work-tekst_kogo_ishhem') ?></h5>
-               <div>
-                  <p class="requirements-vacancie-work-page"><?php the_field('work-tekst_v_vakansii_sinij_1') ?></p>
-                  <ul>
-                  <?php the_field('work-spisok_posle_sinego_1') ?>
-                  </ul>
-               </div>
-               <div>
-                  <p class="requirements-vacancie-work-page"><?php the_field('work-tekst_v_vakansii_sinij_2') ?></p>
-                  <ul>
-                  <?php the_field('work-spisok_posle_sinego_2') ?>
-                  </ul>
-               </div>
-               <div>
-                  <p class="requirements-vacancie-work-page"><?php the_field('work-tekst_v_vakansii_sinij_3') ?></p>
-                  <ul>
-                  <?php the_field('work-spisok_posle_sinego_3') ?>
-                  </ul>
-               </div>
-               <div class="respond-btn-work-in-page text-18-500 pointer">Откликнуться</div>
-            </div>
+                  <!-- <div class="text-18-500 vac__active nav-menu-of-vacancies__vac">Оператор-Кассир</div>
+                  <div class="text-18-500 opacity nav-menu-of-vacancies__vac">Сотрудник проката</div>
+                  <div class="text-18-500 opacity nav-menu-of-vacancies__vac">Директор по маркетингу</div> -->
 
+                  <?php
+$vac = get_field('nazvanie_vakansii_strokgo');
+if ($vac) {
+    $co = 0;
+    foreach ($vac as $vacancy) {
+        $co++;
+?>
+<div class="text-18-500 <?php echo ($co == 1) ? 'vac__active' : 'opacity'; ?> nav-menu-of-vacancies__vac pointer">
+      <?php echo $vacancy['nazvanie_vakansii_nomer_povtoritel']; ?></div>
+<?php
+    }
+}
+?>
+
+               </div>
+            </div>
+            <div class="discriptions-of-vacancies-container">
             <div class="discription-area-of-vacancier-work-page">
-               <h5 class="text-18-500"><?php the_field('work-tekst_kogo_ishhem_vac_2') ?></h5>
-               <div>
-               <?php
-                  $vac2 = get_field('opisanie_vakansii_povtoritel_2');
-                  var_dump($vac2); ?>
-                  <p class="requirements-vacancie-work-page"><?php the_field('work-tekst_v_vakansii_sinij_1_vac_2') ?></p>
-                  <ul>
-                  <?php the_field('work-spisok_posle_sinego_1_vac_2') ?>
-                  </ul>
-               </div>
-               <div>
-                  <p class="requirements-vacancie-work-page"><?php the_field('work-tekst_v_vakansii_sinij_2_vac_2') ?></p>
-                  <ul>
-                  <?php the_field('work-spisok_posle_sinego_2_vac_2') ?>
-                  </ul>
-               </div>
-               <div>
-                  <p class="requirements-vacancie-work-page"><?php the_field('work-tekst_v_vakansii_sinij_3_vac_2') ?></p>
-                  <ul>
-                  <?php the_field('work-spisok_posle_sinego_3_vac_2') ?>
-                  </ul>
-               </div>
-               <div class="respond-btn-work-in-page text-18-500 pointer">Откликнуться</div>
+            <?php
+$vac2 = get_field('opisanie_vakansii_povtoritel_2');
+if ($vac2) {
+    $count = 0;
+    foreach ($vac2 as $vacancy) {
+        $count++;
+?>
+<div class="area-of-vacancier-work-page-gap-12<?php echo ($count == 1) ? '' : ' none'; ?>">
+        <h5 class="text-18-500"><?php echo $vacancy['work-tekst_kogo_ishhem_vac_2']; ?></h5>
+        <div>
+            <p class="requirements-vacancie-work-page"><?php echo $vacancy['work-tekst_v_vakansii_sinij_1_vac_2']; ?></p>
+            <ul>
+                <?php echo $vacancy['work-spisok_posle_sinego_1_vac_2']; ?>
+            </ul>
+        </div>
+        <div>
+            <p class="requirements-vacancie-work-page"><?php echo $vacancy['work-tekst_v_vakansii_sinij_2_vac_2']; ?></p>
+            <ul>
+                <?php echo $vacancy['work-spisok_posle_sinego_2_vac_2']; ?>
+            </ul>
+        </div>
+</div>
+<?php
+    }
+}
+?>
+
+               <button class="respond-btn-work-in-page text-18-500 pointer">Откликнуться</button>
             </div>
 
          </div>
+      </div>
+         <script>
+            
+            
+            const vacancies = document.querySelectorAll('.nav-menu-of-vacancies-work-in-page div');
+
+// Перебираем полученные элементы
+vacancies.forEach((vacancy, index) => {
+    // Добавляем слушателя события клика
+    vacancy.addEventListener('click', () => {
+        // Убираем класс "vac__active" у всех соседних элементов
+        vacancies.forEach((v) => {
+            v.classList.remove('vac__active');
+            v.classList.add('opacity');
+        });
+        // Добавляем класс "vac__active" к текущему элементу
+        vacancy.classList.add('vac__active');
+        vacancy.classList.remove('opacity');
+
+
+        // Получаем все контейнеры описаний вакансий
+        const descriptionContainers = document.querySelectorAll('.discription-area-of-vacancier-work-page > div');
+
+        // Перебираем контейнеры
+        descriptionContainers.forEach((container, i) => {
+            // Если контейнер соответствует кликнутой вакансии, убираем класс "none"
+            if (index === i) {
+                container.classList.remove('none');
+            } else {
+                // Иначе добавляем класс "none"
+                container.classList.add('none');
+            }
+        });
+    });
+});
+
+
+
+
+
+         </script>
 
          <div class="call-back-form-container-work-in-page">
             <div class="text-sub-block-news-inside-work-in">
