@@ -209,8 +209,14 @@
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector.svg" class="winter-status icon-search-burger-show" alt="" />
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/search-icon-black.svg" class="summer-status icon-search-burger-show none" alt="" />
                   </li>
-                  <li id="profile-icon-header"><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login.svg" alt="" /> <img class="pointer summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login-black.svg" alt="" /></li>
-                  <!-- <li><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/heart.svg" alt="" /> <img class="pointer summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/heart-black.svg" alt="" /></li>
+
+                   <?php if (is_user_logged_in()): ?>
+                       <li><a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')) ?>"><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login.svg" alt="" /> <img class="pointer summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login-black.svg" alt="" /></a></li>
+                   <?php else: ?>
+                       <li id="profile-icon-header"><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login.svg" alt="" /> <img class="pointer summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login-black.svg" alt="" /></li>
+                   <?php endif; ?>
+
+                   <!-- <li><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/heart.svg" alt="" /> <img class="pointer summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/heart-black.svg" alt="" /></li>
                   <li class="pointer reserve-button-less-470px">
                      Рус <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" alt="" /> <img class=" pointer ummer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" />
                   </li> -->

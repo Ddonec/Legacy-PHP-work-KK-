@@ -16,13 +16,13 @@ Template Name: cabinet
 get_header();
 ?>
 
-
+<?php if (is_user_logged_in()): ?>
 <section class="cabinet-main-section">
-         <div class="bread-crumbs">
-            <p><a href="index.html">Главная</a></p>
-            <p>/</p>
-            <p class="grey-bread-crumbs">Личный кабинет</p>
-         </div>
+    <?php woocommerce_breadcrumb(); ?>
+    <?php
+    $curr_user = wp_get_current_user();
+    $curr_user_phone = get_user_meta( $curr_user->ID, 'phone_number', true );
+    ?>
          <h1 class="h1-no-main-page text-gradient cabinet-title"><?php the_field('zagolovok_straniczy') ?></h1>
          <main class="cabinet-content-container text-14-500-left-lato">
             <div class="user-data-cabinet">
@@ -30,11 +30,11 @@ get_header();
                <div class="user-data-cabinet__discription">
                   <div>
                      <p class="user-data-cabinet__data-title opacity">Ваше имя</p>
-                     <p class="user-data-cabinet__data-value">Влад</p>
+                     <p class="user-data-cabinet__data-value"><?php echo $curr_user->data->display_name; ?></p>
                   </div>
                   <div>
                      <p class="user-data-cabinet__data-title opacity">Номер телефона</p>
-                     <p class="user-data-cabinet__data-value">8 902 510 54 73</p>
+                     <p class="user-data-cabinet__data-value"><?php echo $curr_user_phone; ?></p>
                   </div>
                   <div>
                      <p class="user-data-cabinet__data-title opacity">Способ оплаты</p>
@@ -43,14 +43,14 @@ get_header();
                </div>
                <div class="user-data-cabinet__buttons-zone">
                   <div class="user-data-cabinet__btn-edit">Редактировать</div>
-                  <div class="user-data-cabinet__btn-exit">Выйти</div>
+                  <div class="user-data-cabinet__btn-exit"><a href="<?php echo wp_logout_url( get_permalink() ) ?>">Выйти</a></div>
                </div>
             </div>
             <!-- <div class="cabinet-verification-container text-14-500-left-lato"> -->
             <div class="cabinet-go-check">
                <div class="cabinet-go-check__verif-info">
                   <p class="cabinet-go-check__verif-title mons-28-700"><?php the_field('verefikacziya') ?></p>
-                  <p class="cabinet-go-check__verif-subtitle"><span class="phone-verif-cabinet">8 902 510 54 73</span> ваш номер телефона?</p>
+                  <p class="cabinet-go-check__verif-subtitle"><span class="phone-verif-cabinet"><?php echo $curr_user_phone; ?></span> ваш номер телефона?</p>
                </div>
                <div class="cabinet-go-check__buttons-zone">
                   <div class="cabinet-go-check__btn-1">Да, всё верно</div>
@@ -74,7 +74,10 @@ get_header();
             <!-- </div> -->
          </main>
       </section>
+<?php else: ?>
+    <?php echo do_shortcode( '[idehweb_lwp]' ); ?>
 
+<?php endif; ?>
 <?php
 get_footer();
 ?>
