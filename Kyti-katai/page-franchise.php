@@ -63,42 +63,29 @@ get_header();
     <div class="cunter-container-left-margin-francheise-page">
         <div class="overflov-block-advantages-cards-frahciese-page scroll-container-js">
             <div class="max-width-contaimer-owerflov-inside-franchaise">
-                <div class="advantage-card-frahciese-page">
+
+
+            <?php
+$arr = get_field('povtoritel_pervogo_slajdara');
+if ($arr) {
+    foreach ($arr as $item) {
+?>
+
+               <div class="advantage-card-frahciese-page">
                     <div class="advantage-card__first-text">
                         <div class="first-text__flex">
-                            <?php the_field('franchise-3_kartochki_nazvanie_1') ?>
+                        <?php echo $item['zagolovok']; ?>
                         </div>
-                        <p class="first-text__grey-text-14px"><?php the_field('franchise-3_kartochki_podnazvanie_1') ?></p>
+                        <p class="first-text__grey-text-14px"><?php echo $item['seryj_tekst']; ?></p>
                     </div>
-                    <div class="advantage-card__bottom-text"><?php the_field('franchise-3_kartochki_opisanie_1') ?></div>
-                    <img class="absolut-image-z-coin" src="<?php echo esc_url(get_field('logotip_perevogo_slajdera_kartochka_1')); ?>" alt="" />
+                    <div class="advantage-card__bottom-text"><?php echo $item['opisanie']; ?></div>
+                    <img class="absolut-image-z-coin" src="<?php echo $item['logotip_sprava']; ?>" alt="" />
                 </div>
 
-                <div class="advantage-card-frahciese-page">
-                    <div class="advantage-card__first-text">
-                        <div class="first-text__flex">
-                            <p class="first-text__main-text"><?php the_field('franchise-3_kartochki_nazvanie_2') ?></p>
-                        </div>
-                        <p class="first-text__grey-text-14px"><?php the_field('franchise-3_kartochki_podnazvanie_2') ?></p>
-                    </div>
-                    <div class="advantage-card__bottom-text">
-                        <?php the_field('franchise-3_kartochki_opisanie_2') ?>
-                    </div>
-                    <img class="absolut-image-gold-calendar" src="<?php echo esc_url(get_field('logotip_perevogo_slajdera_kartochka_2')); ?>" alt="" />
-                </div>
-
-                <div class="advantage-card-frahciese-page">
-                    <div class="advantage-card__first-text">
-                        <div class="first-text__flex">
-                            <p class="first-text__main-text"><?php the_field('franchise-3_kartochki_nazvanie_3') ?></p>
-                        </div>
-                        <p class="first-text__grey-text-14px"><?php the_field('franchise-3_kartochki_podnazvanie_3') ?></p>
-                    </div>
-                    <div class="advantage-card__bottom-text">
-                        <?php the_field('franchise-3_kartochki_opisanie_3') ?>
-                    </div>
-                    <img class="absolut-image-gold-calendar" src="<?php echo esc_url(get_field('logotip_perevogo_slajdera_kartochka_3')); ?>" alt="" />
-                </div>
+<?php
+    }
+}
+?>
             </div>
         </div>
     </div>

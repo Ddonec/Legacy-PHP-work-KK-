@@ -2025,7 +2025,7 @@
    height: 200px;
 }
 .scroll-container-js {
-   white-space: nowrap;
+   /* white-space: nowrap; */
    cursor: grab;
    user-select: none;
 }
