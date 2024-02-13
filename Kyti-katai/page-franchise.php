@@ -30,6 +30,13 @@ get_header();
 }
 </style>
 
+<div class="container-for-bread-franchise">
+<div class="bread-crumbs ">
+            <p><a href="<?php echo bloginfo('template_url'); ?>">Главная</a></p>
+            <p>/</p>
+            <p class="grey-bread-crumbs">Франшиза</p>
+         </div>
+         </div>
 <section class="first-section">
     <div class="bacground-image-main-page-first-section-franchese">
         <div class="absolute-peoples-container-f-s-frahciese">

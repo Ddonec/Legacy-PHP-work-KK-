@@ -2124,7 +2124,12 @@
 .modal-c-p__skip-btn {
    color: #000;
 }
-
+.container-for-bread-franchise {
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 20px;
+}
 
 /*
 *
