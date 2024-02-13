@@ -200,9 +200,9 @@
                   <li class="pointer reserve-button-less-470px">
                      Рус <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" alt="" /> <img class=" pointer ummer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" />
                   </li> -->
-                  <li class="pointer list-under-700" id="shopping-cart-icon-header">
+                  <!-- <li class="pointer list-under-700" id="shopping-cart-icon-header">
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/shopping-cart.svg" alt="" />
-                  </li>
+                  </li> -->
                   <li>
                      <div class="burger" onclick="toggleBurgerMenu()">
                         <span class="burgers"></span>

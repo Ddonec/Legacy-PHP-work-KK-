@@ -1530,7 +1530,7 @@
    .number-headr-yellow {
       display: none;
    }
-   .icun-list-h li:not(:last-child) {
+   .icun-list-h li:not(:nth-last-child(-n + 2)) {
       display: none;
    }
 
@@ -2736,9 +2736,7 @@
       height: 350px;
    }
 
-   .icun-list-h li:nth-child(4) {
-      display: none;
-   }
+
    /* .row-footer-2 {
       width: 60%;
    } */
