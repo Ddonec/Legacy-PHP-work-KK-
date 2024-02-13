@@ -1263,8 +1263,8 @@
 .tickets__card-zone {
    display: flex;
    margin-top: 30px;
-   justify-content: space-between;
    flex-wrap: wrap;
+   gap: calc(4% / 3);
    row-gap: 20px;
 }
 .ticket__card {
@@ -1284,38 +1284,7 @@
    box-shadow: inset 0 0 0 2px #f4f4f8;
    z-index: 2;
 }
-.ticket__image {
-   height: 75%;
-   width: 100%;
-   background-image: url(../assets/content/guliver-park.png);
-   background-size: cover;
-   position: absolute;
-   top: 0;
-}
-.ticket__image-2 {
-   height: 75%;
-   width: 100%;
-   background-image: url(../assets/content/rope-park__ticket-2.png);
-   background-size: cover;
-   position: absolute;
-   top: 0;
-}
-.ticket__image-3 {
-   height: 75%;
-   width: 100%;
-   background-image: url(../assets/content/rope-park__ticket-1.png);
-   background-size: cover;
-   position: absolute;
-   top: 0;
-}
-.ticket__image-4 {
-   height: 75%;
-   width: 100%;
-   background-image: url(../assets/content/WhatsApp_Image_2024-01-22_at_18.17.46_\(1\).webp);
-   background-size: cover;
-   position: absolute;
-   top: 0;
-}
+
 .ticket__discription {
    display: flex;
    flex-direction: column;
