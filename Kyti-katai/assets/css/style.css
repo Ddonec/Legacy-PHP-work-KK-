@@ -4304,7 +4304,7 @@ input:checked + .slider:before {
 }
 .modal-r-c__input-1,
 .modal-r-c__input-2 {
-   border-radius: 50px;
+   border-radius: 15px;
    border: 1.5px solid #333;
    opacity: 0.5;
    background: #fff;
@@ -4377,7 +4377,7 @@ input:checked + .slider:before {
 .modal-r-c__input-3,
 .modal-r-c__input-4,
 .modal-r-c__input-5 {
-   border-radius: 50px;
+   border-radius: 15px;
    border: 1.5px solid #333;
    opacity: 0.5;
    background: #fff;
@@ -4387,7 +4387,7 @@ input:checked + .slider:before {
 
 .modal-r-c__input-5 {
    height: 100px;
-   border-radius: 30px;
+   border-radius: 15px;
    display: flex;
    justify-content: flex-start;
    align-items: flex-start;

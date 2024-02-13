@@ -2495,6 +2495,12 @@
    .map-container {
       height: 500px;
    }
+   .all-material-cards > a,
+   .text-inside-cart-blog,
+   .green-samokat,
+   .sick-cart-news {
+      width: 100%;
+   }
 }
 
 @media (max-width: 470px) {
@@ -2623,6 +2629,14 @@
    .photos-work-in__photo-4 {
       display: none;
    }
+   .modal-franchise-1,
+   .modal-franchise-2,
+   .modal-franchise-3,
+   .modal-franchise-4,
+   .modal-r-c__input-1,
+   .modal-r-c__input-2 {
+      width: 100%;
+   }
 }
 
 @media (max-width: 470px) {
@@ -2744,7 +2758,6 @@
    .hand-mask-app-banner {
       height: 350px;
    }
-
 
    /* .row-footer-2 {
       width: 60%;
