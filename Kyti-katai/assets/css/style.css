@@ -4235,7 +4235,7 @@ input:checked + .slider:before {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   z-index: 200;
+   z-index: 1200;
    width: 90%;
    max-width: 580px;
 }
@@ -4819,7 +4819,7 @@ input:checked + .slider:before {
    width: 100vw;
    height: 100dvh;
    position: fixed;
-   z-index: 1150;
+   z-index: 1010;
    top: 0;
 }
 
@@ -4834,7 +4834,7 @@ input:checked + .slider:before {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   z-index: 200;
+   z-index: 1200;
 }
 .log-in-modal__image {
    width: 48%;

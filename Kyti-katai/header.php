@@ -102,9 +102,6 @@
 
 </style>
    <body>
-      <header>
-
-
       <nav class="burger-menu text-14-500-left-lato-left" id="burgerMenu">
             <img class="close-btn-burger-menu" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/close-vector-btn-black.svg" alt="" />
             <a href="<?php echo get_option('home'); ?>"><img class="logo-blue-burger" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/logo-blue.svg" alt="" /></a>
@@ -127,6 +124,9 @@
             <li class="winter-opacity"><a href="<?php echo get_option('home'); ?>/rope-park">Веревочный парк</a></li>
             <li class="winter-opacity"><a href="<?php echo get_option('home'); ?>/make-child-fun/">Организация детских праздников</a></li>
          </nav>
+      <header>
+
+
 
 
 
