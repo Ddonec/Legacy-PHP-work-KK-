@@ -1413,6 +1413,15 @@
 @media (max-width: 700px) {
    .mobile-viev-table-find-page {
       display: block;
+      height: 500px;
+      overflow-y: auto;
+   }
+   .mobile-viev-table-find-page::-webkit-scrollbar {
+      width: 4px;
+   }
+   .mobile-viev-table-find-page::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+      background-color: var(--purple-light, #5567ea);
    }
 
    .absolute-peoples-container-f-s div {

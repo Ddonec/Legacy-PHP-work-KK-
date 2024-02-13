@@ -3148,11 +3148,23 @@ input:checked + .slider:before {
 .dynamic-finmodel-container {
    margin: 100px auto;
 }
-.table-info-find-page > div:not(:first-child):not(:last-child) {
+.table-info-find-page > div:not(:last-child) {
    border-bottom: 0.711px solid rgba(85, 103, 234, 0.2);
 }
 .mobile-viev-table-find-page > div:not(:last-child) {
    border-bottom: 0.711px solid rgba(85, 103, 234, 0.2);
+}
+.table-info-find-page {
+   height: 367px;
+   overflow-y: auto;
+}
+
+.table-info-find-page::-webkit-scrollbar {
+   width: 4px;
+}
+.table-info-find-page::-webkit-scrollbar-thumb {
+   border-radius: 20px;
+   background-color: var(--purple-light, #5567ea);
 }
 
 .dynamic__title {

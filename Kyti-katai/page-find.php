@@ -109,175 +109,108 @@ get_header();
             <img class="search-icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/search-icon-black.svg" alt="" />
          </div>
 
+         
+
          <div class="table-info-find-page text-14-500-left">
-            <div class="title-table-find-page grey-i-p">
-               <p><?php the_field('najdi_svoj_park_nazvanie') ?></p>
-               <p><?php the_field('najdi_svoj_park_adres') ?></p>
-               <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?></p>
-               <p><?php the_field('najdi_svoj_park_teznika_porka') ?></p>
-            </div>
-            <div class="discription-table-find-page">
-               <p><?php the_field('najdi_svoj_park_nazvanie_1') ?></p>
-               <p><?php the_field('najdi_svoj_park_adres_1') ?></p>
-               <p><?php the_field('najdi_svoj_park_rezhim_raboty_1') ?></p>
-               <p><?php the_field('najdi_svoj_park-tehnika_parka_1') ?></p>
-            </div>
-            <div class="discription-table-find-page">
-               <p><?php the_field('najdi_svoj_park_nazvanie_2') ?></p>
-               <p><?php the_field('najdi_svoj_park_adres_2') ?></p>
-               <p><?php the_field('najdi_svoj_park_rezhim_raboty_2') ?></p>
-               <p><?php the_field('najdi_svoj_park-tehnika_parka_2') ?></p>
-            </div>            <div class="discription-table-find-page">
-               <p><?php the_field('najdi_svoj_park_nazvanie_3') ?></p>
-               <p><?php the_field('najdi_svoj_park_adres_3') ?></p>
-               <p><?php the_field('najdi_svoj_park_rezhim_raboty_3') ?></p>
-               <p><?php the_field('najdi_svoj_park-tehnika_parka_3') ?></p>
-            </div>            <div class="discription-table-find-page">
-               <p><?php the_field('najdi_svoj_park_nazvanie_4') ?></p>
-               <p><?php the_field('najdi_svoj_park_adres_4') ?></p>
-               <p><?php the_field('najdi_svoj_park_rezhim_raboty_4') ?></p>
-               <p><?php the_field('najdi_svoj_park-tehnika_parka_4') ?></p>
-            </div>            <div class="discription-table-find-page">
-               <p><?php the_field('najdi_svoj_park_nazvanie_5') ?></p>
-               <p><?php the_field('najdi_svoj_park_adres_5') ?></p>
-               <p><?php the_field('najdi_svoj_park_rezhim_raboty_5') ?></p>
-               <p><?php the_field('najdi_svoj_park-tehnika_parka_5') ?></p>
-            </div>            <div class="discription-table-find-page">
-               <p><?php the_field('najdi_svoj_park_nazvanie_6') ?></p>
-               <p><?php the_field('najdi_svoj_park_adres_6') ?></p>
-               <p><?php the_field('najdi_svoj_park_rezhim_raboty_6') ?></p>
-               <p><?php the_field('najdi_svoj_park-tehnika_parka_6') ?></p>
-            </div>
+
          </div>
-         <div class="mobile-viev-table-find-page none">
-            <div class="table-find-page-for-768less">
-               <div class="block-of-768less-table">
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_nazvanie_1') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_adres_1') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_1') ?></p>
-                  </div>
-                  <div class="last-element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park-tehnika_parka_1') ?></p>
-                  </div>
-               </div>
-            </div>
+<script>
+    $.getJSON("/wp-content/uploads/points.json", function(data) {
+        // Получение списка парков
+        var parks = data.features;
 
-            <div class="table-find-page-for-768less">
-               <div class="block-of-768less-table">
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_nazvanie_2') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_adres_2') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_2') ?></p>
-                  </div>
-                  <div class="last-element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park-tehnika_parka_2') ?></p>
-                  </div>
-               </div>
-            </div>
+        // Находим контейнер для списка парков
+        var parkListContainer = document.querySelector(".table-info-find-page");
 
-            <div class="table-find-page-for-768less">
-               <div class="block-of-768less-table">
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_nazvanie_3') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_adres_3') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_3') ?></p>
-                  </div>
-                  <div class="last-element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park-tehnika_parka_3') ?></p>
-                  </div>
-               </div>
-            </div>
+        // Создаем HTML-элементы для каждого парка и добавляем их в контейнер
+        parks.forEach(function(park) {
+            var listItem = document.createElement("div");
+            listItem.classList.add("discription-table-find-page");
 
-            <div class="table-find-page-for-768less">
-               <div class="block-of-768less-table">
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_nazvanie_4') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_adres_4') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_4') ?></p>
-                  </div>
-                  <div class="last-element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park-tehnika_parka_4') ?></p>
-                  </div>
-               </div>
-            </div>
+            var name = document.createElement("p");
+            name.textContent = park.properties.name;
+            listItem.appendChild(name);
 
-            <div class="table-find-page-for-768less">
-               <div class="block-of-768less-table">
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_nazvanie_5') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_adres_5') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_5') ?></p>
-                  </div>
-                  <div class="last-element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park-tehnika_parka_5') ?></p>
-                  </div>
-               </div>
-            </div>
+            var adress = document.createElement("p");
+            if(park.properties.adress){
+            adress.textContent = park.properties.adress;
+             } else {adress.textContent = "Адрес не указан"}
+            listItem.appendChild(adress);
 
-            <div class="table-find-page-for-768less">
-               <div class="block-of-768less-table">
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_nazvanie_6') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_adres_6') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_6') ?></p>
-                  </div>
-                  <div class="last-element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park-tehnika_parka_6') ?></p>
-                  </div>
-               </div>
-            </div>
+            var worktime = document.createElement("p");
+            worktime.textContent = park.properties.worktime;
+            listItem.appendChild(worktime);
 
-            
-         </div>
+            var equipment = document.createElement("p");
+            equipment.textContent = park.properties.equipment;
+            listItem.appendChild(equipment);
+
+            // Добавляем обработчик события клика на элемент списка
+            listItem.addEventListener('click', function() {
+                // Показываем карточку
+                const leftBlock = document.querySelector('.absolute-map-info-left-container');
+                leftBlock.classList.remove('none');
+            });
+
+            // Добавляем элемент списка в контейнер
+            parkListContainer.appendChild(listItem);
+        });
+    });
+</script>
+  
+<div class="mobile-viev-table-find-page none" id="mobile-park-list"></div>
+
+<script>
+    $.getJSON("/wp-content/uploads/points.json", function(data) {
+        var parks = data.features;
+        var mobileParkListContainer = document.getElementById("mobile-park-list");
+
+        parks.forEach(function(park, index) {
+            var parkContainer = document.createElement("div");
+            parkContainer.classList.add("table-find-page-for-768less");
+
+            var blockContainer = document.createElement("div");
+            blockContainer.classList.add("block-of-768less-table");
+
+            var nameElement = document.createElement("div");
+            nameElement.classList.add("element-of-768less-table");
+            nameElement.innerHTML = `
+                <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
+                <p>${park.properties.name}</p>
+            `;
+            blockContainer.appendChild(nameElement);
+
+            var addressElement = document.createElement("div");
+            addressElement.classList.add("element-of-768less-table");
+            addressElement.innerHTML = `
+                <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
+                <p>${park.properties.adress || "Адрес не указан"}</p>
+            `;
+            blockContainer.appendChild(addressElement);
+
+            var worktimeElement = document.createElement("div");
+            worktimeElement.classList.add("element-of-768less-table");
+            worktimeElement.innerHTML = `
+                <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
+                <p>${park.properties.worktime}</p>
+            `;
+            blockContainer.appendChild(worktimeElement);
+
+            var equipmentElement = document.createElement("div");
+            equipmentElement.classList.add("last-element-of-768less-table");
+            equipmentElement.innerHTML = `
+                <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
+                <p>${park.properties.equipment}</p>
+            `;
+            blockContainer.appendChild(equipmentElement);
+
+            parkContainer.appendChild(blockContainer);
+            mobileParkListContainer.appendChild(parkContainer);
+        });
+    });
+</script>
+
+
          <div class="call-back-form-container-overflow-container-default">
                 <div class="call-back-form-container-franchise">
                    <div class="text-sub-block-news-inside">
