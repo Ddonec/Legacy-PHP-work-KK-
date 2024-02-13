@@ -153,7 +153,7 @@ if (have_rows('povtoritel_dlya_gruppy')) {
                     <?php echo get_sub_field('opisanie_na_belom_fone'); ?>
                 </div>
                 <div class="who-is__person-card">
-                    <img class="person-card__photo" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/manager-photo.svg" alt="" />
+                    <img class="person-card__photo" src="<?php echo get_sub_field('foto_otzyva'); ?>" />
                     <div class="person-card__discription">
                         <p><?php echo get_sub_field('imya_posle_fotografii'); ?></p>
                         <p class="person-card__discription_opacity"><?php echo get_sub_field('sub-imya_posle_fotografii'); ?></p>
