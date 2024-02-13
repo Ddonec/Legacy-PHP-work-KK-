@@ -2482,7 +2482,7 @@ input:checked + .slider:before {
    background: #ffc93a;
 
    display: flex;
-   padding: 9px 24px 11px 24px;
+   padding: 9px 0 11px ;
    justify-content: center;
    align-items: center;
    gap: 7px;
@@ -2495,6 +2495,7 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 19.6px */
+   width: 400px;
 }
 
 .download-prez-btn {

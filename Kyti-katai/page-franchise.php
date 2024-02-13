@@ -48,9 +48,7 @@ get_header();
             <div class="last-text-first-section"><?php the_field('franchise-podzagolovok_bolshogo') ?></div>
             <div class="buttons-fs-frahciese-page">
                 <button class="download-fin-model-btn class-to-switch-season-btn" onclick="openPopupFranchise()">Получить финансовую модель</button>
-                <a href="https://forms.gle/bhaVfoQnFYgQi2v36" target="_blank"
-                ><button class="download-prez-btn class-to-switch-season-btn">Получить презентацию франшизы <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/arrow-down-to-line.svg" alt="" /></button
-                    ></a>
+                <!-- <a href="https://forms.gle/bhaVfoQnFYgQi2v36" target="_blank"><button class="download-prez-btn class-to-switch-season-btn">Получить презентацию франшизы <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/arrow-down-to-line.svg" alt="" /></button></a> -->
             </div>
         </div>
     </div>
