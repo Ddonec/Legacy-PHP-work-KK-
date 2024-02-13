@@ -2101,6 +2101,9 @@
       top: 20px;
       left: 12px;
    }
+   .avalible-park__catd {
+      width: 100%;
+   }
 }
 
 @media (max-width: 650px) {

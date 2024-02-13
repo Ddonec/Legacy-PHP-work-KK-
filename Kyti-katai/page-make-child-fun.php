@@ -115,43 +115,49 @@ get_header();
          <section class="third-section-make-fun">
             <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('make-child-fun-zagolovok_3_sekczii') ?></h4>
             <div class="avalible-park-make-fun-container">
-               <div class="avalible-park__catd">
-                  <div class="avalible-park__image-1"></div>
 
-                  <div class="avalible-park__menu">
-                     <div class="avalible-park__title-text">
-                        <p class="text-bold-600"><?php the_field('nazvanie_parka_1') ?></p>
-                        <p class="opacity"><?php the_field('adres_parka_1') ?></p>
-                     </div>
-                     <p class="avalible-park__name-of-park"><?php the_field('vid_aktivnosti_parka_1') ?></p>
-                     <div class="avalible-park__options">
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" /><?php the_field('atribut_parka_1_1') ?></div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" /><?php the_field('atribut_parka_1_2') ?></div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" /><?php the_field('atribut_parka_1_3') ?></div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" /><?php the_field('atribut_parka_1_4') ?></div>
-                     </div>
-                     <div onclick="openPopupReserve()" class="avalible-park__button pointer"><?php the_field('knopka_broni_paka_1') ?></div>
-                  </div>
-               </div>
+            <?php
+$array = get_field('park');
+if ($array) {
+    $counter = 1; // начинаем счетчик с 1
+    foreach ($array as $i) {
+        $image_class = 'avalible-park__image-' . $counter; // создаем уникальный класс
+?>
+<style>
+.<?php echo $image_class; ?> {
+   background: url(<?php echo $i['foto_parka_1']; ?>), lightgray 50% / cover no-repeat;
+   position: relative;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    top: 20px;
+    z-index: -1;
+}
+</style>
+<div class="avalible-park__catd">
+    <div class="<?php echo $image_class; ?>"></div>
+    <div class="avalible-park__menu">
+        <div class="avalible-park__title-text">
+            <p class="text-bold-600"><?php echo $i['nazvanie_parka_1']; ?></p>
+            <p class="opacity"><?php echo $i['adres_parka_1']; ?></p>
+        </div>
+        <p class="avalible-park__name-of-park"><?php echo $i['vid_aktivnosti_parka_1']; ?></p>
+        <div class="avalible-park__options">
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" /><?php echo $i['atribut_parka_1_1']; ?></div>
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" /><?php echo $i['atribut_parka_1_2']; ?></div>
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" /><?php echo $i['atribut_parka_1_3']; ?></div>
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" /><?php echo $i['atribut_parka_1_4']; ?></div>
+        </div>
+        <div onclick="openPopupReserve()" class="avalible-park__button pointer"><?php the_field('knopka_broni_paka_1') ?></div>
+    </div>
+</div>
+<?php
+        $counter++; // увеличиваем счетчик на 1 для следующего элемента
+    }
+}
+?>
 
-               <div class="avalible-park__catd">
-                  <div class="avalible-park__image-2"></div>
-
-                  <div class="avalible-park__menu">
-                     <div class="avalible-park__title-text">
-                        <p class="text-bold-600"><?php the_field('nazvanie_parka_2') ?></p>
-                        <p class="opacity"><?php the_field('adres_parka_2') ?></p>
-                     </div>
-                     <p class="avalible-park__name-of-park"><?php the_field('vid_aktivnosti_parka_2') ?></p>
-                     <div class="avalible-park__options">
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" /><?php the_field('atribut_parka_2_1') ?></div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" /><?php the_field('atribut_parka_2_2') ?></div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" /><?php the_field('atribut_parka_2_3') ?></div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" /><?php the_field('atribut_parka_2_4') ?></div>
-                     </div>
-                     <div onclick="openPopupReserve()" class="avalible-park__button pointer"><?php the_field('knopka_broni_paka_2') ?></div>
-                  </div>
-               </div>
             </div>
          </section>
          <section class="four-section-make-fun">

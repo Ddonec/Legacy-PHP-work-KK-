@@ -100,12 +100,6 @@
    background: url(<?php the_field('pervyj_slajder_foto_6'); ?>), lightgray 0px -33.03px / 100% 118.312% no-repeat;
 }
 
-.avalible-park__image-1 {
-   background: url(<?php the_field('foto_parka_1'); ?>), lightgray 50% / cover no-repeat;
-}
-.avalible-park__image-2 {
-   background: url(<?php the_field('foto_parka_2'); ?>), lightgray 50% / cover no-repeat;
-}
 </style>
    <body>
       <header>
