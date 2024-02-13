@@ -55,7 +55,7 @@ get_header();
 
          </div>
 
-         <div class="kids-dosug-catalog-child-page-container summer-status">
+         <div class="kids-dosug-catalog-child-page-container summer-status none">
             <div class="child-game-card-cataloc-child-page">
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g2.png" alt="" />
                <p class="text-18-500">Зорбинг</p>
