@@ -249,44 +249,29 @@ vacancies.forEach((vacancy, index) => {
     <div class="feedback-absolute-pseudo-container">
         <div class="feedback-overflov-pseudo-container">
             <ul class="feedback-containers-zone-franchise">
-                <li class="feedback-container-franchise">
-                    <div class="feedback__title"><?php the_field('zagolovok_otzyva_1') ?></div>
-                    <div class="feedback__profile">
-                        <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/manager-photo.svg" alt="" /><span><?php the_field('fio_otzyva_1') ?></span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
-                        <span>5</span>
-                    </div>
-                    <div class="feedback__main-discription">
-                        <?php the_field('tekst_otzyva_1') ?>
-                    </div>
-                    <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span><?php the_field('ssylka_na_otzyv_1') ?></span></div>
-                    <div class="feedback__opacity"><?php the_field('data_otzyva_1') ?></div>
-                </li>
 
-                <li class="feedback-container-franchise">
-                    <div class="feedback__title"><?php the_field('zagolovok_otzyva_2') ?></div>
-                    <div class="feedback__profile">
-                        <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/avatar-1.svg" alt="" /><span><?php the_field('fio_otzyva_2') ?></span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
-                        <span>5</span>
-                    </div>
-                    <div class="feedback__main-discription">
-                        <?php the_field('tekst_otzyva_2') ?>
-                    </div>
-                    <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span><?php the_field('ssylka_na_otzyv_2') ?></span></div>
-                    <div class="feedback__opacity"><?php the_field('data_otzyva_2') ?></div>
-                </li>
+            <?php
+$arr = get_field('otzyv');
+if ($arr) {
+    foreach ($arr as $item) {
+?>
+                     <li class="feedback-container-franchise">
+                        <div class="feedback__title"><?php echo $item['zagolovok_otzyva']; ?></div>
+                        <div class="feedback__profile">
+                           <img class="feedback__avatar" src="<?php echo $item['foto_cheloveka']; ?>" /><span><?php echo $item['imya_cheloveka']; ?></span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
+                           <span><?php echo $item['czifra_oczenki']; ?></span>
+                        </div>
+                        <div class="feedback__main-discription">
+                        <?php echo $item['tekst_otzyva']; ?>
+                        </div>
+                        <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
+                        <div class="feedback__opacity"><?php echo $item['data_otzyva']; ?></div>
+                     </li>
+<?php
+    }
+}
+?>
 
-                <li class="feedback-container-franchise">
-                    <div class="feedback__title"><?php the_field('zagolovok_otzyva_3') ?></div>
-                    <div class="feedback__profile">
-                        <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/avatar-2.svg" alt="" /><span><?php the_field('fio_otzyva_3') ?></span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
-                        <span>5</span>
-                    </div>
-                    <div class="feedback__main-discription">
-                        <?php the_field('tekst_otzyva_3') ?>
-                    </div>
-                    <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span><?php the_field('ssylka_na_otzyv_3') ?></span></div>
-                    <div class="feedback__opacity"><?php the_field('data_otzyva_3') ?></div>
-                </li>
             </ul>
         </div>
         <div class="franchise-arrows-feedback">
@@ -294,6 +279,38 @@ vacancies.forEach((vacancy, index) => {
             <div class="arrows-feedback-left arrows-feedback-opacity"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-left.svg" alt="" /></div>
         </div>
     </div>
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  const scrollWrapper = document.querySelector(".feedback-overflov-pseudo-container");
+  const nextBtn = document.querySelector(".arrows-feedback-rignt");
+  const prevBtn = document.querySelector(".arrows-feedback-left");
+
+  nextBtn.addEventListener("click", function() {
+    scrollWrapper.scrollBy({ left: 409, behavior: "smooth" });
+    console.log("вправо 200");
+    updateButtonOpacity();
+  });
+
+  prevBtn.addEventListener("click", function() {
+    scrollWrapper.scrollBy({ left: -409, behavior: "smooth" });
+    console.log("влево 200");
+    updateButtonOpacity();
+  });
+
+  function updateButtonOpacity() {
+    // Проверяем, можно ли скроллить влево
+    prevBtn.style.opacity = scrollWrapper.scrollLeft > 0 ? 1 : 0.5;
+
+    // Проверяем, можно ли скроллить вправо
+    const maxScrollLeft = scrollWrapper.scrollWidth - scrollWrapper.clientWidth;
+    nextBtn.style.opacity = scrollWrapper.scrollLeft < maxScrollLeft ? 1 : 0.5;
+  }
+  updateButtonOpacity();
+});
+
+                     </script>
 </section>
 <section id="finnodel-section" class="finnodel-section">
     <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-4_sekcziya_zagolovok') ?>
