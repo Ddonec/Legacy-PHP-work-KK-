@@ -565,7 +565,8 @@ s2
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
-.title-of-section-gradient-yellow {
+.title-of-section-gradient-yellow,
+.title-of-section-gradient-yellow-f {
    text-align: center;
    font-family: Montserrat Alternates;
    font-size: 48px;
@@ -2482,7 +2483,7 @@ input:checked + .slider:before {
    background: #ffc93a;
 
    display: flex;
-   padding: 9px 0 11px ;
+   padding: 9px 0 11px;
    justify-content: center;
    align-items: center;
    gap: 7px;
@@ -2620,6 +2621,9 @@ input:checked + .slider:before {
    background: #e8eafb;
    overflow: hidden;
    position: relative;
+}
+.advantage-card-frahciese-page-fake {
+   width: calc((100vw - 1200px) / 2);
 }
 
 .advantage-card__first-text {
@@ -2963,6 +2967,11 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 500;
    line-height: 130%; /* 23.4px */
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+   height: 47px;
 }
 .feedback__profile {
    display: flex;
@@ -2978,6 +2987,12 @@ input:checked + .slider:before {
 }
 .feedback__star {
    margin: 0 10px 0 4px;
+}
+.feedback__main-discription {
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 5;
 }
 .feedback__show-more-link {
    color: var(--purple, #5567ea);

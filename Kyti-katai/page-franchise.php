@@ -91,6 +91,7 @@ if ($arr) {
     }
 }
 ?>
+<div claas="advantage-card-frahciese-page-fake" style="width: calc((100vw - 1200px) / 2);"></div>
             </div>
         </div>
     </div>
@@ -248,7 +249,7 @@ vacancies.forEach((vacancy, index) => {
     </div>
 </section>
 <section id="they-chose-us" class="they-chose-us">
-    <h3 class="title-of-section-gradient-yellow"><?php the_field('franchise-tretyaya_sekcziya_sinyaya-title') ?></h3>
+    <h3 class="title-of-section-gradient-yellow-f"><?php the_field('franchise-tretyaya_sekcziya_sinyaya-title') ?></h3>
 
     <div class="chose-us__second-title"><?php the_field('franchise-tretyaya_sekcziya_sinyaya_subtitle') ?></div>
     <div class="feedback-absolute-pseudo-container">
@@ -269,7 +270,8 @@ if ($arr) {
                         <div class="feedback__main-discription">
                         <?php echo $item['tekst_otzyva']; ?>
                         </div>
-                        <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
+                        <div class="">
+                            <a class="feedback__show-more-link" href="<?php echo $item['ssylka_na_otzyv']; ?>"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div></a>
                         <div class="feedback__opacity"><?php echo $item['data_otzyva']; ?></div>
                      </li>
 <?php
@@ -587,7 +589,7 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
 </section>
 <section id="contacts-franchise-page" class="contacts-franchise-page">
-    <h3 class="title-of-section-gradient-yellow"><?php the_field('franchise-tajtl_kontaktov') ?></h3>
+    <h3 class="title-of-section-gradient-yellow-f"><?php the_field('franchise-tajtl_kontaktov') ?></h3>
     <div class="contact-cards-frabchise">
         <div class="director-card">
             <img class="director__photo" src="<?php the_field('avatarka_dirketor'); ?>" alt="" />

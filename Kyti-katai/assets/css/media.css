@@ -410,6 +410,9 @@
    .shop-take-rent {
       column-gap: 10px;
    }
+   .advantage-card-frahciese-page-fake {
+      width: 20vw;
+   }
 }
 @media (max-width: 965px) {
    .shop-take-rent > div:nth-last-child(-n + 4) {
@@ -2130,6 +2133,9 @@
       flex-direction: column;
       align-items: normal;
    }
+   .data__list-fin {
+      width: calc(100vw - 40px);
+   }
 }
 
 @media (max-width: 630px) {
@@ -2203,9 +2209,7 @@
       height: fit-content;
       margin-top: 80px;
    }
-   .data__list-fin {
-      width: calc(100vw - 40px);
-   }
+
    .finmodel__data::before {
       border-radius: 0 0 15px 15px;
    }
