@@ -124,8 +124,8 @@
             <li><a href="<?php echo get_option('home'); ?>/find">Найди свой парк</a></li>
             <li><a href="<?php echo get_option('home'); ?>/catalog">Возьми в прокат</a></li>
             <li><a href="<?php echo get_option('home'); ?>/catalog-child">Развлечения детям</a></li>
-            <li><a href="<?php echo get_option('home'); ?>/rope-park">Веревочный парк</a></li>
-            <li><a href="<?php echo get_option('home'); ?>/make-child-fun/">Организация детских праздников</a></li>
+            <li class="winter-opacity"><a href="<?php echo get_option('home'); ?>/rope-park">Веревочный парк</a></li>
+            <li class="winter-opacity"><a href="<?php echo get_option('home'); ?>/make-child-fun/">Организация детских праздников</a></li>
          </nav>
 
 
