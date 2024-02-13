@@ -2119,6 +2119,12 @@
    transform: rotateY(180deg);
    z-index: -1;
 }
+.modal-r-c__button,
+.modal-c-p__save-btn,
+.modal-c-p__skip-btn {
+   color: #000;
+}
+
 
 /*
 *

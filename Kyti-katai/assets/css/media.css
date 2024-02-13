@@ -1963,6 +1963,7 @@
       width: 100vw;
       margin: 0;
       transform: translateX(-20px);
+      order: 5;
    }
    .call-back-form-container-franchise {
       border-radius: 40px 40px 0 0;
@@ -2497,7 +2498,7 @@
    }
    .all-material-cards > a,
    .text-inside-cart-blog,
-   .green-samokat,
+   .all-material-cards a > .green-samokat,
    .sick-cart-news {
       width: 100%;
    }
