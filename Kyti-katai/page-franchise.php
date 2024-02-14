@@ -330,56 +330,111 @@ document.addEventListener("DOMContentLoaded", function() {
                 <ul class="data__list-fin">
                     <?php the_field('franchise-nazvanie_spiska') ?>
 
-                    <li>
+                    <li class="li1">
                         <div class="data__circle1"></div>
                         <div class="data__procent"><?php the_field('franchise-proczent_spiska_1') ?></div>
                         <div class="data__title"><?php the_field('franchise-element_spiska_1') ?></div>
                     </li>
-                    <li>
+                    <li class="li2">
                         <div class="data__circle2"></div>
                         <div class="data__procent"><?php the_field('franchise-proczent_spiska_2') ?></div>
                         <div class="data__title"><?php the_field('franchise-element_spiska_2') ?></div>
                     </li>
-                    <li>
+                    <li class="li3">
                         <div class="data__circle3"></div>
                         <div class="data__procent"><?php the_field('franchise-proczent_spiska_3') ?></div>
                         <div class="data__title"><?php the_field('franchise-element_spiska_3') ?></div>
                     </li>
-                    <li>
+                    <li class="li4">
                         <div class="data__circle4"></div>
                         <div class="data__procent"><?php the_field('franchise-proczent_spiska_4') ?></div>
                         <div class="data__title"><?php the_field('franchise-element_spiska_4') ?></div>
                     </li>
-                    <li>
+                    <li class="li5">
                         <div class="data__circle5"></div>
                         <div class="data__procent"><?php the_field('franchise-proczent_spiska_5') ?></div>
                         <div class="data__title"><?php the_field('franchise-element_spiska_5') ?></div>
                     </li>
-                    <li>
+                    <li class="li6">
                         <div class="data__circle6"></div>
                         <div class="data__procent"><?php the_field('franchise-proczent_spiska_6') ?></div>
                         <div class="data__title"><?php the_field('franchise-element_spiska_6') ?></div>
                     </li>
-                    <li>
+                    <li class="li7">
                         <div class="data__circle7"></div>
                         <div class="data__procent"><?php the_field('franchise-proczent_spiska_7') ?></div>
                         <div class="data__title"><?php the_field('franchise-element_spiska_7') ?></div>
                     </li>
-                    <li>
+                    <li class="li8">
                         <div class="data__circle8"></div>
                         <div class="data__procent"><?php the_field('franchise-proczent_spiska_8') ?></div>
                         <div class="data__title"><?php the_field('franchise-element_spiska_8') ?></div>
                     </li>
-                    <li>
+                    <li class="li9">
+                        <div class="data__circle9"></div>
+                        <div class="data__procent"><?php the_field('franchise-proczent_spiska_9') ?></div>
+                        <div class="data__title"><?php the_field('franchise-element_spiska_6') ?></div>
+                    </li>
+                    <li class="li10">
                         <div class="data__circle9"></div>
                         <div class="data__procent"><?php the_field('franchise-proczent_spiska_9') ?></div>
                         <div class="data__title"><?php the_field('franchise-element_spiska_6') ?></div>
                     </li>
                 </ul>
             </div>
-            <div class="pin-diagramm"></div>
+<div class="diagramm-comtainer">
+            <svg class="pie" viewBox="0 0 32 32">
+                     <g>
+                        <!-- Circle 1 - 42% -->
+                        <circle r="15.9155" cx="50%" cy="50%"></circle>
+                        <!-- Circle 2 - 22% -->
+                        <circle r="15.9155" cx="50%" cy="50%"></circle>
+                        <!-- Circle 3 - 19% -->
+                        <circle r="15.9155" cx="50%" cy="50%"></circle>
+                        <!-- Circle 4 - 5% -->
+                        <circle r="15.9155" cx="50%" cy="50%"></circle>
+                        <!-- Circle 5 - 4% -->
+                        <circle r="15.9155" cx="50%" cy="50%"></circle>
+                        <!-- Circle 6 - 3% -->
+                        <circle r="15.9155" cx="50%" cy="50%"></circle>
+                        <!-- Circle 7 - 2% -->
+                        <circle r="15.9155" cx="50%" cy="50%"></circle>
+                        <!-- Circle 8 - 1% -->
+                        <circle r="15.9155" cx="50%" cy="50%"></circle>
+                        <!-- Circle 9 - 1% -->
+                        <circle r="15.9155" cx="50%" cy="50%"></circle>
+                        <!-- Circle 10 - 1% -->
+                        <circle r="15.9155" cx="50%" cy="50%"></circle>
+                     </g>
+            </svg>
+            </div>
+
         </div>
     </div>
+    <script>
+                  // Получаем список всех элементов списка
+                  var listItems = document.querySelectorAll(".data__list-fin li");
+
+                  // Перебираем все элементы списка и добавляем обработчики событий для каждого
+                  listItems.forEach(function (listItem) {
+                     // Получаем номер элемента списка
+                     var number = listItem.className.slice(2);
+
+                     // Добавляем обработчик события для наведения мыши
+                     listItem.addEventListener("mouseenter", function () {
+                        listItem.style.backgroundColor = "#ffc93a";
+                        var pieCircles = document.querySelector(".pie circle:nth-of-type(" + number + ")");
+                        pieCircles.style.stroke = "#ffc93a";
+                     });
+
+                     // Добавляем обработчик события для отведения мыши
+                     listItem.addEventListener("mouseleave", function () {
+                        listItem.style.backgroundColor = "";
+                        var pieCircles = document.querySelector(".pie circle:nth-of-type(" + number + ")");
+                        pieCircles.style.stroke = "";
+                     });
+                  });
+               </script>
     <div class="dynamic-finmodel-container">
         <div class="dynamic__title">
             <p class="dynamic__title_small-text">Динамика открытия новых пунктов проката</p>
