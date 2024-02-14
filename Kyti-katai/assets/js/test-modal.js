@@ -215,11 +215,11 @@ function openPopupAbout() {
          <div class="modal-a-p__subtitle">${parkData ? parkData.name : ''}</div>
          <div class="modal-a-p__time-zone">
             <p class="time-zone__grey">Время работы:</p>
-            <p class="time-zone__disc">${parkData ? parkData.time : ''}</p>
+            <p class="time-zone__disc">${parkData.time ? parkData.time : '10-22'}</p>
          </div>
          <div class="modal-a-p__technic-zone">
             <p class="technic-zone__grey">Техника парка:</p>
-            <p class="technic-zone__disc">${parkData ? parkData.equipment : ''}</p>
+            <p class="technic-zone__disc">${parkData.equipment ? parkData.equipment : 'Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны'}</p>
          </div>
       </div>
       <div class="modal-a-p__img"></div>
@@ -257,7 +257,7 @@ function openPopupAbout() {
    swapParkBtnModal.addEventListener("click", function () {
       document.body.removeChild(popup);
       document.body.removeChild(greyBG);
-      openPopupSwitch();
+      openPopupChoseSwitch();
    });
 }
 

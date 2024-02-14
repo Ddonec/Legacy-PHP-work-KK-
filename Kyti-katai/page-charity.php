@@ -13,7 +13,7 @@ get_header();
 
 <section class="main-content-news-page">
          <div class="bread-crumbs">
-            <p><a href="index.html">Главная</a></p>
+            <p><a href="<?php echo bloginfo('template_url'); ?>">Главная</a></p>
             <p>/</p>
             <p><a href="#">Лето</a></p>
             <p>/</p>

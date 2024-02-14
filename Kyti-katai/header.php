@@ -42,15 +42,7 @@
 }
 
 
-.format__pictures_first {
-   background-image: url(<?php the_field('format_uslug_slajder_kartinka_1'); ?>);
-}
-.format__pictures_second {
-   background-image: url(<?php the_field('format_uslug_slajder_kartinka_2'); ?>);
-}
-.format__pictures_third {
-   background-image: url(<?php the_field('format_uslug_slajder_kartinka_3'); ?>);
-}
+
 
 .absolute-fs-container-right-frahciese {
    background-image: url(<?php the_field('pravaya_kartinka_sverhu'); ?>);
@@ -108,17 +100,8 @@
    background: url(<?php the_field('pervyj_slajder_foto_6'); ?>), lightgray 0px -33.03px / 100% 118.312% no-repeat;
 }
 
-.avalible-park__image-1 {
-   background: url(<?php the_field('foto_parka_1'); ?>), lightgray 50% / cover no-repeat;
-}
-.avalible-park__image-2 {
-   background: url(<?php the_field('foto_parka_2'); ?>), lightgray 50% / cover no-repeat;
-}
 </style>
    <body>
-      <header>
-
-
       <nav class="burger-menu text-14-500-left-lato-left" id="burgerMenu">
             <img class="close-btn-burger-menu" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/close-vector-btn-black.svg" alt="" />
             <a href="<?php echo get_option('home'); ?>"><img class="logo-blue-burger" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/logo-blue.svg" alt="" /></a>
@@ -138,9 +121,12 @@
             <li><a href="<?php echo get_option('home'); ?>/find">Найди свой парк</a></li>
             <li><a href="<?php echo get_option('home'); ?>/catalog">Возьми в прокат</a></li>
             <li><a href="<?php echo get_option('home'); ?>/catalog-child">Развлечения детям</a></li>
-            <li><a href="<?php echo get_option('home'); ?>/rope-park">Веревочный парк</a></li>
-            <li><a href="<?php echo get_option('home'); ?>/make-child-fun/">Организация детских праздников</a></li>
+            <li class="winter-opacity"><a href="<?php echo get_option('home'); ?>/rope-park">Веревочный парк</a></li>
+            <li class="winter-opacity"><a href="<?php echo get_option('home'); ?>/make-child-fun/">Организация детских праздников</a></li>
          </nav>
+      <header>
+
+
 
 
 
@@ -220,9 +206,9 @@
                   <li class="pointer reserve-button-less-470px">
                      Рус <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" alt="" /> <img class=" pointer ummer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" />
                   </li> -->
-                  <li class="pointer list-under-700" id="shopping-cart-icon-header">
+                  <!-- <li class="pointer list-under-700" id="shopping-cart-icon-header">
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/shopping-cart.svg" alt="" />
-                  </li>
+                  </li> -->
                   <li>
                      <div class="burger" onclick="toggleBurgerMenu()">
                         <span class="burgers"></span>
@@ -234,8 +220,8 @@
             </div>
             <div class="logo-header">
                <a href="<?php echo get_option('home'); ?>">
-                  <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group3.svg" alt="" />
-                  <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/bike-logo-black.svg" alt="" />
+                  <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/logo-new-white.svg" alt="" />
+                  <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/logo-new-black.svg" alt="" />
                </a>
             </div>
          </div>
@@ -245,7 +231,7 @@
                   <ul>
                      <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/find/">Найди свой парк</a></li>
                      <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/catalog/">Возьми в прокат</a></li>
-                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/catalog-child/">Развлечения детям</a></li>
+                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/catalog-child/">Развлечения для детей</a></li>
                   </ul>
                </div>
                <div class="spase-between-header"></div>

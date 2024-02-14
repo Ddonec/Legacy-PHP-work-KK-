@@ -29,6 +29,9 @@ header {
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
+   position: sticky;
+   top: 0;
+   z-index: 500;
 }
 
 button {
@@ -159,7 +162,7 @@ html {
    z-index: 6;
 }
 .logo-header img {
-   width: 102px;
+   width: 135px;
 }
 .zero-block-header {
    width: 251px;
@@ -562,7 +565,8 @@ s2
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
-.title-of-section-gradient-yellow {
+.title-of-section-gradient-yellow,
+.title-of-section-gradient-yellow-f {
    text-align: center;
    font-family: Montserrat Alternates;
    font-size: 48px;
@@ -2142,6 +2146,7 @@ s7
    line-height: 140%; /* 25.2px */
 
    margin: 40px auto 80px;
+   color: #000;
 }
 
 .button-news-container-main-page {
@@ -2478,7 +2483,7 @@ input:checked + .slider:before {
    background: #ffc93a;
 
    display: flex;
-   padding: 9px 24px 11px 24px;
+   padding: 9px 0 11px;
    justify-content: center;
    align-items: center;
    gap: 7px;
@@ -2491,6 +2496,7 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 19.6px */
+   width: 400px;
 }
 
 .download-prez-btn {
@@ -2616,6 +2622,9 @@ input:checked + .slider:before {
    overflow: hidden;
    position: relative;
 }
+.advantage-card-frahciese-page-fake {
+   width: calc((100vw - 1200px) / 2);
+}
 
 .advantage-card__first-text {
    display: flex;
@@ -2713,6 +2722,9 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 19.6px */
+   align-content: center;
+   display: flex;
+   flex-wrap: wrap;
 }
 .format__who-is {
    display: flex;
@@ -2747,7 +2759,9 @@ input:checked + .slider:before {
 .format__numbers-and-lines > div {
    margin: 20px;
 }
-
+.format__numbers-and-lines > div:last-child {
+   display: none;
+}
 .who-is__person-card {
    display: flex;
    gap: 10px;
@@ -2770,9 +2784,10 @@ input:checked + .slider:before {
    display: flex;
    gap: 20px;
 }
-.format__pictures_max-width div {
+.format__pictures_max-width img {
    width: 530px;
    height: 300px;
+   border-radius: 20px;
 }
 .format__pictures_first {
    background-size: cover;
@@ -2952,6 +2967,11 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 500;
    line-height: 130%; /* 23.4px */
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+   height: 47px;
 }
 .feedback__profile {
    display: flex;
@@ -2962,9 +2982,17 @@ input:checked + .slider:before {
 .feedback__avatar {
    width: 32px;
    margin-right: 8px;
+   height: 32px;
+   border-radius: 50%;
 }
 .feedback__star {
    margin: 0 10px 0 4px;
+}
+.feedback__main-discription {
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 5;
 }
 .feedback__show-more-link {
    color: var(--purple, #5567ea);
@@ -3116,6 +3144,9 @@ input:checked + .slider:before {
    font-weight: 600;
    line-height: 130%; /* 23.4px */
    height: 24px;
+
+   display: flex;
+   flex-shrink: 0;
 }
 .data__title {
    overflow: hidden;
@@ -3127,21 +3158,99 @@ input:checked + .slider:before {
    font-weight: 500;
    line-height: 140%; /* 19.6px */
 }
-.pin-diagramm {
+/* .pin-diagramm {
    width: 320px;
    height: 320px;
    background-image: conic-gradient(#5567ea 0% 42%, #eef0fd 42% 64%, #dde1fb 64% 83%, #ccd2f9 83% 88%, #a9b2f4 88% 92%, #99a4f2 92% 94%, #818ff0 94% 96%, #7785ee 96% 98%, #6677ed 98% 100%);
    border-radius: 50%;
    margin: auto;
+} */
+.diagramm-comtainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+.finmodel__data ul .li1:hover {
+   background-color: #ffc93a;
+}
+.pie {
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   transform: rotate(270deg);
+}
+.pie circle {
+   fill: none;
+   stroke-width: 32;
+   clip-path: circle(50%);
+   cursor: pointer;
+   transition: all 0.3s;
+}
+.pie circle:nth-of-type(1) {
+   stroke: #5567ea;
+   stroke-dasharray: 42 100;
+}
+.pie circle:nth-of-type(2) {
+   stroke: #eef0fd;
+   stroke-dasharray: 0 42 22 100;
+}
+.pie circle:nth-of-type(3) {
+   stroke: #dde1fb;
+   stroke-dasharray: 0 64 19 100;
+}
+.pie circle:nth-of-type(4) {
+   stroke: #ccd2f9;
+   stroke-dasharray: 0 83 5 100;
+}
+.pie circle:nth-of-type(5) {
+   stroke: #a9b2f4;
+   stroke-dasharray: 0 88 4 100;
+}
+.pie circle:nth-of-type(6) {
+   stroke: #99a4f2;
+   stroke-dasharray: 0 92 3 100;
+}
+.pie circle:nth-of-type(7) {
+   stroke: #818ff0;
+   stroke-dasharray: 0 95 2 100;
+}
+.pie circle:nth-of-type(8) {
+   stroke: #7785ee;
+   stroke-dasharray: 0 97 1 100;
+}
+.pie circle:nth-of-type(9) {
+   stroke: #6677ed;
+   stroke-dasharray: 0 98 1 100;
+}
+.pie circle:nth-of-type(10) {
+   stroke: #6677ed;
+   stroke-dasharray: 0 99 1 100;
+}
+
+.pie circle:hover {
+   stroke: #ffc93a;
 }
 .dynamic-finmodel-container {
    margin: 100px auto;
 }
-.table-info-find-page > div:not(:first-child):not(:last-child) {
+.table-info-find-page > div:not(:last-child) {
    border-bottom: 0.711px solid rgba(85, 103, 234, 0.2);
 }
 .mobile-viev-table-find-page > div:not(:last-child) {
    border-bottom: 0.711px solid rgba(85, 103, 234, 0.2);
+}
+.table-info-find-page {
+   height: 367px;
+   overflow-y: auto;
+}
+
+.table-info-find-page::-webkit-scrollbar {
+   width: 4px;
+}
+.table-info-find-page::-webkit-scrollbar-thumb {
+   border-radius: 20px;
+   background-color: var(--purple-light, #5567ea);
 }
 
 .dynamic__title {
@@ -3602,7 +3711,6 @@ input:checked + .slider:before {
    width: 100%;
    height: 540px;
    border-radius: 32px;
-   background: linear-gradient(78deg, rgba(51, 51, 51, 0.6) 1.23%, rgba(51, 51, 51, 0) 75.3%), url(../assets/content/photo_2024-02-067.07.30.jpeg), lightgray 0px -41.505px / 100% 156.143% no-repeat;
    background-size: cover;
    overflow: hidden;
    position: relative;
@@ -3610,8 +3718,6 @@ input:checked + .slider:before {
 .photo-area-about-rope-park-page__second {
    width: 100%;
    height: 540px;
-   background: linear-gradient(78deg, rgba(51, 51, 51, 0.6) 1.23%, rgba(51, 51, 51, 0) 75.3%), url(../assets/content/photo-area-about-rope-park-page__2.png),
-      lightgray 0px -41.505px / 100% 156.143% no-repeat;
    border-radius: 32px;
    background-size: cover;
    overflow: hidden;
@@ -3667,22 +3773,18 @@ input:checked + .slider:before {
 }
 .park-characteristics__image1 {
    width: 25%;
-   background-image: url(../assets/content/rope-park-options-1.png);
    background-size: cover;
 }
 .park-characteristics__image2 {
    width: 25%;
-   background-image: url(../assets/content/rope-park-options-2.png);
    background-size: cover;
 }
 .park-characteristics__image3 {
    width: 25%;
-   background-image: url(../assets/content/rope-park-options-3.png);
    background-size: cover;
 }
 .park-characteristics__image4 {
    width: 25%;
-   background-image: url(../assets/content/rope-park-options-4.png);
    background-size: cover;
 }
 
@@ -3730,32 +3832,26 @@ input:checked + .slider:before {
 
 .photos-of-rope-park__img1 {
    border-radius: 15px;
-   background: url(../assets/content/photos-of-rope-park__img1.webp), lightgray 50% / cover no-repeat;
    background-size: cover;
 }
 .photos-of-rope-park__img2 {
    border-radius: 15px;
-   background: url(../assets/content/photos-of-rope-park__img2.webp), lightgray 50% / cover no-repeat;
    background-size: cover;
 }
 .photos-of-rope-park__img3 {
    border-radius: 15px;
-   background: url(../assets/content/photos-of-rope-park__img3.webp), lightgray 50% / cover no-repeat;
    background-size: cover;
 }
 .photos-of-rope-park__img4 {
    border-radius: 15px;
-   background: url(../assets/content/photos-of-rope-park__img4.webp), lightgray 50% / cover no-repeat;
    background-size: cover;
 }
 .photos-of-rope-park__img5 {
    border-radius: 15px;
-   background: url(../assets/content/photos-of-rope-park__img5.webp), lightgray 50% / cover no-repeat;
    background-size: cover;
 }
 .photos-of-rope-park__img6 {
    border-radius: 15px;
-   background: url(../assets/content/photos-of-rope-park__img6.webp), lightgray 50% / cover no-repeat;
    background-size: cover;
 }
 
@@ -3872,6 +3968,12 @@ input:checked + .slider:before {
    gap: 20px;
    margin-top: 10px;
    margin-bottom: 80px;
+   position: relative;
+   flex-wrap: wrap;
+}
+
+.avalible-park__catd {
+   width: calc(50% - 10px);
 }
 .avalible-park__image-1 {
    position: relative;
@@ -4231,7 +4333,7 @@ input:checked + .slider:before {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   z-index: 200;
+   z-index: 1200;
    width: 90%;
    max-width: 580px;
 }
@@ -4288,7 +4390,7 @@ input:checked + .slider:before {
 }
 .modal-r-c__input-1,
 .modal-r-c__input-2 {
-   border-radius: 50px;
+   border-radius: 15px;
    border: 1.5px solid #333;
    opacity: 0.5;
    background: #fff;
@@ -4361,7 +4463,7 @@ input:checked + .slider:before {
 .modal-r-c__input-3,
 .modal-r-c__input-4,
 .modal-r-c__input-5 {
-   border-radius: 50px;
+   border-radius: 15px;
    border: 1.5px solid #333;
    opacity: 0.5;
    background: #fff;
@@ -4371,7 +4473,7 @@ input:checked + .slider:before {
 
 .modal-r-c__input-5 {
    height: 100px;
-   border-radius: 30px;
+   border-radius: 15px;
    display: flex;
    justify-content: flex-start;
    align-items: flex-start;
@@ -4815,7 +4917,7 @@ input:checked + .slider:before {
    width: 100vw;
    height: 100dvh;
    position: fixed;
-   z-index: 150;
+   z-index: 1010;
    top: 0;
 }
 
@@ -4830,7 +4932,7 @@ input:checked + .slider:before {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   z-index: 200;
+   z-index: 1200;
 }
 .log-in-modal__image {
    width: 48%;
@@ -5219,7 +5321,7 @@ input:checked + .slider:before {
    gap: 8px;
    position: fixed;
    background: white;
-   z-index: 200;
+   z-index: 1200;
    right: 0;
    transform: translateX(100%);
    height: 100vh;

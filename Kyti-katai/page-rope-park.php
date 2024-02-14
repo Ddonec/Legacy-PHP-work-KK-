@@ -11,7 +11,53 @@ Template Name: rope-park
 get_header();
 ?>
 
+<style>
+   .photo-area-about-rope-park-page__first {
+   background: linear-gradient(78deg, rgba(51, 51, 51, 0.6) 1.23%, rgba(51, 51, 51, 0) 75.3%), url(<?php the_field('bolshoe_foto_1') ?>), lightgray 0px -41.505px / 100% 156.143% no-repeat;
+}
+.photo-area-about-rope-park-page__second {
+   background: linear-gradient(78deg, rgba(51, 51, 51, 0.6) 1.23%, rgba(51, 51, 51, 0) 75.3%), url(<?php the_field('bolshoe_foto_2') ?>), lightgray 0px -41.505px / 100% 156.143% no-repeat;
+}
 
+.park-characteristics__image1 {
+   background-image: url(<?php the_field('foto_harakteristik_1') ?>);
+}
+.park-characteristics__image2 {
+   background-image: url(<?php the_field('foto_harakteristik_2') ?>);
+}
+.park-characteristics__image3 {
+   background-image: url(<?php the_field('foto_harakteristik_3') ?>);
+}
+.park-characteristics__image4 {
+   background-image: url(<?php the_field('foto_harakteristik_4') ?>);
+}
+
+.photos-of-rope-park__img1 {
+   background: url(<?php the_field('foto_snizu_iz_6_1') ?>);
+   background-size: cover;
+}
+.photos-of-rope-park__img2 {
+   background: url(<?php the_field('foto_snizu_iz_6_2') ?>);
+   background-size: cover;
+}
+.photos-of-rope-park__img3 {
+   background: url(<?php the_field('foto_snizu_iz_6_3') ?>);
+   background-size: cover;
+}
+.photos-of-rope-park__img4 {
+   background: url(<?php the_field('foto_snizu_iz_6_4') ?>);
+   background-size: cover;
+}
+.photos-of-rope-park__img5 {
+   background: url(<?php the_field('foto_snizu_iz_6_5') ?>);
+   background-size: cover;
+}
+.photos-of-rope-park__img6 {
+   background: url(<?php the_field('foto_snizu_iz_6_6') ?>);
+   background-size: cover;
+}
+
+</style>
 
 <section class="main-content-news-page">
          <div class="bread-crumbs">
@@ -79,37 +125,39 @@ get_header();
          <div class="park-tikket-buy-container">
             <h4 class="title-of-block-small-text-28-700-mons">Билеты можно приобрести в парках</h4>
             <div class="tickets__card-zone">
-               <div class="ticket__card">
-                  <div class="ticket__image"></div>
-                  <div class="ticket__discription">
-                     <p class="text-18-600">Наташинский парк (Гуливер)</p>
-                     <p class="text-14-500-left-lato opacity">МО, Люберцы, ул. Митрофанова, 22</p>
-                  </div>
-               </div>
 
-               <div class="ticket__card">
-                  <div class="ticket__image-2"></div>
-                  <div class="ticket__discription">
-                     <p class="text-18-600">Пехорка</p>
-                     <p class="text-14-500-left-lato opacity">МО, Балашиха, ул. Парковая, 4</p>
-                  </div>
-               </div>
 
-               <div class="ticket__card">
-                  <div class="ticket__image-3"></div>
-                  <div class="ticket__discription">
-                     <p class="text-18-600">Парк им. Калинина</p>
-                     <p class="text-14-500-left-lato opacity">МО, Королёв, ул. Терешковой, 3</p>
-                  </div>
-               </div>
+               <?php
+$arr = get_field('povtoritel_parkov');
+if ($arr) {
+    $count = 1;
+    foreach ($arr as $item) {
+      $image_class = 'ticket__image-' . $count; // создаем уникальный класс
+      ?>
+<style>
+   .<?php echo $image_class; ?> {
+   height: 75%;
+   width: 100%;
+   background-image: url(<?php echo $item['izobrazhenie']; ?>);
+   background-size: cover;
+   position: absolute;
+   top: 0;
+}
+</style>
 
-               <div class="ticket__card">
-                  <div class="ticket__image-4"></div>
+             <div class="ticket__card">
+                  <div class="<?php echo $image_class; ?>"></div>
                   <div class="ticket__discription">
-                     <p class="text-18-600">Городской парк г. Кашира </p>
-                     <p class="text-14-500-left-lato opacity">МО, Кашира, ул. Ленина, 2 </p>
+                     <p class="text-18-600"><?php echo $item['nazvanie']; ?></p>
+                     <p class="text-14-500-left-lato opacity"><?php echo $item['adres']; ?></p>
                   </div>
                </div>
+<?php
+$count ++;
+    }
+}
+?>
+
             </div>
          </div>
          <div class="our-values-about-us-page-container">

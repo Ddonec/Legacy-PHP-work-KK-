@@ -115,43 +115,49 @@ get_header();
          <section class="third-section-make-fun">
             <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('make-child-fun-zagolovok_3_sekczii') ?></h4>
             <div class="avalible-park-make-fun-container">
-               <div class="avalible-park__catd">
-                  <div class="avalible-park__image-1"></div>
 
-                  <div class="avalible-park__menu">
-                     <div class="avalible-park__title-text">
-                        <p class="text-bold-600"><?php the_field('nazvanie_parka_1') ?></p>
-                        <p class="opacity"><?php the_field('adres_parka_1') ?></p>
-                     </div>
-                     <p class="avalible-park__name-of-park"><?php the_field('vid_aktivnosti_parka_1') ?></p>
-                     <div class="avalible-park__options">
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" /><?php the_field('atribut_parka_1_1') ?></div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" /><?php the_field('atribut_parka_1_2') ?></div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" /><?php the_field('atribut_parka_1_3') ?></div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" /><?php the_field('atribut_parka_1_4') ?></div>
-                     </div>
-                     <div onclick="openPopupReserve()" class="avalible-park__button pointer"><?php the_field('knopka_broni_paka_1') ?></div>
-                  </div>
-               </div>
+            <?php
+$array = get_field('park');
+if ($array) {
+    $counter = 1; // начинаем счетчик с 1
+    foreach ($array as $i) {
+        $image_class = 'avalible-park__image-' . $counter; // создаем уникальный класс
+?>
+<style>
+.<?php echo $image_class; ?> {
+   background: url(<?php echo $i['foto_parka_1']; ?>), lightgray 50% / cover no-repeat;
+   position: relative;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    top: 20px;
+    z-index: -1;
+}
+</style>
+<div class="avalible-park__catd">
+    <div class="<?php echo $image_class; ?>"></div>
+    <div class="avalible-park__menu">
+        <div class="avalible-park__title-text">
+            <p class="text-bold-600"><?php echo $i['nazvanie_parka_1']; ?></p>
+            <p class="opacity"><?php echo $i['adres_parka_1']; ?></p>
+        </div>
+        <p class="avalible-park__name-of-park"><?php echo $i['vid_aktivnosti_parka_1']; ?></p>
+        <div class="avalible-park__options">
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" /><?php echo $i['atribut_parka_1_1']; ?></div>
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" /><?php echo $i['atribut_parka_1_2']; ?></div>
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" /><?php echo $i['atribut_parka_1_3']; ?></div>
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" /><?php echo $i['atribut_parka_1_4']; ?></div>
+        </div>
+        <div onclick="openPopupReserve()" class="avalible-park__button pointer"><?php the_field('knopka_broni_paka_1') ?></div>
+    </div>
+</div>
+<?php
+        $counter++; // увеличиваем счетчик на 1 для следующего элемента
+    }
+}
+?>
 
-               <div class="avalible-park__catd">
-                  <div class="avalible-park__image-2"></div>
-
-                  <div class="avalible-park__menu">
-                     <div class="avalible-park__title-text">
-                        <p class="text-bold-600"><?php the_field('nazvanie_parka_2') ?></p>
-                        <p class="opacity"><?php the_field('adres_parka_2') ?></p>
-                     </div>
-                     <p class="avalible-park__name-of-park"><?php the_field('vid_aktivnosti_parka_2') ?></p>
-                     <div class="avalible-park__options">
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" /><?php the_field('atribut_parka_2_1') ?></div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" /><?php the_field('atribut_parka_2_2') ?></div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" /><?php the_field('atribut_parka_2_3') ?></div>
-                        <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" /><?php the_field('atribut_parka_2_4') ?></div>
-                     </div>
-                     <div onclick="openPopupReserve()" class="avalible-park__button pointer"><?php the_field('knopka_broni_paka_2') ?></div>
-                  </div>
-               </div>
             </div>
          </section>
          <section class="four-section-make-fun">
@@ -159,53 +165,28 @@ get_header();
             <div class="feedback-absolute-pseudo-container">
                <div class="feedback-overflov-pseudo-container">
                   <ul class="feedback-containers-zone-franchise">
+                     <?php
+$arr = get_field('otzyv');
+if ($arr) {
+    foreach ($arr as $item) {
+?>
                      <li class="feedback-container-franchise">
-                        <div class="feedback__title">Масса удовольствия, Персонал был очень вежлив.</div>
+                        <div class="feedback__title"><?php echo $item['zagolovok_otzyva']; ?></div>
                         <div class="feedback__profile">
-                           <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/manager-photo.svg" alt="" /><span>Никита Мельников</span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
-                           <span>5</span>
+                           <img class="feedback__avatar" src="<?php echo $item['foto_cheloveka']; ?>" /><span><?php echo $item['imya_cheloveka']; ?></span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
+                           <span><?php echo $item['czifra_oczenki']; ?></span>
                         </div>
                         <div class="feedback__main-discription">
-                           Брали с другом велики на выходной день. Масса удовольствия! Персонал помог определиться с велосипедом и был вежлив. Удобно и недорого! Обязательно порекомендую этот прокат
-                           своим знакомым и друзьям. Большое спасибо!
+                        <?php echo $item['tekst_otzyva']; ?>
                         </div>
-                        <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
-                        <div class="feedback__opacity">25.10.23</div>
+                        <div class="">
+                           <a class="feedback__show-more-link" href="<?php echo $item['ssylka_na_otzyv']; ?>"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div></a>
+                        <div class="feedback__opacity"><?php echo $item['data_otzyva']; ?></div>
                      </li>
-                     
-                     
-
-                     <li class="feedback-container-franchise">
-                        <div class="feedback__title">Масса удовольствия, Персонал был очень вежлив.</div>
-                        <div class="feedback__profile">
-                           <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/avatar-1.svg" alt="" /><span>Мария Зворыкина</span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
-                           <span>5</span>
-                        </div>
-                        <div class="feedback__main-discription">
-                           Чудесное место для отдыха со своей семьёй. Широкий ассортимент услуг: детские машинки, велосипеды, аттракционы и так далее. Очень вежливый персонал и приятная атмосфера.
-                           Настоятельно рекомендую посетить! Скрыть
-                        </div>
-                        <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
-                        <div class="feedback__opacity">23.10.23</div>
-                     </li>
-
-                     <li class="feedback-container-franchise">
-                        <div class="feedback__title">Масса удовольствия, Персонал был очень вежлив.</div>
-                        <div class="feedback__profile">
-                           <img class="feedback__avatar" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/avatar-2.svg" alt="" /><span>Андрей Потанин</span> <img class="feedback__star" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/star.svg" alt="" />
-                           <span>5</span>
-                        </div>
-                        <div class="feedback__main-discription">
-                           Великолепное место для отдыха!!! Отзывчивый и вежливый персонал, который при любых вопросов с радостью готов ответить и помочь. Большое количество разной техники, точно
-                           найдете что-то на свое предпочтение, также много аттракционов
-                        </div>
-                        <div class="feedback__show-more-link"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div>
-                        <div class="feedback__opacity">17.10.23</div>
-                     </li>
-
-
-                     <?php the_field('otzyv_1_html') ?>
-
+<?php
+    }
+}
+?>
 
                   </ul>
                </div>

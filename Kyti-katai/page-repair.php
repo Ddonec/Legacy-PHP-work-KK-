@@ -44,9 +44,9 @@ get_header();
                <li class="pointer"><?php the_field('repair-pole_navigaczii_4') ?></li>
                <li class="pointer"><?php the_field('repair-pole_navigaczii_5') ?></li>
                <li class="pointer"><?php the_field('repair-pole_navigaczii_6') ?></li>
-               <li class="arrow-right-list pointer">
+               <div class="arrow-right-list pointer">
                   <img id="vector-repair" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-right.svg" alt="" />
-               </li>
+               </div>
             </ul>
          </div>
          <div class="desctop-photo-repair-page"><img class="photo-repair-page" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/repair-page-photo.png" alt="" /></div>
@@ -99,6 +99,40 @@ get_header();
             <div><p>Ремонт блока управления электромотором</p></div>
             <div><p>Ремонт блока управления электромотором</p></div>
          </div>
+
+<script>
+      const vacancies = document.querySelectorAll('.nav-menu-of-vacancies-work-in-page div');
+   vacancies.forEach((vacancy, index) => {
+    // Добавляем слушателя события клика
+    vacancy.addEventListener('click', () => {
+        // Убираем класс "vac__active" у всех соседних элементов
+        vacancies.forEach((v) => {
+            v.classList.remove('vac__active');
+            v.classList.add('opacity');
+        });
+        // Добавляем класс "vac__active" к текущему элементу
+        vacancy.classList.add('vac__active');
+        vacancy.classList.remove('opacity');
+
+
+        // Получаем все контейнеры описаний вакансий
+        const descriptionContainers = document.querySelectorAll('.discription-area-of-vacancier-work-page > div');
+
+        // Перебираем контейнеры
+        descriptionContainers.forEach((container, i) => {
+            // Если контейнер соответствует кликнутой вакансии, убираем класс "none"
+            if (index === i) {
+                container.classList.remove('none');
+            } else {
+                // Иначе добавляем класс "none"
+                container.classList.add('none');
+            }
+        });
+    });
+});
+</script>
+         
+
 
          <div class="call-back-form-container-overflow-container-default">
             <div class="call-back-form-container-franchise">

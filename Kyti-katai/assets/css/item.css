@@ -1000,7 +1000,7 @@
 .yellow-line-container {
    border-radius: 4px;
    background: #ffc93a;
-   width: 4610px;
+   width: 3700px;
    height: 4px;
    flex-shrink: 0;
    position: relative;
@@ -1052,10 +1052,9 @@
 }
 .blue-yellow-dot-about-page-1 {
    position: absolute;
-   bottom: -12px;
-   left: 215px;
+   top: -46px;
 }
-.blue-yellow-dot-about-page-2 {
+/* .blue-yellow-dot-about-page-2 {
    position: absolute;
    bottom: -12px;
    left: 990px;
@@ -1079,7 +1078,7 @@
    position: absolute;
    bottom: -12px;
    left: 4090px;
-}
+} */
 .logo-about-us-bike-white {
    margin-left: 90px;
    margin-bottom: 35px;
@@ -1100,9 +1099,12 @@
    width: 460px;
    display: grid;
    gap: 20px;
+   position: relative;
 }
-.history-block-2009-about-us-page img {
+.history-block-2009-about-us-page .image-of-history {
    border-radius: 0 30px 30px 30px;
+   width: 460px;
+   height: 237px;
 }
 
 .history-cards-container-about-page {
@@ -1261,8 +1263,8 @@
 .tickets__card-zone {
    display: flex;
    margin-top: 30px;
-   justify-content: space-between;
    flex-wrap: wrap;
+   gap: calc(4% / 3);
    row-gap: 20px;
 }
 .ticket__card {
@@ -1282,38 +1284,7 @@
    box-shadow: inset 0 0 0 2px #f4f4f8;
    z-index: 2;
 }
-.ticket__image {
-   height: 75%;
-   width: 100%;
-   background-image: url(../assets/content/guliver-park.png);
-   background-size: cover;
-   position: absolute;
-   top: 0;
-}
-.ticket__image-2 {
-   height: 75%;
-   width: 100%;
-   background-image: url(../assets/content/rope-park__ticket-2.png);
-   background-size: cover;
-   position: absolute;
-   top: 0;
-}
-.ticket__image-3 {
-   height: 75%;
-   width: 100%;
-   background-image: url(../assets/content/rope-park__ticket-1.png);
-   background-size: cover;
-   position: absolute;
-   top: 0;
-}
-.ticket__image-4 {
-   height: 75%;
-   width: 100%;
-   background-image: url(../assets/content/WhatsApp_Image_2024-01-22_at_18.17.46_\(1\).webp);
-   background-size: cover;
-   position: absolute;
-   top: 0;
-}
+
 .ticket__discription {
    display: flex;
    flex-direction: column;
@@ -1496,7 +1467,7 @@
 .photos-work-in__photo-1 {
    width: 180px;
    height: 240px;
-   background-image: url(../assets/content/photos-work-in__photo-1.png);
+   /* background-image: url(../assets/content/photos-work-in__photo-1.png); */
    background-size: cover;
    background-position: center;
    border-radius: 20px;
@@ -1508,7 +1479,7 @@
 .photos-work-in__photo-2 {
    width: 150px;
    height: 200px;
-   background-image: url(../assets/content/photos-work-in__photo-2.jpeg);
+   /* background-image: url(../assets/content/photos-work-in__photo-2.jpeg); */
    background-size: cover;
    background-position: center;
    border-radius: 20px;
@@ -1519,7 +1490,7 @@
 .photos-work-in__photo-3 {
    width: 150px;
    height: 200px;
-   background-image: url(../assets/content/photos-work-in__photo-3.png);
+   /* background-image: url(../assets/content/photos-work-in__photo-3.png); */
    background-size: cover;
    background-position: center;
    border-radius: 20px;
@@ -1531,7 +1502,7 @@
 .photos-work-in__photo-4 {
    width: 150px;
    height: 200px;
-   background-image: url(../assets/content/photos-work-in__photo-4.png);
+   /* background-image: url(../assets/content/photos-work-in__photo-4.png); */
    background-size: cover;
    background-position: right;
    border-radius: 20px;
@@ -2054,7 +2025,7 @@
    height: 200px;
 }
 .scroll-container-js {
-   white-space: nowrap;
+   /* white-space: nowrap; */
    cursor: grab;
    user-select: none;
 }
@@ -2147,6 +2118,24 @@
 .card:hover .card__front {
    transform: rotateY(180deg);
    z-index: -1;
+}
+.modal-r-c__button,
+.modal-c-p__save-btn,
+.modal-c-p__skip-btn {
+   color: #000;
+}
+.container-for-bread-franchise {
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.person-card__photo {
+   width: 60px;
+   height: 60px;
+   margin: auto;
+   border-radius: 50%;
 }
 
 /*

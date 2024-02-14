@@ -20,3 +20,19 @@ get_footer();
 
 
 //default
+
+
+
+<?php
+$arr = get_field('nazvaniya_parkov_v_tabah');
+if ($arr) {
+    $count = 0;
+    foreach ($arr as $item) {
+        $count++;
+?>
+<div class="text-18-500 <?php echo ($co == 1) ? '' : 'opacity'; ?> pointer">
+      <?php echo $item['tab_nazvanie_parka']; ?></div>
+<?php
+    }
+}
+?>

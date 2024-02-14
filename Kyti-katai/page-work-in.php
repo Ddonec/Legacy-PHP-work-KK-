@@ -19,6 +19,22 @@ get_header();
 ?>
 
 
+<style>
+.photos-work-in__photo-1 {
+   background-image: url(<?php the_field('absolyut_foto_1') ?>);
+}
+.photos-work-in__photo-2 {
+   background-image: url(<?php the_field('absolyut_foto_2') ?>);
+}
+.photos-work-in__photo-3 {
+   background-image: url(<?php the_field('absolyut_foto_3') ?>);
+}
+.photos-work-in__photo-4 {
+   background-image: url(<?php the_field('absolyut_foto_4') ?>);
+}
+</style>
+
+
 
 
       <section class="main-content-news-page">

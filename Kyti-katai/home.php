@@ -482,51 +482,19 @@ document.addEventListener("DOMContentLoaded", function() {
                   <?php the_field('razvlecheniya_dlya_detej_title') ?>  
                      <p><?php the_field('razvlecheniya_dlya_detej_subtitle') ?>  </p>
                   </div>
-                  <div>
-                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_1'); ?></p>
-                  </div>
-
-                  <div>
-                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_2', 95)); ?>" alt="Alt text" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_2'); ?></p>
-                  </div>
-                  <div>
-                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_3', 95)); ?>" alt="Alt text" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_3'); ?></p>
-                  </div>
-                  <div>
-                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g4.svg" alt="" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_4'); ?></p>
-                  </div>
-                  <div>
-                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_5', 95)); ?>" alt="Alt text" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_5'); ?></p>
-                  </div>
-                  <div>
-                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_6', 95)); ?>" alt="Alt text" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_6'); ?></p>
-                  </div>
-                  <div>
-                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_7', 95)); ?>" alt="Alt text" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_7'); ?></p>
-                  </div>
-                  <div>
-                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_8', 95)); ?>" alt="Alt text" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_8'); ?></p>
-                  </div>
-                  <div>
-                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_9', 95)); ?>" alt="Alt text" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_9'); ?></p>
-                  </div>
-                  <div>
-                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g10.png" alt="" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_10'); ?></p>
-                  </div>
-                  <div>
-                     <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_11'); ?></p>
-                  </div>
+                  <?php
+$arr = get_field('kartochki_s_razvlecheniyami');
+if ($arr) {
+    foreach ($arr as $item) {
+?>
+        <div class="pointer">
+            <img src="<?php echo $item['izobradenie_kartochki']; ?>" alt="" />
+            <p class="text-in-chill-for-kids-card"><?php echo $item['opisanie_kartochki']; ?></p>
+        </div>
+<?php
+    }
+}
+?>                  
                </div>
 
                <div class="kids-chill kids-chill-winter">
@@ -534,26 +502,20 @@ document.addEventListener("DOMContentLoaded", function() {
                   <?php the_field('razvlecheniya_dlya_detej_title') ?>  
                      <p><?php the_field('razvlecheniya_dlya_detej_subtitle') ?>  </p>
                   </div>
-                  <div>
-                     <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_2', 95)); ?>" alt="" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_winter_1'); ?></p>
-                  </div>
-                  <div>
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/g1.svg" alt="Alt text" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_winter_2'); ?></p>
-                  </div>
-                  <div>
-                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_2', 95)); ?>" alt="Alt text" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_winter_3'); ?></p>
-                  </div>
-                  <div>
-                     <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_2', 95)); ?>" alt="" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_winter_4'); ?></p>
-                  </div>
-                  <div>
-                  <img src="<?php echo esc_url(get_field('razvlecheniya_ikonka_2', 95)); ?>" alt="Alt text" />
-                     <p class="text-in-chill-for-kids-card"><?php the_field('razvlecheniya_dlya_detej_tekst_kartochki_winter_5'); ?></p>
-                  </div>
+
+                  <?php
+$arr = get_field('kartochki_s_razvlecheniyami_zima');
+if ($arr) {
+    foreach ($arr as $item) {
+?>
+        <div class="pointer">
+            <img src="<?php echo $item['izobradenie_kartochki']; ?>" alt="" />
+            <p class="text-in-chill-for-kids-card"><?php echo $item['opisanie_kartochki']; ?></p>
+        </div>
+<?php
+    }
+}
+?>  
                </div>
             </div>
             <div class="go-to-all-chill-btn-container">
