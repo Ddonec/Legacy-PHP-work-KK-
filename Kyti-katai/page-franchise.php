@@ -63,7 +63,7 @@ get_header();
         <li><a href="#finnodel-section"><?php the_field('franchise-sinyaya_navigacziya_3') ?></a></li>
         <li><a href="#our-team-franchise"><?php the_field('franchise-sinyaya_navigacziya_4') ?></a></li>
         <li><a href="#contacts-franchise-page"><?php the_field('franchise-sinyaya_navigacziya_5') ?></a></li>
-        <li onclick="openPopupFranchise()" class="b-l-f-active"><?php the_field('franchise-sinyaya_navigacziya_6') ?></li>
+        <li onclick="openPopupFranchise()" class="b-l-f-active pointer"><?php the_field('franchise-sinyaya_navigacziya_6') ?></li>
     </ul>
     <div class="cunter-container-left-margin-francheise-page">
         <div class="overflov-block-advantages-cards-frahciese-page scroll-container-js">

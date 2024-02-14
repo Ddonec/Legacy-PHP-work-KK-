@@ -214,8 +214,8 @@
             </div>
             <div class="logo-header">
                <a href="<?php echo get_option('home'); ?>">
-                  <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Group3.svg" alt="" />
-                  <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/bike-logo-black.svg" alt="" />
+                  <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/logo-new-white.svg" alt="" />
+                  <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/logo-new-black.svg" alt="" />
                </a>
             </div>
          </div>
