@@ -512,7 +512,7 @@
 .social-left-block-news-2-page a:nth-last-child(1) div {
    width: 48px;
    height: 48px;
-   background: #00468C;
+   background: #00468c;
    border-radius: 50%;
    display: flex;
    justify-content: center;
@@ -1679,6 +1679,14 @@
 
 .main-content-news-page {
    position: relative;
+}
+.map-fill > .map-container {
+   margin-top: 0;
+}
+.map-fill{
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .text-blicks-repair-page {
    display: flex;
