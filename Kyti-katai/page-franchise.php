@@ -65,6 +65,8 @@ get_header();
         <li><a href="#contacts-franchise-page"><?php the_field('franchise-sinyaya_navigacziya_5') ?></a></li>
         <li onclick="openPopupFranchise()" class="b-l-f-active pointer"><?php the_field('franchise-sinyaya_navigacziya_6') ?></li>
     </ul>
+    <h3 class="title-of-section-gradient text-gradient">О франшизе</h3>
+
     <div class="cunter-container-left-margin-francheise-page">
         <div class="overflov-block-advantages-cards-frahciese-page scroll-container-js">
             <div class="max-width-contaimer-owerflov-inside-franchaise">
@@ -323,8 +325,8 @@ document.addEventListener("DOMContentLoaded", function() {
     <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-4_sekcziya_zagolovok') ?>
     </h3>
     <div class="finmodel-container">
-        <p class="finmodel__title"><?php the_field('franchise-4_sekcziya_nazvanie_polya') ?>
-        </p>
+        <!-- <p class="finmodel__title"><?php the_field('franchise-4_sekcziya_nazvanie_polya') ?>
+        </p> -->
         <div class="finmodel__main">
             <div class="finmodel__data">
                 <ul class="data__list-fin">
@@ -472,7 +474,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
         </div>
     </div>
-    <div class="call-back-form-container-overflow-container">
+    <!-- <div class="call-back-form-container-overflow-container">
         <div class="call-back-form-container-franchise">
             <div class="text-sub-block-news-inside">
                 <h4 class="main-text-sub-block-news-p-cont text-gradient">Давайте созвонимся!</h4>
@@ -487,7 +489,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </section>
 <section id="our-team-franchise" class="our-team-franchise">
     <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-zagolovok_5_sekczii') ?></h3>
