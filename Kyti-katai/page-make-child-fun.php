@@ -148,6 +148,16 @@ if ($array) {
             <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" /><?php echo $i['atribut_parka_1_2']; ?></div>
             <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" /><?php echo $i['atribut_parka_1_3']; ?></div>
             <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__4.svg" alt="" /><?php echo $i['atribut_parka_1_4']; ?></div>
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" /><?php echo $i['atribut_parka_1_5']; ?></div>
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" /><?php echo $i['atribut_parka_1_6']; ?></div>
+        </div>
+        <p class="avalible-park__name-of-park"><?php echo $i['vid_aktivnosti_parka_2']; ?></p>
+        <div class="avalible-park__options">
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" /><?php echo $i['atribut_parka_2_1']; ?></div>
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" /><?php echo $i['atribut_parka_2_2']; ?></div>
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__3.svg" alt="" /><?php echo $i['atribut_parka_2_3']; ?></div>
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__1.svg" alt="" /><?php echo $i['atribut_parka_2_4']; ?></div>
+            <div><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/avalible-park__2.svg" alt="" /><?php echo $i['atribut_parka_2_4']; ?></div>
         </div>
         <div onclick="openPopupReserve()" class="avalible-park__button pointer"><?php the_field('knopka_broni_paka_1') ?></div>
     </div>
