@@ -2496,7 +2496,7 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 19.6px */
-   width: 400px;
+   width: 340px;
 }
 
 .download-prez-btn {

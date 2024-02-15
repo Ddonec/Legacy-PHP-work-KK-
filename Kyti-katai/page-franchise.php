@@ -47,7 +47,7 @@ get_header();
             <h1 class="franchese-h1"><?php the_field('franchise-bolshoj_zagolovok_straniczy') ?></h1>
             <div class="last-text-first-section"><?php the_field('franchise-podzagolovok_bolshogo') ?></div>
             <div class="buttons-fs-frahciese-page">
-                <button class="download-fin-model-btn class-to-switch-season-btn" onclick="openPopupFranchise()">Получить финансовую модель</button>
+                <button class="download-fin-model-btn class-to-switch-season-btn" onclick="openPopupFranchise()">Узнать подробности</button>
                 <!-- <a href="https://forms.gle/bhaVfoQnFYgQi2v36" target="_blank"><button class="download-prez-btn class-to-switch-season-btn">Получить презентацию франшизы <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/arrow-down-to-line.svg" alt="" /></button></a> -->
             </div>
         </div>
@@ -271,7 +271,7 @@ if ($arr) {
                         <?php echo $item['tekst_otzyva']; ?>
                         </div>
                         <div class="">
-                            <a class="feedback__show-more-link" href="<?php echo $item['ssylka_na_otzyv']; ?>"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div></a>
+                            <a target="_blank" class="feedback__show-more-link" href="<?php echo $item['ssylka_na_otzyv']; ?>"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div></a>
                         <div class="feedback__opacity"><?php echo $item['data_otzyva']; ?></div>
                      </li>
 <?php

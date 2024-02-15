@@ -180,7 +180,7 @@ if ($arr) {
                         <?php echo $item['tekst_otzyva']; ?>
                         </div>
                         <div class="">
-                           <a class="feedback__show-more-link" href="<?php echo $item['ssylka_na_otzyv']; ?>"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div></a>
+                           <a target="_blank" class="feedback__show-more-link" href="<?php echo $item['ssylka_na_otzyv']; ?>"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div></a>
                         <div class="feedback__opacity"><?php echo $item['data_otzyva']; ?></div>
                      </li>
 <?php
