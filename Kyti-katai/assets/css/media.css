@@ -250,9 +250,7 @@
    .kids-chill div {
       width: 176px;
    }
-   .kids-chill div:nth-last-child(-n + 1) {
-      display: none;
-   }
+
    .text-area-first-section-1920 h1 {
       margin-top: 50px;
    }
@@ -422,6 +420,17 @@
 
 @media (min-width: 1341px) {
    .apps-links-footer- {
+      display: none;
+   }
+}
+@media (min-width: 1240px) {
+   .kids-chill-winter > #wide-card-on-chill-kids-copy {
+      width: 171px;
+      font-size: 17px;
+      /* display: flex; */
+      padding: 46px 20px;
+   }
+   .kids-chill-winter > #wide-card-on-chill-kids-copy > p {
       display: none;
    }
 }
@@ -621,9 +630,6 @@
    }
 }
 @media (max-width: 1185px) {
-   .kids-chill div:nth-last-child(-n + 3) {
-      display: none;
-   }
    .shop-take-rent {
       width: 100%;
    }
@@ -1191,9 +1197,7 @@
    .kids-chill div {
       width: 167px;
    }
-   .kids-chill div:nth-last-child(-n + 5) {
-      display: none;
-   }
+
    .text-area-first-section-1920 h1 {
       margin-top: 80px;
    }
