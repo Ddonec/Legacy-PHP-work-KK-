@@ -4066,6 +4066,28 @@ input:checked + .slider:before {
    width: fit-content;
    margin: 30px 0;
 }
+.desctop-photo-repair-page {
+   margin-top: 30px;
+}
+.download-price-of-repair-btn {
+   margin: 20px auto 0px;
+   display: block;
+   padding: 10px 24px 12px 24px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   border-radius: 30px;
+   background: #ffc93a;
+   border: none;
+   color: #333;
+   text-align: center;
+   font-family: Lato, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%;
+   width: fit-content;
+}
 #vector-repair {
    height: 20px;
 }

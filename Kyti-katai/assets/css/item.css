@@ -1843,35 +1843,30 @@
    line-height: 140%; /* 25.2px */
 }
 .phopos-container-example-repair-page > div:nth-child(1) {
-   background-image: url(../assets/content/photo_2024-02-0617.05.45.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    width: 31%;
 }
 .phopos-container-example-repair-page > div:nth-child(2) {
-   background-image: url(../assets/content/photo_2024-02-0617.05.43.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    width: 31%;
 }
 .phopos-container-example-repair-page > div:nth-child(3) {
-   background-image: url(../assets/content/photo_2024-02-0617.05.39.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    width: 31%;
 }
 .phopos-container-example-repair-page > div:nth-child(4) {
-   background-image: url(../assets/content/photo_2024-02-0617.05.41.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    width: 48%;
 }
 .phopos-container-example-repair-page > div:nth-child(5) {
-   background-image: url(../assets/content/photo_2024-02-0617.05.46.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
