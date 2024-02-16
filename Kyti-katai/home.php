@@ -108,6 +108,26 @@ $.getJSON("/wp-content/uploads/points.json", function(data) {
             leftBlock.classList.remove('none');
         });
     });
+
+
+
+    var input = document.querySelector(".park-list-map-zone__input");
+    input.addEventListener("input", function () {
+        // Получаем поисковый запрос
+        var searchTerm = this.value.toLowerCase();
+
+        // Перебираем элементы списка
+        var items = list.children;
+        for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+            // Если поисковый запрос найден в тексте элемента, показываем его
+            if (item.textContent.toLowerCase().indexOf(searchTerm) !== -1) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        }
+    });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
