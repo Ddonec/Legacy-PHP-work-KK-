@@ -45,9 +45,126 @@ jQuery(document).ready(function($) {
 
 
         <h3>форма на страницу Франшиза (модальное окно)</h3>
+        <div classs="abc">
+            <?php echo do_shortcode( '[contact-form-7 id="9f34528" title="Франшиза"]' ); ?>
+        </div>
 
-        <?php echo do_shortcode( '[contact-form-7 id="9f34528" title="Франшиза"]' ); ?>
+<style>
+    .wpcf7.js .wpcf7-form {
+   flex-direction: column;
+}
+.wpcf7.js .form50 {
+   width: 100%;
+}
 
+.wpcf7.js p {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
+   width: 861px;
+   z-index: 5;
+}
+.wpcf7.js p > label {
+   width: 49%;
+}
+.wpcf7.js p > label input{
+   width: 100%;
+}
+.wpcf7.js label + br {
+   display: none;
+}
+.wpcf7.js p > label:nth-child(9) {
+   width: 100%;
+   position: relative;
+}
+.wpcf7.js .form100 {
+   display: flex;
+   height: 100px;
+   padding: 14px 20px 16px 30px;
+   align-items: flex-start;
+   gap: 8px;
+   border-radius: 15px;
+   border: 1.5px solid rgba(51, 51, 51, 0.5);
+   background: #f4f5fd;
+   width: 100%;
+   font-family: lato, sans-serif;
+   border: 1.5px solid #333;
+   opacity: 0.5;
+   background: white;
+}
+.wpcf7.js .form50{
+    border-radius:15px;
+}
+.wpcf7-form-control.wpcf7-submit.franchise-submitt{
+    width: 100%;
+}
+#your-checkbox-id label:after{
+    content: '';
+}
+#your-checkbox-id label input {
+    display: none;
+    width: 100%;
+}
+
+.wpcf7.js .wpcf7-list-item{
+    display:flex;
+    
+}
+.wpcf7.js .wpcf7-form-control-wrap{
+width:100%;    
+cursor: pointer;
+}
+.wpcf7.js .wpcf7-list-item.first.last{
+margin: 0;}
+
+
+#your-checkbox-id label {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 46px;
+   border: 1px solid #ffc93a;
+   align-items: center;
+   border-radius: 23px;
+   cursor: pointer;
+}
+.bcd {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.toggle-input {
+   display: none;
+   width: 100%;
+}
+
+.toggle-slider {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   width: 49%;
+   height: 40px;
+   background-color: #ffc93a;
+   border-radius: 20px;
+   transition: 0.3s;
+   z-index: -1;
+   transform: translateY(-50%);
+   margin-left: 1%;
+}
+
+#your-checkbox-id label input:checked + .toggle-slider {
+   transform: translate(100%, -50%);
+}
+
+</style>
+
+<script>
+
+document.getElementById('your-checkbox-id').querySelector('label').innerHTML = '<div class="bcd text-14-500-left-lato-left">Напишите на почту</div><div class="bcd text-14-500-left-lato-left">Позвоните мне</div><input type="checkbox" name="checkbox-142[]" value="Позвоните мне"><div class="toggle-slider"></div>';
+
+</script>
         
         <form class="modal-reserve-franchise">
             <div class="modal-r-c__top-container">
@@ -102,6 +219,12 @@ jQuery(document).ready(function($) {
                </div>
          </div>
          
+        </form>
+
+
+        <form action="">
+
+        
         </form>
 <br>
 <br>
