@@ -24,12 +24,26 @@
             <div class="row-footer-1">
                <div class="title-list-1 poinetr">Компания</div>
                <ul>
-                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/catalog/">Возьми в прокат</a></li>
+                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/catalog/">Техника</a></li>
                   <li class="pointer"><a href="<?php echo get_option('home'); ?>/find">Мы в парках</a></li>
                   <li class="pointer"><a href="<?php echo get_option('home'); ?>/about-us">О нас</a></li>
                   <li class="pointer"><a href="<?php echo get_option('home'); ?>/category/articles/">Новости</a></li>
                   <!-- <li class="pointer"><a href="<?php echo get_option('home'); ?>/charity">Благотворительность</a></li> -->
-                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/work">Работа у нас</a></li>
+                  <li class="pointer"><a href="<?php echo get_option('home'); ?>">Пикник Сити</a></li>
+                  <!-- <li class="pointer"><a href="<?php echo get_option('home'); ?>/work">Работа у нас</a></li> -->
+               </ul>
+            </div>
+
+            <div class="row-footer-1">
+               <div class="title-list-1 poinetr">Партнёрам</div>
+               <ul>
+                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/catalog/">Техника</a></li>
+                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/find">Мы в парках</a></li>
+                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/about-us">О нас</a></li>
+                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/category/articles/">Новости</a></li>
+                  <!-- <li class="pointer"><a href="<?php echo get_option('home'); ?>/charity">Благотворительность</a></li> -->
+                  <li class="pointer"><a href="<?php echo get_option('home'); ?>">Пикник Сити</a></li>
+                  <!-- <li class="pointer"><a href="<?php echo get_option('home'); ?>/work">Работа у нас</a></li> -->
                </ul>
             </div>
 

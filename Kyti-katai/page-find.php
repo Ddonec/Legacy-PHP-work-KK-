@@ -307,13 +307,13 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
          </div>
          <div class="search-container-find-page">
-            <input class="input-search-find-page" type="search" placeholder="Введите название парка, адреса или техники" />
+            <input class="input-search-find-page" id="searchInput" type="text" placeholder="Введите название парка, адреса или техники" />
             <img class="search-icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/search-icon-black.svg" alt="" />
          </div>
 
          
 
-         <div class="table-info-find-page text-14-500-left">
+         <div class="table-info-find-page text-14-500-left list">
 
          </div>
 <script>
@@ -358,6 +358,29 @@ document.addEventListener('DOMContentLoaded', function() {
             parkListContainer.appendChild(listItem);
         });
     });
+</script>
+
+<script>
+const searchInput = document.querySelector(".input-search-find-page");
+const list = document.querySelector(".table-info-find-page");
+
+// Добавляем прослушиватель событий при вводе в input
+searchInput.addEventListener("input", function () {
+  // Получаем поисковый запрос
+  const searchTerm = this.value.toLowerCase();
+
+  // Перебираем элементы списка
+  const items = list.querySelectorAll("div.discription-table-find-page");
+  items.forEach(function(item) {
+    // Если поисковый запрос найден в тексте элемента, показываем его
+    const name = item.querySelector("p:first-child").textContent.toLowerCase();
+    if (name.includes(searchTerm)) {
+      item.style.display = "flex";
+    } else {
+      item.style.display = "none";
+    }
+  });
+});
 </script>
   
 <div class="mobile-viev-table-find-page none" id="mobile-park-list"></div>
