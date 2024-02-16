@@ -4456,21 +4456,41 @@ input:checked + .slider:before {
    display: flex;
    flex-wrap: wrap;
    gap: 12px;
-   width: 861px;
+   width: 100%;
    z-index: 5;
+   justify-content: space-between;
 }
 .wpcf7.js p > label {
-   width: 49%;
+   width: 48%;
 }
-.wpcf7.js p > label input{
+.wpcf7.js p > label input {
    width: 100%;
 }
-.wpcf7.js label + br {
+.modal-reserve-celebrate-absolute.franchise-page-form {
+   display: inline-flex;
+   padding: 40px;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 20px;
+   border-radius: 20px;
+   background: #fff;
+   position: fixed;
+   margin: auto;
+   z-index: 1200;
+}
+.modal-reserve-celebrate-absolute.franchise-page-form.none {
+   display: none;
+}
+.wpcf7.js label + br,
+.wpcf7.js .wpcf7-spinner {
    display: none;
 }
 .wpcf7.js p > label:nth-child(9) {
    width: 100%;
    position: relative;
+}
+.wpcf7.js p br {
+   display: none;
 }
 .wpcf7.js .form100 {
    display: flex;
@@ -4487,31 +4507,30 @@ input:checked + .slider:before {
    opacity: 0.5;
    background: white;
 }
-.wpcf7.js .form50{
-    border-radius:15px;
+.wpcf7.js .form50 {
+   border-radius: 15px;
 }
-.wpcf7-form-control.wpcf7-submit.franchise-submitt{
-    width: 100%;
+.wpcf7-form-control.wpcf7-submit.franchise-submitt {
+   width: 100%;
 }
-#your-checkbox-id label:after{
-    content: '';
+#your-checkbox-id label:after {
+   content: "";
 }
 #your-checkbox-id label input {
-    display: none;
-    width: 100%;
+   display: none;
+   width: 100%;
 }
 
-.wpcf7.js .wpcf7-list-item{
-    display:flex;
-    
+.wpcf7.js .wpcf7-list-item {
+   display: flex;
 }
-.wpcf7.js .wpcf7-form-control-wrap{
-width:100%;    
-cursor: pointer;
+.wpcf7.js .wpcf7-form-control-wrap {
+   width: 100%;
+   cursor: pointer;
 }
-.wpcf7.js .wpcf7-list-item.first.last{
-margin: 0;}
-
+.wpcf7.js .wpcf7-list-item.first.last {
+   margin: 0;
+}
 
 #your-checkbox-id label {
    display: flex;

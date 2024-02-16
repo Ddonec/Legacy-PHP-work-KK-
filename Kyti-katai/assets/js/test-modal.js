@@ -197,10 +197,10 @@ function openPopupAbout() {
    greyBG = document.createElement("div");
    greyBG.className = "grey-bg";
    popup.className = "modal-reserve-celebrate-absolute";
-   
+
    // Чтение данных из куки
-   var cookieData = document.cookie.split(';').reduce(function(acc, cookie) {
-      var parts = cookie.split('=');
+   var cookieData = document.cookie.split(";").reduce(function (acc, cookie) {
+      var parts = cookie.split("=");
       acc[parts[0].trim()] = decodeURIComponent(parts[1]);
       return acc;
    }, {});
@@ -212,14 +212,14 @@ function openPopupAbout() {
    var modalHTML = `<section class="modal-about-park">
       <div class="modal-a-p__title">О парке</div>
       <div class="modal-a-p__middle-container">
-         <div class="modal-a-p__subtitle">${parkData ? parkData.name : ''}</div>
+         <div class="modal-a-p__subtitle">${parkData ? parkData.name : ""}</div>
          <div class="modal-a-p__time-zone">
             <p class="time-zone__grey">Время работы:</p>
-            <p class="time-zone__disc">${parkData.time ? parkData.time : '10-22'}</p>
+            <p class="time-zone__disc">${parkData.time ? parkData.time : "10-22"}</p>
          </div>
          <div class="modal-a-p__technic-zone">
             <p class="technic-zone__grey">Техника парка:</p>
-            <p class="technic-zone__disc">${parkData.equipment ? parkData.equipment : 'Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны'}</p>
+            <p class="technic-zone__disc">${parkData.equipment ? parkData.equipment : "Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны"}</p>
          </div>
       </div>
       <div class="modal-a-p__img"></div>
@@ -324,53 +324,21 @@ function openPopupSwitch() {
    });
 }
 function openPopupFranchise() {
-   popup = document.createElement("div");
+   popup = document.querySelector(".modal-reserve-celebrate-absolute.franchise-page-form");
    greyBG = document.createElement("div");
    greyBG.className = "grey-bg";
-   popup.className = "modal-reserve-celebrate-absolute";
-   popup.innerHTML = ` <form class="modal-reserve-franchise">
-   <div class="modal-r-c__top-container">
-      <div class="modal-title modal-r-c__title">Оставить заявку</div>
-      <div class="modal-subtitle modal-r-c__title">Укажите ваши данные, чтобы наши специалисты связались с вами</div>
-   </div>
-   <div class="modal-r-c__input-container">
-      <input type="text" class="modal-franchise-1 modal-franchise__input" placeholder="Ваше имя" />
-      <input type="text" class="modal-franchise-2 modal-franchise__input" placeholder="Город открытия" />
-      <input type="email" placeholder="Электронная почта" class="modal-franchise-3 modal-franchise__input" />
-      <input type="tel" placeholder="Номер телефона" class="modal-franchise-4 modal-franchise__input" />
-      <input type="text" placeholder="Ваше сообщение" class="modal-r-c__input-5 modal-r-c__input modal-franchise-5" />
-   </div>
-   <div class="modal-r-c__button-area">
-      <div class="toggle-container">
-         <label class="toggle-label " for="toggle"
-            ><p class="text-14-500-left-lato-left">Напишите на почту</p>
-            <p class="text-14-500-left-lato-left">Позвоните мне</p></label
-         >
-         <input type="checkbox" id="toggle" class="toggle-input" />
-         <div class="toggle-slider"></div>
-      </div>
 
-      <button class="modal-r-c__button">Отправить</button>
-      <p class="modal-r-c__data-agree modal-data-agree">Отправляя данную форму, вы соглашаетесь с <br /><a href="#">условиями обработки персональных данных</a></p>
-   </div>
-   <div class="close-modal-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-         <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
-      </svg>
-   </div>
-</form>`;
-
-   document.body.appendChild(popup);
    document.body.appendChild(greyBG);
+   popup.style.display = "flex";
 
    greyBG.addEventListener("click", function () {
-      document.body.removeChild(popup);
       document.body.removeChild(greyBG);
+      popup.style.display = "none";
       console.log("close");
    });
 
    popup.querySelector(".close-modal-btn").addEventListener("click", function () {
-      document.body.removeChild(popup);
+      popup.style.display = "none";
       document.body.removeChild(greyBG);
       console.log("close");
    });
@@ -378,8 +346,8 @@ function openPopupFranchise() {
    const goBackBtn = document.querySelector(".go-back-modal-btn");
 
    goBackBtn.addEventListener("click", function () {
-      document.body.removeChild(popup);
       document.body.removeChild(greyBG);
+      popup.style.display = "none";
       openPopupAbout();
    });
 }

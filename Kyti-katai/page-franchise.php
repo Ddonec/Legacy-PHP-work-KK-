@@ -666,6 +666,18 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
 </section>
 
+
+
+<div class="modal-reserve-celebrate-absolute franchise-page-form none">
+<div class="modal-r-c__top-container">
+                <div class="modal-title modal-r-c__title">Оставить заявку</div>
+                <div class="modal-subtitle modal-r-c__title">Укажите ваши данные, чтобы наши специалисты связались с вами</div>
+            </div>
+<?php echo do_shortcode( '[contact-form-7 id="9f34528" title="Франшиза"]' ); ?>
+</div>
+<script>
+document.getElementById('your-checkbox-id').querySelector('label').innerHTML = '<div class="bcd text-14-500-left-lato-left">Напишите на почту</div><div class="bcd text-14-500-left-lato-left">Позвоните мне</div><input type="checkbox" name="checkbox-142[]" value="Позвоните мне"><div class="toggle-slider"></div>';
+</script>
 <?php
 get_footer();
 ?>
