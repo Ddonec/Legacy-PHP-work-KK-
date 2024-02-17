@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <section class="absolute-map-info-right-container">
                <div class="park-list-map-zone text-14-500-left-lato-left">
                   <p class="park-info-map-zone-title">Парки</p>
-                  <input class="park-list-map-zone__input" type="text" placeholder="Парк, город или метро" />
+                  <input class="park-list-map-zone__input" type="text" placeholder="Парк" />
                   <ul class="park-list-map-zone__ul">
                      <li>Парк Строгино</li>
                      <li>Парк Победы</li>
