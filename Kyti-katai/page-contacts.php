@@ -27,7 +27,7 @@ get_header();
    </div>
 </div> -->
 
-<div id="map-test" class="map"></div>
+<div id="map-test" class="map" style="margin:auto;"></div>
 
 <script src="https://api-maps.yandex.ru/2.1/?apikey=4e215164-d278-42d9-abf5-0345e2b353a0
 API-4e215164-d278-42d9-abf5-0345e2b353a0

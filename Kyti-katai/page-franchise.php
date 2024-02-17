@@ -47,7 +47,7 @@ get_header();
             <h1 class="franchese-h1"><?php the_field('franchise-bolshoj_zagolovok_straniczy') ?></h1>
             <div class="last-text-first-section"><?php the_field('franchise-podzagolovok_bolshogo') ?></div>
             <div class="buttons-fs-frahciese-page">
-                <button class="download-fin-model-btn class-to-switch-season-btn" onclick="openPopupFranchise()">Получить финансовую модель</button>
+                <button class="download-fin-model-btn class-to-switch-season-btn" onclick="openPopupFranchise()">Узнать подробности</button>
                 <!-- <a href="https://forms.gle/bhaVfoQnFYgQi2v36" target="_blank"><button class="download-prez-btn class-to-switch-season-btn">Получить презентацию франшизы <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/arrow-down-to-line.svg" alt="" /></button></a> -->
             </div>
         </div>
@@ -65,6 +65,8 @@ get_header();
         <li><a href="#contacts-franchise-page"><?php the_field('franchise-sinyaya_navigacziya_5') ?></a></li>
         <li onclick="openPopupFranchise()" class="b-l-f-active pointer"><?php the_field('franchise-sinyaya_navigacziya_6') ?></li>
     </ul>
+    <h3 class="title-of-section-gradient text-gradient">О франшизе</h3>
+
     <div class="cunter-container-left-margin-francheise-page">
         <div class="overflov-block-advantages-cards-frahciese-page scroll-container-js">
             <div class="max-width-contaimer-owerflov-inside-franchaise">
@@ -271,7 +273,7 @@ if ($arr) {
                         <?php echo $item['tekst_otzyva']; ?>
                         </div>
                         <div class="">
-                            <a class="feedback__show-more-link" href="<?php echo $item['ssylka_na_otzyv']; ?>"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div></a>
+                            <a target="_blank" class="feedback__show-more-link" href="<?php echo $item['ssylka_na_otzyv']; ?>"><img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/chevron-down.svg" alt="" /> <span>Читать отзыв полностью</span></div></a>
                         <div class="feedback__opacity"><?php echo $item['data_otzyva']; ?></div>
                      </li>
 <?php
@@ -323,8 +325,8 @@ document.addEventListener("DOMContentLoaded", function() {
     <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-4_sekcziya_zagolovok') ?>
     </h3>
     <div class="finmodel-container">
-        <p class="finmodel__title"><?php the_field('franchise-4_sekcziya_nazvanie_polya') ?>
-        </p>
+        <!-- <p class="finmodel__title"><?php the_field('franchise-4_sekcziya_nazvanie_polya') ?>
+        </p> -->
         <div class="finmodel__main">
             <div class="finmodel__data">
                 <ul class="data__list-fin">
@@ -472,7 +474,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
         </div>
     </div>
-    <div class="call-back-form-container-overflow-container">
+    <!-- <div class="call-back-form-container-overflow-container">
         <div class="call-back-form-container-franchise">
             <div class="text-sub-block-news-inside">
                 <h4 class="main-text-sub-block-news-p-cont text-gradient">Давайте созвонимся!</h4>
@@ -487,7 +489,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </section>
 <section id="our-team-franchise" class="our-team-franchise">
     <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-zagolovok_5_sekczii') ?></h3>
@@ -664,6 +666,18 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
 </section>
 
+
+
+<div class="modal-reserve-celebrate-absolute franchise-page-form none">
+<div class="modal-r-c__top-container">
+                <div class="modal-title modal-r-c__title">Оставить заявку</div>
+                <div class="modal-subtitle modal-r-c__title">Укажите ваши данные, чтобы наши специалисты связались с вами</div>
+            </div>
+<?php echo do_shortcode( '[contact-form-7 id="9f34528" title="Франшиза"]' ); ?>
+</div>
+<script>
+document.getElementById('your-checkbox-id').querySelector('label').innerHTML = '<div class="bcd text-14-500-left-lato-left">Напишите на почту</div><div class="bcd text-14-500-left-lato-left">Позвоните мне</div><input type="checkbox" name="checkbox-142[]" value="Позвоните мне"><div class="toggle-slider"></div>';
+</script>
 <?php
 get_footer();
 ?>

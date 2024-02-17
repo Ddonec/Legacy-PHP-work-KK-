@@ -190,28 +190,39 @@ vacancies.forEach((vacancy, index) => {
 
          </script>
 
-         <div class="call-back-form-container-work-in-page">
+<div class="call-back-form-container-work-in-page">
             <div class="text-sub-block-news-inside-work-in">
                <h4 class="main-text-sub-block-news-p-cont text-gradient"><?php the_field('work-tvjtl_formy') ?></h4>
                <p class="second-text-sub-block-news-p-cont text-18-500-left"><?php the_field('work-subtajtl_formy') ?></p>
             </div>
-             <?php echo do_shortcode( '[contact-form-7 id="24c1000" title="Работа в КутиКатай"]' ); ?>
-            <div class="input-zone-news-work-page-cont">
-               <input class="input-small-vacancies i-n-p-c-work-in-name" type="text" placeholder="Ваше имя" />
-               <input class="input-small-vacancies i-n-p-c-work-in-number" type="text" placeholder="Номер телефона" />
-               <input class="input-small-vacancies i-n-p-c-work-in-email" type="email" placeholder="Электронная почта" />
-               <input class="input-small-vacancies i-n-p-c-work-in-work-type" type="text" placeholder="Специальность" />
-               <input class="input-big-vacancies i-n-p-c-work-in-about" type="text" placeholder="Расскажите о себе" />
-               <div class="grey-btd-add-resume">
-                  <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/plus.svg" alt="" />
-                  <p>Прикрепить&nbsp;резюме</p>
-               </div>
-            </div>
+  
+            <?php echo do_shortcode( '[contact-form-7 id="24c1000" title="Работа в КутиКатай"]' ); ?>
             <img class="koleso-work-in-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/koleso-blue.svg" alt="" />
             <img class="koleso-work-in-2" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/spici-blue.svg" alt="" />
-            <div class="send-btn-news-sub text-18-500 pointer">Отправить</div>
             <div class="data-agreement-12px">Нажимая кнопку вы принимаете <a href="https://agency-5.ru/soglashenie-ob-obrabotke-personalnyh-dannyh/">Соглашение об обработке персональных данных</a></div>
-         </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Подключаем jQuery -->
+<script>
+jQuery(document).ready(function($) {
+    // Ищем все элементы input типа file внутри формы Contact Form 7
+    $('.wpcf7-form-control-wrap input[type="file"]').each(function() {
+        var input = $(this);
+        // Скрываем кнопку
+        input.hide();
+        // Создаем и добавляем элемент, который будет отображаться вместо кнопки
+        var customButton = $('<div class="custom-file-button">Выберите файл</div>');
+        input.after(customButton);
+        // Добавляем обработчик события клика на новый элемент
+        customButton.on('click', function() {
+            // Эмулируем клик на скрытой кнопке
+            input.trigger('click');
+        });
+    });
+});
+
+</script>
       </section>
 
 

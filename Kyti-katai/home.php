@@ -108,6 +108,26 @@ $.getJSON("/wp-content/uploads/points.json", function(data) {
             leftBlock.classList.remove('none');
         });
     });
+
+
+
+    var input = document.querySelector(".park-list-map-zone__input");
+    input.addEventListener("input", function () {
+        // Получаем поисковый запрос
+        var searchTerm = this.value.toLowerCase();
+
+        // Перебираем элементы списка
+        var items = list.children;
+        for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+            // Если поисковый запрос найден в тексте элемента, показываем его
+            if (item.textContent.toLowerCase().indexOf(searchTerm) !== -1) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        }
+    });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -205,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <section class="absolute-map-info-right-container">
                <div class="park-list-map-zone text-14-500-left-lato-left">
                   <p class="park-info-map-zone-title">Парки</p>
-                  <input class="park-list-map-zone__input" type="text" placeholder="Парк, город или метро" />
+                  <input class="park-list-map-zone__input" type="text" placeholder="Парк" />
                   <ul class="park-list-map-zone__ul">
                      <li>Парк Строгино</li>
                      <li>Парк Победы</li>

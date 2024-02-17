@@ -9,14 +9,31 @@ Template Name: repair
 get_header();
 ?>
 
+<style>
 
+.phopos-container-example-repair-page > div:nth-child(1) {
+   background-image: url(<?php the_field('izobradenie_snizu_1'); ?>);
+}
+.phopos-container-example-repair-page > div:nth-child(2) {
+   background-image: url(<?php the_field('izobradenie_snizu_2'); ?>);
+}
+.phopos-container-example-repair-page > div:nth-child(3) {
+   background-image: url(<?php the_field('izobradenie_snizu_3'); ?>);
+}
+.phopos-container-example-repair-page > div:nth-child(4) {
+   background-image: url(<?php the_field('izobradenie_snizu_4'); ?>);
+}
+.phopos-container-example-repair-page > div:nth-child(5) {
+   background-image: url(<?php the_field('izobradenie_snizu_5'); ?>);
+}
+</style>
 <section class="main-content-news-page">
          <div class="bread-crumbs">
             <p><a href="<?php echo get_option('home'); ?>">Главная</a></p>
             <p>/</p>
             <p><a href="#">Лето</a></p>
             <p>/</p>
-            <p class="grey-bread-crumbs">Ремонт техники</p>
+            <p class="grey-bread-crumbs">Веломастерская</p>
          </div>
          <h1 class="h1-repair-page text-gradient"><?php the_field('repair-zagolovok_straniczy') ?></h1>
 
@@ -35,9 +52,8 @@ get_header();
             <p><?php the_field('repair-pravyj_tekst') ?></p>
          </div>
 
-         <div class="nav-repair-page">
+         <!-- <div class="nav-repair-page">
             <ul>
-               <!-- <li class="pointer">Всё</li> -->
                <li class="pointer"><?php the_field('repair-pole_navigaczii_1') ?></li>
                <li class="pointer"><?php the_field('repair-pole_navigaczii_2') ?></li>
                <li class="pointer"><?php the_field('repair-pole_navigaczii_3') ?></li>
@@ -48,7 +64,7 @@ get_header();
                   <img id="vector-repair" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-right.svg" alt="" />
                </div>
             </ul>
-         </div>
+         </div> -->
          <div class="desctop-photo-repair-page"><img class="photo-repair-page" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/repair-page-photo.png" alt="" /></div>
 
          <div class="price-repair-page-container">
@@ -74,7 +90,7 @@ get_header();
                <div><?php the_field('repair-usluga_5') ?></div>
                <p><?php the_field('repair-czena_za_uslugu_5') ?></p>
             </div>
-            <div>
+            <!-- <div>
                <div><?php the_field('repair-usluga_6') ?></div>
                <p><?php the_field('repair-czena_za_uslugu_6') ?></p>
             </div>
@@ -89,15 +105,17 @@ get_header();
             <div>
                <div><?php the_field('repair-usluga_9') ?></div>
                <p><?php the_field('repair-czena_za_uslugu_9') ?></p>
-            </div>
+            </div> -->
+            <a class="download-price-of-repair-btn" href="<?php echo bloginfo('template_url'); ?>/assets/assets/Price.xlsx" download>Посмотреть весь прайс</a>
+
          </div>
          <p class="example-text-repair-page"><?php the_field('repair-zagolovok_primerov_rabot') ?></p>
          <div class="phopos-container-example-repair-page">
-            <div><p>Сборка из коробки</p></div>
-            <div><p>Замена подшипников в колесах</p></div>
-            <div><p>Ремонт рулевого штока</p></div>
-            <div><p>Ремонт блока управления электромотором</p></div>
-            <div><p>Ремонт блока управления электромотором</p></div>
+            <div><p><?php the_field('podpis_k_izobrazheniyu_1'); ?></p></div>
+            <div><p><?php the_field('podpis_k_izobrazheniyu_2'); ?></p></div>
+            <div><p><?php the_field('podpis_k_izobrazheniyu_3'); ?></p></div>
+            <div><p><?php the_field('podpis_k_izobrazheniyu_4'); ?></p></div>
+            <div><p><?php the_field('podpis_k_izobrazheniyu_5'); ?></p></div>
          </div>
 
 <script>

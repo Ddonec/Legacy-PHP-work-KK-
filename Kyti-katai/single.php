@@ -14,13 +14,13 @@ get_header();
 
         <div class="news-second-page-main-container">
             <div class="social-left-block-news-2-page">
-                <a href="#">
+                <a target="_blank" href="https://t.me/share/url?url=<?php echo urlencode(get_permalink()); ?>">
                     <div class="telegramm-bg-image-mews-2-page"></div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://wa.me/?text=<?php echo urlencode(get_permalink()); ?>">
                     <div class="whatsapp-bg-image-mews-2-page"></div>
                 </a>
-                <a href="#"
+                <a href="mailto:?body=<?php echo urlencode(get_permalink()); ?>"
                 >
                     <div><img src="<?php echo bloginfo( 'template_url' ); ?>/assets/assets/icon/mail-logo-white.svg"
                               alt="email"/></div

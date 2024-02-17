@@ -42,12 +42,12 @@ get_header();
                   </div>
                </div>
                <div class="user-data-cabinet__buttons-zone">
-                  <div class="user-data-cabinet__btn-edit">Редактировать</div>
+                  <div class="user-data-cabinet__btn-edit none">Редактировать</div>
                   <div class="user-data-cabinet__btn-exit"><a href="<?php echo wp_logout_url( get_permalink() ) ?>">Выйти</a></div>
                </div>
             </div>
             <!-- <div class="cabinet-verification-container text-14-500-left-lato"> -->
-            <div class="cabinet-go-check">
+            <div class="cabinet-go-check none">
                <div class="cabinet-go-check__verif-info">
                   <p class="cabinet-go-check__verif-title mons-28-700"><?php the_field('verefikacziya') ?></p>
                   <p class="cabinet-go-check__verif-subtitle"><span class="phone-verif-cabinet"><?php echo $curr_user_phone; ?></span> ваш номер телефона?</p>
@@ -70,7 +70,7 @@ get_header();
                </div>
                <img class="image-blue-check-cabinet" src="<?php echo esc_url(get_field('galochka_logo')); ?>" alt="" />
             </div>
-            <div class="cabinet-orders mons-28-700"><?php the_field('orders') ?></div>
+            <div class="cabinet-orders mons-28-700 none"><?php the_field('orders') ?></div>
             <!-- </div> -->
          </main>
       </section>
@@ -80,4 +80,4 @@ get_header();
 <?php endif; ?>
 <?php
 get_footer();
-?>
+?>r

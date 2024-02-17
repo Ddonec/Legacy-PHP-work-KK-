@@ -136,7 +136,9 @@ html {
    border-radius: 0 0 20px 20px;
 
    opacity: 0;
-   transition: 0.6s;
+   transform: translateY(-300px);
+
+   /* transition: 0.6s; */
 }
 #drop-window-company a {
    padding: 10px;
@@ -1156,7 +1158,7 @@ s4
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
-   margin: 87px 0 100px;
+   margin: 30px 0 80px;
    position: relative;
 }
 .cards-rope-park-2 {
@@ -2496,7 +2498,7 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 19.6px */
-   width: 400px;
+   width: 340px;
 }
 
 .download-prez-btn {
@@ -3334,7 +3336,7 @@ input:checked + .slider:before {
    background: var(--purple, #5567ea);
 }
 .row-diagramm__value_2023::before {
-   content: "100";
+   content: "82";
    height: 100%;
    background: var(--purple, #5567ea);
 }
@@ -4064,6 +4066,28 @@ input:checked + .slider:before {
    width: fit-content;
    margin: 30px 0;
 }
+.desctop-photo-repair-page {
+   margin-top: 30px;
+}
+.download-price-of-repair-btn {
+   margin: 20px auto 0px;
+   display: block;
+   padding: 10px 24px 12px 24px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   border-radius: 30px;
+   background: #ffc93a;
+   border: none;
+   color: #333;
+   text-align: center;
+   font-family: Lato, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%;
+   width: fit-content;
+}
 #vector-repair {
    height: 20px;
 }
@@ -4421,7 +4445,94 @@ input:checked + .slider:before {
    align-items: center;
 }
 
-.toggle-label {
+.wpcf7.js .wpcf7-form {
+   flex-direction: column;
+}
+.wpcf7.js .form50 {
+   width: 100%;
+}
+
+.wpcf7.js p {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
+   width: 100%;
+   z-index: 5;
+   justify-content: space-between;
+}
+.wpcf7.js p > label {
+   width: 48%;
+}
+.wpcf7.js p > label input {
+   width: 100%;
+}
+.modal-reserve-celebrate-absolute.franchise-page-form {
+   display: inline-flex;
+   padding: 40px;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 20px;
+   border-radius: 20px;
+   background: #fff;
+   position: fixed;
+   margin: auto;
+   z-index: 1200;
+}
+.modal-reserve-celebrate-absolute.franchise-page-form.none {
+   display: none;
+}
+.wpcf7.js label + br,
+.wpcf7.js .wpcf7-spinner {
+   display: none;
+}
+.wpcf7.js p > label:nth-child(9) {
+   width: 100%;
+   position: relative;
+}
+.wpcf7.js p br {
+   display: none;
+}
+.wpcf7.js .form100 {
+   display: flex;
+   height: 100px;
+   padding: 14px 20px 16px 30px;
+   align-items: flex-start;
+   gap: 8px;
+   border-radius: 15px;
+   border: 1.5px solid rgba(51, 51, 51, 0.5);
+   background: #f4f5fd;
+   width: 100%;
+   font-family: lato, sans-serif;
+   border: 1.5px solid #333;
+   opacity: 0.5;
+   background: white;
+}
+.wpcf7.js .form50 {
+   border-radius: 15px;
+}
+.wpcf7-form-control.wpcf7-submit.franchise-submitt {
+   width: 100%;
+}
+#your-checkbox-id label:after {
+   content: "";
+}
+#your-checkbox-id label input {
+   display: none;
+   width: 100%;
+}
+
+.wpcf7.js .wpcf7-list-item {
+   display: flex;
+}
+.wpcf7.js .wpcf7-form-control-wrap {
+   width: 100%;
+   cursor: pointer;
+}
+.wpcf7.js .wpcf7-list-item.first.last {
+   margin: 0;
+}
+
+#your-checkbox-id label {
    display: flex;
    justify-content: space-between;
    width: 100%;
@@ -4429,8 +4540,9 @@ input:checked + .slider:before {
    border: 1px solid #ffc93a;
    align-items: center;
    border-radius: 23px;
+   cursor: pointer;
 }
-.toggle-label > p {
+.bcd {
    width: 50%;
    display: flex;
    justify-content: center;
@@ -4456,10 +4568,33 @@ input:checked + .slider:before {
    margin-left: 1%;
 }
 
-.toggle-input:checked + .toggle-slider {
+#your-checkbox-id label input:checked + .toggle-slider {
    transform: translate(100%, -50%);
 }
 
+/* / */
+
+.ajax-auth > div,
+.ajax-auth > input,
+.ajax-auth > .lh1,
+.ajax-auth > p {
+   margin: 10px 0;
+}
+.ajax-auth button {
+   font-size: 12px;
+   border-radius: 20px;
+   background: #ffc93a;
+   display: flex;
+   padding: 10px 24px 12px 24px;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+   width: fit-content;
+   border: none;
+   color: #000;
+}
+
+/* / */
 .modal-r-c__input-3,
 .modal-r-c__input-4,
 .modal-r-c__input-5 {
@@ -5366,7 +5501,7 @@ input:checked + .slider:before {
    width: 100%;
    flex-wrap: wrap;
 }
-.wpcf7-form-control.wpcf7-text {
+.wpcf7-text {
    border-radius: 50px;
    border: 1.5px solid #333;
    opacity: 0.5;
@@ -5378,7 +5513,7 @@ input:checked + .slider:before {
    align-items: flex-start;
    gap: 8px;
 }
-.wpcf7-form-control.wpcf7-text.wpcf7-tel {
+.wpcf7-form-control.wpcf7-text.form-tel-1 {
    border-radius: 50px;
    border: 1.5px solid #333;
    opacity: 0.5;

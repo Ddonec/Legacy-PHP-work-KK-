@@ -512,7 +512,7 @@
 .social-left-block-news-2-page a:nth-last-child(1) div {
    width: 48px;
    height: 48px;
-   background: #333;
+   background: #00468c;
    border-radius: 50%;
    display: flex;
    justify-content: center;
@@ -1441,6 +1441,65 @@
    position: relative;
    overflow: hidden;
 }
+
+.call-back-form-container-work-in-page .wpcf7-form {
+   flex-direction: column;
+}
+.call-back-form-container-work-in-page .form50 {
+   width: 100%;
+}
+
+.call-back-form-container-work-in-page p {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
+   width: 861px;
+   z-index: 5;
+}
+.call-back-form-container-work-in-page p > label {
+   width: 49%;
+}
+.call-back-form-container-work-in-page label + br {
+   display: none;
+}
+.call-back-form-container-work-in-page p > label:nth-child(9) {
+   width: 100%;
+}
+.call-back-form-container-work-in-page .form100 {
+   display: flex;
+   height: 100px;
+   padding: 14px 20px 16px 30px;
+   align-items: flex-start;
+   gap: 8px;
+   border-radius: 30px;
+   border: 1.5px solid rgba(51, 51, 51, 0.5);
+   background: #f4f5fd;
+   width: 100%;
+   font-family: lato, sans-serif;
+   border: 1.5px solid #333;
+   opacity: 0.5;
+   background: white;
+}
+.custom-file-button {
+   display: flex;
+   width: 261px;
+   padding: 14px 32px 16px 32px;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+   border-radius: 50px;
+   opacity: 0.5;
+   background: #333;
+
+   color: var(--white, #fff);
+   text-align: center;
+   font-family: Lato, sans-serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%; /* 25.2px */
+   cursor: pointer;
+}
 .text-sub-block-news-inside-work-in {
    display: flex;
    flex-direction: column;
@@ -1532,25 +1591,6 @@
    border: 1.5px solid rgba(51, 51, 51, 0.5);
    background: #f4f5fd;
    width: 100%;
-}
-.grey-btd-add-resume {
-   display: flex;
-   width: 261px;
-   padding: 14px 32px 16px 32px;
-   justify-content: center;
-   align-items: center;
-   gap: 8px;
-   border-radius: 50px;
-   opacity: 0.5;
-   background: #333;
-
-   color: var(--white, #fff);
-   text-align: center;
-   font-family: Lato, sans-serif;
-   font-size: 18px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 140%; /* 25.2px */
 }
 
 .koleso-work-in-1 {
@@ -1679,6 +1719,14 @@
 
 .main-content-news-page {
    position: relative;
+}
+.map-fill > .map-container {
+   margin-top: 0;
+}
+.map-fill {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .text-blicks-repair-page {
    display: flex;
@@ -1835,35 +1883,30 @@
    line-height: 140%; /* 25.2px */
 }
 .phopos-container-example-repair-page > div:nth-child(1) {
-   background-image: url(../assets/content/photo_2024-02-0617.05.45.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    width: 31%;
 }
 .phopos-container-example-repair-page > div:nth-child(2) {
-   background-image: url(../assets/content/photo_2024-02-0617.05.43.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    width: 31%;
 }
 .phopos-container-example-repair-page > div:nth-child(3) {
-   background-image: url(../assets/content/photo_2024-02-0617.05.39.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    width: 31%;
 }
 .phopos-container-example-repair-page > div:nth-child(4) {
-   background-image: url(../assets/content/photo_2024-02-0617.05.41.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    width: 48%;
 }
 .phopos-container-example-repair-page > div:nth-child(5) {
-   background-image: url(../assets/content/photo_2024-02-0617.05.46.jpeg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
