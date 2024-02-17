@@ -1990,6 +1990,12 @@
    .wpcf7-form-control.wpcf7-text {
       width: 100%;
    }
+   .columns-footer > div:nth-child(1){
+      order: -2;
+   }
+   .columns-footer > div:nth-child(4){
+      order: -1;
+   }
 }
 
 @media (min-width: 701px) {
