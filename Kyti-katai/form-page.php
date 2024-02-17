@@ -257,7 +257,11 @@ document.getElementById('your-checkbox-id').querySelector('label').innerHTML = '
         <br>
         <br>
         <br>
-        <?php echo do_shortcode( '[idehweb_lwp type="reg"]' ); ?>
+        <button id="openModalButton">Открыть</button>
+        <?php echo do_shortcode( '[idehweb_lwp type="log"]' ); ?>;
+
+
+
     </section>
 <?php
 get_footer();

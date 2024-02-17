@@ -4572,6 +4572,29 @@ input:checked + .slider:before {
    transform: translate(100%, -50%);
 }
 
+/* / */
+
+.ajax-auth > div,
+.ajax-auth > input,
+.ajax-auth > .lh1,
+.ajax-auth > p {
+   margin: 10px 0;
+}
+.ajax-auth button {
+   font-size: 12px;
+   border-radius: 20px;
+   background: #ffc93a;
+   display: flex;
+   padding: 10px 24px 12px 24px;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+   width: fit-content;
+   border: none;
+   color: #000;
+}
+
+/* / */
 .modal-r-c__input-3,
 .modal-r-c__input-4,
 .modal-r-c__input-5 {
