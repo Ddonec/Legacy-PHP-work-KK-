@@ -11,7 +11,25 @@ get_header();
                         class="catalog-page-title-h1-mobile none">Каталог</span></h1>
         </div>
 
-        <?php get_parent_product_categories(get_queried_object_id());?>
+        <?php
+        if ($_COOKIE['SummerWinterCheckStatus'] == 'true') {
+            $season = 'zima';
+        } else {
+            $season = 'leto';
+        }
+
+        $categories = get_parent_product_categories_season($season);
+        $current_id = get_queried_object_id();
+        echo '<ul class="nav-catalog">';
+        echo ($current_id == 0) ? '<li class="active-category">': '<li>';
+        echo '<a href="/shop/">Каталог</a></li>';
+        foreach ( $categories as $category ) {
+            echo ($current_id == $category->term_id) ? '<li class="active-category">': '<li>';
+            echo '<a href="' . get_term_link( $category->term_id, 'product_cat' ) . '">' . $category->name . '</a></li>';
+        }
+
+        echo '</ul>';
+        ?>
 
         <div class="hide-filters-cat">
             <div class="hide-filter-btn">
