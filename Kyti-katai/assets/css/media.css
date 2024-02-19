@@ -790,6 +790,9 @@
    .cabinet-go-check__btn-5 {
       display: none;
    }
+   .call-back-form-container-overflow-container-default form > p:nth-child(4){
+      width: 100%;
+   }
 }
 /* @media (max-width: 1088px){
 .third-section-make-fun{
@@ -1418,6 +1421,9 @@
    }
    .main-content-news-page {
       overflow: hidden;
+   }
+   .modal-reserve-celebrate-absolute.franchise-page-form{
+      padding: 20px;
    }
 }
 @media (max-width: 700px) {
@@ -3013,5 +3019,11 @@
    }
    .h1-repair-page {
       font-size: 32px;
+   }
+   .wpcf7.js p > label{
+      width: 47%;
+   }
+   .franchise-page-form .wpcf7.js form > p > label:nth-of-type(-n+4) > span {
+      width: 47%;
    }
 }
