@@ -201,8 +201,9 @@ $count ++;
             </div>
          </div>
          <div class="photos-rope-perk-container">
-            <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('phone') ?></h4>
+            <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('rope-park-zagolovok_tretej_sekczii') ?></h4>
             <div class="photos-of-rope-park-overflow">
+               
                <div class="photos-of-rope-park">
                   <div class="photos-of-rope-park__big-layout photos-of-rope-park__img1"></div>
                   <div class="photos-of-rope-park__small-layout photos-of-rope-park__img2"></div>
