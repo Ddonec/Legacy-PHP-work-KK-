@@ -244,7 +244,7 @@ vacancies.forEach((vacancy, index) => {
                     <?php the_field('franchise-prilodenie_banner_opisanie') ?>
                 </div>
 
-                <div class="apps-links-app-cart-franchise"> <a href="https://apps.apple.com/ru/app/кутикатай/id1645059794"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /></a><a href="https://play.google.com/store/apps/details?id=com.kutikataj.app_clients_kutikatay"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></a></div>
+                <div class="apps-links-app-cart-franchise"> <a href="https://apps.apple.com/ru/app/Кути Катай/id1645059794"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /></a><a href="https://play.google.com/store/apps/details?id=com.kutikataj.app_clients_kutikatay"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></a></div>
             </div>
             <img class="phone-hand-full-size" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/phone-hand-full.png" alt="" />
             <img class="phone-screen-full-size" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/phone-screen-full.png" alt="" />

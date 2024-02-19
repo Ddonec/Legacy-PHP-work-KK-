@@ -111,7 +111,7 @@
                   <ul class="dropdown-list" id="companyDropdownList">
                      <li><a href="<?php echo get_option('home'); ?>/about-us">О нас</a></li>
                      <li><a href="<?php echo get_option('home'); ?>/category/articles/">Новости</a></li>
-                     <li><a href="<?php echo get_option('home'); ?>/work">Работа в КутиКатай</a></li>
+                     <li><a href="<?php echo get_option('home'); ?>/work">Работа в Кути Катай</a></li>
                      <li><a href="<?php echo get_option('home'); ?>/contacts">Контакты</a></li>
                   </ul>
                </div>
@@ -168,7 +168,7 @@
                <div id="drop-window-company">
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/about-us/">О нас</a>
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/category/articles/">Новости</a>
-                     <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/work/">Работа в КутиКатай</a>
+                     <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/work/">Работа в Кути Катай</a>
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/contacts/">Контакты</a>
                </div>
 
