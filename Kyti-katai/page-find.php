@@ -401,7 +401,88 @@ searchInput.addEventListener("input", function () {
 });
 </script>
   
-<div class="mobile-viev-table-find-page none" id="mobile-park-list"></div>
+<div class="mobile-viev-table-find-page none" id="mobile-park-list">
+
+
+
+<!-- <div class="table-find-page-for-768less">
+               <div class="block-of-768less-table">
+                  <div class="element-of-768less-table">
+                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_nazvanie_5') ?></p>
+                  </div>
+                  <div class="element-of-768less-table">
+                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_adres_5') ?></p>
+                  </div>
+                  <div class="element-of-768less-table">
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_5') ?></p>
+                  </div>
+                  <div class="last-element-of-768less-table">
+                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
+                     <p><?php the_field('najdi_svoj_park-tehnika_parka_5') ?></p>
+                  </div>
+               </div>
+            </div> -->
+</div>
+
+<script>
+    $.getJSON("/wp-content/uploads/points.json", function(data) {
+        // Получение списка парков
+        var parks = data.features;
+
+        // Находим контейнер для списка парков
+        var parentContainer = document.getElementById("mobile-park-list");
+
+        // Создаем HTML-элементы для каждого парка и добавляем их в контейнер
+        parks.forEach(function(park) {
+            // Создаем блок .block-of-768less-table
+            var blockOfTable = document.createElement("div");
+            blockOfTable.classList.add("block-of-768less-table");
+
+            // Создаем элементы для каждой информации парка и добавляем их в блок
+            var elements = ["name", "address", "worktime", "equipment"];
+            elements.forEach(function(element) {
+                var divElement = document.createElement("div");
+                divElement.classList.add("element-of-768less-table");
+
+                var pLabel = document.createElement("p");
+                if (element === "worktime") {
+                    pLabel.textContent = "Режим работы:";
+                } else {
+                    pLabel.textContent = getRussianLabel(element);
+                }
+                divElement.appendChild(pLabel);
+
+                var pValue = document.createElement("p");
+                pValue.textContent = park.properties[element] || (element === "address" ? "Адрес не указан" : "");
+                divElement.appendChild(pValue);
+
+                blockOfTable.appendChild(divElement);
+            });
+
+            // Добавляем блок в общий контейнер
+            parentContainer.appendChild(blockOfTable);
+        });
+    });
+
+    function getRussianLabel(label) {
+        switch (label) {
+            case "name":
+                return "Название:";
+            case "address":
+                return "Адрес:";
+            case "equipment":
+                return "Техника парка:";
+            default:
+                return label.charAt(0).toUpperCase() + label.slice(1) + ":";
+        }
+    }
+</script>
+
+
+
 
 
 

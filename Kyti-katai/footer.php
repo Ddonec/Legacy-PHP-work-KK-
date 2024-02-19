@@ -28,7 +28,7 @@
                   <li class="pointer"><a href="<?php echo get_option('home'); ?>/find">Мы в парках</a></li>
                   <li class="pointer"><a href="<?php echo get_option('home'); ?>/about-us">О нас</a></li>
                   <li class="pointer"><a href="<?php echo get_option('home'); ?>/category/articles/">Новости</a></li>
-                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/faq">Faq</a></li>
+                  <li class="pointer"><a href="<?php echo get_option('home'); ?>/faq">FAQ</a></li>
                   <!-- <li class="pointer"><a href="<?php echo get_option('home'); ?>/charity">Благотворительность</a></li> -->
                   <!-- <li class="pointer"><a href="<?php echo get_option('home'); ?>">Пикник Сити</a></li> -->
                   <li class="pointer"><a href="<?php echo get_option('home'); ?>/work">Работа у нас</a></li>

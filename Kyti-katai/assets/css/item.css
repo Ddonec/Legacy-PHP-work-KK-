@@ -2060,7 +2060,7 @@
    gap: 12px;
 }
 .element-of-768less-table > p:nth-child(1),
-.last-element-of-768less-table > p:nth-child(1) {
+.last-element-of-768less-table > p:nth-child(odd) {
    opacity: 0.5;
    width: 116px;
 }
