@@ -971,7 +971,7 @@ b {
 .kids-chill > div:not(:first-child) {
    white-space: nowrap;
 }
-.image-container-c-c{
+.image-container-c-c {
    display: flex;
    align-items: center;
    vertical-align: middle;
@@ -2667,6 +2667,17 @@ input:checked + .slider:before {
    display: flex;
    align-items: flex-end;
 }
+.first-text__grey-text-10px {
+   color: var(--black, #333);
+   font-family: Lato, sans-serif;
+   font-size: 10px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 150%; /* 21px */
+   opacity: 0.5;
+   display: flex;
+   align-items: flex-end;
+}
 .first-text__flex .first-text__grey-text-14px {
    height: 90%;
 }
@@ -2685,7 +2696,7 @@ input:checked + .slider:before {
 .advantage-card__bottom-text {
    color: #333;
    font-family: Lato, sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    font-style: normal;
    font-weight: 500;
    line-height: 140%; /* 25.2px */
@@ -4470,7 +4481,7 @@ input:checked + .slider:before {
 }
 
 .call-back-form-container-overflow-container-default .wpcf7.js .wpcf7-form,
-.subscribe-for-our-news-container .wpcf7.js .wpcf7-form{
+.subscribe-for-our-news-container .wpcf7.js .wpcf7-form {
    flex-direction: row;
 }
 .wpcf7.js .form50 {
@@ -4486,17 +4497,17 @@ input:checked + .slider:before {
    justify-content: space-between;
 }
 .call-back-form-container-work-in-page .wpcf7.js p > label,
-.franchise-page-form .wpcf7.js p > label{
+.franchise-page-form .wpcf7.js p > label {
    width: 48%;
 }
 .call-back-form-container-work-in-page .wpcf7.js p > label input,
-.franchise-page-form .wpcf7.js p > label input{
+.franchise-page-form .wpcf7.js p > label input {
    width: 100%;
 }
 
 .call-back-form-container-overflow-container-default .wpcf7.js p > label,
 .subscribe-for-our-news-container .wpcf7.js p > label,
-.franchise-page-form .wpcf7.js p > label{
+.franchise-page-form .wpcf7.js p > label {
    display: contents;
    width: 100%;
 }
@@ -4509,7 +4520,7 @@ input:checked + .slider:before {
    width: 100%;
    flex-wrap: wrap;
 }
-.franchise-page-form .wpcf7.js form > p > label:nth-of-type(-n+4) > span {
+.franchise-page-form .wpcf7.js form > p > label:nth-of-type(-n + 4) > span {
    width: 48%;
 }
 .modal-reserve-celebrate-absolute.franchise-page-form {
@@ -4800,6 +4811,11 @@ input:checked + .slider:before {
    width: 100%;
    position: relative;
 }
+.modal-c-p__park-list-pseudo {
+   position: relative;
+   height: 290px;
+   overflow-y: scroll;
+}
 .park-list__title {
    color: #333;
    font-family: Lato, sans-serif;
@@ -4811,21 +4827,20 @@ input:checked + .slider:before {
 }
 .park-list__ul {
    width: 100%;
-   height: 290px;
    display: flex;
    flex-wrap: wrap;
    gap: 10px;
    overflow-y: auto;
 }
-.park-list__ul::-webkit-scrollbar {
+.modal-c-p__park-list-pseudo::-webkit-scrollbar {
    width: 4px;
 }
-.park-list__ul::-webkit-scrollbar-thumb {
+.modal-c-p__park-list-pseudo::-webkit-scrollbar-thumb {
    border-radius: 20px;
    background-color: var(--purple-light, #5567ea);
 }
 
-.modal-c-p__park-list::before {
+.modal-c-p__park-list-pseudo::before {
    content: "";
    position: absolute;
    bottom: 0;
@@ -4841,6 +4856,7 @@ input:checked + .slider:before {
    justify-content: center;
    align-items: center;
    gap: 10px;
+   height: fit-content;
 
    color: #333;
    font-family: Lato, sans-serif;
@@ -5437,7 +5453,8 @@ input:checked + .slider:before {
    align-self: stretch;
    flex-direction: column;
 }
-.park-list-map-zone__input {
+.park-list-map-zone__input,
+.park-list-map-zone__input-f {
    border-radius: 40px;
    border: 2px solid rgba(34, 34, 34, 0.1);
    background: #fff;
