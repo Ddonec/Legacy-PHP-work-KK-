@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
          </div>
          <div class="search-container-find-page">
-            <input class="input-search-find-page" id="searchInput" type="text" placeholder="Введите название парка, адреса или техники" />
+            <input class="input-search-find-page" id="searchInput" type="text" placeholder="Парк" />
             <img class="search-icon" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/search-icon-black.svg" alt="" />
          </div>
 
