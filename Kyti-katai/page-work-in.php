@@ -54,7 +54,7 @@ get_header();
          <div class="title-of-section-news-page">
             <h3 class="text-gradient"><?php the_field('work-zagolovok_straniczy') ?></h3>
             <!-- <div class="black-text-section">Работа в</div>
-            <div class="opacity-text-section o-t-s-all">КутиКатай</div>
+            <div class="opacity-text-section o-t-s-all">Кути Катай</div>
             <div class="item-shadow-section-vacancies-page"></div> -->
          </div>
          <div class="first-2-blocks-rope-park-page">
@@ -196,7 +196,7 @@ vacancies.forEach((vacancy, index) => {
                <p class="second-text-sub-block-news-p-cont text-18-500-left"><?php the_field('work-subtajtl_formy') ?></p>
             </div>
   
-            <?php echo do_shortcode( '[contact-form-7 id="24c1000" title="Работа в КутиКатай"]' ); ?>
+            <?php echo do_shortcode( '[contact-form-7 id="24c1000" title="Работа в Кути Катай"]' ); ?>
             <img class="koleso-work-in-1" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/koleso-blue.svg" alt="" />
             <img class="koleso-work-in-2" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/spici-blue.svg" alt="" />
             <div class="data-agreement-12px">Нажимая кнопку вы принимаете <a href="https://agency-5.ru/soglashenie-ob-obrabotke-personalnyh-dannyh/">Соглашение об обработке персональных данных</a></div>

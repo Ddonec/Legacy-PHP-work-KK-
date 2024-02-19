@@ -98,22 +98,12 @@ function openPopupChoseSwitch() {
             <div class="modal-c-p__title">Выбор парка</div>
             <div class="modal-c-p__subtitle">Выберите парк, в котором вы хотите арендовать технику</div>
          </div>
-         <div class="modal-c-p__search-city">
-            <div class="modal-c-p__moscow-city">Москва</div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-               <path
-                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                  stroke="#333333"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-               />
-               <path d="M21 21L16.7 16.7" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-         </div>
+         <input class="park-list-map-zone__input-f" type="text" placeholder="Парк">
+         <div class="modal-c-p__park-list-pseudo">
          <div class="modal-c-p__park-list">
             <p class="park-list__title">Парки Москвы:</p>
             ${parkListHTML}
+         </div>
          </div>
          <div class="modal-c-p__buttons">
             <button class="modal-c-p__save-btn">Сохранить</button>
@@ -188,6 +178,29 @@ function openPopupChoseSwitch() {
          document.body.removeChild(popup);
          document.body.removeChild(greyBG);
          console.log("close");
+      });
+
+      var list = document.querySelector(".park-list__ul");
+
+      // Добавляем обработчик события ввода текста в поле ввода
+      var input = document.querySelector(".park-list-map-zone__input-f");
+      input.addEventListener("input", function () {
+         // Получаем поисковый запрос и преобразуем его в нижний регистр
+         var searchTerm = this.value.toLowerCase();
+
+         // Перебираем элементы списка
+         var items = list.children;
+         for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+            // Получаем текст элемента и преобразуем его в нижний регистр
+            var itemName = item.textContent.toLowerCase();
+            // Если поисковой запрос найден в тексте элемента, показываем его
+            if (itemName.indexOf(searchTerm) !== -1) {
+               item.style.display = "flex";
+            } else {
+               item.style.display = "none";
+            }
+         }
       });
    });
 }

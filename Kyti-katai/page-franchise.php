@@ -244,7 +244,7 @@ vacancies.forEach((vacancy, index) => {
                     <?php the_field('franchise-prilodenie_banner_opisanie') ?>
                 </div>
 
-                <div class="apps-links-app-cart-franchise"> <a href="https://apps.apple.com/ru/app/кутикатай/id1645059794"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /></a><a href="https://play.google.com/store/apps/details?id=com.kutikataj.app_clients_kutikatay"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></a></div>
+                <div class="apps-links-app-cart-franchise"> <a href="https://apps.apple.com/ru/app/Кути Катай/id1645059794"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /></a><a href="https://play.google.com/store/apps/details?id=com.kutikataj.app_clients_kutikatay"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></a></div>
             </div>
             <img class="phone-hand-full-size" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/phone-hand-full.png" alt="" />
             <img class="phone-screen-full-size" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/phone-screen-full.png" alt="" />
@@ -376,13 +376,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     <li class="li9">
                         <div class="data__circle9"></div>
                         <div class="data__procent"><?php the_field('franchise-proczent_spiska_9') ?></div>
-                        <div class="data__title"><?php the_field('franchise-element_spiska_6') ?></div>
+                        <div class="data__title"><?php the_field('franchise-element_spiska_9') ?></div>
                     </li>
-                    <li class="li10">
+                    <!-- <li class="li10">
                         <div class="data__circle9"></div>
-                        <div class="data__procent"><?php the_field('franchise-proczent_spiska_9') ?></div>
-                        <div class="data__title"><?php the_field('franchise-element_spiska_6') ?></div>
-                    </li>
+                        <div class="data__procent"><?php the_field('franchise-proczent_spiska_10') ?></div>
+                        <div class="data__title"><?php the_field('franchise-element_spiska_10') ?></div>
+                    </li> -->
                 </ul>
             </div>
 <div class="diagramm-comtainer">
@@ -407,7 +407,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <!-- Circle 9 - 1% -->
                         <circle r="15.9155" cx="50%" cy="50%"></circle>
                         <!-- Circle 10 - 1% -->
-                        <circle r="15.9155" cx="50%" cy="50%"></circle>
+                        <!-- <circle r="15.9155" cx="50%" cy="50%"></circle> -->
                      </g>
             </svg>
             </div>

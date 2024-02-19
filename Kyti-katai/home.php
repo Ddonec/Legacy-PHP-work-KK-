@@ -480,7 +480,7 @@ document.addEventListener("DOMContentLoaded", function() {
                      <div>скидку&nbsp;15%</div>
                   </div>
                </div>
-               <div class="apps-links-app-cart"><a href="https://apps.apple.com/ru/app/кутикатай/id1645059794"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /></a><a href="https://play.google.com/store/apps/details?id=com.kutikataj.app_clients_kutikatay"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></a></div>
+               <div class="apps-links-app-cart"><a href="https://apps.apple.com/ru/app/Кути Катай/id1645059794"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/appstore.png" alt="" /></a><a href="https://play.google.com/store/apps/details?id=com.kutikataj.app_clients_kutikatay"><img class="pointer" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/googleplay.png" alt="" /></a></div>
             </div>
          </div>
       </section>
@@ -636,7 +636,7 @@ if ($arr) {
          <div class="slider-five-section-5 none">
             <div class="image-bg i-b-el-1"></div>
             <div class="text-5-s-2 i-b-el-2">
-               «КутиКатай» создает новый формат организации Дня рождения. Ваш ребенок и его друзья смогут ощутить себя настоящими «Супергероями» или «Чемпионами», пройти квест или поучаствовать в
+               «Кути Катай» создает новый формат организации Дня рождения. Ваш ребенок и его друзья смогут ощутить себя настоящими «Супергероями» или «Чемпионами», пройти квест или поучаствовать в
                соревновании дружной командой.
             </div>
             <div class="image-bg-2 i-b-el-3"></div>
@@ -667,7 +667,7 @@ if ($arr) {
 
          <!-- <div class="slider-five-section-5-mobile">
             <div class="text-5-s-2 i-b-el-2">
-               «КутиКатай» создает новый формат организации Дня рождения. Ваш ребенок и его друзья смогут ощутить себя настоящими «Супергероями» или «Чемпионами», пройти квест или поучаствовать в
+               «Кути Катай» создает новый формат организации Дня рождения. Ваш ребенок и его друзья смогут ощутить себя настоящими «Супергероями» или «Чемпионами», пройти квест или поучаствовать в
                соревновании дружной командой.
             </div>
             <div class="images-slider-five-section-mobile">
@@ -721,7 +721,7 @@ if ($arr) {
                      <?php the_field('about_us_3') ?>
                      </p>
                   </div>
-                  <a href="<?php echo get_option('home'); ?>/about-us/"><button  class="show-more-6-section-btn border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</button></a>
+                  <a href="<?php echo get_option('home'); ?>/about-us/"><button  class="show-more-6-section-btn border-switch-status-blue switch-color-text-black-white">Узнать о Кути Катай</button></a>
                </div>
                <div class="overflow-blue-section-index-page-container">
                   <div class="three-elemrnts-container-home-page-blue-block">
@@ -816,7 +816,7 @@ if ($arr) {
                <div>измайловский</div>
             </div>
          </div>
-         <a href="<?php echo get_option('home'); ?>/about-us/"><div class="show-more-6-section-btn-2 border-switch-status-blue switch-color-text-black-white">Узнать о КутиКатай</div></a>
+         <a href="<?php echo get_option('home'); ?>/about-us/"><div class="show-more-6-section-btn-2 border-switch-status-blue switch-color-text-black-white">Узнать о Кути Катай</div></a>
       </section>
 
       <section class="seven-section">
