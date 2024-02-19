@@ -28,13 +28,13 @@
       <link rel="stylesheet" href="css/catalog.css" />
       <link rel="stylesheet" href="css/media.css" />       -->
 
-      <?php 
+      <?php
     wp_head()
     ?>
 
-    
 
-      <title>Document</title>
+
+      <title><?php echo wp_get_document_title() ?></title>
    </head>
    <style>
 .green-samokat::before {
@@ -164,14 +164,14 @@
 
             <ul class="header-1920-list">
                <li class="pointer" id="pointer-for-drop">Компания <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /> <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" />
-            
+
                <div id="drop-window-company">
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/about-us/">О нас</a>
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/category/articles/">Новости</a>
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/work/">Работа в КутиКатай</a>
                      <a class="text-14-500-left-lato" href="<?php echo get_option('home'); ?>/contacts/">Контакты</a>
                </div>
-            
+
             </li>
                <!-- <li class="pointer">Сообщества <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /><img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" /></li> -->
                <li class="pointer"><a class="white-text-section" href="/franchise">Франшиза</a></li>
@@ -195,8 +195,14 @@
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector.svg" class="winter-status icon-search-burger-show" alt="" />
                      <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/search-icon-black.svg" class="summer-status icon-search-burger-show none" alt="" />
                   </li>
-                  <li id="profile-icon-header"><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login.svg" alt="" /> <img class="pointer summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login-black.svg" alt="" /></li>
-                  <!-- <li><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/heart.svg" alt="" /> <img class="pointer summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/heart-black.svg" alt="" /></li>
+
+                   <?php if (is_user_logged_in()): ?>
+                       <li><a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')) ?>"><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login.svg" alt="" /> <img class="pointer summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login-black.svg" alt="" /></a></li>
+                   <?php else: ?>
+                       <li id="profile-icon-header"><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login.svg" alt="" /> <img class="pointer summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/login-black.svg" alt="" /></li>
+                   <?php endif; ?>
+
+                   <!-- <li><img class="pointer winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/heart.svg" alt="" /> <img class="pointer summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/heart-black.svg" alt="" /></li>
                   <li class="pointer reserve-button-less-470px">
                      Рус <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" alt="" /> <img class=" pointer ummer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" />
                   </li> -->

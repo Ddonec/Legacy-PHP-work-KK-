@@ -72,10 +72,8 @@ get_header();
                 <h4 class="main-text-sub-block-news-p-cont text-gradient">Подпишитесь на наши новости</h4>
                 <p class="second-text-sub-block-news-p-cont text-20-">И будьте в курсе последних событий проката!</p>
             </div>
+            <?php echo do_shortcode( '[contact-form-7 id="c5668af" title="Подпишитесь на наши новости"]' ); ?>
             <div class="input-zone-news-p-cont">
-                <input class="input-in-news-p-cont i-n-p-c-name" type="text" placeholder="Ваше имя"/>
-                <input class="input-in-news-p-cont i-n-p-c-email" type="email" placeholder="Электронная почта"/>
-                <div class="send-btn-news-sub text-18-500 pointer">Отправить</div>
                 <img class="convert-img-news-sub"
                      src="<?php echo bloginfo( 'template_url' ); ?>/assets/assets/content/convert-yellow.png"
                      alt="mail"/>
