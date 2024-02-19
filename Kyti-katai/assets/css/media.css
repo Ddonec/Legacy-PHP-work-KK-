@@ -247,7 +247,7 @@
    #wide-card-on-chill-kids-copy p {
       font-size: 14px;
    }
-   .kids-chill div {
+   .kids-chill > div {
       width: 176px;
    }
 
@@ -1195,7 +1195,7 @@
    #wide-card-on-chill-kids-copy {
       width: 540px;
    }
-   .kids-chill div {
+   .kids-chill > div {
       width: 167px;
    }
 
@@ -1813,7 +1813,7 @@
    #wide-card-on-chill-kids-copy {
       display: none;
    }
-   .kids-chill div:nth-last-child(-n + 5) {
+   .kids-chill > div:nth-last-child(-n + 5) {
       display: block;
    }
    .parks-area-find-page-overflow-container::-webkit-scrollbar,
@@ -1990,10 +1990,10 @@
    .wpcf7-form-control.wpcf7-text {
       width: 100%;
    }
-   .columns-footer > div:nth-child(1){
+   .columns-footer > div:nth-child(1) {
       order: -2;
    }
-   .columns-footer > div:nth-child(4){
+   .columns-footer > div:nth-child(4) {
       order: -1;
    }
 }
@@ -2736,9 +2736,7 @@
    .t-o-s {
       font-size: 26px;
    }
-   .kids-chill div {
-      padding: 20px 0;
-   }
+
    #wide-card-on-chill-kids {
       font-size: 20px;
    }
@@ -2942,7 +2940,7 @@
       font-size: 16px;
       margin-top: 16px;
    }
-   .kids-chill div {
+   .kids-chill > div {
       padding: 20px;
    }
    .go-to-all-chill-btn {

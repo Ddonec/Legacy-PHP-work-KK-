@@ -946,7 +946,7 @@ b {
    max-width: 1200px;
    position: relative;
 }
-.kids-chill div {
+.kids-chill > div {
    width: 183px;
    height: 174px;
    border-radius: 20px;
@@ -959,8 +959,9 @@ b {
 /* .kids-chill div:nth-last-child(1) {
    display: none;
 } */
-.kids-chill > div > img {
-   height: 98px;
+.kids-chill div > img {
+   max-width: 104px;
+   margin: auto;
 }
 .kids-chill > div:not(:first-child):hover {
    border: 1px solid #ffc93a;
@@ -969,6 +970,12 @@ b {
 }
 .kids-chill > div:not(:first-child) {
    white-space: nowrap;
+}
+.image-container-c-c{
+   display: flex;
+   align-items: center;
+   vertical-align: middle;
+   height: 75%;
 }
 
 .text-in-chill-for-kids-card {
