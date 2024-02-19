@@ -2648,6 +2648,18 @@ input:checked + .slider:before {
    display: flex;
    align-items: flex-end;
 }
+
+.first-text__grey-text-12px {
+   color: var(--black, #333);
+   font-family: Lato, sans-serif;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 150%; /* 21px */
+   opacity: 0.5;
+   display: flex;
+   align-items: flex-end;
+}
 .first-text__flex .first-text__grey-text-14px {
    height: 90%;
 }
@@ -4579,6 +4591,7 @@ input:checked + .slider:before {
 .ajax-auth > .lh1,
 .ajax-auth > p {
    margin: 10px 0;
+   text-align: left;
 }
 .ajax-auth button {
    font-size: 12px;
@@ -4592,6 +4605,10 @@ input:checked + .slider:before {
    width: fit-content;
    border: none;
    color: #000;
+}
+
+#lwp_login.ajax-auth input.lwp_username {
+   border-radius: 20px;
 }
 
 /* / */
