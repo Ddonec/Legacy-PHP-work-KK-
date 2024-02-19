@@ -43,7 +43,7 @@ get_header();
             <div class="absolute-fs-container-left-frahciese"></div>
             <div class="absolute-fs-container-right-frahciese"></div>
         </div>
-        <div class="text-area-first-section-1920">
+        <div class="text-area-first-section-1920" >
             <h1 class="franchese-h1"><?php the_field('franchise-bolshoj_zagolovok_straniczy') ?></h1>
             <div class="last-text-first-section"><?php the_field('franchise-podzagolovok_bolshogo') ?></div>
             <div class="buttons-fs-frahciese-page">
@@ -58,6 +58,7 @@ get_header();
             <span></span>
             <span></span>
         </div>
+        <li><a href="#about-franchise"><?php the_field('franchise-sinyaya_navigacziya_0') ?></a></li>
         <li><a href="#format-of-service-franchise-page"><?php the_field('franchise-sinyaya_navigacziya_1') ?></a></li>
         <li><a href="#they-chose-us"><?php the_field('franchise-sinyaya_navigacziya_2') ?></a></li>
         <li><a href="#finnodel-section"><?php the_field('franchise-sinyaya_navigacziya_3') ?></a></li>
@@ -65,7 +66,7 @@ get_header();
         <li><a href="#contacts-franchise-page"><?php the_field('franchise-sinyaya_navigacziya_5') ?></a></li>
         <li onclick="openPopupFranchise()" class="b-l-f-active pointer"><?php the_field('franchise-sinyaya_navigacziya_6') ?></li>
     </ul>
-    <h3 class="title-of-section-gradient text-gradient">О франшизе</h3>
+    <h3 class="title-of-section-gradient text-gradient" id="about-franchise">О франшизе</h3>
 
     <div class="cunter-container-left-margin-francheise-page">
         <div class="overflov-block-advantages-cards-frahciese-page scroll-container-js">
