@@ -110,7 +110,7 @@
                   <div class="dropdown-header" onclick="toggleDropdown()">Компания <img id="burger-company-drop-arrow" src="assets/icon/dropdown-arrow-up.svg" alt="" /></div>
                   <ul class="dropdown-list" id="companyDropdownList">
                      <li><a href="<?php echo get_option('home'); ?>/about-us">О нас</a></li>
-                     <li><a href="<?php echo get_option('home'); ?>/news">Новости</a></li>
+                     <li><a href="<?php echo get_option('home'); ?>/category/articles/">Новости</a></li>
                      <li><a href="<?php echo get_option('home'); ?>/work">Работа в КутиКатай</a></li>
                      <li><a href="<?php echo get_option('home'); ?>/contacts">Контакты</a></li>
                   </ul>

@@ -508,7 +508,9 @@ if ($arr) {
     foreach ($arr as $item) {
 ?>
         <div class="pointer">
+        <div class="image-container-c-c">
             <img src="<?php echo $item['izobradenie_kartochki']; ?>" alt="" />
+       </div>
             <p class="text-in-chill-for-kids-card"><?php echo $item['opisanie_kartochki']; ?></p>
         </div>
 <?php
@@ -529,7 +531,9 @@ if ($arr) {
     foreach ($arr as $item) {
 ?>
         <div class="pointer">
+         <div class="image-container-c-c">
             <img src="<?php echo $item['izobradenie_kartochki']; ?>" alt="" />
+         </div>
             <p class="text-in-chill-for-kids-card"><?php echo $item['opisanie_kartochki']; ?></p>
         </div>
 <?php

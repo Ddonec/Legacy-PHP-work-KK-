@@ -247,7 +247,7 @@
    #wide-card-on-chill-kids-copy p {
       font-size: 14px;
    }
-   .kids-chill div {
+   .kids-chill > div {
       width: 176px;
    }
 
@@ -790,6 +790,9 @@
    .cabinet-go-check__btn-5 {
       display: none;
    }
+   .call-back-form-container-overflow-container-default form > p:nth-child(4) {
+      width: 100%;
+   }
 }
 /* @media (max-width: 1088px){
 .third-section-make-fun{
@@ -1195,7 +1198,7 @@
    #wide-card-on-chill-kids-copy {
       width: 540px;
    }
-   .kids-chill div {
+   .kids-chill > div {
       width: 167px;
    }
 
@@ -1305,6 +1308,8 @@
    }
    .photos-of-rope-park-overflow {
       overflow-x: auto;
+
+      margin: 30px auto 60px;
    }
    .photos-of-rope-park-overflow::-webkit-scrollbar {
       display: none;
@@ -1332,6 +1337,16 @@
    .log-in-modal__go-sign-up {
       flex-direction: column;
       margin-top: 40px;
+   }
+   .blue-list-frahciese li {
+      display: none;
+   }
+   .burger-blue-list-franchese {
+      display: block;
+   }
+   .blue-list-frahciese {
+      gap: 20px;
+      width: fit-content;
    }
 }
 
@@ -1367,16 +1382,7 @@
    .call-back-form-container-work-in-page {
       gap: 20px;
    }
-   .blue-list-frahciese li {
-      display: none;
-   }
-   .blue-list-frahciese {
-      gap: 20px;
-      width: fit-content;
-   }
-   .burger-blue-list-franchese {
-      display: block;
-   }
+
    .corporative-casues-container > div {
       width: 100%;
    }
@@ -1416,6 +1422,9 @@
    }
    .main-content-news-page {
       overflow: hidden;
+   }
+   .modal-reserve-celebrate-absolute.franchise-page-form {
+      padding: 20px;
    }
 }
 @media (max-width: 700px) {
@@ -1813,7 +1822,7 @@
    #wide-card-on-chill-kids-copy {
       display: none;
    }
-   .kids-chill div:nth-last-child(-n + 5) {
+   .kids-chill > div:nth-last-child(-n + 5) {
       display: block;
    }
    .parks-area-find-page-overflow-container::-webkit-scrollbar,
@@ -1971,7 +1980,6 @@
       width: 100vw;
       margin: 0;
       transform: translateX(-20px);
-      order: 5;
    }
    .call-back-form-container-franchise {
       border-radius: 40px 40px 0 0;
@@ -1990,11 +1998,14 @@
    .wpcf7-form-control.wpcf7-text {
       width: 100%;
    }
-   .columns-footer > div:nth-child(1){
+   .columns-footer > div:nth-child(1) {
       order: -2;
    }
-   .columns-footer > div:nth-child(4){
+   .columns-footer > div:nth-child(4) {
       order: -1;
+   }
+   .person-card__photo {
+      margin: 0;
    }
 }
 
@@ -2038,9 +2049,6 @@
       flex-direction: column;
       gap: 20px;
    }
-   .our-values-about-us-page-container {
-      order: 3;
-   }
    .our-values-about-us-page-container > div,
    .first-2-blocks-about-us-page > div {
       width: 100%;
@@ -2050,7 +2058,7 @@
       margin-left: 0;
    }
    .our-values-about-us-page-container {
-      margin: 60px 0 80px;
+      margin: 60px 0 60px;
       flex-direction: column;
       align-items: center;
    }
@@ -2102,9 +2110,9 @@
       display: block;
    }
 
-   .modal-reserve-celebrate-absolute form {
+   /* .modal-reserve-celebrate-absolute form {
       padding: 28px 20px;
-   }
+   } */
    .modal-reserve-celebrate-absolute section {
       padding: 28px 20px;
    }
@@ -2296,8 +2304,13 @@
    .absolute-on-map-home-page-text-comtainer {
       top: 22px;
    }
-   .title-of-section-gradient {
+   .title-of-section-gradient,
+   .title-of-section-gradient-yellow-f {
       font-size: 32px;
+   }
+   .chose-us__second-title {
+      font-size: 24px;
+      font-weight: 600;
    }
    .title-of-section-1 {
       margin: 79px auto 10px;
@@ -2736,9 +2749,7 @@
    .t-o-s {
       font-size: 26px;
    }
-   .kids-chill div {
-      padding: 20px 0;
-   }
+
    #wide-card-on-chill-kids {
       font-size: 20px;
    }
@@ -2942,7 +2953,7 @@
       font-size: 16px;
       margin-top: 16px;
    }
-   .kids-chill div {
+   .kids-chill > div {
       padding: 20px;
    }
    .go-to-all-chill-btn {
@@ -3017,5 +3028,11 @@
    }
    .h1-repair-page {
       font-size: 32px;
+   }
+   .wpcf7.js p > label {
+      width: 47%;
+   }
+   .franchise-page-form .wpcf7.js form > p > label:nth-of-type(-n + 4) > span {
+      width: 47%;
    }
 }

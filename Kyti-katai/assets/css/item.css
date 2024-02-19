@@ -1386,6 +1386,10 @@
 .area-of-vacancier-work-page-gap-12 > h5 {
    text-align: left;
 }
+.area-of-vacancier-work-page-gap-12 > p {
+   margin-left: 0;
+   padding-left: 0;
+}
 .discription-area-of-vacancier-work-page {
    border-radius: 0px 30px 30px 30px;
    background: #e8eafb;
@@ -1886,31 +1890,32 @@
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 31%;
+   width: calc((100% - 40px) / 3);
 }
 .phopos-container-example-repair-page > div:nth-child(2) {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 31%;
+   width: calc((100% - 40px) / 3);
 }
 .phopos-container-example-repair-page > div:nth-child(3) {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 31%;
+   width: calc((100% - 40px) / 3);
+
 }
 .phopos-container-example-repair-page > div:nth-child(4) {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 48%;
+   width: calc((100% - 20px) / 2);
 }
 .phopos-container-example-repair-page > div:nth-child(5) {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 48%;
+   width: calc((100% - 20px) / 2);
 }
 
 .call-back-form-container-repair-page {
@@ -2056,7 +2061,7 @@
    gap: 12px;
 }
 .element-of-768less-table > p:nth-child(1),
-.last-element-of-768less-table > p:nth-child(1) {
+.last-element-of-768less-table > p:nth-child(odd) {
    opacity: 0.5;
    width: 116px;
 }
@@ -2082,7 +2087,7 @@
    bottom: 0;
    padding: 20px;
    background: white;
-   z-index: 1005;
+   z-index: 1015;
    width: 100%;
    display: flex;
    flex-wrap: wrap;
@@ -2182,8 +2187,10 @@
 }
 
 .kids-dosug-catalog-child-page-container img {
-   aspect-ratio: 1;
    width: 140px;
+}
+
+.lwp_forms_login {
 }
 
 /*

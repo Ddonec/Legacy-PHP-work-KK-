@@ -946,7 +946,7 @@ b {
    max-width: 1200px;
    position: relative;
 }
-.kids-chill div {
+.kids-chill > div {
    width: 183px;
    height: 174px;
    border-radius: 20px;
@@ -959,8 +959,9 @@ b {
 /* .kids-chill div:nth-last-child(1) {
    display: none;
 } */
-.kids-chill > div > img {
-   height: 98px;
+.kids-chill div > img {
+   max-width: 104px;
+   margin: auto;
 }
 .kids-chill > div:not(:first-child):hover {
    border: 1px solid #ffc93a;
@@ -969,6 +970,12 @@ b {
 }
 .kids-chill > div:not(:first-child) {
    white-space: nowrap;
+}
+.image-container-c-c{
+   display: flex;
+   align-items: center;
+   vertical-align: middle;
+   height: 75%;
 }
 
 .text-in-chill-for-kids-card {
@@ -2648,6 +2655,18 @@ input:checked + .slider:before {
    display: flex;
    align-items: flex-end;
 }
+
+.first-text__grey-text-12px {
+   color: var(--black, #333);
+   font-family: Lato, sans-serif;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 150%; /* 21px */
+   opacity: 0.5;
+   display: flex;
+   align-items: flex-end;
+}
 .first-text__flex .first-text__grey-text-14px {
    height: 90%;
 }
@@ -3367,6 +3386,7 @@ input:checked + .slider:before {
    font-weight: 500;
    line-height: 150%; /* 18px */
    opacity: 0.5;
+   margin-top: 10px;
 }
 
 .data-agreement-12px > a {
@@ -3861,7 +3881,7 @@ input:checked + .slider:before {
    margin: 30px auto 100px;
 }
 .list-of-rules-rope-park {
-   margin: 20px 0 60px 14px;
+   margin: 20px 0 0px 14px;
 
    color: #333;
    font-family: Lato, sans-serif;
@@ -4327,7 +4347,7 @@ input:checked + .slider:before {
    align-items: center;
    gap: 8px;
    flex-shrink: 0;
-   margin: 0 auto 100px;
+   margin: 0 auto 60px;
 }
 
 .modal-container {
@@ -4448,11 +4468,16 @@ input:checked + .slider:before {
 .wpcf7.js .wpcf7-form {
    flex-direction: column;
 }
+
+.call-back-form-container-overflow-container-default .wpcf7.js .wpcf7-form,
+.subscribe-for-our-news-container .wpcf7.js .wpcf7-form{
+   flex-direction: row;
+}
 .wpcf7.js .form50 {
    width: 100%;
 }
 
-.wpcf7.js p {
+.call-back-form-container-work-in-page .wpcf7.js p {
    display: flex;
    flex-wrap: wrap;
    gap: 12px;
@@ -4460,11 +4485,32 @@ input:checked + .slider:before {
    z-index: 5;
    justify-content: space-between;
 }
-.wpcf7.js p > label {
+.call-back-form-container-work-in-page .wpcf7.js p > label,
+.franchise-page-form .wpcf7.js p > label{
    width: 48%;
 }
-.wpcf7.js p > label input {
+.call-back-form-container-work-in-page .wpcf7.js p > label input,
+.franchise-page-form .wpcf7.js p > label input{
    width: 100%;
+}
+
+.call-back-form-container-overflow-container-default .wpcf7.js p > label,
+.subscribe-for-our-news-container .wpcf7.js p > label,
+.franchise-page-form .wpcf7.js p > label{
+   display: contents;
+   width: 100%;
+}
+.franchise-page-form .wpcf7.js {
+   width: 100%;
+}
+.franchise-page-form .wpcf7.js form > p {
+   display: flex;
+   gap: 12px;
+   width: 100%;
+   flex-wrap: wrap;
+}
+.franchise-page-form .wpcf7.js form > p > label:nth-of-type(-n+4) > span {
+   width: 48%;
 }
 .modal-reserve-celebrate-absolute.franchise-page-form {
    display: inline-flex;
@@ -4579,6 +4625,7 @@ input:checked + .slider:before {
 .ajax-auth > .lh1,
 .ajax-auth > p {
    margin: 10px 0;
+   text-align: left;
 }
 .ajax-auth button {
    font-size: 12px;
@@ -4592,6 +4639,10 @@ input:checked + .slider:before {
    width: fit-content;
    border: none;
    color: #000;
+}
+
+#lwp_login.ajax-auth input.lwp_username {
+   border-radius: 20px;
 }
 
 /* / */
