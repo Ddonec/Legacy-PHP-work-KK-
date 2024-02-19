@@ -3093,7 +3093,7 @@ input:checked + .slider:before {
    position: absolute;
    bottom: 0;
    left: 0;
-   height: 100px;
+   height: 50px;
    width: 100%;
    z-index: 100;
    background: linear-gradient(180deg, rgba(232, 234, 251, 0) 0%, #e8eafb 100%);
@@ -3229,36 +3229,36 @@ input:checked + .slider:before {
 }
 .pie circle:nth-of-type(3) {
    stroke: #dde1fb;
-   stroke-dasharray: 0 64 19 100;
+   stroke-dasharray: 0 64 20 100;
 }
 .pie circle:nth-of-type(4) {
    stroke: #ccd2f9;
-   stroke-dasharray: 0 83 5 100;
+   stroke-dasharray: 0 84 5 100;
 }
 .pie circle:nth-of-type(5) {
    stroke: #a9b2f4;
-   stroke-dasharray: 0 88 4 100;
+   stroke-dasharray: 0 89 4 100;
 }
 .pie circle:nth-of-type(6) {
    stroke: #99a4f2;
-   stroke-dasharray: 0 92 3 100;
+   stroke-dasharray: 0 93 3 100;
 }
 .pie circle:nth-of-type(7) {
    stroke: #818ff0;
-   stroke-dasharray: 0 95 2 100;
+   stroke-dasharray: 0 96 2 100;
 }
 .pie circle:nth-of-type(8) {
    stroke: #7785ee;
-   stroke-dasharray: 0 97 1 100;
+   stroke-dasharray: 0 98 1 100;
 }
 .pie circle:nth-of-type(9) {
    stroke: #6677ed;
-   stroke-dasharray: 0 98 1 100;
-}
-.pie circle:nth-of-type(10) {
-   stroke: #6677ed;
    stroke-dasharray: 0 99 1 100;
 }
+/* .pie circle:nth-of-type(10) {
+   stroke: #6677ed;
+   stroke-dasharray: 0 99 1 100;
+} */
 
 .pie circle:hover {
    stroke: #ffc93a;
