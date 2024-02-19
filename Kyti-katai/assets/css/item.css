@@ -1890,31 +1890,32 @@
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 31%;
+   width: calc((100% - 40px) / 3);
 }
 .phopos-container-example-repair-page > div:nth-child(2) {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 31%;
+   width: calc((100% - 40px) / 3);
 }
 .phopos-container-example-repair-page > div:nth-child(3) {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 31%;
+   width: calc((100% - 40px) / 3);
+
 }
 .phopos-container-example-repair-page > div:nth-child(4) {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 48%;
+   width: calc((100% - 20px) / 2);
 }
 .phopos-container-example-repair-page > div:nth-child(5) {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 48%;
+   width: calc((100% - 20px) / 2);
 }
 
 .call-back-form-container-repair-page {
