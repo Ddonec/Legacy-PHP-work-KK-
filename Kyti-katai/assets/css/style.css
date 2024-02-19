@@ -4347,7 +4347,7 @@ input:checked + .slider:before {
    align-items: center;
    gap: 8px;
    flex-shrink: 0;
-   margin: 0 auto 100px;
+   margin: 0 auto 60px;
 }
 
 .modal-container {
