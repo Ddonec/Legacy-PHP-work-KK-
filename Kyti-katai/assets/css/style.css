@@ -3386,6 +3386,7 @@ input:checked + .slider:before {
    font-weight: 500;
    line-height: 150%; /* 18px */
    opacity: 0.5;
+   margin-top: 10px;
 }
 
 .data-agreement-12px > a {
@@ -4467,6 +4468,11 @@ input:checked + .slider:before {
 .wpcf7.js .wpcf7-form {
    flex-direction: column;
 }
+
+.call-back-form-container-overflow-container-default .wpcf7.js .wpcf7-form,
+.subscribe-for-our-news-container .wpcf7.js .wpcf7-form{
+   flex-direction: row;
+}
 .wpcf7.js .form50 {
    width: 100%;
 }
@@ -4483,6 +4489,12 @@ input:checked + .slider:before {
    width: 48%;
 }
 .wpcf7.js p > label input {
+   width: 100%;
+}
+
+.call-back-form-container-overflow-container-default .wpcf7.js p > label,
+.subscribe-for-our-news-container .wpcf7.js p > label{
+   display: contents;
    width: 100%;
 }
 .modal-reserve-celebrate-absolute.franchise-page-form {

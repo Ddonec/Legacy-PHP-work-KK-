@@ -224,7 +224,7 @@ $count ++;
             <div class="call-back-form-container-franchise">
                <div class="text-sub-block-news-inside">
                   <h4 class="main-text-sub-block-news-p-cont text-gradient">Давайте созвонимся!</h4>
-                  <p class="second-text-sub-block-news-p-cont text-18-500">Наши специалисты ответят на все ваши вопросы</p>
+                  <p class="second-text-sub-block-news-p-cont text-18-500-left">Наши специалисты ответят на все ваши вопросы</p>
                </div>
                 <?php echo do_shortcode( '[contact-form-7 id="2b64add" title="Давайте созвонимся"]' ); ?>
                <div class="input-zone-news-p-cont">
