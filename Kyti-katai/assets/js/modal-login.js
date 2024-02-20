@@ -5,7 +5,7 @@ if (!window.iconProfile) {
 
    if (iconProfile) {
       iconProfile.addEventListener("click", function () {
-         openPopupLogIn();
+         openPopupLogInNEW();
       });
    }
 
@@ -100,6 +100,27 @@ if (!window.iconProfile) {
 
       popup.querySelector(".close-modal-btn").addEventListener("click", function () {
          document.body.removeChild(popup);
+         document.body.removeChild(greyBG);
+         console.log("close");
+      });
+   }
+   function openPopupLogInNEW() {
+      const modal = document.getElementById("login-modal-container-f");
+      const greyBG = document.createElement("div");
+
+      greyBG.className = "grey-bg";
+      modal.classList.remove("none");
+      modal.style.display = "flex";
+      document.body.appendChild(greyBG);
+
+      greyBG.addEventListener("click", function () {
+         modal.style.display = "none";
+         document.body.removeChild(greyBG);
+         console.log("close");
+      });
+
+      modal.querySelector(".close-modal-btn").addEventListener("click", function () {
+         modal.style.display = "none";
          document.body.removeChild(greyBG);
          console.log("close");
       });
