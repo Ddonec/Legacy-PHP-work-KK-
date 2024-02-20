@@ -15,17 +15,21 @@ get_header();
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 ymaps.ready(function() {
-    var myMap = new ymaps.Map('map', {
+   var myMap = new ymaps.Map('map', {
         center: [55.76, 37.64],
         zoom: 11
     }, {
         searchControlProvider: 'yandex#search'
     });
-    document.getElementById('map-area-first-section').addEventListener('mouseleave', function() {
-    const leftBlock = document.querySelector('.absolute-map-info-left-container');
-    leftBlock.classList.add('none');
-});
+        myMap.behaviors.disable('scrollZoom');
 
+   const leftBlock = document.querySelector('.absolute-map-info-left-container');
+    document.getElementById('map-area-first-section').addEventListener('mouseleave', function() {
+    leftBlock.classList.add('none');
+   });
+   leftBlock.addEventListener("click", function(){
+     leftBlock.classList.add('none');
+   })
     // Загрузка данных и добавление ObjectManager
     $.getJSON("/wp-content/uploads/points.json", function(data) {
         var objectManager = new ymaps.ObjectManager({
@@ -205,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
          <div class="map-container" id="map-area-first-section">
             <section class="absolute-map-info-left-container none">
                <div class="park-info-map-zone text-14-500-left-lato-left">
-                  <img class="Vector-close-10" src="assets/icon/Vector-close-10.7.svg" alt="" />
+                  <img class="Vector-close-10" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-close-mod.svg" alt="" />
                   <p class="park-info-map-zone-title left-park-json-data-1">Красногвардейский пруд</p>
                   <div class="park-info-map-zone-line0info">
                      <p class="opacity">Время работы:</p>
@@ -277,7 +281,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <section class="absolute-map-info-left-container">
                <div class="park-info-map-zone text-14-500-left-lato-left">
-                  <img class="Vector-close-10" src="assets/icon/Vector-close-10.7.svg" alt="" />
+                  <img class="Vector-close-10" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-close-mod.svg" alt="" />
                   <p class="park-info-map-zone-title">Красногвардейский пруд</p>
                   <div class="park-info-map-zone-line0info">
                      <p class="opacity">Время работы:</p>

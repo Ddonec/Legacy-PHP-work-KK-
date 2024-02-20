@@ -18,10 +18,15 @@ ymaps.ready(function() {
     }, {
         searchControlProvider: 'yandex#search'
     });
+        myMap.behaviors.disable('scrollZoom');
+
+   const leftBlock = document.querySelector('.absolute-map-info-left-container');
     document.getElementById('map-area-first-section').addEventListener('mouseleave', function() {
-    const leftBlock = document.querySelector('.absolute-map-info-left-container');
     leftBlock.classList.add('none');
-});
+   });
+   leftBlock.addEventListener("click", function(){
+     leftBlock.classList.add('none');
+   })
 
     // Загрузка данных и добавление ObjectManager
     $.getJSON("/wp-content/uploads/points.json", function(data) {
@@ -209,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <section class="absolute-map-info-left-container none">
                <div class="park-info-map-zone text-14-500-left-lato-left">
-                  <img class="Vector-close-10" src="assets/icon/Vector-close-10.7.svg" alt="" />
+                  <img class="Vector-close-10" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-close-mod.svg" alt="" />
                   <p class="park-info-map-zone-title left-park-json-data-1">Красногвардейский пруд</p>
                   <div class="park-info-map-zone-line0info">
                      <p class="opacity">Время работы:</p>
@@ -833,7 +838,7 @@ if ($arr) {
                 <?php
                 global $post;
 
-                $on_index_posts = get_posts(array('numberposts' => 10));
+$on_index_posts = get_posts(array('numberposts' => 10));
 
                 foreach( $on_index_posts as $post ){
                     $tags = wp_get_post_tags( get_the_ID() );
