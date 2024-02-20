@@ -1131,6 +1131,9 @@
    .line-contact-zone-contacts-page {
       display: none;
    }
+   .call-back-form-container-work-in-page p {
+      width: 100%;
+   }
 }
 
 @media (max-width: 976px) {
@@ -2036,6 +2039,9 @@
    .title-of-section-find-page {
       font-size: 32px;
    }
+   .main-content-news-page > .call-back-form-container-work-in-page > img{
+      width: unset;
+   }
 }
 
 @media (min-width: 701px) {
@@ -2852,6 +2858,9 @@
    .apps-links-app-cart-franchise a img {
       width: 100%;
    }
+   .call-back-form-container-work-in-page{
+      padding: 40px 20px 50px 20px;
+   }
 }
 
 @media (max-width: 459px) {
@@ -3059,6 +3068,10 @@
       width: 47%;
    }
    .franchise-page-form .wpcf7.js form > p > label:nth-of-type(-n + 4) > span {
+      width: 47%;
+   }
+
+   .call-back-form-container-work-in-page .wpcf7.js p > label:nth-of-type(-n + 4) {
       width: 47%;
    }
 }
