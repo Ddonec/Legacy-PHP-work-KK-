@@ -43,8 +43,7 @@ get_header();
                </div>
                <div class="user-data-cabinet__buttons-zone">
                   <div class="user-data-cabinet__btn-edit none">Редактировать</div>
-                  <div class="user-data-cabinet__btn-exit"><a href="<?php echo wp_logout_url( get_permalink() ) ?>">Выйти</a></div>
-               </div>
+                  <div class="user-data-cabinet__btn-exit"><a href="<?php echo wp_logout_url( home_url() ) ?>">Выйти</a></div>               </div>
             </div>
             <!-- <div class="cabinet-verification-container text-14-500-left-lato"> -->
             <div class="cabinet-go-check none">
@@ -80,4 +79,5 @@ get_header();
 <?php endif; ?>
 <?php
 get_footer();
-?>r
+?>
+

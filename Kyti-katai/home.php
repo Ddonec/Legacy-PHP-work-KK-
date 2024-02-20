@@ -833,8 +833,7 @@ if ($arr) {
                 <?php
                 global $post;
 
-                $on_index_posts = get_posts();
-
+                $on_index_posts = get_posts(array('numberposts' => 10));
 
                 foreach( $on_index_posts as $post ){
                     $tags = wp_get_post_tags( get_the_ID() );

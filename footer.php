@@ -89,15 +89,18 @@
             <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/visa.svg" alt="" />
          </div>
       </footer>
-      <div id="login-modal-container-f" class="none">
+
+            <!-- login modal -->
+
+            <div id="login-modal-container-f" class="none">
             <div class="log-in-modal__image"></div>
-               <?php echo do_shortcode( '[idehweb_lwp type="log"]' ); ?>
+            <?php echo do_shortcode( '[idehweb_lwp type="log"]' ); ?>
             <div class="close-modal-btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                      <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
                   </svg>
             </div>
-      </div>
+         </div>
    </body>
 </html>
 

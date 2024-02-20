@@ -158,6 +158,13 @@ margin: 0;}
    transform: translate(100%, -50%);
 }
 
+
+
+
+
+/* login modal  */
+
+
 </style>
 
 <script>
@@ -206,15 +213,11 @@ document.getElementById('your-checkbox-id').querySelector('label').innerHTML = '
         <br>
         <br>
         <button id="openModalButton">Открыть</button>
-        <div id="login-modal-container-f" class="none">
-            <div class="log-in-modal__image"></div>
-               <?php echo do_shortcode( '[idehweb_lwp type="log"]' ); ?>
-            <div class="close-modal-btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                     <path d="M1 15L15 1M15 15L1 1" stroke="black" stroke-width="2" stroke-linecap="round" />
-                  </svg>
-            </div>
-         </div>
+
+
+ 
+         <?php echo do_shortcode( '[idehweb_lwp type="log"]' ); ?>
+
 
 
     </section>
