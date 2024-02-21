@@ -2078,11 +2078,11 @@
    }
    .photo-area-about-us-page {
       height: 300px;
-      order: 1;
-      margin: 20px 0;
+      /* order: 1; */
+      margin: 0;
    }
    .first-2-blocks-about-us-page {
-      order: 2;
+      /* order: 2; */
       flex-direction: column;
       gap: 20px;
    }
