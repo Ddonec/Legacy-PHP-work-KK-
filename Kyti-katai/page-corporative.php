@@ -14,11 +14,7 @@ get_header();
       <div class="bread-crumbs">
          <p><a href="<?php echo get_option('home'); ?>">Главная</a></p>
          <p>/</p>
-         <p><a href="#">Лето</a></p>
-         <p>/</p>
-         <p><a href="#">Новости</a></p>
-         <p>/</p>
-         <p class="grey-bread-crumbs">..</p>
+         <p class="grey-bread-crumbs">Корпоративным клиентам</p>
       </div>
       <div class="title-of-section-news-page">
          <h1 class="h1-rope-park-page text-gradient"><?php the_field('corporative-zakolovok_straniczy') ?></h1>
