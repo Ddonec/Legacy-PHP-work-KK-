@@ -449,6 +449,11 @@
    gap: 8px;
    margin-bottom: 24px;
 }
+.text-sub-block-news-inside > p {
+   display: flex;
+   align-items: flex-start;
+   text-align: left;
+}
 
 .main-text-sub-block-news-p-cont {
    font-family: Montserrat Alternates;
@@ -2267,15 +2272,14 @@
    margin-bottom: 16px;
    opacity: 0.5;
 }
-#login-modal-container-f .iti__flag.iti__ru 
- {
+#login-modal-container-f .iti__flag.iti__ru {
    height: 27px;
    background-position: -8195px 0;
    border-radius: 50%;
    width: 27px;
    margin-left: 5px;
 }
-#login-modal-container-f .iti__flag.iti__by{
+#login-modal-container-f .iti__flag.iti__by {
    height: 27px;
    border-radius: 50%;
    width: 27px;
