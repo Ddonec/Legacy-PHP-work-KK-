@@ -12,13 +12,7 @@ get_header();
         </div>
 
         <?php
-        if ($_COOKIE['SummerWinterCheckStatus'] == 'true') {
-            $season = 'zima';
-        } else {
-            $season = 'leto';
-        }
-
-        $categories = get_parent_product_categories_season($season);
+        $categories = get_parent_product_categories_season();
         $current_id = get_queried_object_id();
         echo '<ul class="nav-catalog">';
         echo ($current_id == 0) ? '<li class="active-category">': '<li>';
