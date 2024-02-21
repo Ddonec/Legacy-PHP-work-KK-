@@ -1171,7 +1171,7 @@
    list-style: none;
    display: flex;
    justify-content: space-between;
-   margin: 40px auto 80px;
+   margin: 40px auto 30px;
    width: calc(100% - 40px);
    max-width: 1200px;
 }
@@ -1445,7 +1445,7 @@
 
    border-radius: 40px;
    background: #e8eafb;
-   margin: 160px auto 90px;
+   margin: 80px auto 90px;
 
    position: relative;
    overflow: hidden;

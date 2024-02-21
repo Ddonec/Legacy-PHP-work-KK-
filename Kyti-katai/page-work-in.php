@@ -43,7 +43,7 @@ get_header();
             <p>/</p>
             <p><a href="#">Лето</a></p>
             <p>/</p>
-            <p class="grey-bread-crumbs">Веревочный парк</p>
+            <p class="grey-bread-crumbs">Вакансии</p>
          </div>
          <div class="photos-zone-work-in-page">
             <div class="photos-work-in__photo-1"></div>
@@ -191,7 +191,7 @@ vacancies.forEach((vacancy, index) => {
          </script>
 
 <div class="call-back-form-container-work-in-page">
-            <div class="text-sub-block-news-inside-work-in">
+            <div class="text-sub-block-news-inside-work-in" id="work-in-form">
                <h4 class="main-text-sub-block-news-p-cont text-gradient"><?php the_field('work-tvjtl_formy') ?></h4>
                <p class="second-text-sub-block-news-p-cont text-18-500-left"><?php the_field('work-subtajtl_formy') ?></p>
             </div>
@@ -222,6 +222,20 @@ jQuery(document).ready(function($) {
     });
 });
 
+</script>
+
+<script>
+    // Находим кнопку "Откликнуться"
+    const respondButton = document.querySelector('.respond-btn-work-in-page');
+
+    // Добавляем обработчик события клика на кнопку
+    respondButton.addEventListener('click', function() {
+        // Находим элемент, к которому нужно прокрутить
+        const workInForm = document.getElementById('work-in-form');
+
+        // Выполняем прокрутку к элементу
+        workInForm.scrollIntoView({ behavior: 'smooth' }); // Используем плавную прокрутку
+    });
 </script>
       </section>
 
