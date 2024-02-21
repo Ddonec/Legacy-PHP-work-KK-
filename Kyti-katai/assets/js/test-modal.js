@@ -10,7 +10,13 @@ if (cardReserve) {
 }
 if (parkValueSticky) {
    parkValueSticky.addEventListener("click", function () {
-      openPopupAbout();
+      var parkNameStickyValue = document.querySelector(".park-name-sticky-value");
+      // Проверка, существует ли значение в parkNameStickyValue
+      if (!parkNameStickyValue.textContent) {
+         openPopupChoseSwitch();
+      } else {
+         openPopupAbout();
+      }
    });
 }
 
