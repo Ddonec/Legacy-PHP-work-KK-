@@ -59,9 +59,9 @@ get_header();
             <span></span>
         </div>
         <li><a href="#about-franchise"><?php the_field('franchise-sinyaya_navigacziya_0') ?></a></li>
+        <li><a href="#finnodel-section"><?php the_field('franchise-sinyaya_navigacziya_3') ?></a></li>
         <li><a href="#format-of-service-franchise-page"><?php the_field('franchise-sinyaya_navigacziya_1') ?></a></li>
         <li><a href="#they-chose-us"><?php the_field('franchise-sinyaya_navigacziya_2') ?></a></li>
-        <li><a href="#finnodel-section"><?php the_field('franchise-sinyaya_navigacziya_3') ?></a></li>
         <li><a href="#our-team-franchise"><?php the_field('franchise-sinyaya_navigacziya_4') ?></a></li>
         <li><a href="#contacts-franchise-page"><?php the_field('franchise-sinyaya_navigacziya_5') ?></a></li>
         <li onclick="openPopupFranchise()" class="b-l-f-active pointer"><?php the_field('franchise-sinyaya_navigacziya_6') ?></li>

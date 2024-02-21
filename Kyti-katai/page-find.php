@@ -261,60 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <span class="park-name-sticky-value"></span>
          </span>
       </div>
-<!-- 
 
-      <section class="main-content-news-page">
-         <div class="bread-crumbs">
-            <p><a href="index">Главная</a></p>
-            <p>/</p>
-            <p><a href="#">Лето</a></p>
-            <p>/</p>
-            <p class="grey-bread-crumbs">Найди свой парк</p>
-         </div>
-         <div class="title-of-section-find-page">
-            <h3 class="text-gradient"><?php the_field('find-park-title') ?></h3>
-         </div>
-      </section>
-         <div class="map-container map-containep-find-page" id="map-area-first-section">
-            <div class="absolute-on-map-home-page-text-comtainer">
-               <h3 class="text-gradient">Найди свой парк</h3>
-            </div>
-            <section class="absolute-map-info-left-container">
-               <div class="park-info-map-zone text-14-500-left-lato-left">
-                  <img class="Vector-close-10" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-close-mod.svg" alt="" />
-                  <p class="park-info-map-zone-title">Красногвардейский пруд</p>
-                  <div class="park-info-map-zone-line0info">
-                     <p class="opacity">Время работы:</p>
-                     <p>Круглосуточно</p>
-                  </div>
-                  <div class="park-info-map-zone-line0info">
-                     <p class="opacity">Техника парка:</p>
-                     <p>Велосипеды, Электросамокаты, Батуты, Зорбинг, Лодки и Катамараны</p>
-                  </div>
-                  <div class="map-area-first-section__button">Выбрать парк</div>
-               </div>
-            </section>
-            <section class="absolute-map-info-right-container">
-               <div class="park-list-map-zone text-14-500-left-lato-left">
-                  <p class="park-info-map-zone-title">Парки</p>
-                  <input class="park-list-map-zone__input" type="text" placeholder="Парк, город или метро" />
-                  <ul class="park-list-map-zone__ul">
-                     <li>Парк Строгино</li>
-                     <li>Парк Победы</li>
-                     <li>Красногвардейский пруд</li>
-                     <li>ВДНХ</li>
-                     <li>Лиазновский парк</li>
-                     <li>ВДНХ</li>
-                     <li>ВДНХ</li>
-                     <li>ВДНХ</li>
-                  </ul>
-               </div>
-            </section>
-
-            <div id="map"></div>
-            <a href="<?php echo get_option('home'); ?>/find">
-            </a>
-         </div> -->
       <section class="main-content-news-page">
          <h2 class="text-36-700 h2-find-page">Список парков</h2>
 
@@ -338,97 +285,10 @@ document.addEventListener('DOMContentLoaded', function() {
          <div class="table-info-find-page text-14-500-left list">
 
          </div>
-<script>
-    $.getJSON("/wp-content/uploads/points.json", function(data) {
-        // Получение списка парков
-        var parks = data.features;
-
-        // Находим контейнер для списка парков
-        var parkListContainer = document.querySelector(".table-info-find-page");
-
-        // Создаем HTML-элементы для каждого парка и добавляем их в контейнер
-        parks.forEach(function(park) {
-            var listItem = document.createElement("div");
-            listItem.classList.add("discription-table-find-page");
-
-            var name = document.createElement("p");
-            name.textContent = park.properties.name;
-            listItem.appendChild(name);
-
-            var adress = document.createElement("p");
-            if(park.properties.adress){
-            adress.textContent = park.properties.adress;
-             } else {adress.textContent = "Адрес не указан"}
-            listItem.appendChild(adress);
-
-            var worktime = document.createElement("p");
-            worktime.textContent = park.properties.worktime;
-            listItem.appendChild(worktime);
-
-            var equipment = document.createElement("p");
-            equipment.textContent = park.properties.equipment;
-            listItem.appendChild(equipment);
-
-            // Добавляем обработчик события клика на элемент списка
-            listItem.addEventListener('click', function() {
-                // Показываем карточку
-                const leftBlock = document.querySelector('.absolute-map-info-left-container');
-                leftBlock.classList.remove('none');
-            });
-
-            // Добавляем элемент списка в контейнер
-            parkListContainer.appendChild(listItem);
-        });
-    });
-</script>
-
-<script>
-const searchInput = document.querySelector(".input-search-find-page");
-const list = document.querySelector(".table-info-find-page");
-
-// Добавляем прослушиватель событий при вводе в input
-searchInput.addEventListener("input", function () {
-  // Получаем поисковый запрос
-  const searchTerm = this.value.toLowerCase();
-
-  // Перебираем элементы списка
-  const items = list.querySelectorAll("div.discription-table-find-page");
-  items.forEach(function(item) {
-    // Если поисковый запрос найден в тексте элемента, показываем его
-    const name = item.querySelector("p:first-child").textContent.toLowerCase();
-    if (name.includes(searchTerm)) {
-      item.style.display = "flex";
-    } else {
-      item.style.display = "none";
-    }
-  });
-});
-</script>
-  
-<div class="mobile-viev-table-find-page none" id="mobile-park-list">
 
 
+         <div class="mobile-viev-table-find-page none" id="mobile-park-list">
 
-<!-- <div class="table-find-page-for-768less">
-               <div class="block-of-768less-table">
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_nazvanie') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_nazvanie_5') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_adres') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_adres_5') ?></p>
-                  </div>
-                  <div class="element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park_rezhim_raboty_5') ?></p>
-                  </div>
-                  <div class="last-element-of-768less-table">
-                     <p><?php the_field('najdi_svoj_park_teznika_porka') ?>:</p>
-                     <p><?php the_field('najdi_svoj_park-tehnika_parka_5') ?></p>
-                  </div>
-               </div>
-            </div> -->
 </div>
 
 <script>
@@ -484,6 +344,98 @@ searchInput.addEventListener("input", function () {
         }
     }
 </script>
+
+
+
+<script>
+    $.getJSON("/wp-content/uploads/points.json", function(data) {
+        // Получение списка парков
+        var parks = data.features;
+
+        // Находим контейнер для списка парков
+        var parkListContainer = document.querySelector(".table-info-find-page");
+
+        // Создаем HTML-элементы для каждого парка и добавляем их в контейнер
+        parks.forEach(function(park) {
+            var listItem = document.createElement("div");
+            listItem.classList.add("discription-table-find-page");
+
+            var name = document.createElement("p");
+            name.textContent = park.properties.name;
+            listItem.appendChild(name);
+
+            var adress = document.createElement("p");
+            if(park.properties.adress){
+            adress.textContent = park.properties.adress;
+             } else {adress.textContent = "Адрес не указан"}
+            listItem.appendChild(adress);
+
+            var worktime = document.createElement("p");
+            worktime.textContent = park.properties.worktime;
+            listItem.appendChild(worktime);
+
+            var equipment = document.createElement("p");
+            equipment.textContent = park.properties.equipment;
+            listItem.appendChild(equipment);
+
+            // Добавляем обработчик события клика на элемент списка
+            listItem.addEventListener('click', function() {
+                // Показываем карточку
+                const leftBlock = document.querySelector('.absolute-map-info-left-container');
+                leftBlock.classList.remove('none');
+            });
+
+            // Добавляем элемент списка в контейнер
+            parkListContainer.appendChild(listItem);
+        });
+    });
+</script>
+
+<script>
+const searchInput = document.querySelector(".input-search-find-page");
+
+// Function to filter items within the first container
+function filterFirstContainer(searchTerm) {
+    const items = document.querySelectorAll(".table-info-find-page .discription-table-find-page");
+    items.forEach(function(item) {
+        const name = item.querySelector("p:first-child").textContent.trim().toLowerCase();
+        if (name.includes(searchTerm)) {
+            item.style.display = "flex";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+
+// Function to filter items within the second container
+function filterSecondContainer(searchTerm) {
+    const items = document.querySelectorAll(".mobile-viev-table-find-page .block-of-768less-table");
+    items.forEach(function(item) {
+        const paragraphs = item.querySelectorAll("p");
+        let found = false;
+        paragraphs.forEach(function(paragraph) {
+            if (paragraph.textContent.trim().toLowerCase().includes(searchTerm)) {
+                found = true;
+            }
+        });
+        if (found) {
+            item.style.display = "flex";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+
+// Add event listener to the search input
+searchInput.addEventListener("input", function () {
+    const searchTerm = this.value.trim().toLowerCase();
+    filterFirstContainer(searchTerm); // Call the function for the first container
+    filterSecondContainer(searchTerm); // Call the function for the second container
+});
+
+</script>
+  
+
 
 
 
