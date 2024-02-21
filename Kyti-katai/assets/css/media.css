@@ -2568,6 +2568,9 @@
    .sick-cart-news {
       width: 100%;
    }
+   .title-of-section-contacts-page{
+      font-size: 32px;
+   }
 }
 
 @media (max-width: 470px) {
