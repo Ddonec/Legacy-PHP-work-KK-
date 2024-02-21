@@ -2044,6 +2044,10 @@
    .main-content-news-page > .call-back-form-container-work-in-page > img {
       width: unset;
    }
+   .main-content-news-page > .call-back-form-container-work-in-page > .koleso-work-in-1,
+   .main-content-news-page > .call-back-form-container-work-in-page > .koleso-work-in-2 {
+      display: none;
+   }
 }
 
 @media (min-width: 701px) {
