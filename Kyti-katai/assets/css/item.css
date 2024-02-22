@@ -1155,9 +1155,7 @@
    max-width: 1200px;
    margin: 0 auto;
 }
-/* .map-area-contacts-page:hover {
-   background-size: 120%;
-} */
+
 .blie-map-point-contacts-page {
    display: inline-flex;
    padding: 30px;
@@ -1238,16 +1236,6 @@
    display: flex;
    justify-content: space-between;
 }
-/* .photo-area-about-rope-park-page {
-   max-width: 1200px;
-   height: 520px;
-   background-image: url(../assets/content/rope-park-slider-1-image.jpeg);
-   background-position: center;
-   background-size: 110%;
-   transition: 0.6s ease;
-   border-radius: 40px;
-   margin: 40px auto 160px;
-} */
 
 .first-2-blocks-rope-park-page {
    display: flex;
