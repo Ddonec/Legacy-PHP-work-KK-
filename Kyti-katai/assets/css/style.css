@@ -683,7 +683,7 @@ s2
    height: 50%;
    z-index: 1;
    transition: 0.6s;
-   border-radius: 18px 18px 50px 50px;
+   border-radius: 18px 18px 20px 20px;
 }
 .card-of-product:hover::before {
    top: 0%;

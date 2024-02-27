@@ -337,7 +337,8 @@
 .nav-catalog {
    display: flex;
    /* flex-wrap: wrap; */
-   justify-content: space-between;
+   /* justify-content: space-between; */
+   gap: 5%;
    list-style: none;
    color: #333;
    text-align: center;
@@ -439,8 +440,8 @@
 .in-stock-catalog {
    display: flex;
    flex-wrap: wrap;
-   gap: 15px;
-   justify-content: space-between;
+   gap: 20px;
+   /* justify-content: space-between; */
 }
 
 .show-more-btn-catalog {
@@ -742,3 +743,49 @@
    stroke: #5567ea; /* Измените цвет на требуемый цвет при наведении */
    width: 5;
 }
+
+/* ** */
+
+/* каталог рефакторинг */
+
+.filters-container-catalog,
+.hide-filters-cat,
+.in-stock-discription,
+.hide-filters-cat,
+.woocommerce-notices-wrapper {
+   display: none;
+}
+.in-stock-catalog .orderby {
+   border: 1px solid #ccccd0;
+   width: 100%;
+   height: 100%;
+   border-radius: 30px;
+   padding-left: 20px;
+}
+.woocommerce-result-count,
+.woocommerce-ordering {
+   height: 50px;
+   align-items: center;
+   display: flex;
+
+   text-align: center;
+   font-family: "Lato", sans-serif;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 140%;
+}
+.woocommerce-ordering {
+   justify-content: end;
+   width: 30%;
+}
+.woocommerce-result-count {
+   background-color: #ffc93a;
+   border-radius: 30px;
+   width: calc((70% - 20px));
+   padding-left: 24px;
+}
+.attachment-woocommerce_thumbnail {
+   height: 130px;
+}
+/* ** */
