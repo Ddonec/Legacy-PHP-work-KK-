@@ -309,13 +309,13 @@ document.addEventListener("click", () => {
 function openMenu() {
    dropWindow.style.opacity = 1;
    dropWindow.style.zIndex = 10;
-   dropWindow.style.transform = "translateY(0)"
+   dropWindow.style.transform = "translateY(0)";
    isMenuOpen = true;
 }
 
 function closeMenu() {
    dropWindow.style.opacity = 0;
    dropWindow.style.zIndex = -1;
-   dropWindow.style.transform = "translateY(-280px)"
+   dropWindow.style.transform = "translateY(-280px)";
    isMenuOpen = false;
 }
