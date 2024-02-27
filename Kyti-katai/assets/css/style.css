@@ -3737,14 +3737,7 @@ input:checked + .slider:before {
    width: 100%;
 }
 
-.photo-area-about-rope-park-page__first {
-   width: 100%;
-   height: 540px;
-   border-radius: 32px;
-   background-size: cover;
-   overflow: hidden;
-   position: relative;
-}
+.photo-area-about-rope-park-page__first,
 .photo-area-about-rope-park-page__second {
    width: 100%;
    height: 540px;
@@ -3752,6 +3745,7 @@ input:checked + .slider:before {
    background-size: cover;
    overflow: hidden;
    position: relative;
+   background-position: center;
 }
 
 .poller-park-photo__discription-area {
