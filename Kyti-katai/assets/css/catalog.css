@@ -427,6 +427,7 @@
    display: grid;
    gap: 10px;
    margin-bottom: 15px;
+   width: 100%;
 }
 .in-stock-discription {
    background: #ffc93a;
@@ -761,6 +762,7 @@
    height: 100%;
    border-radius: 30px;
    padding-left: 20px;
+   cursor: pointer;
 }
 .woocommerce-result-count,
 .woocommerce-ordering {
@@ -774,6 +776,7 @@
    font-style: normal;
    font-weight: 500;
    line-height: 140%;
+   cursor: pointer;
 }
 .woocommerce-ordering {
    justify-content: end;
@@ -787,5 +790,11 @@
 }
 .attachment-woocommerce_thumbnail {
    height: 130px;
+}
+.cpoduct-zone-cat .show-more-btn-catalog {
+   display: none;
+}
+.in-stock-catalog {
+   margin-bottom: 50px;
 }
 /* ** */
