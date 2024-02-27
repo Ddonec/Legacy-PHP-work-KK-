@@ -41,10 +41,11 @@ function openPopupBurgerBottom() {
    greyBG.className = "grey-bg";
    popup.className = "burger-bottom-franchise";
    popup.innerHTML = `          
+       <li><a href="#about-franchise">О франшизе</a></li>
        <li><a href="#format-of-service-franchise-page">Формат услуг</a></li>
        <li><a href="#they-chose-us">Нас выбирают</a></li>
-       <li><a href="#finnodel-section">Финмодель</a></li>
-       <li><a href="#our-team-franchise">Команда</a></li>
+       <li><a href="#finnodel-section">Финансовая модель</a></li>
+       <li><a href="#our-team-franchise">Команда поддержки</a></li>
        <li><a href="#contacts-franchise-page">Контакты</a></li>
    `;
 

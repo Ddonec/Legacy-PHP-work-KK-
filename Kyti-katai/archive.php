@@ -66,7 +66,7 @@ get_header();
         </div>
 
 
-        <div class="show-more-btn-news text-14-500 pointer">Показать еще</div>
+        <div class="show-more-btn-news text-14-500 pointer none">Показать еще</div>
         <div class="subscribe-for-our-news-container">
             <div class="text-sub-block-news-inside">
                 <h4 class="main-text-sub-block-news-p-cont text-gradient">Подпишитесь на наши новости</h4>

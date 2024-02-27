@@ -13,10 +13,10 @@ get_header();
 
 <style>
    .photo-area-about-rope-park-page__first {
-   background: linear-gradient(78deg, rgba(51, 51, 51, 0.6) 1.23%, rgba(51, 51, 51, 0) 75.3%), url(<?php the_field('bolshoe_foto_1') ?>), lightgray 0px -41.505px / 100% 156.143% no-repeat;
+   background-image: url(<?php the_field('bolshoe_foto_1') ?>);
 }
 .photo-area-about-rope-park-page__second {
-   background: linear-gradient(78deg, rgba(51, 51, 51, 0.6) 1.23%, rgba(51, 51, 51, 0) 75.3%), url(<?php the_field('bolshoe_foto_2') ?>), lightgray 0px -41.505px / 100% 156.143% no-repeat;
+   background-image: url(<?php the_field('bolshoe_foto_2') ?>);
 }
 
 .park-characteristics__image1 {

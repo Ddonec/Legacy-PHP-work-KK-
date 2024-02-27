@@ -758,8 +758,8 @@
       width: 20%;
    }
 
-   .ticket__card {
-      width: 48%;
+   .tickets__card-zone > .ticket__card:nth-of-type(n + 1) {
+      width: 49%;
    }
    .cabinet-content-container {
       display: flex;
@@ -2305,7 +2305,7 @@
    .title-of-section-news-page h1 {
       font-size: 36px;
    }
-   .ticket__card {
+   .tickets__card-zone > .ticket__card:nth-of-type(n + 1) {
       width: 100%;
    }
    .apps-links-app-cart-franchise a {
@@ -2568,7 +2568,7 @@
    .sick-cart-news {
       width: 100%;
    }
-   .title-of-section-contacts-page{
+   .title-of-section-contacts-page {
       font-size: 32px;
    }
 }
