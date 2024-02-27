@@ -496,6 +496,10 @@ document.addEventListener("DOMContentLoaded", function() {
     <h3 class="title-of-section-gradient text-gradient"><?php the_field('franchise-zagolovok_5_sekczii') ?></h3>
     <div class="overflow-comand-cards-franchise">
         <div class="comand-cards-franchise">
+             <div class="comand-card-text-franchise">
+                <p class="text-18-500-left">Будем рядом</p>
+                <p class="team-fr__title">За вами закрепляется менеджер от <span>каждого департамента,</span> а не один специалист</p>
+            </div>
             <div class="card">
                 <div class="card__front">
                     <div class="comand-card-franchise">
@@ -532,10 +536,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                 </div>
             </div>
-            <div class="comand-card-text-franchise">
-                <p class="text-18-500-left">Будем рядом</p>
-                <p class="team-fr__title">За вами закрепляется менеджер от <span>каждого департамента,</span> а не один специалист</p>
-            </div>
+
             <div class="card">
                 <div class="card__front">
                     <div class="comand-card-franchise-3">
