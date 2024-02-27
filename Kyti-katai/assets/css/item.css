@@ -1257,11 +1257,17 @@
    display: flex;
    margin-top: 30px;
    flex-wrap: wrap;
-   gap: calc(4% / 3);
+   gap: 2%;
    row-gap: 20px;
 }
+.tickets__card-zone > .ticket__card:nth-of-type(-n + 2) {
+   width: 49%;
+}
+.tickets__card-zone > .ticket__card:nth-of-type(n + 3) {
+   width: 32%;
+}
 .ticket__card {
-   width: 24%;
+   /* width: 24%; */
    height: 265px;
    position: relative;
    overflow: hidden;
@@ -2298,7 +2304,6 @@
 */
 
 /* STATUS */
-
 
 /* ** */
 /* ** */
