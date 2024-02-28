@@ -59,6 +59,18 @@ html {
    width: max-content;
    max-width: 1920px;
 }
+.summer-body-status .header-top-blue {
+   background: rgb(255, 201, 58);
+}
+.summer-body-status .blue-line-fake {
+   background: rgb(255, 201, 58);
+}
+.summer-body-status .gray-line-fake {
+   background: rgb(255, 249, 232);
+}
+.summer-body-status .second-line-header {
+   background: rgb(255, 249, 232);
+}
 #summer,
 #winter {
    display: none;
@@ -267,6 +279,9 @@ html {
    left: 50%;
    transform: translate(-50%);
    z-index: 5;
+}
+.summer-body-status .under-bike {
+   background: rgb(255, 201, 58);
 }
 
 .header-second-line-container {

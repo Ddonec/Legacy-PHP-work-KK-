@@ -57,6 +57,9 @@
 .bacground-image-main-page-first-section.summer {
    background-image: url(<?php the_field('banner_glavnoj_straniczy_leto'); ?>);
 }
+.summer-body-status .bacground-image-main-page-first-section {
+   background-image: url(<?php the_field('banner_glavnoj_straniczy_leto'); ?>);
+}
 
 .bacground-image-main-page-first-section-franchese {
    background-image: url(<?php the_field('banner_glavnoj_straniczy_zima'); ?>);
