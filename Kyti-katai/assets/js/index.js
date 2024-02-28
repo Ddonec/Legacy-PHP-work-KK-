@@ -62,6 +62,8 @@ function applyStyles(checked) {
    const removeClass = (elements, className) => elements && elements.forEach((element) => element.classList.remove(className));
 
    if (checked) {
+      document.body.classList.remove("summer-body-status");
+      document.body.classList.add("winter-body-status");
       addClass(summerStatus, "none");
       removeClass(textGradient, "text-gradient-summer");
       removeClass(winterStatus, "none");
@@ -104,6 +106,8 @@ function applyStyles(checked) {
       kidsChillSmallCOntainerW && kidsChillSmallCOntainerW.classList.remove("none");
       kidsChillSmallCOntainerS && kidsChillSmallCOntainerS.classList.add("none");
    } else {
+      document.body.classList.add("summer-body-status");
+      document.body.classList.remove("winter-body-status");
       removeClass(summerStatus, "none");
       addClass(textGradient, "text-gradient-summer");
       addClass(winterStatus, "none");

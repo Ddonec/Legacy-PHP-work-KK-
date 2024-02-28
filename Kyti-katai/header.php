@@ -109,10 +109,10 @@ if (isset($_COOKIE[$cookie_name])) {
     $cookie_value = $_COOKIE[$cookie_name];
     
     // Определяем класс в зависимости от значения куки
-    $class = ($cookie_value == 'true') ? 'winter' : 'summer';
+    $class = ($cookie_value == 'true') ? 'winter-body-status' : 'summer-body-status';
 } else {
     // Если кука не установлена, предположим летнее время
-    $class = 'summer';
+    $class = 'summer-body-status';
 }
 ?>
    <body <?php echo 'class="' . $class . '"'; ?>>
