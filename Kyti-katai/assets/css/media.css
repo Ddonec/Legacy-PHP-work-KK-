@@ -204,6 +204,9 @@
    .h1-no-main-page.text-gradient {
       width: 100%;
    }
+   .h1-no-main-page.text-gradient.text-gradient-summer {
+      width: fit-content;
+   }
    .second-line-header,
    .gray-line-fake {
       display: none;
@@ -792,6 +795,9 @@
    }
    .call-back-form-container-overflow-container-default form > p:nth-child(4) {
       width: 100%;
+   }
+   .user-data-cabinet__btn-exit {
+      width: 132px;
    }
 }
 /* @media (max-width: 1088px){

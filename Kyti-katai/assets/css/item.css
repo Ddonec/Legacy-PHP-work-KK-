@@ -1620,6 +1620,20 @@
    background: linear-gradient(270deg, rgba(69, 92, 255, 1) 0%, rgba(69, 89, 237, 1) 50%, rgba(51, 51, 51, 1) 100%);
    -webkit-background-clip: text;
 }
+.winter-body-status .text-gradient {
+   color: transparent;
+   background: rgb(69, 92, 255);
+   background: linear-gradient(270deg, rgba(69, 92, 255, 1) 0%, rgba(69, 89, 237, 1) 50%, rgba(51, 51, 51, 1) 100%);
+   -webkit-background-clip: text;
+}
+.summer-body-status .text-gradient {
+   color: #131212;
+   background-image: -webkit-linear-gradient(0deg, #131212 10%, #7d380f 54%, #fec43e 99%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   text-fill-color: transparent;
+   -webkit-text-fill-color: transparent;
+}
 
 .text-gradient-summer {
    color: #131212;

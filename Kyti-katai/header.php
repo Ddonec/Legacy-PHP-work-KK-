@@ -101,7 +101,21 @@
 }
 
 </style>
-   <body>
+
+<?php
+// Получаем значение куки
+$cookie_name = 'SummerWinterCheckStatus';
+if (isset($_COOKIE[$cookie_name])) {
+    $cookie_value = $_COOKIE[$cookie_name];
+    
+    // Определяем класс в зависимости от значения куки
+    $class = ($cookie_value == 'true') ? 'winter-body-status' : 'summer-body-status';
+} else {
+    // Если кука не установлена, предположим летнее время
+    $class = 'summer-body-status';
+}
+?>
+   <body <?php echo 'class="' . $class . '"'; ?>>
       <nav class="burger-menu text-14-500-left-lato-left" id="burgerMenu">
             <img class="close-btn-burger-menu" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/close-vector-btn-black.svg" alt="" />
             <a href="<?php echo get_option('home'); ?>"><img class="logo-blue-burger" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/logo-blue.svg" alt="" /></a>

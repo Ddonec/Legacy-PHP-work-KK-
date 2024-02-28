@@ -23,10 +23,15 @@ get_header();
     $curr_user = wp_get_current_user();
     $curr_user_phone = get_user_meta( $curr_user->ID, 'phone_number', true );
     ?>
-         <h1 class="h1-no-main-page text-gradient cabinet-title"><?php the_field('zagolovok_straniczy') ?></h1>
+         <h1 class="h1-no-main-page text-gradient cabinet-title">
+            <!-- <?php the_field('zagolovok_straniczy') ?> -->Личный кабинет
+      </h1>
          <main class="cabinet-content-container text-14-500-left-lato">
             <div class="user-data-cabinet">
-               <div class="user-title-cabinet mons-28-700"><?php the_field('lichnye_dannye') ?></div>
+               <div class="user-title-cabinet mons-28-700">
+                  <!-- <?php the_field('lichnye_dannye') ?> -->
+                  Ваши данные
+            </div>
                <div class="user-data-cabinet__discription">
                   <div>
                      <p class="user-data-cabinet__data-title opacity">Ваше имя</p>

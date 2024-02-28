@@ -62,6 +62,8 @@ function applyStyles(checked) {
    const removeClass = (elements, className) => elements && elements.forEach((element) => element.classList.remove(className));
 
    if (checked) {
+      document.body.classList.remove("summer-body-status");
+      document.body.classList.add("winter-body-status");
       addClass(summerStatus, "none");
       removeClass(textGradient, "text-gradient-summer");
       removeClass(winterStatus, "none");
@@ -104,6 +106,8 @@ function applyStyles(checked) {
       kidsChillSmallCOntainerW && kidsChillSmallCOntainerW.classList.remove("none");
       kidsChillSmallCOntainerS && kidsChillSmallCOntainerS.classList.add("none");
    } else {
+      document.body.classList.add("summer-body-status");
+      document.body.classList.remove("winter-body-status");
       removeClass(summerStatus, "none");
       addClass(textGradient, "text-gradient-summer");
       addClass(winterStatus, "none");
@@ -309,13 +313,13 @@ document.addEventListener("click", () => {
 function openMenu() {
    dropWindow.style.opacity = 1;
    dropWindow.style.zIndex = 10;
-   dropWindow.style.transform = "translateY(0)"
+   dropWindow.style.transform = "translateY(0)";
    isMenuOpen = true;
 }
 
 function closeMenu() {
    dropWindow.style.opacity = 0;
    dropWindow.style.zIndex = -1;
-   dropWindow.style.transform = "translateY(-280px)"
+   dropWindow.style.transform = "translateY(-280px)";
    isMenuOpen = false;
 }
