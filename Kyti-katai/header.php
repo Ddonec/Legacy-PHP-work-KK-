@@ -71,11 +71,17 @@
 .absolute-fs-container-left.summer {
    background-image: url(<?php the_field('levaya_kartinka_banera_leto'); ?>);
 }
+.summer-body-status .absolute-fs-container-left {
+   background-image: url(<?php the_field('levaya_kartinka_banera_leto'); ?>);
+}
 
 .absolute-fs-container-right {
    background-image: url(<?php the_field('pravaya_kartinka_banera'); ?>);
 }
 .absolute-fs-container-right.summer {
+   background-image: url(<?php the_field('pravaya_kartinka_banera_leto'); ?>);
+}
+.summer-body-status .absolute-fs-container-right {
    background-image: url(<?php the_field('pravaya_kartinka_banera_leto'); ?>);
 }
 
@@ -179,7 +185,7 @@ if (isset($_COOKIE[$cookie_name])) {
                <a class="number-headr-yellow number-header-yellow" href="tel:89351680416"><?php the_field('phone') ?></a>
             </div>
 
-            <ul class="header-1920-list">
+            <ul class="header-1920-list font-color-default-white">
                <li class="pointer" id="pointer-for-drop">Компания <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /> <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" />
 
                <div id="drop-window-company">

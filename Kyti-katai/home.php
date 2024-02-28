@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   <div class="shadow-moscow"></div>
                </div> -->
                <div class="last-text-first-section"><?php the_field('title_2') ?></div>
-               <a href="<?php echo get_option('home'); ?>/catalog"><button class="to-choice-btn class-to-switch-season-btn">Перейти</button></a>
+               <a href="<?php echo get_option('home'); ?>/catalog"><button class="to-choice-btn stock-btn class-to-switch-season-btn">Перейти</button></a>
             </div>
             <div class="absolute-peoples-container-f-s">
                <div class="absolute-fs-container-left"></div>
