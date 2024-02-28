@@ -59,6 +59,42 @@ html {
    width: max-content;
    max-width: 1920px;
 }
+.summer-body-status .header-top-blue {
+   background: rgb(255, 201, 58);
+}
+.summer-body-status .blue-line-fake {
+   background: rgb(255, 201, 58);
+}
+.summer-body-status .gray-line-fake {
+   background: rgb(255, 249, 232);
+}
+.summer-body-status .second-line-header {
+   background: rgb(255, 249, 232);
+}
+.summer-body-status #search-header-1920 {
+   border: 2px solid black;
+   background: rgb(255, 221, 100);
+   color: black;
+}
+.summer-body-status .stock-btn {
+   background: #5567ea;
+   color: white;
+}
+.summer-body-status .winter-status {
+   display: none;
+}
+.winter-body-status .summer-status {
+   display: none;
+}
+.summer-body-status .summer-status {
+   display: inline;
+}
+.summer-body-status .font-color-default-white {
+   color: black;
+}
+.winter-body-status .winter-status {
+   display: inline;
+}
 #summer,
 #winter {
    display: none;
@@ -267,6 +303,9 @@ html {
    left: 50%;
    transform: translate(-50%);
    z-index: 5;
+}
+.summer-body-status .under-bike {
+   background: rgb(255, 201, 58);
 }
 
 .header-second-line-container {
