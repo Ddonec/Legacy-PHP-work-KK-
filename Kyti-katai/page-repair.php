@@ -106,8 +106,7 @@ get_header();
                <div><?php the_field('repair-usluga_9') ?></div>
                <p><?php the_field('repair-czena_za_uslugu_9') ?></p>
             </div> -->
-            <a class="download-price-of-repair-btn" target="_blank" href="https://docs.google.com/spreadsheets/d/1uSJUAed22xzyutmkrbH2weUkYMi82DTELGU1w6ka0xU/edit#gid=0" download>Посмотреть весь прайс</a>
-
+            <a class="download-price-of-repair-btn" target="_blank" href="https://kk.agency-5.ru/wp-content/uploads/2024/03/prajs.pdf">Посмотреть весь прайс</a>
          </div>
          <p class="example-text-repair-page"><?php the_field('repair-zagolovok_primerov_rabot') ?></p>
          <div class="phopos-container-example-repair-page">

@@ -112,15 +112,12 @@
 </style>
 
 <?php
-// Получаем значение куки
 $cookie_name = 'SummerWinterCheckStatus';
 if (isset($_COOKIE[$cookie_name])) {
     $cookie_value = $_COOKIE[$cookie_name];
     
-    // Определяем класс в зависимости от значения куки
     $class = ($cookie_value == 'true') ? 'winter-body-status' : 'summer-body-status';
 } else {
-    // Если кука не установлена, предположим летнее время
     $class = 'summer-body-status';
 }
 ?>
@@ -142,7 +139,7 @@ if (isset($_COOKIE[$cookie_name])) {
             <li><a href="<?php echo get_option('home'); ?>/franchise">Франшиза</a></li>
             <li><a href="<?php echo get_option('home'); ?>/faq">FAQ</a></li>
             <li><a href="<?php echo get_option('home'); ?>/find">Найди свой парк</a></li>
-            <li><a href="<?php echo get_option('home'); ?>/catalog">Возьми в прокат</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/shop">Возьми в прокат</a></li>
             <li><a href="<?php echo get_option('home'); ?>/catalog-child">Развлечения детям</a></li>
             <li class="winter-opacity"><a href="<?php echo get_option('home'); ?>/rope-park">Веревочный парк</a></li>
             <li class="winter-opacity"><a href="<?php echo get_option('home'); ?>/make-child-fun/">Организация детских праздников</a></li>
@@ -157,33 +154,35 @@ if (isset($_COOKIE[$cookie_name])) {
             <div class="blue-line-fake"></div>
             <div class="gray-line-fake"></div>
          </div>
+         
 
          <div class="header-top-blue">
             <div class="under-bike"></div>
-
             <div class="year-time-button">
-               <label class="switch">
-                  <input type="checkbox" checked />
-                  <span class="slider round pointer">
-                     <div class="text-in-slider-buton" id="season-content">
-                        <!-- В начальном состоянии отображаем зиму -->
-                        <div class="season winter">
-                           <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/sun-yellow.svg" alt="sun" id="sun-header-button" />
-                           <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/snowflake.svg" alt="snow" id="snow-header-button" />
-                           <span class="time-of-year-text"> Зима </span>
-                        </div>
-                        <!-- В скрытом состоянии отображаем лето -->
-                        <div class="season summer" style="display: none">
-                           <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/sun.svg" alt="sun" id="sun-header-button-2" />
-                           <span class="time-of-year-text"> Лето </span>
-                           <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/snowflake-blue.svg" alt="sun" id="snow-header-button-2" />
-                        </div>
-                     </div>
-                  </span>
-               </label>
-
-               <a class="number-headr-yellow number-header-yellow" href="tel:89351680416"><?php the_field('phone') ?></a>
+   <label class="switch">
+      <!-- Добавляем name и value для чекбокса -->
+      <input type="checkbox" name="seasonCheckbox" value="true" <?php echo (isset($_COOKIE["SummerWinterCheckStatus"]) && $_COOKIE["SummerWinterCheckStatus"] == 'true') ? 'checked' : ''; ?> />
+      <span class="slider round pointer">
+         <div class="text-in-slider-buton" id="season-content">
+            <!-- В начальном состоянии отображаем зиму -->
+            <div class="season winter" <?php echo (isset($_COOKIE["SummerWinterCheckStatus"]) && $_COOKIE["SummerWinterCheckStatus"] == 'true') ? 'style="display: none;"' : ''; ?>>
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/sun-yellow.svg" alt="sun" id="sun-header-button" />
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/snowflake.svg" alt="snow" id="snow-header-button" />
+               <span class="time-of-year-text"> Зима </span>
             </div>
+            <!-- В скрытом состоянии отображаем лето -->
+            <div class="season summer" <?php echo (!isset($_COOKIE["SummerWinterCheckStatus"]) || $_COOKIE["SummerWinterCheckStatus"] != 'true') ? 'style="display: none;"' : ''; ?>>
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/sun.svg" alt="sun" id="sun-header-button-2" />
+               <span class="time-of-year-text"> Лето </span>
+               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/snowflake-blue.svg" alt="sun" id="snow-header-button-2" />
+            </div>
+         </div>
+      </span>
+   </label>
+
+   <a class="number-headr-yellow number-header-yellow" href="tel:89351680416"><?php the_field('phone') ?></a>
+</div>
+
 
             <ul class="header-1920-list font-color-default-white">
                <li class="pointer" id="pointer-for-drop">Компания <img class="winter-status" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-36.svg" /> <img class="summer-status none" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector-black.svg" alt="" />
@@ -205,9 +204,11 @@ if (isset($_COOKIE[$cookie_name])) {
                <!-- <a class="number-header-yellow n-h-y" href="tel:89351680416"><?php the_field('phone', 95) ?></a> -->
             </div>
             <div class="input-zone-1920">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector.svg" alt="" id="search-icon-1920" />
+            <?php echo do_shortcode('[fibosearch]'); ?>
+
+               <!-- <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector.svg" alt="" id="search-icon-1920" />
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/search-icon-black.svg" alt="" id="search-icon-1920-black" class="none" />
-               <input type="text" placeholder="Поиск" id="search-header-1920" class="search-header-1920" />
+               <input type="text" placeholder="Поиск" id="search-header-1920" class="search-header-1920" /> -->
             </div>
             <div class="profile-icon-header">
                <ul class="icun-list-h">
@@ -253,7 +254,7 @@ if (isset($_COOKIE[$cookie_name])) {
                <div class="left-list">
                   <ul>
                      <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/find/">Найди свой парк</a></li>
-                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/catalog/">Возьми в прокат</a></li>
+                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/shop/">Возьми в прокат</a></li>
                      <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/catalog-child/">Развлечения для детей</a></li>
                   </ul>
                </div>

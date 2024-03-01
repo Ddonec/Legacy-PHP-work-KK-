@@ -46,7 +46,7 @@ API-4e215164-d278-42d9-abf5-0345e2b353a0
          {},
          {
             iconLayout: "default#image",
-            iconImageHref: "<?php echo bloginfo('template_url'); ?>/assets/assets/content/map-dot.png",
+            iconImageHref: "<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Frame-flag-new-map.svg",
             iconImageSize: [116, 96],
             iconImageOffset: [-116, -96],
          }

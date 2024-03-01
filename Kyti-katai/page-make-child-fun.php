@@ -56,7 +56,7 @@ get_header();
          </section>
          <section class="second-section-make-fun">
             <div class="photos-rope-perk-container">
-               <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('make-child-fun-zagolovok_sekczii_2') ?></h4>
+               <h4 class="title-of-block-small-text-28-700-mons text-gradient"><?php the_field('make-child-fun-zagolovok_sekczii_2') ?></h4>
                <div class="photos-of-rope-park-overflow">
                   <div class="photos-of-rope-park">
                      <div class="photos-of-rope-park__big-layout photos-make-fun__img1"></div>
@@ -113,7 +113,7 @@ get_header();
             </div>
          </section>
          <section class="third-section-make-fun">
-            <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('make-child-fun-zagolovok_3_sekczii') ?></h4>
+            <h4 class="title-of-block-small-text-28-700-mons text-gradient"><?php the_field('make-child-fun-zagolovok_3_sekczii') ?></h4>
             <div class="avalible-park-make-fun-container">
 
             <?php
