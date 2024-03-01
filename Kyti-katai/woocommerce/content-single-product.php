@@ -39,11 +39,38 @@ global $product;
                     <li class="pointer item-disc-i-p-1 i-p-d i-p-d-active text-16-500-left">Описание</li>
                     <li class="pointer item-disc-i-p-2 i-p-d text-16-500-left">Характеристики</li>
                 </ul>
-                <p class="text-18-500-left">
+                <p class="text-18-500-left i-p-d-text-1">
                     <?php echo $product->get_description(); ?>
                 </p>
+                <p class="text-18-500-left i-p-d-text-2 none">
+                    Тут скоро будут характеристики
+                </p>
             </div>
-            <div class="price-cards-i-p">
+            
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const listItems = document.querySelectorAll(".item-disc-i-p-1, .item-disc-i-p-2");
+        const descriptions = document.querySelectorAll(".i-p-d-text-1, .i-p-d-text-2");
+
+        listItems.forEach(function(item, index) {
+            item.addEventListener("click", function() {
+                listItems.forEach(function(otherItem) {
+                    otherItem.classList.remove("i-p-d-active");
+                });
+                item.classList.add("i-p-d-active");
+                descriptions.forEach(function(description, descIndex) {
+                    if (index === descIndex) {
+                        description.classList.remove("none");
+                    } else {
+                        description.classList.add("none");
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+            <div class="price-cards-i-p none">
                 <div class="price-card-i-p text-18-500-left">
                     <p class="">Стоимость (₽)</p>
                     <div class="prices-area-i-p-flex text-14">
@@ -79,7 +106,7 @@ global $product;
             </div>
         </div>
     </div>
-    <div class="item-page-map-block">
+    <div class="item-page-map-block none">
         <div class="button-on-map-item-page pointer"><a target="_blank" href="https://yandex.ru/maps/213/moscow/?ll=37.617700%2C55.755863&z=10">Смотреть&nbsp;на&nbsp;карте</a></div>
     </div>
 </section>

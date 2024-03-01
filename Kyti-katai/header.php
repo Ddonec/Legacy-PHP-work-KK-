@@ -253,7 +253,7 @@ if (isset($_COOKIE[$cookie_name])) {
                <div class="left-list">
                   <ul>
                      <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/find/">Найди свой парк</a></li>
-                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/catalog/">Возьми в прокат</a></li>
+                     <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/shop/">Возьми в прокат</a></li>
                      <li class="text-second-line-header pointer"><a href="<?php echo get_option('home'); ?>/catalog-child/">Развлечения для детей</a></li>
                   </ul>
                </div>

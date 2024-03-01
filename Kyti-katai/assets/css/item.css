@@ -146,7 +146,6 @@
 .photo-item-i-p {
    width: 44%;
    border-radius: 20px;
-   background-image: url(../assets/content/img-bike-2.png);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -299,6 +298,11 @@
    gap: 40px;
    margin: 0 auto;
    position: relative;
+}
+
+.last-section-of-i-p .left-arrow-i-p,
+.last-section-of-i-p .right-arrow-i-p {
+   display: none;
 }
 
 .last-section-area-i-p {

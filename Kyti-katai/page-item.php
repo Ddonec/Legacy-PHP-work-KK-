@@ -49,7 +49,7 @@ get_header();
                   <?php the_field('item-page-tekst_opisaniya') ?>
                   </p>
                </div>
-               <div class="price-cards-i-p">
+               <div class="price-cards-i-p none">
                   <div class="price-card-i-p text-18-500-left">
                      <p class="">Стоимость (₽)</p>
                      <div class="prices-area-i-p-flex text-14">
@@ -88,7 +88,7 @@ get_header();
                </div>
             </div>
          </div>
-         <div class="item-page-map-block">
+         <div class="item-page-map-block none">
             <div class="button-on-map-item-page pointer"><a target="_blank" href="https://yandex.ru/maps/213/moscow/?ll=37.617700%2C55.755863&z=10">Смотреть&nbsp;на&nbsp;карте</a></div>
          </div>
       </section>
