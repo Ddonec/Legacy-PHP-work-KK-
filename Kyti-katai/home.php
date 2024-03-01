@@ -337,9 +337,17 @@ document.addEventListener("DOMContentLoaded", function() {
                      <div class="discription-of-product">
                          <?php echo $product->get_title() ?>
                          <ul>
-                             <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
-                             <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li>
-                             <li><span class="opacity-text-discription-product-card">Доступно: </span>в <?php echo ParkClass::park_count() ?> парках</li>
+                             <!-- <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
+                             <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li> -->
+                             <li>
+                                <span class="opacity-text-discription-product-card">Доступно: </span>
+                                <?php 
+                                  $park_count = ParkClass::park_count();
+                                  echo 'в ';
+                                  echo $park_count;
+                                  echo ($park_count == 1) ? ' парке' : ' парках';
+                                  ?>
+                              </li>
                          </ul>
                          <div class="price-of-product pointer">
                              <img class="add-to-cart-btn"
