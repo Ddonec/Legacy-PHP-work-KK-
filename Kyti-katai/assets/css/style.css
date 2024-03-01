@@ -190,7 +190,10 @@ html {
    height: 16px;
 }
 .icun-list-h li .icon-search-burger-show {
-   height: 14px;
+   height: 16px;
+}
+.icun-list-h li a {
+   height: 16px;
 }
 .logo-header {
    position: absolute;
@@ -1003,7 +1006,7 @@ b {
    max-width: 104px;
    margin: auto;
 }
-.kids-chill> a:hover  > div{
+.kids-chill > a:hover > div {
    border: 1px solid #ffc93a;
    background: #ffdd6459;
    transition: 0.2s;
@@ -1207,6 +1210,7 @@ s4
    justify-content: space-around;
    margin: 30px 0 80px;
    position: relative;
+   overflow-x: hidden;
 }
 .cards-rope-park-2 {
    display: flex;
