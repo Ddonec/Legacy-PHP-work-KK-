@@ -2686,18 +2686,14 @@
       justify-content: flex-start;
    }
    .photos-work-in__photo-1 {
-      transform: rotate(347deg) translateX(-50%);
-      width: 72px;
-      height: 124px;
-      left: 98%;
-      top: 13px;
+      display: none;
    }
    .photos-work-in__photo-2 {
       width: 100px;
       height: 138px;
-      transform: rotate(4deg) translateX(-50%);
-      left: 92%;
-      top: -94px;
+      transform: rotate(4deg) translateX(-57%);
+      left: 90%;
+      top: -70px;
    }
    .photos-work-in__photo-3 {
       display: none;
