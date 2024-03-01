@@ -331,7 +331,27 @@ document.addEventListener("DOMContentLoaded", function() {
                  global $product;
 
                  ?>
-                    <div <?php wc_product_class( 'card-of-product', $product ); ?>>
+                 <!--            <div class="card-of-product">-->
+                 <!--                <a href="--><?php //echo get_option('home'); ?><!--/item"><img class="img-of-product"-->
+                 <!--                                                                      src="--><?php //echo bloginfo('template_url'); ?><!--/assets/assets/content/img-bike-2.png"-->
+                 <!--                                                                      alt=""/></a>-->
+                 <!---->
+                 <!--                <div class="discription-of-product">-->
+                 <!--                    Велосипед 12-K-->
+                 <!--                    <ul>-->
+                 <!--                        <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>-->
+                 <!--                        <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li>-->
+                 <!--                        <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>-->
+                 <!--                    </ul>-->
+                 <!--                    <div class="price-of-product pointer">-->
+                 <!--                        <img class="add-to-cart-btn"-->
+                 <!--                             src="--><?php //echo bloginfo('template_url'); ?><!--/assets/assets/icon/Vector+13px.svg" alt=""/>-->
+                 <!---->
+                 <!--                        <span class="prise-of-rent-1">от 1 200₽/час</span>-->
+                 <!--                    </div>-->
+                 <!--                </div>-->
+                 <!--            </div>-->
+                 <div <?php wc_product_class( 'card-of-product', $product ); ?>>
                      <a href="<?php echo $product->get_permalink() ?>"><?php echo $product->get_image() ?></a>
 
                      <div class="discription-of-product">
@@ -356,7 +376,176 @@ document.addEventListener("DOMContentLoaded", function() {
 
              ?>
 
-           
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Велосипед 12-K
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Городской велосипед
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Велосипед 12-K
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Городской велосипед
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Городской велосипед
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Велосипед 12-K
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Городской велосипед
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Велосипед 12-K
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-1.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Городской велосипед
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Прогулочный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>300₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>3шт</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 000₽/час</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card-of-product">
+               <a href="<?php echo get_option('home'); ?>/item"><img class="img-of-product" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/img-bike-2.png" alt="" /></a>
+
+               <div class="discription-of-product">
+                  Велосипед 12-K
+                  <ul>
+                     <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
+                     <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li>
+                     <li><span class="opacity-text-discription-product-card">Доступно: </span>в 3 парках</li>
+                  </ul>
+                  <div class="price-of-product pointer">
+                     <img class="add-to-cart-btn" src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector+13px.svg" alt="" />
+                     <span class="prise-of-rent-1">от 1 200₽/час</span>
+                  </div>
+               </div>
+            </div>
          </div>
          <div class="boo">
             <a href="<?php echo get_option('home'); ?>/catalog"><div class="go-to-shop-btn class-to-switch-season-btn">Перейти в каталог</div></a>

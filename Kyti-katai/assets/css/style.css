@@ -667,7 +667,7 @@ s2
    list-style: none;
    gap: 21px;
    display: flex;
-   justify-content: space-between;
+   /* justify-content: space-between; */
    align-items: center;
    width: calc(100% - 65px);
    overflow-x: auto;
