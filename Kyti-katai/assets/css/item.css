@@ -2306,6 +2306,31 @@
    gap: 10px;
 }
 
+/* search */
+
+.dgwt-wcas-search-wrapp {
+   width: 336px;
+}
+#dgwt-wcas-search-input-1 {
+   border: 2px solid black;
+   padding: 6px 12px 6px 28px;
+   background-color: unset;
+   opacity: 0.6;
+}
+
+.dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp {
+   padding: 0;
+   background: unset;
+}
+.dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp button.dgwt-wcas-search-submit {
+   top: 50%;
+   transform: translateY(-50%);
+   right: 23px;
+   left: unset;
+}
+.winter-body-status #dgwt-wcas-search-input-1::placeholder {
+   color: #ffffff; /* Цвет текста плейсхолдера */
+}
 /*
 *
 *

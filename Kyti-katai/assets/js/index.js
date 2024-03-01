@@ -9,7 +9,7 @@ const underBiker = getElement(".under-bike");
 const secondLineHeader = getElement(".second-line-header");
 const headerList = getElement(".header-1920-list");
 const header2List = getElement(".icun-list-h");
-const searchZoneHeader = getElement("#search-header-1920");
+const searchZoneHeader = getElement("#dgwt-wcas-search-input-1");
 const searchZoneHeaderClass = getElement(".search-header-1920");
 const summerStatus = document.querySelectorAll(".summer-status");
 const winterStatus = document.querySelectorAll(".winter-status");
@@ -38,6 +38,9 @@ const appbanner = getElement(".app-banner");
 const winterOpacity = document.querySelectorAll(".winter-opacity");
 const kidsChillSmallCOntainerW = getElement(".kids-chill-winter");
 const kidsChillSmallCOntainerS = getElement(".kids-chill-summer");
+
+const svgIcon = document.querySelector(".dgwt-wcas-ico-magnifier");
+var pathElement = svgIcon.querySelector("path");
 
 const blueFake = getElement(".blue-line-fake");
 const grayFake = getElement(".gray-line-fake");
@@ -83,9 +86,12 @@ function applyStyles(checked) {
       secondLineHeader && (secondLineHeader.style.background = "rgba(232, 234, 251, 1)");
       headerList && (headerList.style.color = "white");
       header2List && (header2List.style.color = "white");
-      searchZoneHeaderClass && searchZoneHeaderClass.classList.remove("custom-placeholder-style");
+      // searchZoneHeaderClass && searchZoneHeaderClass.classList.remove("custom-placeholder-style");
+      pathElement.setAttribute("fill", "#ffffff");
+      changePlaceholderColor("#ffffff");
       searchZoneHeader && (searchZoneHeader.style.border = "2px solid #fff");
       searchZoneHeader && (searchZoneHeader.style.background = "#5567ea");
+      searchZoneHeader && (searchZoneHeader.style.color = "white");
       blueFake && (blueFake.style.background = "#5567ea");
       grayFake && (grayFake.style.background = "rgba(232, 234, 251, 1)");
       backgroundHeaderRightPhoto && backgroundHeaderRightPhoto.classList.remove("summer");
@@ -127,7 +133,9 @@ function applyStyles(checked) {
       secondLineHeader && (secondLineHeader.style.background = "#fff9e8");
       headerList && (headerList.style.color = "black");
       header2List && (header2List.style.color = "black");
-      searchZoneHeaderClass && searchZoneHeaderClass.classList.add("custom-placeholder-style");
+      // searchZoneHeaderClass && searchZoneHeaderClass.classList.add("custom-placeholder-style");
+      pathElement.setAttribute("fill", "#000000");
+      changePlaceholderColor("#000000");
       searchZoneHeader && (searchZoneHeader.style.border = "2px solid black");
       searchZoneHeader && (searchZoneHeader.style.background = "#ffdd64");
       searchZoneHeader && (searchZoneHeader.style.color = "black");
@@ -197,7 +205,7 @@ function styleChange() {
       secondLineHeader.style.background = "rgba(232, 234, 251, 1)";
       headerList.style.color = "white";
       header2List.style.color = "white";
-      searchZoneHeaderClass.classList.remove("custom-placeholder-style");
+      // searchZoneHeaderClass.classList.remove("custom-placeholder-style");
       searchZoneHeader.style.border = "2px solid #fff";
       searchZoneHeader.style.background = "#5567ea";
       placeholderElement.style.color = newPlaceholderColor;
@@ -322,4 +330,12 @@ function closeMenu() {
    dropWindow.style.zIndex = -1;
    dropWindow.style.transform = "translateY(-280px)";
    isMenuOpen = false;
+}
+
+var inputElement = document.querySelector('.dgwt-wcas-sf-wrapp input[type="search"].dgwt-wcas-search-input');
+
+// Функция для изменения цвета текста плейсхолдера
+function changePlaceholderColor(color) {
+   inputElement.setAttribute("placeholder", "Поиск"); // Возвращаем значение плейсхолдера, если оно было изменено
+   inputElement.style.color = color; // Устанавливаем цвет текста плейсхолдера
 }

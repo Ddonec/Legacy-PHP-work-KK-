@@ -154,6 +154,7 @@ if (isset($_COOKIE[$cookie_name])) {
             <div class="blue-line-fake"></div>
             <div class="gray-line-fake"></div>
          </div>
+         
 
          <div class="header-top-blue">
             <div class="under-bike"></div>
@@ -203,9 +204,11 @@ if (isset($_COOKIE[$cookie_name])) {
                <!-- <a class="number-header-yellow n-h-y" href="tel:89351680416"><?php the_field('phone', 95) ?></a> -->
             </div>
             <div class="input-zone-1920">
-               <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector.svg" alt="" id="search-icon-1920" />
+            <?php echo do_shortcode('[fibosearch]'); ?>
+
+               <!-- <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/Vector.svg" alt="" id="search-icon-1920" />
                <img src="<?php echo bloginfo('template_url'); ?>/assets/assets/icon/search-icon-black.svg" alt="" id="search-icon-1920-black" class="none" />
-               <input type="text" placeholder="Поиск" id="search-header-1920" class="search-header-1920" />
+               <input type="text" placeholder="Поиск" id="search-header-1920" class="search-header-1920" /> -->
             </div>
             <div class="profile-icon-header">
                <ul class="icun-list-h">
