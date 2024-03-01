@@ -986,7 +986,7 @@ b {
    max-width: 1200px;
    position: relative;
 }
-.kids-chill > div {
+.kids-chill > a > div {
    width: 183px;
    height: 174px;
    border-radius: 20px;
@@ -1003,7 +1003,7 @@ b {
    max-width: 104px;
    margin: auto;
 }
-.kids-chill > div:not(:first-child):hover {
+.kids-chill> a:hover  > div{
    border: 1px solid #ffc93a;
    background: #ffdd6459;
    transition: 0.2s;

@@ -411,12 +411,12 @@ $arr = get_field('kartochki_s_razvlecheniyami');
 if ($arr) {
     foreach ($arr as $item) {
 ?>
-        <div class="pointer">
+        <a href="<?php echo $item['ssylka']; ?>"><div class="pointer">
         <div class="image-container-c-c">
             <img src="<?php echo $item['izobradenie_kartochki']; ?>" alt="" />
        </div>
             <p class="text-in-chill-for-kids-card"><?php echo $item['opisanie_kartochki']; ?></p>
-        </div>
+        </div></a>
 <?php
     }
 }
@@ -434,12 +434,13 @@ $arr = get_field('kartochki_s_razvlecheniyami_zima');
 if ($arr) {
     foreach ($arr as $item) {
 ?>
-        <div class="pointer">
+        <a href="<?php echo $item['ssylka']; ?>"><div class="pointer">
          <div class="image-container-c-c">
             <img src="<?php echo $item['izobradenie_kartochki']; ?>" alt="" />
          </div>
             <p class="text-in-chill-for-kids-card"><?php echo $item['opisanie_kartochki']; ?></p>
         </div>
+       </a>
 <?php
     }
 }
