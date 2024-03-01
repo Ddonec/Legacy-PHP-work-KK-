@@ -40,6 +40,7 @@ button {
 
 h1 {
    font-size: 48px;
+   width: fit-content;
 }
 html {
    scroll-behavior: smooth;
@@ -3877,6 +3878,7 @@ input:checked + .slider:before {
    font-style: normal;
    font-weight: 700;
    line-height: 130%; /* 36.4px */
+   width: fit-content;
 }
 
 .photos-of-rope-park {

@@ -95,7 +95,7 @@ get_header();
             </div>
          </div>
          <div class="park-characteristics-container">
-            <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('rope-park-zagolovok_vtoroj_sekczii') ?></h4>
+            <h4 class="title-of-block-small-text-28-700-mons text-gradient"><?php the_field('rope-park-zagolovok_vtoroj_sekczii') ?></h4>
             <div class="park-characteristics">
                <div class="park-characteristics__text1 park-characteristics__text">
                   <p class="park-characteristics__title"><?php the_field('rope-park-sinij_zagolovok_1') ?></p>
@@ -123,7 +123,7 @@ get_header();
             </div>
          </div>
          <div class="park-tikket-buy-container">
-            <h4 class="title-of-block-small-text-28-700-mons">Билеты можно приобрести в парках</h4>
+            <h4 class="title-of-block-small-text-28-700-mons text-gradient">Билеты можно приобрести в парках</h4>
             <div class="tickets__card-zone">
 
 
@@ -201,7 +201,7 @@ $count ++;
             </div>
          </div>
          <div class="photos-rope-perk-container">
-            <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('rope-park-zagolovok_tretej_sekczii') ?></h4>
+            <h4 class="title-of-block-small-text-28-700-mons text-gradient"><?php the_field('rope-park-zagolovok_tretej_sekczii') ?></h4>
             <div class="photos-of-rope-park-overflow">
                
                <div class="photos-of-rope-park">
@@ -215,7 +215,7 @@ $count ++;
             </div>
          </div>
          <div class="rules-of-rope-park-section">
-            <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('rope-park-zagolovok_chetvertoj_sekczii') ?></h4>
+            <h4 class="title-of-block-small-text-28-700-mons text-gradient"><?php the_field('rope-park-zagolovok_chetvertoj_sekczii') ?></h4>
             <ol class="list-of-rules-rope-park">
             <?php the_field('rope-park-soderzhanie_4_sekczii') ?>
             </ol>

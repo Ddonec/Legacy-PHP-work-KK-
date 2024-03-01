@@ -55,7 +55,7 @@ get_header();
          </div>
       </div>
       <section class="assortiment-section-corporative-page">
-         <h4 class="title-of-block-small-text-28-700-mons"><?php the_field('corporative-zagolovok_2_sekczii') ?></h4>
+         <h4 class="title-of-block-small-text-28-700-mons text-gradient"><?php the_field('corporative-zagolovok_2_sekczii') ?></h4>
          <div class="assiortement-overflow-container">
             <div class="assortement-main-container">
                <div class="assortement__card assortement__card_1">
