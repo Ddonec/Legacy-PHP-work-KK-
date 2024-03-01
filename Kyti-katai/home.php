@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   <div class="shadow-moscow"></div>
                </div> -->
                <div class="last-text-first-section"><?php the_field('title_2') ?></div>
-               <a href="<?php echo get_option('home'); ?>/catalog"><button class="to-choice-btn class-to-switch-season-btn">Перейти</button></a>
+               <a href="<?php echo get_option('home'); ?>/shop"><button class="to-choice-btn class-to-switch-season-btn">Перейти</button></a>
             </div>
             <div class="absolute-peoples-container-f-s">
                <div class="absolute-fs-container-left"></div>
@@ -339,15 +339,7 @@ document.addEventListener("DOMContentLoaded", function() {
                          <ul>
                              <!-- <li><span class="opacity-text-discription-product-card">Вид: </span>Горный</li>
                              <li><span class="opacity-text-discription-product-card">Залог: </span>200₽</li> -->
-                             <li>
-                                <span class="opacity-text-discription-product-card">Доступно: </span>
-                                <?php 
-                                  $park_count = ParkClass::park_count();
-                                  echo 'в ';
-                                  echo $park_count;
-                                  echo ($park_count == 1) ? ' парке' : ' парках';
-                                  ?>
-                              </li>
+
                          </ul>
                          <div class="price-of-product pointer">
                              <img class="add-to-cart-btn"
@@ -367,7 +359,7 @@ document.addEventListener("DOMContentLoaded", function() {
            
          </div>
          <div class="boo">
-            <a href="<?php echo get_option('home'); ?>/catalog"><div class="go-to-shop-btn class-to-switch-season-btn">Перейти в каталог</div></a>
+            <a href="<?php echo get_option('home'); ?>/shop"><div class="go-to-shop-btn class-to-switch-season-btn">Перейти в каталог</div></a>
          </div>
          <div class="hand-mask-app-banner">
             <img class="pointer" id="hand-iphone" src="<?php echo bloginfo('template_url'); ?>/assets/assets/content/hand-phone-full-size.png" alt="" />

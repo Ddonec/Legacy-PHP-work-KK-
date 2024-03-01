@@ -142,7 +142,7 @@ if (isset($_COOKIE[$cookie_name])) {
             <li><a href="<?php echo get_option('home'); ?>/franchise">Франшиза</a></li>
             <li><a href="<?php echo get_option('home'); ?>/faq">FAQ</a></li>
             <li><a href="<?php echo get_option('home'); ?>/find">Найди свой парк</a></li>
-            <li><a href="<?php echo get_option('home'); ?>/catalog">Возьми в прокат</a></li>
+            <li><a href="<?php echo get_option('home'); ?>/shop">Возьми в прокат</a></li>
             <li><a href="<?php echo get_option('home'); ?>/catalog-child">Развлечения детям</a></li>
             <li class="winter-opacity"><a href="<?php echo get_option('home'); ?>/rope-park">Веревочный парк</a></li>
             <li class="winter-opacity"><a href="<?php echo get_option('home'); ?>/make-child-fun/">Организация детских праздников</a></li>
