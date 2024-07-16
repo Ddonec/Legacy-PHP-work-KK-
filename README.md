@@ -1,6 +1,6 @@
 # Кути Катай
 
-![Кути Катай](../Legacy-PHP-work-KK-/Kyti-katai/assets/assets/icon/logo-blue.svg)
+![Кути Катай](https://kutikatai.ru/wp-content/themes/Kyti-katai/assets/assets/icon/logo-new-black.svg)
 
 Добро пожаловать на официальный репозиторий проекта "Кути Катай"! Это уникальный веб-сайт, созданный для поклонников бренда "Кути Катай". Здесь вы найдете информацию о проекте, ссылки на репозитории с разработкой и натяжкой на WordPress, а также детали о дизайне и структуре сайта.
 
@@ -23,12 +23,11 @@
 
 [GitHub - HTML Development](https://github.com/Ddonec/work-hard-chill-ride)
 
-
 ---
 
 # Kuti Katai
 
-![Kuti Katai](../Legacy-PHP-work-KK-/Kyti-katai/assets/assets/icon/logo-blue.svg)
+![Kuti Katai](https://kutikatai.ru/wp-content/themes/Kyti-katai/assets/assets/icon/logo-new-black.svg)
 
 Welcome to the official repository of the "Kuti Katai" project! This is a unique website created for fans of the "Kuti Katai" brand. Here you will find information about the project, links to repositories with development and WordPress integration, as well as details about the design and structure of the site.
 
@@ -50,6 +49,5 @@ Welcome to the official repository of the "Kuti Katai" project! This is a unique
 This repository contains the initial development of the project in HTML. It includes the entire structure and styles of the site.
 
 [GitHub - HTML Development](https://github.com/Ddonec/work-hard-chill-ride)
-
 
 Feel free to adjust the content as needed.
