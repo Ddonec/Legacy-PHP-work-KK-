@@ -1,10 +1,6 @@
-Sure, here's a comprehensive `README.md` for your GitHub project:
-
----
-
 # Кути Катай
 
-![Кути Катай](https://kutikatai.ru/assets/images/logo.png)
+![Кути Катай](../Legacy-PHP-work-KK-/Kyti-katai/assets/assets/icon/logo-blue.svg)
 
 Добро пожаловать на официальный репозиторий проекта "Кути Катай"! Это уникальный веб-сайт, созданный для поклонников бренда "Кути Катай". Здесь вы найдете информацию о проекте, ссылки на репозитории с разработкой и натяжкой на WordPress, а также детали о дизайне и структуре сайта.
 
@@ -32,7 +28,7 @@ Sure, here's a comprehensive `README.md` for your GitHub project:
 
 # Kuti Katai
 
-![Kuti Katai](https://kutikatai.ru/assets/images/logo.png)
+![Kuti Katai](../Legacy-PHP-work-KK-/Kyti-katai/assets/assets/icon/logo-blue.svg)
 
 Welcome to the official repository of the "Kuti Katai" project! This is a unique website created for fans of the "Kuti Katai" brand. Here you will find information about the project, links to repositories with development and WordPress integration, as well as details about the design and structure of the site.
 
