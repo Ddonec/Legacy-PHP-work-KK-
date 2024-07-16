@@ -64,5 +64,3 @@ Welcome to the official repository of the "Kuti Katai" project! This is a unique
 This repository contains the initial development of the project in HTML. It includes the entire structure and styles of the site.
 
 [GitHub - HTML Development](https://github.com/Ddonec/work-hard-chill-ride)
-
-Feel free to adjust the content as needed.
