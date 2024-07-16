@@ -11,6 +11,14 @@
 - **Разработка в HTML**: [GitHub - HTML Development](https://github.com/Ddonec/work-hard-chill-ride)
 - **Натяжка на WordPress (PHP)**: [GitHub - WordPress Development](https://github.com/Ddonec/Legacy-PHP-work-KK-/tree/ed5ac980af62b3b48cc0c76dfb49b9ed47538701)
 
+## Задачи
+
+* Разработка 21 страницы по макету из Figma
+* Разраотка внутренней логики и алгоритмов на страницах
+* Адаптация готового макета под систему Wordpress
+* Интеграция базы данных 1С
+
+
 ## О проекте
 
 "Кути Катай" — это проект, который включает в себя уникальный дизайн и функциональность. Веб-сайт был разработан с нуля, начиная с HTML верстки и заканчивая интеграцией с WordPress. Вся информация и ресурсы доступны в открытых репозиториях, чтобы каждый мог ознакомиться с процессом создания и внести свой вклад.
@@ -37,6 +45,13 @@ Welcome to the official repository of the "Kuti Katai" project! This is a unique
 - **Design in Figma**: [Kuti Katai - Figma](https://www.figma.com/design/SpYuTiJPCuzNV4ZnpkNOnm/%D0%9A%D1%83%D1%82%D0%B8-%D0%9A%D0%B0%D1%82%D0%B0%D0%B9?node-id=2115-21356&t=NJu2X9wruh2SyO7n-0)
 - **HTML Development**: [GitHub - HTML Development](https://github.com/Ddonec/work-hard-chill-ride)
 - **WordPress Development (PHP)**: [GitHub - WordPress Development](https://github.com/Ddonec/Legacy-PHP-work-KK-/tree/ed5ac980af62b3b48cc0c76dfb49b9ed47538701)
+
+## Main Tasks
+
+* Development of 21 pages based on a layout from Figma
+* Development of internal logic and algorithms on pages
+* Adaptation of the finished layout for the Wordpress system
+* 1C database integration
 
 ## About the Project
 
